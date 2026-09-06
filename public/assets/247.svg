@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+<g fill="none" stroke="#e50914" stroke-linecap="round">
+<circle cx="200" cy="210" r="120" stroke-width="16"></circle>
+<g stroke-width="9">
+<line x1="200.0" y1="114.0" x2="200.0" y2="98.0"></line><line x1="252.0" y1="119.9" x2="256.0" y2="113.0"></line><line x1="290.1" y1="158.0" x2="297.0" y2="154.0"></line><line x1="296.0" y1="210.0" x2="312.0" y2="210.0"></line><line x1="290.1" y1="262.0" x2="297.0" y2="266.0"></line><line x1="252.0" y1="300.1" x2="256.0" y2="307.0"></line><line x1="200.0" y1="306.0" x2="200.0" y2="322.0"></line><line x1="148.0" y1="300.1" x2="144.0" y2="307.0"></line><line x1="109.9" y1="262.0" x2="103.0" y2="266.0"></line><line x1="104.0" y1="210.0" x2="88.0" y2="210.0"></line><line x1="109.9" y1="158.0" x2="103.0" y2="154.0"></line><line x1="148.0" y1="119.9" x2="144.0" y2="113.0"></line>
+</g>
+<path d="M200 118 A92 92 0 0 0 118 168" stroke-width="20"></path>
+<path d="M188 96 L212 116 L182 132 Z" fill="#e50914" stroke="none"></path>
+</g>
+<text x="200" y="235" font-family="Poppins,Arial,sans-serif" font-weight="800" font-size="90" fill="#e50914" text-anchor="middle">24/7</text>
+</svg>

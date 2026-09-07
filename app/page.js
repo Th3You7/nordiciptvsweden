@@ -36,7 +36,9 @@ export default function Home() {
       const th = localStorage.getItem("aurion_theme");
       const lg = localStorage.getItem("aurion_lang");
       if (th) setTheme(th);
-      if (lg) setLang(lg);
+      // Ignore anything stale (e.g. the previous "mt" locale) so a returning
+      // visitor never lands on a language the copy no longer has.
+      if (lg === "en" || lg === "sv") setLang(lg);
     } catch (e) {}
     setW(window.innerWidth);
     const onResize = () => {
@@ -111,12 +113,17 @@ export default function Home() {
     setTheme(nt);
   };
   const toggleLang = () => {
-    const nl = lang === "en" ? "mt" : "en";
+    const nl = lang === "en" ? "sv" : "en";
     try {
       localStorage.setItem("aurion_lang", nl);
     } catch (e) {}
     setLang(nl);
   };
+
+  // Keep <html lang> in step with the copy actually on screen.
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   const t = resolveLang(COPY, lang);
   const R = (o) => resolveLang(o, lang);
@@ -145,28 +152,28 @@ export default function Home() {
   const steps = R(STEP_DATA);
   const contentRows = R(CONTENT_ROW_DATA);
 
-  const payMethods = ["Visa", "Mastercard", "PayPal", lang === "mt" ? "u aktar" : "& more"];
+  const payMethods = ["Visa", "Mastercard", "PayPal", lang === "sv" ? "och mer" : "& more"];
   const heroStats = [
-    { value: "99.9%", label: lang === "mt" ? "Attività" : "Uptime" },
-    { value: "40K+", label: lang === "mt" ? "Films" : "Movies" },
-    { value: "18K+", label: lang === "mt" ? "Kanali Live" : "Live Channels" },
+    { value: "99.9%", label: lang === "sv" ? "Drifttid" : "Uptime" },
+    { value: "40K+", label: lang === "sv" ? "Filmer" : "Movies" },
+    { value: "18K+", label: lang === "sv" ? "Livekanaler" : "Live Channels" },
   ];
   const stats = [
-    { value: "99.9%", label: lang === "mt" ? "Attività (Uptime)" : "Uptime" },
-    { value: "40,000+", label: lang === "mt" ? "Films" : "Movies" },
-    { value: "12,000+", label: lang === "mt" ? "Serje" : "Series" },
-    { value: "18,000+", label: lang === "mt" ? "Kanali Live" : "Live Channels" },
-    { value: "50,000+", label: lang === "mt" ? "Utenti Attivi" : "Active Users" },
+    { value: "99.9%", label: lang === "sv" ? "Drifttid" : "Uptime" },
+    { value: "40,000+", label: lang === "sv" ? "Filmer" : "Movies" },
+    { value: "12,000+", label: lang === "sv" ? "Serier" : "Series" },
+    { value: "18,000+", label: lang === "sv" ? "Livekanaler" : "Live Channels" },
+    { value: "50,000+", label: lang === "sv" ? "Aktiva användare" : "Active Users" },
   ];
   const footerCols = [
-    { title: lang === "mt" ? "Prodott" : "Product", links: [["features", "features"], ["pricing", "pricing"], ["devices", "devices"]] },
-    { title: lang === "mt" ? "Kumpanija" : "Company", links: [["blog", "blog"], ["contact", "contact"], ["faq", "faq"]] },
+    { title: lang === "sv" ? "Produkt" : "Product", links: [["features", "features"], ["pricing", "pricing"], ["devices", "devices"]] },
+    { title: lang === "sv" ? "Företag" : "Company", links: [["blog", "blog"], ["contact", "contact"], ["faq", "faq"]] },
     { title: "Legal", links: null },
   ];
   const legalLinks = [
-    { label: lang === "mt" ? "Termini" : "Terms", key: "faq" },
-    { label: lang === "mt" ? "Privatezza" : "Privacy", key: "faq" },
-    { label: lang === "mt" ? "Rifużjonijiet" : "Refunds", key: "faq" },
+    { label: lang === "sv" ? "Villkor" : "Terms", key: "faq" },
+    { label: lang === "sv" ? "Integritet" : "Privacy", key: "faq" },
+    { label: lang === "sv" ? "Återbetalningar" : "Refunds", key: "faq" },
   ];
 
   const grids = {
@@ -178,8 +185,10 @@ export default function Home() {
     gridDevBig: g(w < 480 ? 2 : w < 820 ? 3 : 4, "18px"),
     gridRev: g(w < 640 ? 1 : w < 1000 ? 2 : 3, "20px"),
     gridSteps: g(w < 760 ? 1 : 3, "20px"),
-    gridPrice: g(w < 560 ? 2 : 4, "18px"),
-    gridPriceHome: g(w < 560 ? 2 : 4, "14px"),
+    // Pricing cards stretch to a uniform height across the row (the shared
+    // grid helper aligns to start, which would size each card to its content).
+    gridPrice: g(w < 560 ? 2 : 4, "18px") + "align-items:stretch;",
+    gridPriceHome: g(w < 560 ? 2 : 4, "16px") + "align-items:stretch;",
     gridBlogHome: g(w < 640 ? 1 : 3, "20px"),
     gridContact: `display:grid;gap:22px;grid-template-columns:${w < 680 ? "1fr" : "1fr 1fr"};`,
     gridFoot: `display:grid;gap:36px;grid-template-columns:${w < 720 ? "1fr 1fr" : w < 960 ? "1.4fr 1fr 1fr" : "1.6fr 1fr 1fr 1fr"};`,
@@ -188,11 +197,11 @@ export default function Home() {
 
   const planCardStyle = (p, sm) =>
     sm
-      ? `position:relative;border:${p.best ? "1.6px solid var(--accent)" : "1px solid var(--border)"};border-radius:16px;background:var(--card);padding:22px 16px;transition:transform .3s ease,box-shadow .3s ease;${p.best ? "box-shadow:0 0 28px var(--glow);" : ""}`
+      ? `position:relative;border:${p.best ? "1.6px solid var(--accent)" : "1px solid var(--border)"};border-radius:18px;background:var(--card);padding:28px 21px;transition:transform .3s ease,box-shadow .3s ease;${p.best ? "box-shadow:0 0 28px var(--glow);" : ""}`
       : `position:relative;border:${p.best ? "1.6px solid var(--accent)" : "1px solid var(--border)"};border-radius:20px;background:var(--card);padding:32px 26px;transition:transform .3s ease,box-shadow .3s ease;${p.best ? "box-shadow:0 0 34px var(--glow);" : ""}`;
   const planBtnStyle = (p, sm) =>
     sm
-      ? `width:100%;margin-top:16px;height:40px;border-radius:10px;font-family:Poppins;font-weight:600;font-size:13.5px;cursor:pointer;transition:background .2s,transform .2s,border-color .2s;${p.best ? "border:none;background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(229,9,20,.35);" : "border:1.5px solid var(--accent);background:transparent;color:var(--text);"}`
+      ? `width:100%;margin-top:18px;height:45px;border-radius:11px;font-family:Poppins;font-weight:600;font-size:14.5px;cursor:pointer;transition:background .2s,transform .2s,border-color .2s;${p.best ? "border:none;background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(229,9,20,.35);" : "border:1.5px solid var(--accent);background:transparent;color:var(--text);"}`
       : `width:100%;margin-top:22px;height:48px;border-radius:12px;font-family:Poppins;font-weight:600;font-size:15px;cursor:pointer;transition:background .2s,transform .2s,border-color .2s;${p.best ? "border:none;background:var(--accent);color:#fff;box-shadow:0 10px 26px rgba(229,9,20,.35);" : "border:1.5px solid var(--accent);background:transparent;color:var(--text);"}`;
 
   const kicker = (text) => (
@@ -265,14 +274,14 @@ export default function Home() {
             <Box as="button" onClick={toggleLang} aria-label="Language" hover="border-color:var(--accent)"
               sx="display:flex;align-items:center;gap:7px;height:40px;padding:0 13px;border:1px solid var(--border);border-radius:999px;background:transparent;color:var(--text);cursor:pointer;font-family:'Inter';font-weight:600;font-size:13px;transition:border-color .2s ease;">
               <span style={{ display: "inline-flex" }}><Icon name="globe2" size={17} /></span>
-              <span style={{ letterSpacing: ".04em" }}>{lang === "en" ? "EN" : "MT"}</span>
+              <span style={{ letterSpacing: ".04em" }}>{lang === "en" ? "EN" : "SV"}</span>
             </Box>
             <Box as="button" onClick={toggleTheme} aria-label="Toggle theme" hover="border-color:var(--accent);transform:rotate(18deg)"
               sx="width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--border);border-radius:999px;background:transparent;color:var(--text);cursor:pointer;transition:border-color .2s ease,transform .3s ease;">
               <Icon name={theme === "dark" ? "sun" : "moon"} size={20} />
             </Box>
-            <Box as="button" onClick={() => go("contact")} hover="background:var(--accent2);transform:translateY(-2px);box-shadow:0 12px 30px rgba(229,9,20,.45)"
-              sx={`display:${deskNav ? "inline-flex" : "none"};align-items:center;height:40px;padding:0 20px;border:none;border-radius:999px;background:var(--accent);color:#fff;font-family:'Poppins';font-weight:600;font-size:14px;cursor:pointer;box-shadow:0 8px 22px rgba(229,9,20,.32);transition:background .2s ease,transform .2s ease,box-shadow .2s ease;`}>
+            <Box as="button" onClick={() => go("contact")} hover="background:var(--green2);transform:translateY(-2px);box-shadow:0 12px 30px var(--greenGlow)"
+              sx={`display:${deskNav ? "inline-flex" : "none"};align-items:center;height:40px;padding:0 20px;border:none;border-radius:999px;background:var(--green);color:#fff;font-family:'Poppins';font-weight:600;font-size:14px;cursor:pointer;box-shadow:0 8px 22px var(--greenGlow);transition:background .2s ease,transform .2s ease,box-shadow .2s ease;`}>
               {t.nav.freeTrial}
             </Box>
             <button onClick={() => setMobile((m) => !m)} aria-label="Menu" style={{ display: deskNav || iconNav ? "none" : "grid", width: "40px", height: "40px", placeItems: "center", border: "1px solid var(--border)", borderRadius: "12px", background: "transparent", color: "var(--text)", cursor: "pointer" }}>
@@ -288,7 +297,7 @@ export default function Home() {
                 {item.label}
               </button>
             ))}
-            <button onClick={() => go("contact")} style={{ marginTop: "8px", height: "48px", border: "none", borderRadius: "999px", background: "var(--accent)", color: "#fff", fontFamily: "'Poppins'", fontWeight: 600, fontSize: "15px", cursor: "pointer" }}>{t.nav.freeTrial}</button>
+            <button onClick={() => go("contact")} style={{ marginTop: "8px", height: "48px", border: "none", borderRadius: "999px", background: "var(--green)", color: "#fff", fontFamily: "'Poppins'", fontWeight: 600, fontSize: "15px", cursor: "pointer" }}>{t.nav.freeTrial}</button>
           </div>
         )}
       </nav>
@@ -307,8 +316,8 @@ export default function Home() {
                 <h1 style={{ fontFamily: "'Poppins'", fontWeight: 800, fontSize: "clamp(38px,5.2vw,64px)", lineHeight: 1.04, letterSpacing: "-.02em", margin: "22px 0 0", textWrap: "balance" }}>{t.hero.title}</h1>
                 <p style={{ fontSize: "clamp(16px,1.5vw,19px)", lineHeight: 1.65, color: "var(--text2)", margin: "22px 0 0", maxWidth: "520px", textWrap: "pretty" }}>{t.hero.sub}</p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "14px", marginTop: "34px" }}>
-                  <Box as="button" onClick={() => go("contact")} hover="background:var(--accent2);transform:translateY(-2px);box-shadow:0 16px 40px rgba(229,9,20,.5)"
-                    sx="display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 26px;border:none;border-radius:999px;background:var(--accent);color:#fff;font-family:'Poppins';font-weight:600;font-size:16px;cursor:pointer;box-shadow:0 12px 30px rgba(229,9,20,.36);transition:background .2s,transform .2s,box-shadow .2s;">
+                  <Box as="button" onClick={() => go("contact")} hover="background:var(--green2);transform:translateY(-2px);box-shadow:0 16px 40px var(--greenGlow)"
+                    sx="display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 26px;border:none;border-radius:999px;background:var(--green);color:#fff;font-family:'Poppins';font-weight:600;font-size:16px;cursor:pointer;box-shadow:0 12px 30px var(--greenGlow);transition:background .2s,transform .2s,box-shadow .2s;">
                     {t.hero.cta1}<span style={{ display: "inline-flex" }}><Icon name="arrow" size={18} /></span>
                   </Box>
                   <Box as="button" onClick={() => go("pricing")} hover="background:rgba(229,9,20,.08);transform:translateY(-2px)"
@@ -327,7 +336,7 @@ export default function Home() {
               </div>
               <div data-reveal="1" style={{ position: "relative", minHeight: "360px" }}>
                 <div style={{ position: "relative", borderRadius: "22px", border: "1px solid var(--border)", background: "var(--card)", boxShadow: "var(--shadow)", padding: "14px" }}>
-                  <div style={{ borderRadius: "14px", overflow: "hidden", aspectRatio: "16/10", background: "url('/assets/hero-tv.jpg') center/cover no-repeat,var(--bg2)", display: "grid", placeItems: "center", position: "relative" }}>
+                  <div style={{ borderRadius: "14px", overflow: "hidden", aspectRatio: "16/10", background: "url('/assets/bg-collage.jpg') center/cover no-repeat,var(--bg2)", display: "grid", placeItems: "center", position: "relative" }}>
                     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(8,8,8,.35),rgba(8,8,8,.62)),radial-gradient(circle at 50% 45%,var(--glow),transparent 62%)" }} />
                     <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", gap: "12px", color: "var(--text2)" }}>
                       <span style={{ width: "66px", height: "66px", borderRadius: "50%", background: "var(--accent)", display: "grid", placeItems: "center", color: "#fff", boxShadow: "0 0 34px var(--glow)", animation: "au-pulse 3.2s ease-in-out infinite" }}><Icon name="play" size={30} filled /></span>
@@ -336,7 +345,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div style={{ position: "absolute", right: "-6px", bottom: "-26px", width: "118px", borderRadius: "22px", border: "1px solid var(--border)", background: "var(--card)", boxShadow: "var(--shadow)", padding: "8px", animation: "au-float 5s ease-in-out infinite" }}>
-                  <div style={{ borderRadius: "14px", overflow: "hidden", aspectRatio: "9/17", background: "url('/img_0968-2-mrtc28d1-ato8.jpg') center/cover no-repeat,var(--bg2)" }} />
+                  <div style={{ borderRadius: "14px", overflow: "hidden", aspectRatio: "9/17", background: "url('/assets/phone-app.webp') center/cover no-repeat,var(--bg2)" }} />
                 </div>
               </div>
             </Box>
@@ -495,16 +504,16 @@ export default function Home() {
                 {plans.map((p, i) => (
                   <Box key={i} data-reveal="1" hover="transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.3),0 0 26px var(--glow)" sx={planCardStyle(p, true)}>
                     {p.best && (
-                      <span style={{ position: "absolute", top: "-11px", left: "50%", transform: "translateX(-50%)", background: "var(--accent)", color: "#fff", fontFamily: "'Poppins'", fontWeight: 600, fontSize: "10.5px", letterSpacing: ".06em", padding: "5px 11px", borderRadius: "999px", boxShadow: "0 8px 20px rgba(229,9,20,.4)", whiteSpace: "nowrap" }}>{p.badge}</span>
+                      <span style={{ position: "absolute", top: "-12px", left: "50%", transform: "translateX(-50%)", background: "var(--accent)", color: "#fff", fontFamily: "'Poppins'", fontWeight: 600, fontSize: "11.5px", letterSpacing: ".06em", padding: "6px 12px", borderRadius: "999px", boxShadow: "0 8px 20px rgba(229,9,20,.4)", whiteSpace: "nowrap" }}>{p.badge}</span>
                     )}
-                    <div style={{ fontFamily: "'Poppins'", fontWeight: 600, fontSize: "16px" }}>{p.name}</div>
-                    <div style={{ display: "flex", alignItems: "baseline", gap: "4px", margin: "10px 0 3px" }}><span style={{ fontFamily: "'Poppins'", fontWeight: 800, fontSize: "34px", letterSpacing: "-.02em" }}>{p.price}</span></div>
-                    <div style={{ fontSize: "12px", color: "var(--text2)" }}>{p.per}</div>
+                    <div style={{ fontFamily: "'Poppins'", fontWeight: 600, fontSize: "17.5px" }}>{p.name}</div>
+                    <div style={{ display: "flex", alignItems: "baseline", gap: "4px", margin: "12px 0 4px" }}><span style={{ fontFamily: "'Poppins'", fontWeight: 800, fontSize: "40px", letterSpacing: "-.02em" }}>{p.price}</span></div>
+                    <div style={{ fontSize: "13px", color: "var(--text2)" }}>{p.per}</div>
                     <button onClick={() => go("contact")} style={parseInlineBtn(planBtnStyle(p, true))}>{t.pricing.choose}</button>
-                    <div style={{ height: "1px", background: "var(--border)", margin: "16px 0" }} />
-                    <div style={{ display: "flex", flexDirection: "column", gap: "9px" }}>
+                    <div style={{ height: "1px", background: "var(--border)", margin: "19px 0" }} />
+                    <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                       {p.features.map((feat, j) => (
-                        <div key={j} style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "12.5px", lineHeight: 1.4, color: "var(--text2)" }}>
+                        <div key={j} style={{ display: "flex", alignItems: "flex-start", gap: "9px", fontSize: "13.5px", lineHeight: 1.45, color: "var(--text2)" }}>
                           <span style={{ display: "inline-flex", color: "var(--accent)", flex: "none", marginTop: "1px" }}><Icon name="check" size={17} /></span>{feat}
                         </div>
                       ))}
@@ -526,7 +535,13 @@ export default function Home() {
                 <h2 style={{ fontFamily: "'Poppins'", fontWeight: 700, fontSize: "clamp(28px,3.4vw,40px)", letterSpacing: "-.02em", margin: 0 }}>{t.faq.title}</h2>
               </div>
               <div data-reveal="1" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-                {faqRaw.slice(0, 4).map((q, i) => faqItem(q, i, false))}
+                {faqRaw.slice(0, 7).map((q, i) => faqItem(q, i, false))}
+              </div>
+              <div data-reveal="1" style={{ textAlign: "center", margin: "30px 0 0" }}>
+                <Box as="button" onClick={() => go("faq")} hover="background:rgba(229,9,20,.08);transform:translateY(-2px)"
+                  sx="display:inline-flex;align-items:center;gap:9px;height:46px;padding:0 22px;border:1.5px solid var(--accent);border-radius:999px;background:transparent;color:var(--text);font-family:'Poppins';font-weight:600;font-size:14.5px;cursor:pointer;transition:background .2s,transform .2s;">
+                  {t.faq.seeAll}<Icon name="arrow" size={17} />
+                </Box>
               </div>
             </section>
 
@@ -569,8 +584,8 @@ export default function Home() {
                 <div style={{ position: "relative" }}>
                   <h2 style={{ fontFamily: "'Poppins'", fontWeight: 800, fontSize: "clamp(30px,4vw,50px)", letterSpacing: "-.02em", margin: "0 0 14px", textWrap: "balance" }}>{t.cta.title}</h2>
                   <p style={{ color: "var(--text2)", fontSize: "18px", margin: "0 auto 30px", maxWidth: "520px" }}>{t.cta.sub}</p>
-                  <Box as="button" onClick={() => go("contact")} hover="background:var(--accent2);transform:translateY(-2px)"
-                    sx="height:56px;padding:0 32px;border:none;border-radius:999px;background:var(--accent);color:#fff;font-family:'Poppins';font-weight:600;font-size:17px;cursor:pointer;box-shadow:0 14px 34px rgba(229,9,20,.42);transition:background .2s,transform .2s;">
+                  <Box as="button" onClick={() => go("contact")} hover="background:var(--green2);transform:translateY(-2px)"
+                    sx="height:56px;padding:0 32px;border:none;border-radius:999px;background:var(--green);color:#fff;font-family:'Poppins';font-weight:600;font-size:17px;cursor:pointer;box-shadow:0 14px 34px var(--greenGlow);transition:background .2s,transform .2s;">
                     {t.hero.cta1}
                   </Box>
                 </div>
@@ -605,8 +620,8 @@ export default function Home() {
 
             <div data-reveal="1" style={{ marginTop: "clamp(48px,6vw,72px)", textAlign: "center", border: "1px solid rgba(229,9,20,.35)", borderRadius: "24px", background: "linear-gradient(180deg,var(--card),var(--bg2))", padding: "clamp(36px,5vw,60px) 32px", boxShadow: "0 0 50px var(--glow)" }}>
               <h2 style={{ fontFamily: "'Poppins'", fontWeight: 800, fontSize: "clamp(26px,3.2vw,38px)", margin: "0 0 22px" }}>{t.cta.title}</h2>
-              <Box as="button" onClick={() => go("contact")} hover="background:var(--accent2);transform:translateY(-2px)"
-                sx="height:54px;padding:0 30px;border:none;border-radius:999px;background:var(--accent);color:#fff;font-family:'Poppins';font-weight:600;font-size:16px;cursor:pointer;box-shadow:0 12px 30px rgba(229,9,20,.4);transition:background .2s,transform .2s;">{t.hero.cta1}</Box>
+              <Box as="button" onClick={() => go("contact")} hover="background:var(--green2);transform:translateY(-2px)"
+                sx="height:54px;padding:0 30px;border:none;border-radius:999px;background:var(--green);color:#fff;font-family:'Poppins';font-weight:600;font-size:16px;cursor:pointer;box-shadow:0 12px 30px var(--greenGlow);transition:background .2s,transform .2s;">{t.hero.cta1}</Box>
             </div>
           </section>
         )}
@@ -705,8 +720,8 @@ export default function Home() {
 
             <div data-reveal="1" style={{ marginTop: "clamp(48px,6vw,72px)", textAlign: "center", border: "1px solid rgba(229,9,20,.35)", borderRadius: "24px", background: "linear-gradient(180deg,var(--card),var(--bg2))", padding: "clamp(36px,5vw,60px) 32px", boxShadow: "0 0 50px var(--glow)" }}>
               <h2 style={{ fontFamily: "'Poppins'", fontWeight: 800, fontSize: "clamp(26px,3.2vw,38px)", margin: "0 0 22px" }}>{t.devicesPage.ctaTitle}</h2>
-              <Box as="button" onClick={() => go("contact")} hover="background:var(--accent2);transform:translateY(-2px)"
-                sx="height:54px;padding:0 30px;border:none;border-radius:999px;background:var(--accent);color:#fff;font-family:'Poppins';font-weight:600;font-size:16px;cursor:pointer;box-shadow:0 12px 30px rgba(229,9,20,.4);transition:background .2s,transform .2s;">{t.hero.cta1}</Box>
+              <Box as="button" onClick={() => go("contact")} hover="background:var(--green2);transform:translateY(-2px)"
+                sx="height:54px;padding:0 30px;border:none;border-radius:999px;background:var(--green);color:#fff;font-family:'Poppins';font-weight:600;font-size:16px;cursor:pointer;box-shadow:0 12px 30px var(--greenGlow);transition:background .2s,transform .2s;">{t.hero.cta1}</Box>
             </div>
           </section>
         )}
@@ -733,14 +748,14 @@ export default function Home() {
               <p style={{ color: "var(--text2)", fontSize: "17px", margin: 0 }}>{t.contact.sub}</p>
             </div>
             <Box sx={grids.gridContact} data-grid="contact">
-              <Box as="a" href={WA_LINK} target="_blank" rel="noopener" data-reveal="1" hover="transform:translateY(-6px);border-color:rgba(229,9,20,.4);box-shadow:0 22px 48px rgba(0,0,0,.28),0 0 26px var(--glow)"
+              <Box as="a" href={WA_LINK} target="_blank" rel="noopener" data-reveal="1" hover="transform:translateY(-6px);border-color:rgba(37,211,102,.4);box-shadow:0 22px 48px rgba(0,0,0,.28),0 0 26px var(--greenGlow)"
                 sx="text-decoration:none;color:var(--text);border:1px solid var(--border);border-radius:22px;background:var(--card);padding:40px 34px;display:flex;flex-direction:column;align-items:flex-start;gap:18px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;">
-                <span style={{ display: "grid", placeItems: "center", width: "60px", height: "60px", borderRadius: "16px", background: "rgba(229,9,20,.10)", color: "var(--accent)" }}><Icon name="wa" size={30} /></span>
+                <span style={{ display: "grid", placeItems: "center", width: "60px", height: "60px", borderRadius: "16px", background: "rgba(37,211,102,.12)", color: "var(--green)" }}><Icon name="wa" size={30} /></span>
                 <div>
                   <div style={{ fontFamily: "'Poppins'", fontWeight: 700, fontSize: "22px" }}>{t.contact.wa}</div>
                   <div style={{ color: "var(--text2)", fontSize: "15px", marginTop: "6px", lineHeight: 1.55 }}>{t.contact.waDesc}</div>
                 </div>
-                <span style={{ marginTop: "auto", display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "'Poppins'", fontWeight: 600, fontSize: "15px", color: "var(--accent)" }}>{t.contact.waCta}<Icon name="arrow" size={18} /></span>
+                <span style={{ marginTop: "auto", display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "'Poppins'", fontWeight: 600, fontSize: "15px", color: "var(--green)" }}>{t.contact.waCta}<Icon name="arrow" size={18} /></span>
               </Box>
               <div data-reveal="1" style={{ border: "1px solid var(--border)", borderRadius: "22px", background: "var(--card)", padding: "40px 34px", display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "18px" }}>
                 <span style={{ display: "grid", placeItems: "center", width: "60px", height: "60px", borderRadius: "16px", background: "rgba(229,9,20,.10)", color: "var(--accent)" }}><Icon name="headphones" size={30} /></span>
@@ -792,8 +807,8 @@ export default function Home() {
       </footer>
 
       {/* WhatsApp float */}
-      <Box as="a" href={WA_LINK} target="_blank" rel="noopener" aria-label="WhatsApp" hover="background:var(--accent2);transform:scale(1.08)"
-        sx="position:fixed;right:24px;bottom:24px;z-index:80;width:60px;height:60px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(229,9,20,.45);animation:au-float 3.4s ease-in-out infinite;transition:background .2s ease,transform .2s ease;">
+      <Box as="a" href={WA_LINK} target="_blank" rel="noopener" aria-label="WhatsApp" hover="background:var(--green2);transform:scale(1.08)"
+        sx="position:fixed;right:24px;bottom:24px;z-index:80;width:60px;height:60px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px var(--greenGlow);animation:au-float 3.4s ease-in-out infinite;transition:background .2s ease,transform .2s ease;">
         <Icon name="wa" size={28} />
       </Box>
     </div>

@@ -1,0 +1,668 @@
+{
+  "meta": {
+    "title": "AURION IPTV — Premium IPTV-streaming i 4K",
+    "description": "Premium-IPTV med äkta 4K-skärpa, direkt aktivering och ett bibliotek som aldrig sover — 18 000+ livekanaler på alla enheter.",
+    "ogLocale": "sv_SE",
+    "langName": "Svenska"
+  },
+  "nav": {
+    "home": "Hem",
+    "features": "Funktioner",
+    "pricing": "Priser",
+    "blog": "Blogg",
+    "devices": "Enheter",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "freeTrial": "Gratis test",
+    "more": "Mer"
+  },
+  "hero": {
+    "badge": "Liveservrar online just nu",
+    "title": "Alla kanaler. Alla enheter. Inga kompromisser.",
+    "sub": "Premium-IPTV med äkta 4K-skärpa, direkt aktivering och ett bibliotek som aldrig sover — streaming, perfektionerad.",
+    "cta1": "Starta gratis testperiod",
+    "cta2": "Se abonnemang"
+  },
+  "stats": {
+    "hero": [
+      {
+        "value": "99.9%",
+        "label": "Drifttid"
+      },
+      {
+        "value": "40K+",
+        "label": "Filmer"
+      },
+      {
+        "value": "18K+",
+        "label": "Livekanaler"
+      }
+    ],
+    "bar": [
+      {
+        "value": "99.9%",
+        "label": "Drifttid"
+      },
+      {
+        "value": "40,000+",
+        "label": "Filmer"
+      },
+      {
+        "value": "12,000+",
+        "label": "Serier"
+      },
+      {
+        "value": "18,000+",
+        "label": "Livekanaler"
+      },
+      {
+        "value": "50,000+",
+        "label": "Aktiva användare"
+      }
+    ]
+  },
+  "features": {
+    "kicker": "Varför AURION",
+    "title": "Byggd för hur du tittar",
+    "sub": "Allt du behöver för en felfri stream, och inget du inte behöver.",
+    "items": [
+      {
+        "icon": "tv",
+        "bg": "/assets/4k-bg.jpg",
+        "title": "Ultra HD 4K",
+        "desc": "Kristallklara 4K- och FHD-streams på alla titlar som stöds."
+      },
+      {
+        "icon": "phone",
+        "bg": "/assets/multidevice-bg.jpg",
+        "title": "Flera enheter",
+        "desc": "Titta på TV, mobil, surfplatta och webbläsare — växla sömlöst."
+      },
+      {
+        "icon": "zap",
+        "bg": "/assets/247.png",
+        "bgContain": true,
+        "title": "Direkt aktivering",
+        "desc": "Igång på under 60 sekunder efter köpet."
+      },
+      {
+        "icon": "cloud",
+        "bg": "/assets/fx-buffering.png",
+        "bgContain": true,
+        "title": "Ingen buffring",
+        "desc": "Optimerade globala servrar håller varje stream helt jämn."
+      },
+      {
+        "icon": "headphones",
+        "bg": "/assets/fx-support.png",
+        "bgContain": true,
+        "title": "Support dygnet runt",
+        "desc": "Riktiga människor redo att hjälpa, när som helst, varje dag."
+      },
+      {
+        "icon": "shield",
+        "bg": "/assets/fx-secure.png",
+        "bgContain": true,
+        "title": "Säker streaming",
+        "desc": "Krypterade anslutningar och helt privat uppspelning, alltid."
+      }
+    ]
+  },
+  "library": {
+    "kicker": "Innehållsbibliotek",
+    "title": "Ett bibliotek som aldrig tar slut",
+    "items": [
+      {
+        "icon": "film",
+        "title": "Filmer"
+      },
+      {
+        "icon": "tv2",
+        "title": "Serier"
+      },
+      {
+        "icon": "trophy",
+        "title": "Sport"
+      },
+      {
+        "icon": "news",
+        "title": "Nyheter"
+      },
+      {
+        "icon": "baby",
+        "title": "Barn"
+      },
+      {
+        "icon": "book",
+        "title": "Dokumentärer"
+      }
+    ]
+  },
+  "devices": {
+    "kicker": "Titta var som helst",
+    "title": "Fungerar på skärmarna du redan har",
+    "items": [
+      {
+        "icon": "tv",
+        "title": "Smart-TV"
+      },
+      {
+        "icon": "phone",
+        "title": "Android"
+      },
+      {
+        "icon": "phone",
+        "title": "iPhone"
+      },
+      {
+        "icon": "monitor",
+        "title": "Fire TV"
+      },
+      {
+        "icon": "monitor",
+        "title": "Windows"
+      },
+      {
+        "icon": "laptop",
+        "title": "Mac"
+      },
+      {
+        "icon": "globe",
+        "title": "Webbläsare"
+      },
+      {
+        "icon": "tablet",
+        "title": "Surfplatta"
+      }
+    ]
+  },
+  "reviews": {
+    "kicker": "Älskad av tittarna",
+    "title": "Betrodd av 50 000+ streamare",
+    "items": [
+      {
+        "initial": "J",
+        "name": "James C.",
+        "role": "Verifierad kund",
+        "quote": "Bytte från kabel-TV och har aldrig ångrat mig. 4K ser otroligt bra ut och installationen tog två minuter."
+      },
+      {
+        "initial": "M",
+        "name": "Maria B.",
+        "role": "Verifierad kund",
+        "quote": "Supporten svarade på WhatsApp inom en minut. Noll buffring även på matchkvällen."
+      },
+      {
+        "initial": "D",
+        "name": "David R.",
+        "role": "Verifierad kund",
+        "quote": "Fungerar felfritt på min TV, mobil och laptop. Det klart bästa värdet jag hittat."
+      }
+    ]
+  },
+  "content": {
+    "kicker": "Innehåll och kanaler",
+    "title": "Sport, serier och mer — allt på ett ställe",
+    "sub": "AURION ger dig live-TV, filmer och sport i skarp HD och 4K. Ett abonnemang, alla enheter. Utforska tjänsten, se abonnemangen eller hör av dig.",
+    "rows": [
+      {
+        "icon": "trophy",
+        "img": "/assets/sport.webp",
+        "tag": "SPORT · HD",
+        "title": "Livesport, inga avbrott",
+        "desc": "AURION streamar livesport och evenemang i HD med minimal fördröjning. Missa aldrig en match — se den live eller i efterhand.",
+        "bullets": [
+          "Toppligor från hela Europa och världen",
+          "HD-streams med låg fördröjning och minimal buffring",
+          "Alla stora sporter och liveevenemang",
+          "Se live eller i efterhand"
+        ]
+      },
+      {
+        "icon": "film",
+        "img": "/assets/posters-grid.webp",
+        "tag": "FILMER OCH SERIER",
+        "title": "Tusentals serier och filmer",
+        "desc": "Ett ställe för alla dina serier och filmer — från de senaste premiärerna till tidlösa klassiker, plus innehåll för hela familjen.",
+        "bullets": [
+          "Tusentals serier och filmer on demand",
+          "Populära streamingoriginal ingår",
+          "Nya premiärer och klassiker genom tiderna",
+          "Samlingar för barn och familj"
+        ]
+      },
+      {
+        "icon": "monitor",
+        "img": "/assets/devices.webp",
+        "tag": "ALLA ENHETER",
+        "title": "Titta på vilken skärm som helst",
+        "desc": "AURION fungerar överallt där du är. Ett abonnemang täcker alla skärmar i hemmet — så att hela familjen kan titta samtidigt.",
+        "bullets": [
+          "Smart-TV, Android, iOS och streamingstickor",
+          "Surfplatta, laptop och mobil",
+          "Ett abonnemang, obegränsat antal skärmar",
+          "Hela familjen kan titta samtidigt"
+        ]
+      }
+    ]
+  },
+  "payments": {
+    "title": "Betalsätt vi accepterar",
+    "note": "Betala tryggt med Visa, Mastercard, PayPal och mer.",
+    "methods": [
+      "Visa",
+      "Mastercard",
+      "PayPal",
+      "och mer"
+    ]
+  },
+  "cta": {
+    "title": "Redo att börja titta?",
+    "sub": "Gå med tusentals tittare som streamar i fantastisk 4K redan idag."
+  },
+  "pricing": {
+    "kicker": "Abonnemang",
+    "title": "Enkla, ärliga priser",
+    "sub": "Ett abonnemang, alla funktioner. Inga dolda avgifter, avsluta när du vill.",
+    "choose": "Välj abonnemang",
+    "seeAll": "Se alla priser",
+    "note": "Alla abonnemang inkluderar en gratis testperiod och 7 dagars pengarna-tillbaka-garanti.",
+    "plans": [
+      {
+        "price": "€15",
+        "name": "1 månad",
+        "per": "faktureras en gång · €15/mån",
+        "best": false,
+        "features": [
+          "18 000+ livekanaler",
+          "40 000+ filmer och 12 000+ serier",
+          "4K / FHD där det finns",
+          "2 enheter samtidigt",
+          "Inga hack, ingen buffring",
+          "Direkt aktivering på 60 sekunder",
+          "Fungerar på alla enheter",
+          "Komplett TV-guide (EPG) ingår",
+          "Gratis steg-för-steg-guide",
+          "WhatsApp-support dygnet runt"
+        ]
+      },
+      {
+        "price": "€35",
+        "name": "3 månader",
+        "per": "faktureras en gång · €11,7/mån",
+        "best": false,
+        "features": [
+          "Allt i 1 månad",
+          "18 000+ livekanaler",
+          "40 000+ filmer och 12 000+ serier",
+          "4K / FHD där det finns",
+          "3 enheter samtidigt",
+          "Prioriterade streamingservrar",
+          "Krypterad, privat uppspelning",
+          "Gratis appuppdateringar",
+          "WhatsApp-support dygnet runt",
+          "Spara 22 % mot månadsvis"
+        ]
+      },
+      {
+        "price": "€45",
+        "name": "6 månader",
+        "per": "faktureras en gång · €7,5/mån",
+        "best": false,
+        "features": [
+          "Allt i 3 månader",
+          "18 000+ livekanaler",
+          "40 000+ filmer och 12 000+ serier",
+          "4K / FHD där det finns",
+          "4 enheter samtidigt",
+          "VIP-kö till supporten",
+          "Tidig tillgång till nytt innehåll",
+          "Play-funktion och on demand-bibliotek",
+          "Gratis installation på alla dina enheter",
+          "Spara 50 % mot månadsvis"
+        ]
+      },
+      {
+        "price": "€65",
+        "name": "12 månader",
+        "per": "faktureras en gång · €5,4/mån",
+        "best": true,
+        "badge": "Bäst värde",
+        "features": [
+          "Allt i 6 månader",
+          "18 000+ livekanaler",
+          "40 000+ filmer och 12 000+ serier",
+          "4K / FHD i bästa kvalitet",
+          "5 enheter samtidigt",
+          "Högst prioriterade 4K-servrar",
+          "Egen kontaktperson",
+          "2 månader gratis mot månadsvis",
+          "Krypterad, privat uppspelning",
+          "Spara 64 % mot månadsvis"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frågor? Besvarade.",
+    "seeAll": "Se alla frågor",
+    "items": [
+      {
+        "q": "Vad är AURION och hur fungerar det?",
+        "a": "AURION är en premium IPTV-streamingtjänst. Efter att du tecknat abonnemang får du inloggningsuppgifter som fungerar i alla kompatibla appar på dina enheter — ingen parabol eller kabel behövs."
+      },
+      {
+        "q": "Vilka enheter stöds?",
+        "a": "Smart-TV, Android, iPhone, Fire TV, Windows, Mac, surfplattor och alla moderna webbläsare. Har den en skärm fungerar den troligen."
+      },
+      {
+        "q": "Hur snabb är aktiveringen?",
+        "a": "De flesta konton aktiveras direkt — oftast inom 60 sekunder efter genomfört köp."
+      },
+      {
+        "q": "Erbjuder ni en gratis testperiod?",
+        "a": "Ja. Alla nya kunder kan börja med en gratis testperiod för att testa kvalitet och stabilitet innan de bestämmer sig."
+      },
+      {
+        "q": "Vilken internethastighet behöver jag?",
+        "a": "Vi rekommenderar minst 15 Mbit/s för HD och 25 Mbit/s för smidig 4K-streaming."
+      },
+      {
+        "q": "Kan jag avsluta när jag vill?",
+        "a": "Absolut. Det finns inga långa bindningstider, och vi erbjuder 7 dagars pengarna-tillbaka-garanti på alla abonnemang."
+      },
+      {
+        "q": "Hur betalar jag?",
+        "a": "Du kan betala tryggt med kort, via banköverföring eller genom betallänken vi skickar på WhatsApp. Så snart betalningen är bekräftad aktiveras ditt konto."
+      },
+      {
+        "q": "Hur får jag mina inloggningsuppgifter?",
+        "a": "Vi skickar ditt användarnamn, lösenord och spellistelänk på WhatsApp direkt efter aktiveringen, tillsammans med en kort installationsguide för din enhet."
+      },
+      {
+        "q": "Kan jag titta på flera enheter samtidigt?",
+        "a": "Ja. Abonnemanget på 1 månad täcker 2 enheter samtidigt, 3 månader täcker 3, 6 månader täcker 4 och 12 månader täcker 5. Du kan installera tjänsten på hur många enheter du vill — gränsen gäller bara samtidiga streams."
+      },
+      {
+        "q": "Vilka appar kan jag använda?",
+        "a": "AURION fungerar med alla vanliga IPTV-spelare — IPTV Smarters, TiviMate, Smart STB, Perfect Player och liknande appar. Vi rekommenderar den som passar din enhet bäst."
+      },
+      {
+        "q": "Ingår en TV-guide (EPG)?",
+        "a": "Ja. En komplett EPG med programnamn och tablå ingår i alla abonnemang, så du ser vad som sänds nu och vad som kommer härnäst."
+      },
+      {
+        "q": "Har ni play-funktion och on demand?",
+        "a": "Ja. Många kanaler har play-funktion så att du kan se ett program i efterhand, plus ett bibliotek med 40 000+ filmer och 12 000+ serier on demand."
+      },
+      {
+        "q": "Visar ni livesport och stora evenemang?",
+        "a": "Ja. Vi har de stora europeiska ligorna, cuperna och de internationella tävlingarna i HD, tillsammans med de viktigaste sport- och evenemangskanalerna."
+      },
+      {
+        "q": "Vilka språk sänds kanalerna på?",
+        "a": "Utbudet täcker svenska, engelska, norska, danska, finska och de stora europeiska språken, plus arabiska, turkiska och många fler — över 18 000 kanaler totalt."
+      },
+      {
+        "q": "Vad gör jag om en kanal hakar upp sig eller slutar fungera?",
+        "a": "Skicka ett meddelande på WhatsApp så löser vi det. De flesta problem löses inom några minuter — oftast ett serverbyte eller en snabb inställning i appen. Vårt team finns tillgängligt dygnet runt."
+      },
+      {
+        "q": "Behöver jag VPN?",
+        "a": "Oftast inte — tjänsten fungerar på en vanlig uppkoppling. Om din operatör bromsar streamingtrafik kan VPN hjälpa, och vårt team säger till om det behövs."
+      },
+      {
+        "q": "Kan jag använda tjänsten när jag reser utomlands?",
+        "a": "Ja. Ditt konto fungerar överallt där det finns en stabil internetuppkoppling, så du behåller dina kanaler när du reser."
+      },
+      {
+        "q": "Finns det bindningstid eller automatisk förnyelse?",
+        "a": "Nej. Varje abonnemang betalas en gång för en bestämd period och inget förnyas automatiskt. När det tar slut bestämmer du själv om du vill förlänga."
+      },
+      {
+        "q": "Hur förnyar jag mitt abonnemang?",
+        "a": "Skicka ett meddelande på WhatsApp innan ditt abonnemang tar slut så förlänger vi samma konto — du behåller dina inställningar och favoriter."
+      },
+      {
+        "q": "Kan jag uppgradera mitt abonnemang senare?",
+        "a": "Ja. Du kan gå över till ett längre abonnemang eller lägga till fler samtidiga enheter när som helst — vi justerar bara mellanskillnaden."
+      },
+      {
+        "q": "Hjälper ni mig att installera allt?",
+        "a": "Ja, utan kostnad. Vi skickar en steg-för-steg-guide och, om du vill, går vi igenom den med dig på WhatsApp tills allt fungerar."
+      },
+      {
+        "q": "Är mitt tittande privat?",
+        "a": "Ja. Uppspelningen är krypterad och vi delar aldrig dina uppgifter med någon. Vi sparar bara det som behövs för att driva ditt abonnemang."
+      }
+    ]
+  },
+  "faqPage": {
+    "kicker": "Support",
+    "title": "Vanliga frågor"
+  },
+  "blog": {
+    "kicker": "Bloggen",
+    "title": "Guider, tips och nyheter",
+    "sub": "Allt för att få ut mesta möjliga av ditt abonnemang.",
+    "readAll": "Läs bloggen",
+    "posts": [
+      {
+        "tag": "IPTV-guider",
+        "title": "Den kompletta nybörjarguiden till IPTV 2026",
+        "excerpt": "Allt du behöver veta för att börja streama — förklarat på ett enkelt språk.",
+        "date": "12 juli 2026",
+        "read": "6 min läsning"
+      },
+      {
+        "tag": "Installation",
+        "title": "Så installerar du AURION på din Smart-TV",
+        "excerpt": "En steg-för-steg-genomgång för de populäraste TV-plattformarna.",
+        "date": "5 juli 2026",
+        "read": "4 min läsning"
+      },
+      {
+        "tag": "Streamingtips",
+        "title": "Fem sätt att bli av med buffring för gott",
+        "excerpt": "Enkla nätverksjusteringar som gör stor skillnad för streamkvaliteten.",
+        "date": "28 juni 2026",
+        "read": "5 min läsning"
+      },
+      {
+        "tag": "Produktnyheter",
+        "title": "Nyheter: snabbare servrar och ett nytt gränssnitt",
+        "excerpt": "En titt på de senaste förbättringarna som rullas ut till alla kunder.",
+        "date": "20 juni 2026",
+        "read": "3 min läsning"
+      }
+    ]
+  },
+  "devicesPage": {
+    "kicker": "Enheter",
+    "title": "Ett abonnemang, alla skärmar",
+    "sub": "Kom igång på några minuter på vilken enhet som helst.",
+    "stepsTitle": "Kom igång i 3 enkla steg",
+    "ctaTitle": "Behöver du hjälp att komma igång?",
+    "steps": [
+      {
+        "n": "1",
+        "title": "Välj ditt abonnemang",
+        "desc": "Välj abonnemanget som passar och betala tryggt på några sekunder."
+      },
+      {
+        "n": "2",
+        "title": "Få dina inloggningsuppgifter",
+        "desc": "Få dina inloggningsuppgifter direkt via meddelande, klara att använda."
+      },
+      {
+        "n": "3",
+        "title": "Öppna appen och titta",
+        "desc": "Ange dina uppgifter i valfri kompatibel app och börja streama direkt."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Kontakt",
+    "title": "Prata med en människa, direkt",
+    "sub": "Inga formulär, inga mejlköer. Nå oss på WhatsApp när som helst.",
+    "wa": "WhatsAppa oss",
+    "waDesc": "Chatta direkt med vårt team om installation, betalning eller vad som helst.",
+    "waCta": "Öppna chatten",
+    "support": "Support dygnet runt",
+    "supportDesc": "Riktiga människor, varje timme varje dag, på engelska och svenska.",
+    "online": "Agenter online just nu"
+  },
+  "footer": {
+    "tagline": "Premium IPTV-streaming, byggd för skärpa, snabbhet och tillförlitlighet.",
+    "copy": "© 2026 AURION. Alla rättigheter förbehållna.",
+    "disclaimer": "AURION är en oberoende streamingplattform. Allt bildmaterial som visas är platshållare. Inga kanal- eller varumärkeslogotyper från tredje part används.",
+    "cols": {
+      "product": "Produkt",
+      "company": "Företag",
+      "legal": "Juridik",
+      "terms": "Villkor",
+      "privacy": "Integritet",
+      "refunds": "Återbetalningar"
+    }
+  },
+  "legal": {
+    "updatedLabel": "Senast uppdaterad",
+    "updatedDate": "2026-09-08",
+    "operatorLabel": "Operatör",
+    "operator": "AURION IPTV — [fyll i registrerat företagsnamn, registrerad adress och organisationsnummer]",
+    "contactCta": "Kontakta oss på WhatsApp"
+  },
+  "terms": {
+    "kicker": "Juridik",
+    "title": "Användarvillkor",
+    "intro": "Dessa villkor gäller för din användning av AURION IPTV. Genom att teckna ett abonnemang godkänner du dem, så läs dem gärna innan du beställer.",
+    "sections": [
+      {
+        "h": "1. Vad tjänsten är",
+        "p": "AURION ger tillgång till en internetbaserad TV-tjänst. Efter betalning får du personliga inloggningsuppgifter som fungerar i vanliga IPTV-spelarappar på dina egna enheter. Ingen parabol, kabelanslutning eller digitalbox levereras eller krävs."
+      },
+      {
+        "h": "2. Oberoende plattform",
+        "p": "AURION är en oberoende streamingplattform och är inte ansluten till, godkänd av eller sponsrad av något TV-bolag, någon kanal eller någon rättighetshavare. Allt bildmaterial på denna webbplats är platshållarmaterial; inga kanal- eller varumärkeslogotyper från tredje part används."
+      },
+      {
+        "h": "3. Behörighet",
+        "p": "Du måste vara minst 18 år och rättsligt behörig att ingå avtal för att teckna ett abonnemang. Abonnemanget är avsett för personligt, privat och icke-kommersiellt bruk i ditt eget hushåll."
+      },
+      {
+        "h": "4. Aktivering och inloggningsuppgifter",
+        "p": "När betalningen har bekräftats skickar vi ditt användarnamn, lösenord och spellistelänk på WhatsApp, normalt inom några minuter, tillsammans med en kort installationsguide. Dina inloggningsuppgifter är personliga. Du får inte dela, publicera, vidaresälja eller vidarelicensiera dem. Om vi upptäcker att uppgifter delas utanför ditt hushåll kan vi stänga av kontot utan återbetalning."
+      },
+      {
+        "h": "5. Samtidiga enheter",
+        "p": "Varje abonnemang omfattar ett bestämt antal samtidiga streams: 2 på abonnemanget för 1 månad, 3 på 3 månader, 4 på 6 månader och 5 på 12 månader. Du får installera tjänsten på hur många av dina egna enheter du vill — gränsen gäller endast hur många streams som körs samtidigt."
+      },
+      {
+        "h": "6. Pris, betalning och avtalstid",
+        "p": "Priserna visas på prissidan och inkluderar alla avgifter om inget annat anges. Betalning sker en gång för en bestämd period med kort, banköverföring eller via betallänken vi skickar på WhatsApp. Det finns ingen bindningstid och inget förnyas automatiskt: när en period tar slut upphör abonnemanget helt enkelt tills du väljer att förlänga det."
+      },
+      {
+        "h": "7. Din uppkoppling",
+        "p": "En stabil internetuppkoppling krävs och ansvaret för den är ditt eget. Vi rekommenderar minst 15 Mbit/s för HD och 25 Mbit/s för 4K. Vi kan inte hållas ansvariga för uppspelningsproblem som orsakas av din egen uppkoppling, hårdvara eller nätoperatör."
+      },
+      {
+        "h": "8. Tillgänglighet",
+        "p": "Vi arbetar för att hålla tjänsten igång kontinuerligt och vår support finns tillgänglig varje dag, men vi garanterar inte oavbruten eller felfri tillgång. Underhåll, serverbyten och omständigheter utanför vår kontroll kan orsaka tillfälliga avbrott. Om något slutar fungera, hör av dig så löser vi det så snabbt vi kan."
+      },
+      {
+        "h": "9. Tillåten användning",
+        "p": "Du åtar dig att inte använda tjänsten olagligt, att inte spela in, återutsända, vidaredistribuera eller offentligt visa innehållet, och att inte försöka kringgå tekniska begränsningar i tjänsten. Brott mot detta avsnitt kan leda till avstängning utan återbetalning."
+      },
+      {
+        "h": "10. Ångerrätt och återbetalning",
+        "p": "Alla abonnemang omfattas av 7 dagars pengarna-tillbaka-garanti. De fullständiga villkoren framgår av vår Återbetalningspolicy, som utgör en del av dessa villkor."
+      },
+      {
+        "h": "11. Ansvar",
+        "p": "Vårt ansvar är begränsat till det belopp du betalat för den aktuella abonnemangsperioden. Ingenting i dessa villkor begränsar de rättigheter du har enligt tvingande konsumentlagstiftning som inte kan avtalas bort."
+      },
+      {
+        "h": "12. Ändringar av dessa villkor",
+        "p": "Vi kan komma att uppdatera dessa villkor. Den version som är publicerad på denna sida när du beställer är den som gäller för ditt abonnemang. Datum för den senaste ändringen visas ovan."
+      }
+    ]
+  },
+  "privacy": {
+    "kicker": "Juridik",
+    "title": "Integritetspolicy",
+    "intro": "Denna policy förklarar vilka personuppgifter vi samlar in när du använder AURION IPTV, varför vi samlar in dem och vilka rättigheter du har.",
+    "sections": [
+      {
+        "h": "1. Vem är ansvarig",
+        "p": "Operatören som anges ovan är personuppgiftsansvarig för de personuppgifter som beskrivs i denna policy. Du kan nå oss på WhatsApp med alla frågor om integritet."
+      },
+      {
+        "h": "2. Vad vi samlar in",
+        "p": "Vi samlar bara in det vi behöver för att sälja och driva ditt abonnemang: det WhatsApp-nummer och namn du kontaktar oss med, de meddelanden du skickar, bekräftelse på att en betalning genomförts, vilket abonnemang du valt samt grundläggande teknisk information som behövs för att utfärda och supporta dina inloggningsuppgifter. Vi efterfrågar eller lagrar inte fullständiga kortnummer — betalningar hanteras av betalleverantören eller din bank."
+      },
+      {
+        "h": "3. Varför vi använder dem och på vilken grund",
+        "p": "Vi använder dina uppgifter för att aktivera och underhålla ditt abonnemang, ge support och föra register över transaktioner. Den rättsliga grunden är fullgörande av det avtal du ingår med oss och, för bokföring, fullgörande av våra rättsliga förpliktelser."
+      },
+      {
+        "h": "4. Vilka vi delar dem med",
+        "p": "Vi säljer inte dina personuppgifter och delar dem inte för reklamändamål. Uppgifter delas endast med de leverantörer vi behöver för att driva verksamheten: meddelandeplattformen du kontaktar oss genom och betalleverantören eller banken som hanterar din betalning. Var och en behandlar dina uppgifter enligt sin egen integritetspolicy."
+      },
+      {
+        "h": "5. Kakor och lokal lagring",
+        "p": "Denna webbplats använder inga reklam- eller spårningskakor och kör ingen analys från tredje part. Det enda som lagras i din webbläsare är ditt valda färgtema, som sparas i lokal lagring på din egen enhet så att sidan minns det vid nästa besök. Det innehåller inga personuppgifter, skickas aldrig till oss och du kan rensa det när som helst via webbläsarens inställningar."
+      },
+      {
+        "h": "6. Hur länge vi sparar dem",
+        "p": "Vi sparar dina uppgifter så länge ditt abonnemang är aktivt och därefter så länge vi är skyldiga att bevara transaktionsunderlag. När uppgifterna inte längre behövs raderas de."
+      },
+      {
+        "h": "7. Säkerhet",
+        "p": "Uppspelningen är krypterad under överföring och åtkomsten till kunduppgifter är begränsad till de personer som behöver den för att leverera tjänsten och supporten."
+      },
+      {
+        "h": "8. Dina rättigheter",
+        "p": "Du har rätt att begära tillgång till dina personuppgifter, att få dem rättade eller raderade, att begränsa eller invända mot behandlingen och att få en kopia i ett portabelt format. Kontakta oss på WhatsApp för att utöva någon av dessa rättigheter. Om du befinner dig i EU eller EES och anser att vi har hanterat dina uppgifter felaktigt kan du lämna in ett klagomål till din nationella tillsynsmyndighet — i Sverige är det Integritetsskyddsmyndigheten (IMY)."
+      },
+      {
+        "h": "9. Ändringar av denna policy",
+        "p": "Om denna policy ändras publiceras den reviderade versionen på denna sida med ett nytt ändringsdatum."
+      }
+    ]
+  },
+  "refund": {
+    "kicker": "Juridik",
+    "title": "Återbetalningspolicy",
+    "intro": "Varje AURION-abonnemang omfattas av 7 dagars pengarna-tillbaka-garanti. Denna sida förklarar exakt hur den fungerar och hur du använder den.",
+    "sections": [
+      {
+        "h": "1. 7-dagarsgarantin",
+        "p": "Om tjänsten inte fungerar för dig kan du begära full återbetalning inom 7 dagar från aktiveringen. Detta gäller alla abonnemang, från 1 månad till 12 månader."
+      },
+      {
+        "h": "2. Testa innan du betalar",
+        "p": "Helst ska du aldrig behöva den här sidan. Alla nya kunder kan börja med en gratis testperiod för att kontrollera kvalitet och stabilitet på sina egna enheter och sin egen uppkoppling innan de betalar något. Be oss om en på WhatsApp."
+      },
+      {
+        "h": "3. Så begär du återbetalning",
+        "p": "Skicka ett meddelande till oss på WhatsApp inom 7-dagarsperioden och berätta vad som inte fungerade. Vi försöker normalt lösa problemet först — de flesta problem är ett serverbyte eller en snabb inställning i appen och löses på några minuter. Om du ändå föredrar återbetalning genomför vi den."
+      },
+      {
+        "h": "4. Hur återbetalningen sker",
+        "p": "Återbetalning sker med samma betalmetod som du använde. När återbetalningen godkänts genomför vi den omgående; hur lång tid det sedan tar innan pengarna syns beror på din bank eller betalleverantör, vanligtvis några arbetsdagar."
+      },
+      {
+        "h": "5. När garantin inte gäller",
+        "p": "Garantin omfattar inte begäran som görs mer än 7 dagar efter aktivering, konton som stängts av på grund av brott mot användarvillkoren (till exempel delning eller vidareförsäljning av inloggningsuppgifter), eller problem som uteslutande beror på din egen internetuppkoppling eller hårdvara där du avböjer den hjälp vi erbjuder för att lösa dem."
+      },
+      {
+        "h": "6. Inga automatiska förnyelser",
+        "p": "Abonnemang förnyas aldrig automatiskt, så det finns inga oväntade avgifter att återbetala. När en period tar slut bestämmer du själv om du vill förlänga."
+      },
+      {
+        "h": "7. Dina lagstadgade rättigheter",
+        "p": "Denna garanti erbjuds utöver, och begränsar inte, de rättigheter du har enligt tvingande konsumentlagstiftning i ditt hemland."
+      }
+    ]
+  }
+}

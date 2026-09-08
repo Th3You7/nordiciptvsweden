@@ -1,0 +1,668 @@
+{
+  "meta": {
+    "title": "AURION IPTV — Premium IPTV Streaming in 4K",
+    "description": "Premium IPTV with true 4K clarity, instant activation and a library that never sleeps — 18,000+ live channels on every device.",
+    "ogLocale": "en_US",
+    "langName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "devices": "Devices",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "freeTrial": "Free Trial",
+    "more": "More"
+  },
+  "hero": {
+    "badge": "Live servers online now",
+    "title": "Every channel. Every device. Zero compromise.",
+    "sub": "Premium IPTV with true 4K clarity, instant activation and a library that never sleeps — streaming, perfected.",
+    "cta1": "Start Free Trial",
+    "cta2": "View Plans"
+  },
+  "stats": {
+    "hero": [
+      {
+        "value": "99.9%",
+        "label": "Uptime"
+      },
+      {
+        "value": "40K+",
+        "label": "Movies"
+      },
+      {
+        "value": "18K+",
+        "label": "Live Channels"
+      }
+    ],
+    "bar": [
+      {
+        "value": "99.9%",
+        "label": "Uptime"
+      },
+      {
+        "value": "40,000+",
+        "label": "Movies"
+      },
+      {
+        "value": "12,000+",
+        "label": "Series"
+      },
+      {
+        "value": "18,000+",
+        "label": "Live Channels"
+      },
+      {
+        "value": "50,000+",
+        "label": "Active Users"
+      }
+    ]
+  },
+  "features": {
+    "kicker": "Why AURION",
+    "title": "Built for the way you watch",
+    "sub": "Everything you need for a flawless stream, and nothing you don't.",
+    "items": [
+      {
+        "icon": "tv",
+        "bg": "/assets/4k-bg.jpg",
+        "title": "Ultra HD 4K",
+        "desc": "Crystal-clear 4K and FHD streams on every supported title."
+      },
+      {
+        "icon": "phone",
+        "bg": "/assets/multidevice-bg.jpg",
+        "title": "Multi Device",
+        "desc": "Watch on TV, phone, tablet, and browser — switch seamlessly."
+      },
+      {
+        "icon": "zap",
+        "bg": "/assets/247.png",
+        "bgContain": true,
+        "title": "Instant Activation",
+        "desc": "Up and running in under 60 seconds after checkout."
+      },
+      {
+        "icon": "cloud",
+        "bg": "/assets/fx-buffering.png",
+        "bgContain": true,
+        "title": "Zero Buffering",
+        "desc": "Optimised global servers keep every stream perfectly smooth."
+      },
+      {
+        "icon": "headphones",
+        "bg": "/assets/fx-support.png",
+        "bgContain": true,
+        "title": "24/7 Support",
+        "desc": "Real people ready to help, any hour, every single day."
+      },
+      {
+        "icon": "shield",
+        "bg": "/assets/fx-secure.png",
+        "bgContain": true,
+        "title": "Secure Streaming",
+        "desc": "Encrypted connections and fully private playback, always."
+      }
+    ]
+  },
+  "library": {
+    "kicker": "Content library",
+    "title": "A library that never runs dry",
+    "items": [
+      {
+        "icon": "film",
+        "title": "Movies"
+      },
+      {
+        "icon": "tv2",
+        "title": "Series"
+      },
+      {
+        "icon": "trophy",
+        "title": "Sports"
+      },
+      {
+        "icon": "news",
+        "title": "News"
+      },
+      {
+        "icon": "baby",
+        "title": "Kids"
+      },
+      {
+        "icon": "book",
+        "title": "Documentaries"
+      }
+    ]
+  },
+  "devices": {
+    "kicker": "Watch anywhere",
+    "title": "Works on the screens you already own",
+    "items": [
+      {
+        "icon": "tv",
+        "title": "Smart TV"
+      },
+      {
+        "icon": "phone",
+        "title": "Android"
+      },
+      {
+        "icon": "phone",
+        "title": "iPhone"
+      },
+      {
+        "icon": "monitor",
+        "title": "Fire TV"
+      },
+      {
+        "icon": "monitor",
+        "title": "Windows"
+      },
+      {
+        "icon": "laptop",
+        "title": "Mac"
+      },
+      {
+        "icon": "globe",
+        "title": "Web Browser"
+      },
+      {
+        "icon": "tablet",
+        "title": "Tablet"
+      }
+    ]
+  },
+  "reviews": {
+    "kicker": "Loved by viewers",
+    "title": "Trusted by 50,000+ streamers",
+    "items": [
+      {
+        "initial": "J",
+        "name": "James C.",
+        "role": "Verified customer",
+        "quote": "Switched from cable and never looked back. 4K looks incredible and setup took two minutes."
+      },
+      {
+        "initial": "M",
+        "name": "Maria B.",
+        "role": "Verified customer",
+        "quote": "Support answered on WhatsApp within a minute. Zero buffering even on match night."
+      },
+      {
+        "initial": "D",
+        "name": "David R.",
+        "role": "Verified customer",
+        "quote": "Works flawlessly across my TV, phone and laptop. Best value I've found by far."
+      }
+    ]
+  },
+  "content": {
+    "kicker": "Content & channels",
+    "title": "Sport, series & more — all in one place",
+    "sub": "AURION brings you live TV, movies and sport in crisp HD and 4K. One subscription, every device. Explore the service, view plans or get in touch.",
+    "rows": [
+      {
+        "icon": "trophy",
+        "img": "/assets/sport.webp",
+        "tag": "SPORTS · HD",
+        "title": "Live sport, zero blackouts",
+        "desc": "AURION streams live sport and events in HD with minimal delay. Never miss a match — watch live or catch up later.",
+        "bullets": [
+          "Top leagues from across Europe and beyond",
+          "Low-latency HD streams with minimal buffering",
+          "Every major sport and live event",
+          "Watch live or on-demand catch-up"
+        ]
+      },
+      {
+        "icon": "film",
+        "img": "/assets/posters-grid.webp",
+        "tag": "MOVIES & SERIES",
+        "title": "Thousands of series & films",
+        "desc": "One place for all your box sets and movies — from the latest premieres to timeless classics, plus content for the whole family.",
+        "bullets": [
+          "Thousands of on-demand series and films",
+          "Popular streaming originals included",
+          "New premieres and all-time classics",
+          "Kids and family collections"
+        ]
+      },
+      {
+        "icon": "monitor",
+        "img": "/assets/devices.webp",
+        "tag": "ANY DEVICE",
+        "title": "Watch on any screen",
+        "desc": "AURION works everywhere you do. One subscription covers every screen in the home — with the whole family watching at once.",
+        "bullets": [
+          "Smart TV, Android, iOS and streaming sticks",
+          "Tablet, laptop and phone",
+          "One subscription, unlimited screens",
+          "The whole family can watch at once"
+        ]
+      }
+    ]
+  },
+  "payments": {
+    "title": "Accepted payments",
+    "note": "Pay securely with Visa, Mastercard, PayPal and more.",
+    "methods": [
+      "Visa",
+      "Mastercard",
+      "PayPal",
+      "& more"
+    ]
+  },
+  "cta": {
+    "title": "Ready to start watching?",
+    "sub": "Join thousands of viewers streaming in stunning 4K today."
+  },
+  "pricing": {
+    "kicker": "Plans",
+    "title": "Simple, honest pricing",
+    "sub": "One subscription, every feature. No hidden fees, cancel anytime.",
+    "choose": "Choose plan",
+    "seeAll": "See full pricing",
+    "note": "All plans include a free trial and a 7-day money-back guarantee.",
+    "plans": [
+      {
+        "price": "€15",
+        "name": "1 Month",
+        "per": "billed once · €15/mo",
+        "best": false,
+        "features": [
+          "18,000+ live channels",
+          "40,000+ movies & 12,000+ series",
+          "4K / FHD where available",
+          "2 devices at once",
+          "No freezing, no buffering",
+          "Instant activation in 60 seconds",
+          "Works on every device",
+          "Full TV guide (EPG) included",
+          "Free step-by-step setup guide",
+          "24/7 WhatsApp support"
+        ]
+      },
+      {
+        "price": "€35",
+        "name": "3 Months",
+        "per": "billed once · €11.7/mo",
+        "best": false,
+        "features": [
+          "Everything in 1 Month",
+          "18,000+ live channels",
+          "40,000+ movies & 12,000+ series",
+          "4K / FHD where available",
+          "3 devices at once",
+          "Priority streaming servers",
+          "Encrypted, private playback",
+          "Free app updates",
+          "24/7 WhatsApp support",
+          "Save 22% vs monthly"
+        ]
+      },
+      {
+        "price": "€45",
+        "name": "6 Months",
+        "per": "billed once · €7.5/mo",
+        "best": false,
+        "features": [
+          "Everything in 3 Months",
+          "18,000+ live channels",
+          "40,000+ movies & 12,000+ series",
+          "4K / FHD where available",
+          "4 devices at once",
+          "VIP support queue",
+          "Early access to new content",
+          "Catch-up & on-demand library",
+          "Free setup on all your devices",
+          "Save 50% vs monthly"
+        ]
+      },
+      {
+        "price": "€65",
+        "name": "12 Months",
+        "per": "billed once · €5.4/mo",
+        "best": true,
+        "badge": "Best Value",
+        "features": [
+          "Everything in 6 Months",
+          "18,000+ live channels",
+          "40,000+ movies & 12,000+ series",
+          "4K / FHD at the best quality",
+          "5 devices at once",
+          "Top-priority 4K servers",
+          "Dedicated account manager",
+          "2 months free vs monthly",
+          "Encrypted, private playback",
+          "Save 64% vs monthly"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions? Answered.",
+    "seeAll": "See all questions",
+    "items": [
+      {
+        "q": "What is AURION and how does it work?",
+        "a": "AURION is a premium IPTV streaming service. After subscribing you receive credentials that work in any compatible app on your devices — no dish or cable required."
+      },
+      {
+        "q": "Which devices are supported?",
+        "a": "Smart TVs, Android, iPhone, Fire TV, Windows, Mac, tablets and any modern web browser. If it has a screen, it likely works."
+      },
+      {
+        "q": "How fast is activation?",
+        "a": "Most accounts are activated instantly — usually within 60 seconds of completing checkout."
+      },
+      {
+        "q": "Do you offer a free trial?",
+        "a": "Yes. Every new subscriber can start with a free trial to test quality and stability before committing."
+      },
+      {
+        "q": "What internet speed do I need?",
+        "a": "We recommend at least 15 Mbps for HD and 25 Mbps for smooth 4K streaming."
+      },
+      {
+        "q": "Can I cancel anytime?",
+        "a": "Absolutely. There are no long-term contracts, and we offer a 7-day money-back guarantee on every plan."
+      },
+      {
+        "q": "How do I pay?",
+        "a": "You can pay securely by card, by bank transfer, or through the payment link we send you on WhatsApp. As soon as the payment is confirmed your account is activated."
+      },
+      {
+        "q": "How do I receive my login details?",
+        "a": "We send your username, password and playlist link on WhatsApp straight after activation, together with a short setup guide for your device."
+      },
+      {
+        "q": "Can I watch on more than one device at the same time?",
+        "a": "Yes. The 1 Month plan covers 2 devices at once, 3 Months covers 3, 6 Months covers 4 and 12 Months covers 5. You can install the service on as many devices as you like — the limit applies only to simultaneous streams."
+      },
+      {
+        "q": "Which apps can I use?",
+        "a": "AURION works with any standard IPTV player — IPTV Smarters, TiviMate, Smart STB, Perfect Player and similar apps. We'll recommend the best one for your device."
+      },
+      {
+        "q": "Is a TV guide (EPG) included?",
+        "a": "Yes. A full EPG with programme names and schedules is included on every plan, so you can see what is on now and what is coming up."
+      },
+      {
+        "q": "Do you have catch-up and on-demand?",
+        "a": "Yes. Many channels include catch-up so you can watch a programme after it aired, alongside a library of 40,000+ movies and 12,000+ series on demand."
+      },
+      {
+        "q": "Do you show live sport and big events?",
+        "a": "Yes. We carry the major European leagues, cups and international competitions in HD, along with the main sports and event channels."
+      },
+      {
+        "q": "Which languages are the channels in?",
+        "a": "The line-up covers Swedish, English, Norwegian, Danish, Finnish and the major European languages, plus Arabic, Turkish and many more — over 18,000 channels in total."
+      },
+      {
+        "q": "What if a channel freezes or stops working?",
+        "a": "Message us on WhatsApp and we will fix it. Most issues are solved within minutes — usually a server switch or a quick app setting. Our team is available 24/7."
+      },
+      {
+        "q": "Do I need a VPN?",
+        "a": "Usually not — the service works on a normal connection. If your provider slows down streaming traffic a VPN can help, and our team will tell you if it is needed."
+      },
+      {
+        "q": "Can I use it while travelling abroad?",
+        "a": "Yes. Your account works anywhere there is a stable internet connection, so you keep your channels while travelling."
+      },
+      {
+        "q": "Is there a contract or automatic renewal?",
+        "a": "No. Every plan is paid once for a fixed period and nothing renews automatically. When it ends, you decide whether to extend."
+      },
+      {
+        "q": "How do I renew my subscription?",
+        "a": "Send us a message on WhatsApp before your plan ends and we extend the same account — you keep your settings and favourites."
+      },
+      {
+        "q": "Can I upgrade my plan later?",
+        "a": "Yes. You can move to a longer plan or add more simultaneous devices at any time — we simply adjust the difference."
+      },
+      {
+        "q": "Do you help me set everything up?",
+        "a": "Yes, free of charge. We send a step-by-step guide and, if you prefer, we walk you through it on WhatsApp until everything is playing."
+      },
+      {
+        "q": "Is my viewing private?",
+        "a": "Yes. Playback is encrypted and we never share your details with anyone. We only keep what is needed to run your subscription."
+      }
+    ]
+  },
+  "faqPage": {
+    "kicker": "Support",
+    "title": "Frequently asked questions"
+  },
+  "blog": {
+    "kicker": "The blog",
+    "title": "Guides, tips & updates",
+    "sub": "Everything to get the most from your subscription.",
+    "readAll": "Read the blog",
+    "posts": [
+      {
+        "tag": "IPTV Guides",
+        "title": "The complete beginner's guide to IPTV in 2026",
+        "excerpt": "Everything you need to know to start streaming — explained in plain language.",
+        "date": "Jul 12, 2026",
+        "read": "6 min read"
+      },
+      {
+        "tag": "Installation",
+        "title": "How to set up AURION on your Smart TV",
+        "excerpt": "A step-by-step walkthrough for the most popular television platforms.",
+        "date": "Jul 5, 2026",
+        "read": "4 min read"
+      },
+      {
+        "tag": "Streaming Tips",
+        "title": "Five ways to eliminate buffering for good",
+        "excerpt": "Simple network tweaks that make a dramatic difference to stream quality.",
+        "date": "Jun 28, 2026",
+        "read": "5 min read"
+      },
+      {
+        "tag": "Product Updates",
+        "title": "What's new: faster servers and a fresh interface",
+        "excerpt": "A look at the latest improvements rolling out to every subscriber.",
+        "date": "Jun 20, 2026",
+        "read": "3 min read"
+      }
+    ]
+  },
+  "devicesPage": {
+    "kicker": "Devices",
+    "title": "One subscription, every screen",
+    "sub": "Set up in minutes on any device you own.",
+    "stepsTitle": "Set up in 3 simple steps",
+    "ctaTitle": "Need a hand setting up?",
+    "steps": [
+      {
+        "n": "1",
+        "title": "Choose your plan",
+        "desc": "Pick the subscription that fits and check out securely in seconds."
+      },
+      {
+        "n": "2",
+        "title": "Get your credentials",
+        "desc": "Receive your login details instantly by message, ready to use."
+      },
+      {
+        "n": "3",
+        "title": "Load your app & watch",
+        "desc": "Enter your details in any compatible app and start streaming right away."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Talk to a human, instantly",
+    "sub": "No forms, no email queues. Reach us on WhatsApp any time.",
+    "wa": "WhatsApp us",
+    "waDesc": "Chat directly with our team for setup, billing or anything else.",
+    "waCta": "Open chat",
+    "support": "24/7 Support",
+    "supportDesc": "Real people, every hour of every day, in English and Swedish.",
+    "online": "Agents online now"
+  },
+  "footer": {
+    "tagline": "Premium IPTV streaming, engineered for clarity, speed and reliability.",
+    "copy": "© 2026 AURION. All rights reserved.",
+    "disclaimer": "AURION is an independent streaming platform. All artwork shown is placeholder. No third-party channel or brand logos are used.",
+    "cols": {
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "refunds": "Refunds"
+    }
+  },
+  "legal": {
+    "updatedLabel": "Last updated",
+    "updatedDate": "2026-09-08",
+    "operatorLabel": "Operator",
+    "operator": "AURION IPTV — [add registered company name, registered address and company registration number]",
+    "contactCta": "Contact us on WhatsApp"
+  },
+  "terms": {
+    "kicker": "Legal",
+    "title": "Terms of Service",
+    "intro": "These terms govern your use of the AURION IPTV service. By subscribing you accept them, so please read them before you order.",
+    "sections": [
+      {
+        "h": "1. What the service is",
+        "p": "AURION provides access to an internet television service. After payment you receive personal credentials that work in standard IPTV player applications on your own devices. No satellite dish, cable connection or set-top box is supplied or required."
+      },
+      {
+        "h": "2. Independent platform",
+        "p": "AURION is an independent streaming platform and is not affiliated with, endorsed by or sponsored by any broadcaster, channel or rights holder. All artwork shown on this website is placeholder material; no third-party channel or brand logos are used."
+      },
+      {
+        "h": "3. Eligibility",
+        "p": "You must be at least 18 years old and legally able to enter into a contract to subscribe. The subscription is for personal, private and non-commercial use in your own household."
+      },
+      {
+        "h": "4. Activation and credentials",
+        "p": "Once payment is confirmed we send your username, password and playlist link on WhatsApp, usually within a few minutes, together with a short setup guide. Your credentials are personal. You may not share, publish, resell or sublicense them. If we detect credentials being shared beyond your household we may suspend the account without refund."
+      },
+      {
+        "h": "5. Simultaneous devices",
+        "p": "Each plan includes a set number of simultaneous streams: 2 on the 1 Month plan, 3 on 3 Months, 4 on 6 Months and 5 on 12 Months. You may install the service on as many of your own devices as you wish — the limit applies only to how many streams run at the same time."
+      },
+      {
+        "h": "6. Price, payment and term",
+        "p": "Prices are shown on the pricing page and include all charges unless stated otherwise. Payment is made once for a fixed period by card, bank transfer or the payment link we send on WhatsApp. There is no minimum contract and nothing renews automatically: when a period ends, the subscription simply stops until you choose to extend it."
+      },
+      {
+        "h": "7. Your connection",
+        "p": "A stable internet connection is required and is your own responsibility. We recommend at least 15 Mbps for HD and 25 Mbps for 4K. We cannot be held responsible for playback problems caused by your own connection, hardware or network provider."
+      },
+      {
+        "h": "8. Availability",
+        "p": "We work to keep the service running continuously and our support team is available every day, but we do not guarantee uninterrupted or error-free access. Maintenance, server changes and circumstances outside our control may cause temporary interruptions. If something stops working, message us and we will fix it as quickly as we can."
+      },
+      {
+        "h": "9. Acceptable use",
+        "p": "You agree not to use the service unlawfully, not to record, rebroadcast, redistribute or publicly display the content, and not to attempt to circumvent any technical limitation of the service. Breaching this section may result in suspension without refund."
+      },
+      {
+        "h": "10. Cancellation and refunds",
+        "p": "Every plan includes a 7-day money-back guarantee. The full conditions are set out in our Refund Policy, which forms part of these terms."
+      },
+      {
+        "h": "11. Liability",
+        "p": "Our liability is limited to the amount you paid for the current subscription period. Nothing in these terms limits any rights you have under mandatory consumer law that cannot be waived."
+      },
+      {
+        "h": "12. Changes to these terms",
+        "p": "We may update these terms from time to time. The version published on this page at the time you order is the one that applies to your subscription. The date of the latest revision is shown above."
+      }
+    ]
+  },
+  "privacy": {
+    "kicker": "Legal",
+    "title": "Privacy Policy",
+    "intro": "This policy explains what personal data we collect when you use AURION IPTV, why we collect it, and what rights you have over it.",
+    "sections": [
+      {
+        "h": "1. Who is responsible",
+        "p": "The operator named above is the data controller for the personal data described in this policy. You can reach us on WhatsApp for any privacy question."
+      },
+      {
+        "h": "2. What we collect",
+        "p": "We collect only what we need to sell and run your subscription: the WhatsApp number and name you contact us with, the messages you send us, confirmation that a payment succeeded, the plan you chose, and basic technical information needed to issue and support your credentials. We do not ask for or store full card numbers — payments are handled by the payment provider or your bank."
+      },
+      {
+        "h": "3. Why we use it and on what basis",
+        "p": "We use your data to activate and maintain your subscription, to provide support, and to keep records of transactions. The legal basis is performance of the contract you enter into with us, and, for record keeping, compliance with our legal obligations."
+      },
+      {
+        "h": "4. Who we share it with",
+        "p": "We do not sell your personal data and we do not share it for advertising. Data is shared only with the providers we need in order to operate: the messaging platform you contact us through, and the payment provider or bank that processes your payment. Each processes your data under its own privacy policy."
+      },
+      {
+        "h": "5. Cookies and local storage",
+        "p": "This website sets no advertising or tracking cookies and runs no third-party analytics. The only thing stored in your browser is your chosen colour theme, kept in local storage on your own device so the site remembers it on your next visit. It contains no personal data, is never sent to us, and you can clear it at any time through your browser settings."
+      },
+      {
+        "h": "6. How long we keep it",
+        "p": "We keep your data for as long as your subscription is active and for as long afterwards as we are required to retain transaction records. When it is no longer needed, it is deleted."
+      },
+      {
+        "h": "7. Security",
+        "p": "Playback is encrypted in transit and access to subscriber records is limited to the people who need it to provide the service and support."
+      },
+      {
+        "h": "8. Your rights",
+        "p": "You have the right to request access to your personal data, to have it corrected or erased, to restrict or object to its processing, and to receive a copy in a portable format. Message us on WhatsApp to exercise any of these. If you are in the EU or EEA and believe we have handled your data incorrectly, you may lodge a complaint with your national data protection authority — in Sweden this is Integritetsskyddsmyndigheten (IMY)."
+      },
+      {
+        "h": "9. Changes to this policy",
+        "p": "If this policy changes, the revised version is published on this page with a new revision date."
+      }
+    ]
+  },
+  "refund": {
+    "kicker": "Legal",
+    "title": "Refund Policy",
+    "intro": "Every AURION plan is covered by a 7-day money-back guarantee. This page explains exactly how it works and how to claim it.",
+    "sections": [
+      {
+        "h": "1. The 7-day guarantee",
+        "p": "If the service does not work for you, you may request a full refund within 7 days of activation. This applies to every plan, from 1 month to 12 months."
+      },
+      {
+        "h": "2. Try before you pay",
+        "p": "We would rather you never need this page. Every new customer can start with a free trial to check quality and stability on their own devices and connection before paying anything. Ask us for one on WhatsApp."
+      },
+      {
+        "h": "3. How to request a refund",
+        "p": "Message us on WhatsApp within the 7-day window and tell us what went wrong. We will normally try to fix the problem first — most issues are a server switch or a quick app setting and are solved in minutes. If you would still prefer a refund, we process it."
+      },
+      {
+        "h": "4. How refunds are paid",
+        "p": "Refunds are returned by the same method you paid with. Once approved, we issue the refund promptly; how long it then takes to appear depends on your bank or payment provider, typically a few working days."
+      },
+      {
+        "h": "5. When the guarantee does not apply",
+        "p": "The guarantee does not cover requests made more than 7 days after activation, accounts suspended for breaching the Terms of Service (for example sharing or reselling credentials), or problems caused solely by your own internet connection or hardware where you decline the help we offer to resolve them."
+      },
+      {
+        "h": "6. No automatic renewals",
+        "p": "Subscriptions never renew automatically, so there are no unexpected charges to refund. When a period ends you decide whether to extend it."
+      },
+      {
+        "h": "7. Your statutory rights",
+        "p": "This guarantee is offered in addition to, and does not limit, any rights you have under mandatory consumer law in your country of residence."
+      }
+    ]
+  }
+}

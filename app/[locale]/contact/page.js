@@ -1,5 +1,6 @@
 import { locales } from "../../i18n/config";
 import { getMessages } from "../../i18n/getMessages";
+import { localeAlternates } from "../../lib/metadata";
 import { SectionHead, ContactCards } from "../../components/sections";
 import { JsonLd } from "../../components/JsonLd";
 import { breadcrumb, contactPage } from "../../lib/schema";
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }) {
   return {
     title: t.contact.title,
     description: t.contact.sub,
-    alternates: { canonical: `/${locale}/contact` },
+    alternates: localeAlternates(locale, "contact"),
   };
 }
 

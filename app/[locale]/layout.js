@@ -2,7 +2,7 @@ import "../globals.css";
 import Image from "next/image";
 import { Poppins, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
-import { locales, defaultLocale, isLocale } from "../i18n/config";
+import { locales, isLocale } from "../i18n/config";
 import { getMessages } from "../i18n/getMessages";
 import { SiteNav } from "../components/client/SiteNav";
 import { Reveal } from "../components/client/Reveal";
@@ -51,14 +51,6 @@ export async function generateMetadata({ params }) {
       template: `%s | AURION IPTV`,
     },
     description: t.meta.description,
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        en: "/en",
-        sv: "/sv",
-        "x-default": `/${defaultLocale}`,
-      },
-    },
     openGraph: {
       type: "website",
       siteName: "AURION IPTV",

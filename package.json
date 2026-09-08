@@ -6,12 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "check:i18n": "node scripts/check-i18n.mjs"
+    "lint": "eslint --max-warnings 0",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "verify": "npm run lint && npm run check:i18n && npm run build"
   },
   "dependencies": {
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.1.6"
   }
 }

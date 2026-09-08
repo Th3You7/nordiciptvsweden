@@ -1,5 +1,6 @@
 import { locales } from "../../i18n/config";
 import { getMessages } from "../../i18n/getMessages";
+import { localeAlternates } from "../../lib/metadata";
 import { SectionHead, BlogList } from "../../components/sections";
 import { JsonLd } from "../../components/JsonLd";
 import { breadcrumb } from "../../lib/schema";
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }) {
   return {
     title: t.blog.title,
     description: t.blog.sub,
-    alternates: { canonical: `/${locale}/blog` },
+    alternates: localeAlternates(locale, "blog"),
   };
 }
 

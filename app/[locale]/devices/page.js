@@ -1,5 +1,6 @@
 import { locales } from "../../i18n/config";
 import { getMessages } from "../../i18n/getMessages";
+import { localeAlternates } from "../../lib/metadata";
 import { SectionHead, DeviceGrid, Steps, CtaBanner } from "../../components/sections";
 import { JsonLd } from "../../components/JsonLd";
 import { breadcrumb } from "../../lib/schema";
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }) {
   return {
     title: t.devicesPage.title,
     description: t.devicesPage.sub,
-    alternates: { canonical: `/${locale}/devices` },
+    alternates: localeAlternates(locale, "devices"),
   };
 }
 

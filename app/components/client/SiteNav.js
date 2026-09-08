@@ -59,11 +59,13 @@ export function SiteNav({ locale, nav, legal }) {
 
   const onLegalPage = legalItems.some((it) => it.active);
 
-  // Close both menus whenever the route changes.
-  useEffect(() => {
+  // Closed on navigation from the link handlers rather than from an effect on
+  // `pathname` — setState in an effect body costs an extra render pass after
+  // every navigation, and every route change here originates from these links.
+  const closeMenus = () => {
     setOpen(false);
     setMoreOpen(false);
-  }, [pathname]);
+  };
 
   // Dismiss the dropdown on Escape or a click outside the nav.
   useEffect(() => {
@@ -90,7 +92,7 @@ export function SiteNav({ locale, nav, legal }) {
           href={it.href}
           role="menuitem"
           aria-current={it.active ? "page" : undefined}
-          onClick={() => setMoreOpen(false)}
+          onClick={closeMenus}
         >
           <span className="au-nav-drop-ico">
             <Icon name={it.icon} size={18} />
@@ -104,7 +106,7 @@ export function SiteNav({ locale, nav, legal }) {
   return (
     <nav className="au-nav" ref={navRef}>
       <div className="au-nav-inner">
-        <Link href={`/${locale}`} className="au-brand" aria-label={BRAND}>
+        <Link href={`/${locale}`} className="au-brand" aria-label={BRAND} onClick={closeMenus}>
           <span style={{ display: "inline-flex", color: "var(--text)" }}>
             <LogoMark />
           </span>
@@ -118,6 +120,7 @@ export function SiteNav({ locale, nav, legal }) {
               href={it.href}
               className="au-nav-link"
               aria-current={it.active ? "page" : undefined}
+              onClick={closeMenus}
             >
               <span className="au-nav-link-ico">
                 <Icon name={it.icon} size={20} />
@@ -152,6 +155,7 @@ export function SiteNav({ locale, nav, legal }) {
               className="au-nav-icon"
               title={it.label}
               aria-current={it.active ? "page" : undefined}
+              onClick={closeMenus}
             >
               <Icon name={it.icon} size={20} />
               <span>{it.label}</span>
@@ -190,7 +194,11 @@ export function SiteNav({ locale, nav, legal }) {
               <Icon name="moon" size={20} />
             </span>
           </button>
-          <Link href={`/${locale}/contact`} className="au-btn au-btn-green au-btn-nav au-nav-trial">
+          <Link
+            href={`/${locale}/contact`}
+            className="au-btn au-btn-green au-btn-nav au-nav-trial"
+            onClick={closeMenus}
+          >
             {nav.freeTrial}
           </Link>
           <button
@@ -208,7 +216,7 @@ export function SiteNav({ locale, nav, legal }) {
       {open ? (
         <div className="au-nav-mobile">
           {items.map((it) => (
-            <Link key={it.href} href={it.href} aria-current={it.active ? "page" : undefined}>
+            <Link key={it.href} href={it.href} onClick={closeMenus} aria-current={it.active ? "page" : undefined}>
               <span style={{ display: "inline-flex", color: "var(--accent)" }}>
                 <Icon name={it.icon} size={20} />
               </span>
@@ -219,7 +227,7 @@ export function SiteNav({ locale, nav, legal }) {
           {/* On mobile the group is flattened rather than nested in a dropdown. */}
           <div className="au-nav-mobile-head">{nav.more}</div>
           {legalItems.map((it) => (
-            <Link key={it.href} href={it.href} aria-current={it.active ? "page" : undefined}>
+            <Link key={it.href} href={it.href} onClick={closeMenus} aria-current={it.active ? "page" : undefined}>
               <span style={{ display: "inline-flex", color: "var(--accent)" }}>
                 <Icon name={it.icon} size={20} />
               </span>
@@ -227,7 +235,7 @@ export function SiteNav({ locale, nav, legal }) {
             </Link>
           ))}
 
-          <Link href={`/${locale}/contact`} className="au-nav-cta">
+          <Link href={`/${locale}/contact`} className="au-nav-cta" onClick={closeMenus}>
             {nav.freeTrial}
           </Link>
         </div>

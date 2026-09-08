@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { locales } from "../i18n/config";
 import { getMessages } from "../i18n/getMessages";
+import { localeAlternates } from "../lib/metadata";
 import { FaqAccordion } from "../components/client/FaqAccordion";
 import {
   SectionHead,
@@ -20,6 +21,13 @@ import { Icon } from "../components/ui";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+// Title and description are inherited from the locale layout; the canonical
+// and hreflang set must be declared here, per page.
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return { alternates: localeAlternates(locale) };
 }
 
 export default async function HomePage({ params }) {

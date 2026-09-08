@@ -1,5 +1,6 @@
 import { locales } from "../../i18n/config";
 import { getMessages } from "../../i18n/getMessages";
+import { localeAlternates } from "../../lib/metadata";
 import { SectionHead } from "../../components/sections";
 import { FaqAccordion } from "../../components/client/FaqAccordion";
 import { JsonLd } from "../../components/JsonLd";
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }) {
   return {
     title: t.faqPage.title,
     description: t.faq.items[0]?.a,
-    alternates: { canonical: `/${locale}/faq` },
+    alternates: localeAlternates(locale, "faq"),
   };
 }
 

@@ -1,5 +1,6 @@
 import { locales } from "../../i18n/config";
 import { getMessages } from "../../i18n/getMessages";
+import { localeAlternates } from "../../lib/metadata";
 import { LegalArticle } from "../../components/sections";
 import { JsonLd } from "../../components/JsonLd";
 import { breadcrumb } from "../../lib/schema";
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }) {
   return {
     title: t.privacy.title,
     description: t.privacy.intro,
-    alternates: { canonical: `/${locale}/privacy` },
+    alternates: localeAlternates(locale, "privacy"),
   };
 }
 

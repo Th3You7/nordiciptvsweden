@@ -95,18 +95,23 @@ a:hover{color:var(--accent2)}
 .au-brand{display:flex;align-items:center;gap:10px;background:none;border:none;cursor:pointer;color:var(--text);padding:0;text-decoration:none;flex:0 1 auto;min-width:0}
 .au-brand>span:first-child{flex:none}
 .au-brand:hover{color:var(--text)}
-.au-brand-name{min-width:0;font-family:var(--font-heading),system-ui,sans-serif;font-weight:800;font-size:21px;letter-spacing:.14em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-/* "iptvnordic" is a long wordmark; it steps down on narrow screens so the
+/* Flag logo: a framed badge so the photo reads as a mark rather than a stray
+   image, and never distorts regardless of the source aspect ratio. */
+.au-logo-flag{display:inline-flex;flex:none;width:44px;height:28px;border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,.22);box-shadow:0 2px 8px rgba(0,0,0,.45)}
+.au-logo-flag img{width:100%;height:100%;object-fit:cover;display:block}
+.au-brand-name{min-width:0;font-family:var(--font-heading),system-ui,sans-serif;font-weight:900;font-size:26px;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* "IPTV NORDIC" is a long wordmark; it steps down on narrow screens so the
    language switcher and menu button always stay on the bar. */
-@media (max-width:560px){.au-brand-name{font-size:17px;letter-spacing:.06em}}
-@media (max-width:360px){.au-brand-name{font-size:15px;letter-spacing:.02em}}
+@media (max-width:560px){.au-brand-name{font-size:20px;letter-spacing:.05em}.au-logo-flag{width:36px;height:23px}}
+@media (max-width:360px){.au-brand-name{font-size:17px;letter-spacing:.02em}.au-logo-flag{width:32px;height:20px}}
 .au-nav-actions{margin-left:auto;display:flex;align-items:center;gap:10px;flex:none}
 .au-nav-actions>*{flex:none}
 
-.au-nav-desk{align-items:center;gap:2px;margin-left:6px;display:none;min-width:0}
-.au-nav-icons{align-items:center;gap:2px;margin-left:auto;display:none}
+.au-nav-desk{align-items:center;gap:2px;margin:0 auto;display:none;min-width:0}
+.au-nav-icons{align-items:center;gap:2px;margin:0 auto;display:none}
 .au-nav-burger{display:grid;width:40px;height:40px;place-items:center;border:1px solid var(--border);border-radius:12px;background:transparent;color:var(--text);cursor:pointer}
-.au-nav-trial{display:none}
+.au-nav-trial{display:inline-flex;width:40px;padding:0;gap:0}
+.au-nav-trial-label{display:none}
 
 .au-nav-link{display:inline-flex;align-items:center;gap:6px;padding:9px 10px;white-space:nowrap;border:none;border-radius:10px;background:transparent;color:var(--text2);font-family:var(--font-body),system-ui,sans-serif;font-weight:600;font-size:14.5px;cursor:pointer;text-decoration:none;transition:color .2s ease,background .2s ease}
 .au-nav-link:hover{color:var(--text);background:var(--bg2)}
@@ -148,11 +153,14 @@ a:hover{color:var(--accent2)}
 @media (min-width:880px){
   .au-nav-icons{display:flex}
   .au-nav-burger{display:none}
+  .au-nav-actions{margin-left:0}
 }
 @media (min-width:1200px){
   .au-nav-desk{display:flex}
   .au-nav-icons{display:none}
-  .au-nav-trial{display:inline-flex}
+  .au-nav-trial{width:auto;padding:0 18px;gap:8px}
+  .au-nav-trial-label{display:inline}
+  .au-nav-actions{margin-left:0}
 }
 
 /* ── Grids ─────────────────────────────────────────────────────────────── */

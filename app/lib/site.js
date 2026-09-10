@@ -10,4 +10,4 @@ export function url(path) {
 
 // The brand name, defined once. Everything user-facing outside the message
 // catalogs reads from here, so renaming is a one-line change.
-export const BRAND = "iptvnordic";
+export const BRAND = "IPTV NORDIC";

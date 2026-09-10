@@ -1,6 +1,7 @@
 // Server components. Hover and responsive behaviour live in globals.css, so
 // nothing here needs client-side JavaScript.
-import { ICONS, LOGO_MARK } from "../lib/data";
+import Image from "next/image";
+import { ICONS } from "../lib/data";
 
 export function Icon({ name, size = 24, filled = false, className, style }) {
   return (
@@ -22,18 +23,19 @@ export function Icon({ name, size = 24, filled = false, className, style }) {
   );
 }
 
+// Site logo: the Swedish flag, identifying the market at a glance. The
+// wordmark beside it carries the name, so the image itself is decorative.
 export function LogoMark() {
   return (
-    <svg
-      width={30}
-      height={26}
-      viewBox="0 0 28 24"
-      fill="none"
-      aria-hidden="true"
-      focusable="false"
-      style={{ display: "block" }}
-      dangerouslySetInnerHTML={{ __html: LOGO_MARK }}
-    />
+    <span className="au-logo-flag">
+      <Image
+        src="/assets/logo-flag.jpg"
+        alt=""
+        width={44}
+        height={28}
+        priority
+      />
+    </span>
   );
 }
 

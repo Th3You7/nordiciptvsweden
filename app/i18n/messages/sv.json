@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "iptvnordic — Premium IPTV-streaming i 4K",
+    "title": "IPTV NORDIC — Premium IPTV-streaming i 4K",
     "description": "Premium-IPTV med äkta 4K-skärpa, direkt aktivering och ett bibliotek som aldrig sover — 18 000+ livekanaler på alla enheter.",
     "ogLocale": "sv_SE",
     "langName": "Svenska"
@@ -62,7 +62,7 @@
     ]
   },
   "features": {
-    "kicker": "Varför iptvnordic",
+    "kicker": "Varför IPTV NORDIC",
     "title": "Byggd för hur du tittar",
     "sub": "Allt du behöver för en felfri stream, och inget du inte behöver.",
     "items": [
@@ -203,14 +203,14 @@
   "content": {
     "kicker": "Innehåll och kanaler",
     "title": "Sport, serier och mer — allt på ett ställe",
-    "sub": "iptvnordic ger dig live-TV, filmer och sport i skarp HD och 4K. Ett abonnemang, alla enheter. Utforska tjänsten, se abonnemangen eller hör av dig.",
+    "sub": "IPTV NORDIC ger dig live-TV, filmer och sport i skarp HD och 4K. Ett abonnemang, alla enheter. Utforska tjänsten, se abonnemangen eller hör av dig.",
     "rows": [
       {
         "icon": "trophy",
         "img": "/assets/sport.webp",
         "tag": "SPORT · HD",
         "title": "Livesport, inga avbrott",
-        "desc": "iptvnordic streamar livesport och evenemang i HD med minimal fördröjning. Missa aldrig en match — se den live eller i efterhand.",
+        "desc": "IPTV NORDIC streamar livesport och evenemang i HD med minimal fördröjning. Missa aldrig en match — se den live eller i efterhand.",
         "bullets": [
           "Toppligor från hela Europa och världen",
           "HD-streams med låg fördröjning och minimal buffring",
@@ -236,7 +236,7 @@
         "img": "/assets/devices.webp",
         "tag": "ALLA ENHETER",
         "title": "Titta på vilken skärm som helst",
-        "desc": "iptvnordic fungerar överallt där du är. Ett abonnemang täcker alla skärmar i hemmet — så att hela familjen kan titta samtidigt.",
+        "desc": "IPTV NORDIC fungerar överallt där du är. Ett abonnemang täcker alla skärmar i hemmet — så att hela familjen kan titta samtidigt.",
         "bullets": [
           "Smart-TV, Android, iOS och streamingstickor",
           "Surfplatta, laptop och mobil",
@@ -348,8 +348,8 @@
     "seeAll": "Se alla frågor",
     "items": [
       {
-        "q": "Vad är iptvnordic och hur fungerar det?",
-        "a": "iptvnordic är en premium IPTV-streamingtjänst. Efter att du tecknat abonnemang får du inloggningsuppgifter som fungerar i alla kompatibla appar på dina enheter — ingen parabol eller kabel behövs."
+        "q": "Vad är IPTV NORDIC och hur fungerar det?",
+        "a": "IPTV NORDIC är en premium IPTV-streamingtjänst. Efter att du tecknat abonnemang får du inloggningsuppgifter som fungerar i alla kompatibla appar på dina enheter — ingen parabol eller kabel behövs."
       },
       {
         "q": "Vilka enheter stöds?",
@@ -385,7 +385,7 @@
       },
       {
         "q": "Vilka appar kan jag använda?",
-        "a": "iptvnordic fungerar med alla vanliga IPTV-spelare — IPTV Smarters, TiviMate, Smart STB, Perfect Player och liknande appar. Vi rekommenderar den som passar din enhet bäst."
+        "a": "IPTV NORDIC fungerar med alla vanliga IPTV-spelare — IPTV Smarters, TiviMate, Smart STB, Perfect Player och liknande appar. Vi rekommenderar den som passar din enhet bäst."
       },
       {
         "q": "Ingår en TV-guide (EPG)?",
@@ -456,7 +456,7 @@
       },
       {
         "tag": "Installation",
-        "title": "Så installerar du iptvnordic på din Smart-TV",
+        "title": "Så installerar du IPTV NORDIC på din Smart-TV",
         "excerpt": "En steg-för-steg-genomgång för de populäraste TV-plattformarna.",
         "date": "5 juli 2026",
         "read": "4 min läsning"
@@ -514,8 +514,8 @@
   },
   "footer": {
     "tagline": "Premium IPTV-streaming, byggd för skärpa, snabbhet och tillförlitlighet.",
-    "copy": "© 2026 iptvnordic. Alla rättigheter förbehållna.",
-    "disclaimer": "iptvnordic är en oberoende streamingplattform. Allt bildmaterial som visas är platshållare. Inga kanal- eller varumärkeslogotyper från tredje part används.",
+    "copy": "© 2026 IPTV NORDIC. Alla rättigheter förbehållna.",
+    "disclaimer": "IPTV NORDIC är en oberoende streamingplattform. Allt bildmaterial som visas är platshållare. Inga kanal- eller varumärkeslogotyper från tredje part används.",
     "cols": {
       "product": "Produkt",
       "company": "Företag",
@@ -529,21 +529,21 @@
     "updatedLabel": "Senast uppdaterad",
     "updatedDate": "2026-09-08",
     "operatorLabel": "Operatör",
-    "operator": "iptvnordic — [fyll i registrerat företagsnamn, registrerad adress och organisationsnummer]",
+    "operator": "IPTV NORDIC — [fyll i registrerat företagsnamn, registrerad adress och organisationsnummer]",
     "contactCta": "Kontakta oss på WhatsApp"
   },
   "terms": {
     "kicker": "Juridik",
     "title": "Användarvillkor",
-    "intro": "Dessa villkor gäller för din användning av iptvnordic. Genom att teckna ett abonnemang godkänner du dem, så läs dem gärna innan du beställer.",
+    "intro": "Dessa villkor gäller för din användning av IPTV NORDIC. Genom att teckna ett abonnemang godkänner du dem, så läs dem gärna innan du beställer.",
     "sections": [
       {
         "h": "1. Vad tjänsten är",
-        "p": "iptvnordic ger tillgång till en internetbaserad TV-tjänst. Efter betalning får du personliga inloggningsuppgifter som fungerar i vanliga IPTV-spelarappar på dina egna enheter. Ingen parabol, kabelanslutning eller digitalbox levereras eller krävs."
+        "p": "IPTV NORDIC ger tillgång till en internetbaserad TV-tjänst. Efter betalning får du personliga inloggningsuppgifter som fungerar i vanliga IPTV-spelarappar på dina egna enheter. Ingen parabol, kabelanslutning eller digitalbox levereras eller krävs."
       },
       {
         "h": "2. Oberoende plattform",
-        "p": "iptvnordic är en oberoende streamingplattform och är inte ansluten till, godkänd av eller sponsrad av något TV-bolag, någon kanal eller någon rättighetshavare. Allt bildmaterial på denna webbplats är platshållarmaterial; inga kanal- eller varumärkeslogotyper från tredje part används."
+        "p": "IPTV NORDIC är en oberoende streamingplattform och är inte ansluten till, godkänd av eller sponsrad av något TV-bolag, någon kanal eller någon rättighetshavare. Allt bildmaterial på denna webbplats är platshållarmaterial; inga kanal- eller varumärkeslogotyper från tredje part används."
       },
       {
         "h": "3. Behörighet",
@@ -590,7 +590,7 @@
   "privacy": {
     "kicker": "Juridik",
     "title": "Integritetspolicy",
-    "intro": "Denna policy förklarar vilka personuppgifter vi samlar in när du använder iptvnordic, varför vi samlar in dem och vilka rättigheter du har.",
+    "intro": "Denna policy förklarar vilka personuppgifter vi samlar in när du använder IPTV NORDIC, varför vi samlar in dem och vilka rättigheter du har.",
     "sections": [
       {
         "h": "1. Vem är ansvarig",
@@ -633,7 +633,7 @@
   "refund": {
     "kicker": "Juridik",
     "title": "Återbetalningspolicy",
-    "intro": "Varje iptvnordic-abonnemang omfattas av 7 dagars pengarna-tillbaka-garanti. Denna sida förklarar exakt hur den fungerar och hur du använder den.",
+    "intro": "Varje IPTV NORDIC-abonnemang omfattas av 7 dagars pengarna-tillbaka-garanti. Denna sida förklarar exakt hur den fungerar och hur du använder den.",
     "sections": [
       {
         "h": "1. 7-dagarsgarantin",

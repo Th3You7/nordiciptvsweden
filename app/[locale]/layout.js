@@ -19,7 +19,7 @@ import { WA_LINK } from "../lib/data";
 // "latin" covers Swedish (å ä ö) and English; latin-ext is not needed here.
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["600", "700", "800", "900"],
   variable: "--font-heading",
   display: "swap",
 });

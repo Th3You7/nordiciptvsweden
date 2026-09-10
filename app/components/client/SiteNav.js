@@ -8,24 +8,26 @@ import { LanguageSwitcher } from "../LanguageSwitcher";
 import { BRAND } from "../../lib/site";
 import { WA_LINK } from "../../lib/data";
 
-// Client island: the nav needs the mobile-menu toggle, the "More" dropdown, the
-// theme toggle and the active-route highlight. The links themselves are still
-// <a> tags in the prerendered HTML, so they are crawlable.
+// Client island: the nav needs the mobile-menu toggle, the "More" dropdown and
+// the active-route highlight. The links themselves are still <a> tags in the
+// prerendered HTML, so they are crawlable.
 const NAV = [
   ["", "home", "home"],
   ["features", "features", "zap"],
   ["pricing", "pricing", "tag"],
   ["blog", "blog", "news"],
-  ["devices", "devices", "monitor"],
   ["faq", "faq", "help"],
-  ["contact", "contact", "wa"],
 ];
 
-// The legal pages, grouped behind "More" so the main bar stays at seven items.
-const LEGAL = [
-  ["terms", "terms", "receipt"],
-  ["privacy", "privacy", "lock"],
-  ["refund", "refund", "shieldCheck"],
+// Grouped behind "More": Devices and Contact alongside the legal pages.
+// `from` says which label set the text comes from — the nav labels or the
+// short legal labels passed in from the layout.
+const MORE = [
+  { slug: "devices", key: "devices", icon: "monitor", from: "nav" },
+  { slug: "contact", key: "contact", icon: "wa", from: "nav" },
+  { slug: "terms", key: "terms", icon: "receipt", from: "legal" },
+  { slug: "privacy", key: "privacy", icon: "lock", from: "legal" },
+  { slug: "refund", key: "refund", icon: "shieldCheck", from: "legal" },
 ];
 
 // `nav` is only the t.nav sub-object and `legal` only the three short labels:
@@ -42,14 +44,14 @@ export function SiteNav({ locale, nav, legal }) {
     return { href, icon, label: nav[key], active: pathname === href };
   });
 
-  const legalItems = LEGAL.map(([slug, key, icon]) => ({
+  const moreItems = MORE.map(({ slug, key, icon, from }) => ({
     href: `/${locale}/${slug}`,
     icon,
-    label: legal[key],
+    label: from === "nav" ? nav[key] : legal[key],
     active: pathname === `/${locale}/${slug}`,
   }));
 
-  const onLegalPage = legalItems.some((it) => it.active);
+  const onMorePage = moreItems.some((it) => it.active);
 
   // Closed on navigation from the link handlers rather than from an effect on
   // `pathname` — setState in an effect body costs an extra render pass after
@@ -78,7 +80,7 @@ export function SiteNav({ locale, nav, legal }) {
 
   const dropdown = (
     <div className="au-nav-drop" role="menu">
-      {legalItems.map((it) => (
+      {moreItems.map((it) => (
         <Link
           key={it.href}
           href={it.href}
@@ -127,7 +129,7 @@ export function SiteNav({ locale, nav, legal }) {
               className="au-nav-link"
               aria-haspopup="true"
               aria-expanded={moreOpen}
-              aria-current={onLegalPage ? "page" : undefined}
+              aria-current={onMorePage ? "page" : undefined}
               onClick={() => setMoreOpen((o) => !o)}
             >
               <span className="au-nav-link-ico">
@@ -161,7 +163,7 @@ export function SiteNav({ locale, nav, legal }) {
               title={nav.more}
               aria-haspopup="true"
               aria-expanded={moreOpen}
-              aria-current={onLegalPage ? "page" : undefined}
+              aria-current={onMorePage ? "page" : undefined}
               onClick={() => setMoreOpen((o) => !o)}
             >
               <Icon name="more" size={20} />
@@ -173,14 +175,19 @@ export function SiteNav({ locale, nav, legal }) {
 
         <div className="au-nav-actions">
           <LanguageSwitcher locale={locale} />
+          {/* Always on the bar, beside the language switcher: opens WhatsApp.
+              Icon-only on narrow screens, full label from 1200px. */}
           <a
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={nav.freeTrial}
+            title={nav.freeTrial}
             className="au-btn au-btn-green au-btn-nav au-nav-trial"
             onClick={closeMenus}
           >
-            {nav.freeTrial}
+            <Icon name="wa" size={20} />
+            <span className="au-nav-trial-label">{nav.freeTrial}</span>
           </a>
           <button
             type="button"
@@ -207,7 +214,7 @@ export function SiteNav({ locale, nav, legal }) {
 
           {/* On mobile the group is flattened rather than nested in a dropdown. */}
           <div className="au-nav-mobile-head">{nav.more}</div>
-          {legalItems.map((it) => (
+          {moreItems.map((it) => (
             <Link key={it.href} href={it.href} onClick={closeMenus} aria-current={it.active ? "page" : undefined}>
               <span style={{ display: "inline-flex", color: "var(--accent)" }}>
                 <Icon name={it.icon} size={20} />

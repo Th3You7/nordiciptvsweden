@@ -1,6 +1,6 @@
-# iptvnordic — Next.js
+# IPTV NORDIC — Next.js
 
-The iptvnordic landing page, converted from the original standalone template into a
+The IPTV NORDIC landing page, converted from the original standalone template into a
 [Next.js](https://nextjs.org) (App Router) project.
 
 ## Getting started

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "iptvnordic — Premium IPTV Streaming in 4K",
+    "title": "IPTV NORDIC — Premium IPTV Streaming in 4K",
     "description": "Premium IPTV with true 4K clarity, instant activation and a library that never sleeps — 18,000+ live channels on every device.",
     "ogLocale": "en_US",
     "langName": "English"
@@ -62,7 +62,7 @@
     ]
   },
   "features": {
-    "kicker": "Why iptvnordic",
+    "kicker": "Why IPTV NORDIC",
     "title": "Built for the way you watch",
     "sub": "Everything you need for a flawless stream, and nothing you don't.",
     "items": [
@@ -203,14 +203,14 @@
   "content": {
     "kicker": "Content & channels",
     "title": "Sport, series & more — all in one place",
-    "sub": "iptvnordic brings you live TV, movies and sport in crisp HD and 4K. One subscription, every device. Explore the service, view plans or get in touch.",
+    "sub": "IPTV NORDIC brings you live TV, movies and sport in crisp HD and 4K. One subscription, every device. Explore the service, view plans or get in touch.",
     "rows": [
       {
         "icon": "trophy",
         "img": "/assets/sport.webp",
         "tag": "SPORTS · HD",
         "title": "Live sport, zero blackouts",
-        "desc": "iptvnordic streams live sport and events in HD with minimal delay. Never miss a match — watch live or catch up later.",
+        "desc": "IPTV NORDIC streams live sport and events in HD with minimal delay. Never miss a match — watch live or catch up later.",
         "bullets": [
           "Top leagues from across Europe and beyond",
           "Low-latency HD streams with minimal buffering",
@@ -236,7 +236,7 @@
         "img": "/assets/devices.webp",
         "tag": "ANY DEVICE",
         "title": "Watch on any screen",
-        "desc": "iptvnordic works everywhere you do. One subscription covers every screen in the home — with the whole family watching at once.",
+        "desc": "IPTV NORDIC works everywhere you do. One subscription covers every screen in the home — with the whole family watching at once.",
         "bullets": [
           "Smart TV, Android, iOS and streaming sticks",
           "Tablet, laptop and phone",
@@ -348,8 +348,8 @@
     "seeAll": "See all questions",
     "items": [
       {
-        "q": "What is iptvnordic and how does it work?",
-        "a": "iptvnordic is a premium IPTV streaming service. After subscribing you receive credentials that work in any compatible app on your devices — no dish or cable required."
+        "q": "What is IPTV NORDIC and how does it work?",
+        "a": "IPTV NORDIC is a premium IPTV streaming service. After subscribing you receive credentials that work in any compatible app on your devices — no dish or cable required."
       },
       {
         "q": "Which devices are supported?",
@@ -385,7 +385,7 @@
       },
       {
         "q": "Which apps can I use?",
-        "a": "iptvnordic works with any standard IPTV player — IPTV Smarters, TiviMate, Smart STB, Perfect Player and similar apps. We'll recommend the best one for your device."
+        "a": "IPTV NORDIC works with any standard IPTV player — IPTV Smarters, TiviMate, Smart STB, Perfect Player and similar apps. We'll recommend the best one for your device."
       },
       {
         "q": "Is a TV guide (EPG) included?",
@@ -456,7 +456,7 @@
       },
       {
         "tag": "Installation",
-        "title": "How to set up iptvnordic on your Smart TV",
+        "title": "How to set up IPTV NORDIC on your Smart TV",
         "excerpt": "A step-by-step walkthrough for the most popular television platforms.",
         "date": "Jul 5, 2026",
         "read": "4 min read"
@@ -514,8 +514,8 @@
   },
   "footer": {
     "tagline": "Premium IPTV streaming, engineered for clarity, speed and reliability.",
-    "copy": "© 2026 iptvnordic. All rights reserved.",
-    "disclaimer": "iptvnordic is an independent streaming platform. All artwork shown is placeholder. No third-party channel or brand logos are used.",
+    "copy": "© 2026 IPTV NORDIC. All rights reserved.",
+    "disclaimer": "IPTV NORDIC is an independent streaming platform. All artwork shown is placeholder. No third-party channel or brand logos are used.",
     "cols": {
       "product": "Product",
       "company": "Company",
@@ -529,21 +529,21 @@
     "updatedLabel": "Last updated",
     "updatedDate": "2026-09-08",
     "operatorLabel": "Operator",
-    "operator": "iptvnordic — [add registered company name, registered address and company registration number]",
+    "operator": "IPTV NORDIC — [add registered company name, registered address and company registration number]",
     "contactCta": "Contact us on WhatsApp"
   },
   "terms": {
     "kicker": "Legal",
     "title": "Terms of Service",
-    "intro": "These terms govern your use of the iptvnordic service. By subscribing you accept them, so please read them before you order.",
+    "intro": "These terms govern your use of the IPTV NORDIC service. By subscribing you accept them, so please read them before you order.",
     "sections": [
       {
         "h": "1. What the service is",
-        "p": "iptvnordic provides access to an internet television service. After payment you receive personal credentials that work in standard IPTV player applications on your own devices. No satellite dish, cable connection or set-top box is supplied or required."
+        "p": "IPTV NORDIC provides access to an internet television service. After payment you receive personal credentials that work in standard IPTV player applications on your own devices. No satellite dish, cable connection or set-top box is supplied or required."
       },
       {
         "h": "2. Independent platform",
-        "p": "iptvnordic is an independent streaming platform and is not affiliated with, endorsed by or sponsored by any broadcaster, channel or rights holder. All artwork shown on this website is placeholder material; no third-party channel or brand logos are used."
+        "p": "IPTV NORDIC is an independent streaming platform and is not affiliated with, endorsed by or sponsored by any broadcaster, channel or rights holder. All artwork shown on this website is placeholder material; no third-party channel or brand logos are used."
       },
       {
         "h": "3. Eligibility",
@@ -590,7 +590,7 @@
   "privacy": {
     "kicker": "Legal",
     "title": "Privacy Policy",
-    "intro": "This policy explains what personal data we collect when you use iptvnordic, why we collect it, and what rights you have over it.",
+    "intro": "This policy explains what personal data we collect when you use IPTV NORDIC, why we collect it, and what rights you have over it.",
     "sections": [
       {
         "h": "1. Who is responsible",
@@ -633,7 +633,7 @@
   "refund": {
     "kicker": "Legal",
     "title": "Refund Policy",
-    "intro": "Every iptvnordic plan is covered by a 7-day money-back guarantee. This page explains exactly how it works and how to claim it.",
+    "intro": "Every IPTV NORDIC plan is covered by a 7-day money-back guarantee. This page explains exactly how it works and how to claim it.",
     "sections": [
       {
         "h": "1. The 7-day guarantee",

@@ -29,8 +29,6 @@ export const ICONS = {
   home: '<path d="M4 11 12 4l8 7"/><path d="M6 10v9.5h4V14h4v5.5h4V10"/>',
   tag: '<path d="M11 3H4v7l10 10 7-7z"/><circle cx="8" cy="8" r="1.4"/>',
   help: '<circle cx="12" cy="12" r="9.4"/><path d="M9.4 9.3a2.7 2.7 0 0 1 5.2 1c0 1.8-2.6 2.2-2.6 3.7"/><path d="M12 17h.01"/>',
-  sun: '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.5 4.5l1.7 1.7M17.8 17.8l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.5 19.5l1.7-1.7M17.8 6.2l1.7-1.7"/>',
-  moon: '<path d="M21 12.8A8.6 8.6 0 1 1 11.2 3a6.7 6.7 0 0 0 9.8 9.8z"/>',
   menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
   // Filled dots rather than the `h.01` stroke trick: at nav size that trick
   // renders ~1.4px specks. Elements carry their own fill/stroke, overriding
@@ -55,4 +53,3 @@ export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "21261
 export const WHATSAPP_DISPLAY = "+212 617-984899";
 
 export const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
-export const BRAND = "AURION";

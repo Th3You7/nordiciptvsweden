@@ -34,7 +34,7 @@ export default async function FeaturesPage({ params }) {
       </div>
       <LibraryGrid items={t.library.items} />
 
-      <CtaBanner title={t.cta.title} cta={t.hero.cta1} locale={locale} small />
+      <CtaBanner title={t.cta.title} cta={t.hero.cta1} small />
     </section>
   );
 }

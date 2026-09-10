@@ -5,7 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon, LogoMark } from "../ui";
 import { LanguageSwitcher } from "../LanguageSwitcher";
-import { BRAND } from "../../lib/data";
+import { BRAND } from "../../lib/site";
+import { WA_LINK } from "../../lib/data";
 
 // Client island: the nav needs the mobile-menu toggle, the "More" dropdown, the
 // theme toggle and the active-route highlight. The links themselves are still
@@ -26,15 +27,6 @@ const LEGAL = [
   ["privacy", "privacy", "lock"],
   ["refund", "refund", "shieldCheck"],
 ];
-
-function toggleTheme() {
-  const el = document.documentElement;
-  const next = el.getAttribute("data-theme") === "light" ? "dark" : "light";
-  el.setAttribute("data-theme", next);
-  try {
-    localStorage.setItem("aurion_theme", next);
-  } catch (e) {}
-}
 
 // `nav` is only the t.nav sub-object and `legal` only the three short labels:
 // passing the whole catalog would serialize every FAQ answer and pricing plan
@@ -181,26 +173,15 @@ export function SiteNav({ locale, nav, legal }) {
 
         <div className="au-nav-actions">
           <LanguageSwitcher locale={locale} />
-          <button
-            type="button"
-            onClick={toggleTheme}
-            aria-label="Toggle theme"
-            className="au-pill au-pill-icon"
-          >
-            <span className="au-ico-sun">
-              <Icon name="sun" size={20} />
-            </span>
-            <span className="au-ico-moon">
-              <Icon name="moon" size={20} />
-            </span>
-          </button>
-          <Link
-            href={`/${locale}/contact`}
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
             className="au-btn au-btn-green au-btn-nav au-nav-trial"
             onClick={closeMenus}
           >
             {nav.freeTrial}
-          </Link>
+          </a>
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
@@ -235,9 +216,15 @@ export function SiteNav({ locale, nav, legal }) {
             </Link>
           ))}
 
-          <Link href={`/${locale}/contact`} className="au-nav-cta" onClick={closeMenus}>
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="au-nav-cta"
+            onClick={closeMenus}
+          >
             {nav.freeTrial}
-          </Link>
+          </a>
         </div>
       ) : null}
     </nav>

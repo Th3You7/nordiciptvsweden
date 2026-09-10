@@ -1,6 +1,6 @@
 // JSON-LD builders. Every value comes from the locale catalog or the real
 // route table — nothing here asserts anything the page does not actually show.
-import { siteUrl, url, BRAND_NAME } from "./site";
+import { siteUrl, url, BRAND } from "./site";
 
 const ORG_ID = `${siteUrl}/#organization`;
 const SITE_ID = `${siteUrl}/#website`;
@@ -18,14 +18,14 @@ export function siteGraph({ locale, t }) {
       {
         "@type": "Organization",
         "@id": ORG_ID,
-        name: BRAND_NAME,
+        name: BRAND,
         url: siteUrl,
         description: t.meta.description,
       },
       {
         "@type": "WebSite",
         "@id": SITE_ID,
-        name: BRAND_NAME,
+        name: BRAND,
         url: url(locale),
         publisher: { "@id": ORG_ID },
         inLanguage: bcp47(locale),
@@ -94,9 +94,9 @@ export function subscriptionProduct({ locale, t }) {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: BRAND_NAME,
+    name: BRAND,
     description: t.pricing.sub,
-    brand: { "@type": "Brand", name: "AURION" },
+    brand: { "@type": "Brand", name: BRAND },
     category: "IPTV streaming subscription",
     offers,
   };

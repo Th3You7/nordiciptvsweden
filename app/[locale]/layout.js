@@ -10,7 +10,7 @@ import { SiteFooter } from "../components/sections";
 import { Icon } from "../components/ui";
 import { JsonLd } from "../components/JsonLd";
 import { siteGraph } from "../lib/schema";
-import { siteUrl } from "../lib/site";
+import { siteUrl, BRAND } from "../lib/site";
 import { WA_LINK } from "../lib/data";
 
 // Self-hosted at build time and served from our own origin — no request to
@@ -31,9 +31,9 @@ const inter = Inter({
   display: "swap",
 });
 
-// Runs before first paint: applies the saved theme so there is no flash, and
-// marks the document as scripted so the reveal animation may hide elements.
-const BOOT = `try{var t=localStorage.getItem('aurion_theme');if(t)document.documentElement.setAttribute('data-theme',t);document.documentElement.classList.add('has-js')}catch(e){}`;
+// Marks the document as scripted, so the reveal animation may hide elements it
+// is able to bring back. The site is dark-only, so there is no theme to restore.
+const BOOT = `document.documentElement.classList.add('has-js')`;
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -48,12 +48,12 @@ export async function generateMetadata({ params }) {
     metadataBase: new URL(siteUrl),
     title: {
       default: t.meta.title,
-      template: `%s | AURION IPTV`,
+      template: `%s | ${BRAND}`,
     },
     description: t.meta.description,
     openGraph: {
       type: "website",
-      siteName: "AURION IPTV",
+      siteName: BRAND,
       locale: t.meta.ogLocale,
       url: `/${locale}`,
       title: t.meta.title,

@@ -1,6 +1,6 @@
-# AURION IPTV — Next.js
+# iptvnordic — Next.js
 
-The AURION IPTV landing page, converted from the original standalone template into a
+The iptvnordic landing page, converted from the original standalone template into a
 [Next.js](https://nextjs.org) (App Router) project.
 
 ## Getting started

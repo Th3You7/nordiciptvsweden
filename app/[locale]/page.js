@@ -99,7 +99,7 @@ export default async function HomePage({ params }) {
       </section>
 
       <section className="au-sec au-sec-last">
-        <CtaBanner title={t.cta.title} sub={t.cta.sub} cta={t.hero.cta1} locale={locale} />
+        <CtaBanner title={t.cta.title} sub={t.cta.sub} cta={t.hero.cta1} />
       </section>
     </>
   );

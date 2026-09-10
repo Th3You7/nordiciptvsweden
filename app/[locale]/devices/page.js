@@ -42,7 +42,7 @@ export default async function DevicesPage({ params }) {
       </div>
       <Steps items={t.devicesPage.steps} />
 
-      <CtaBanner title={t.devicesPage.ctaTitle} cta={t.hero.cta1} locale={locale} small />
+      <CtaBanner title={t.devicesPage.ctaTitle} cta={t.hero.cta1} small />
     </section>
   );
 }

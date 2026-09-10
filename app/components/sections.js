@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Icon, LogoMark, Stars } from "./ui";
 import { WA_LINK } from "../lib/data";
+import { BRAND } from "../lib/site";
 
 // `sizes` values describe the real rendered width at each breakpoint, so the
 // optimizer picks the smallest adequate source. They must be kept in step with
@@ -44,12 +45,19 @@ export function Hero({ t, locale }) {
         <h1 className="au-hero-title">{t.hero.title}</h1>
         <p className="au-hero-sub">{t.hero.sub}</p>
         <div className="au-hero-ctas">
-          <Link href={`/${locale}/contact`} className="au-btn au-btn-green au-btn-lg">
+          {/* Free-trial CTAs open WhatsApp directly rather than routing through
+              the contact page — one tap from the hero to a conversation. */}
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="au-btn au-btn-green au-btn-lg"
+          >
             {t.hero.cta1}
             <span style={{ display: "inline-flex" }}>
               <Icon name="arrow" size={18} />
             </span>
-          </Link>
+          </a>
           <Link href={`/${locale}/pricing`} className="au-btn au-btn-outline au-btn-lg">
             {t.hero.cta2}
           </Link>
@@ -365,16 +373,23 @@ export function Steps({ items }) {
   );
 }
 
-export function CtaBanner({ title, sub, cta, locale, small }) {
+// Always labelled with the free-trial CTA, so it opens WhatsApp directly.
+// No `locale` needed any more — the link leaves the site.
+export function CtaBanner({ title, sub, cta, small }) {
   return (
     <div className={`au-cta${small ? " au-cta-sm" : ""}`} data-reveal="1">
       <div className="au-cta-glow" />
       <div className="au-cta-body">
         <h2 className="au-cta-h">{title}</h2>
         {sub ? <p className="au-cta-p">{sub}</p> : null}
-        <Link href={`/${locale}/contact`} className={`au-btn au-btn-green ${small ? "au-btn-lg" : "au-btn-xl"}`}>
+        <a
+          href={WA_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`au-btn au-btn-green ${small ? "au-btn-lg" : "au-btn-xl"}`}
+        >
           {cta}
-        </Link>
+        </a>
       </div>
     </div>
   );
@@ -474,7 +489,7 @@ export function SiteFooter({ t, locale }) {
             <div style={{ display: "flex", alignItems: "center", gap: "10px", color: "var(--text)" }}>
               <LogoMark />
               <span className="au-brand-name" style={{ fontSize: "20px" }}>
-                AURION
+                {BRAND}
               </span>
             </div>
             <p className="au-foot-tag">{t.footer.tagline}</p>

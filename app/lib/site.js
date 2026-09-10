@@ -8,4 +8,6 @@ export function url(path) {
   return `${siteUrl}/${String(path).replace(/^\/+/, "")}`;
 }
 
-export const BRAND_NAME = "AURION IPTV";
+// The brand name, defined once. Everything user-facing outside the message
+// catalogs reads from here, so renaming is a one-line change.
+export const BRAND = "iptvnordic";

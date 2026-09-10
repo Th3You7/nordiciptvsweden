@@ -6,19 +6,16 @@ body{
 }
 
 /* ── Theme tokens ──────────────────────────────────────────────────────────
-   Set on <html> by the inline script in the layout, so the correct palette is
-   applied before first paint (no flash on reload). Dark is the default. */
+   Single dark palette — black and red. There is no light variant and no
+   runtime switching, so these values are the whole theme.
+   `color-scheme: dark` tells the browser to render scrollbars, form controls
+   and the canvas behind the page dark to match. */
 :root{
+  color-scheme:dark;
   --bg:#080808;--bg2:#1a1a1a;--card:#121212;--text:#ffffff;--text2:#b5b5b5;
   --border:rgba(255,255,255,0.08);--accent:#e50914;--accent2:#ff2d2d;
   --green:#25d366;--green2:#1eb955;--greenGlow:rgba(37,211,102,.38);
   --shadow:0 24px 60px rgba(0,0,0,.55);--glow:rgba(229,9,20,.35);--navbg:rgba(10,10,10,.72);--stripe:rgba(255,255,255,.04);--scrim:rgba(8,8,8,.72);--photo:.85;
-}
-:root[data-theme="light"]{
-  --bg:#ffffff;--bg2:#f7f7f7;--card:#ffffff;--text:#121212;--text2:#666666;
-  --border:rgba(0,0,0,.08);--accent:#e50914;--accent2:#ff2d2d;
-  --green:#1faf54;--green2:#178f44;--greenGlow:rgba(31,175,84,.28);
-  --shadow:0 20px 50px rgba(0,0,0,.10);--glow:rgba(229,9,20,.20);--navbg:rgba(255,255,255,.72);--stripe:rgba(0,0,0,.035);--scrim:rgba(247,247,247,.82);--photo:.4;
 }
 
 a{color:var(--accent);text-decoration:none;transition:color .2s ease}
@@ -76,17 +73,17 @@ a:hover{color:var(--accent2)}
 .au-no-sub{margin-bottom:0}
 
 /* ── Buttons ───────────────────────────────────────────────────────────── */
-.au-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-family:var(--font-heading),system-ui,sans-serif;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s ease,transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.au-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;text-align:center;font-family:var(--font-heading),system-ui,sans-serif;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s ease,transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 .au-btn:hover{transform:translateY(-2px)}
 .au-btn-green{border:none;background:var(--green);color:#fff;box-shadow:0 12px 30px var(--greenGlow)}
 .au-btn-green:hover{background:var(--green2);color:#fff;box-shadow:0 16px 40px var(--greenGlow)}
 .au-btn-outline{border:1.5px solid var(--accent);background:transparent;color:var(--text)}
 .au-btn-outline:hover{background:rgba(229,9,20,.08);color:var(--text)}
-.au-btn-lg{height:54px;padding:0 26px;font-size:16px}
-.au-btn-xl{height:56px;padding:0 32px;font-size:17px}
-.au-btn-md{height:50px;padding:0 26px;font-size:15px}
-.au-btn-sm{height:46px;padding:0 22px;font-size:14.5px}
-.au-btn-nav{height:40px;padding:0 20px;font-size:14px;box-shadow:0 8px 22px var(--greenGlow)}
+.au-btn-lg{min-height:54px;padding:10px 26px;font-size:16px}
+.au-btn-xl{min-height:56px;padding:10px 32px;font-size:17px}
+.au-btn-md{min-height:50px;padding:10px 26px;font-size:15px}
+.au-btn-sm{min-height:46px;padding:9px 22px;font-size:14.5px}
+.au-btn-nav{height:40px;padding:0 20px;font-size:14px;white-space:nowrap;box-shadow:0 8px 22px var(--greenGlow)}
 
 /* ── Cards ─────────────────────────────────────────────────────────────── */
 .au-card{border:1px solid var(--border);border-radius:20px;background:var(--card);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
@@ -94,23 +91,29 @@ a:hover{color:var(--accent2)}
 
 /* ── Nav ───────────────────────────────────────────────────────────────── */
 .au-nav{position:sticky;top:0;z-index:60;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);background:var(--navbg);border-bottom:1px solid var(--border)}
-.au-nav-inner{max-width:1240px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;gap:28px}
-.au-brand{display:flex;align-items:center;gap:10px;background:none;border:none;cursor:pointer;color:var(--text);padding:0;text-decoration:none}
+.au-nav-inner{max-width:1240px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;gap:16px}
+.au-brand{display:flex;align-items:center;gap:10px;background:none;border:none;cursor:pointer;color:var(--text);padding:0;text-decoration:none;flex:0 1 auto;min-width:0}
+.au-brand>span:first-child{flex:none}
 .au-brand:hover{color:var(--text)}
-.au-brand-name{font-family:var(--font-heading),system-ui,sans-serif;font-weight:800;font-size:21px;letter-spacing:.14em}
-.au-nav-actions{margin-left:auto;display:flex;align-items:center;gap:10px}
+.au-brand-name{min-width:0;font-family:var(--font-heading),system-ui,sans-serif;font-weight:800;font-size:21px;letter-spacing:.14em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* "iptvnordic" is a long wordmark; it steps down on narrow screens so the
+   language switcher and menu button always stay on the bar. */
+@media (max-width:560px){.au-brand-name{font-size:17px;letter-spacing:.06em}}
+@media (max-width:360px){.au-brand-name{font-size:15px;letter-spacing:.02em}}
+.au-nav-actions{margin-left:auto;display:flex;align-items:center;gap:10px;flex:none}
+.au-nav-actions>*{flex:none}
 
-.au-nav-desk{align-items:center;gap:4px;margin-left:14px;display:none}
+.au-nav-desk{align-items:center;gap:2px;margin-left:6px;display:none;min-width:0}
 .au-nav-icons{align-items:center;gap:2px;margin-left:auto;display:none}
 .au-nav-burger{display:grid;width:40px;height:40px;place-items:center;border:1px solid var(--border);border-radius:12px;background:transparent;color:var(--text);cursor:pointer}
 .au-nav-trial{display:none}
 
-.au-nav-link{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:none;border-radius:10px;background:transparent;color:var(--text2);font-family:var(--font-body),system-ui,sans-serif;font-weight:600;font-size:14.5px;cursor:pointer;text-decoration:none;transition:color .2s ease,background .2s ease}
+.au-nav-link{display:inline-flex;align-items:center;gap:6px;padding:9px 10px;white-space:nowrap;border:none;border-radius:10px;background:transparent;color:var(--text2);font-family:var(--font-body),system-ui,sans-serif;font-weight:600;font-size:14.5px;cursor:pointer;text-decoration:none;transition:color .2s ease,background .2s ease}
 .au-nav-link:hover{color:var(--text);background:var(--bg2)}
 .au-nav-link[aria-current="page"]{background:var(--bg2);color:var(--text)}
 .au-nav-link-ico{color:var(--accent);display:inline-flex}
 
-.au-nav-icon{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:58px;height:52px;padding:0 6px;border:none;border-radius:12px;background:transparent;color:var(--text2);cursor:pointer;text-decoration:none;transition:color .2s ease,background .2s ease}
+.au-nav-icon{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:54px;height:52px;padding:0 5px;border:none;border-radius:12px;background:transparent;color:var(--text2);cursor:pointer;text-decoration:none;transition:color .2s ease,background .2s ease}
 .au-nav-icon:hover{color:var(--text);background:var(--bg2)}
 .au-nav-icon[aria-current="page"]{background:var(--bg2);color:var(--accent)}
 .au-nav-icon span{font-family:var(--font-body),system-ui,sans-serif;font-weight:600;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
@@ -142,22 +145,11 @@ a:hover{color:var(--accent2)}
 .au-nav-mobile a[aria-current="page"]{background:var(--bg2)}
 .au-nav-mobile .au-nav-cta{margin-top:8px;height:48px;justify-content:center;border-radius:999px;background:var(--green);color:#fff;font-family:var(--font-heading),system-ui,sans-serif;font-size:15px}
 
-.au-pill{display:flex;align-items:center;gap:7px;height:40px;padding:0 13px;border:1px solid var(--border);border-radius:999px;background:transparent;color:var(--text);cursor:pointer;font-family:var(--font-body),system-ui,sans-serif;font-weight:600;font-size:13px;text-decoration:none;transition:border-color .2s ease,transform .3s ease}
-.au-pill:hover{border-color:var(--accent);color:var(--text)}
-.au-pill-icon{width:40px;height:40px;padding:0;display:grid;place-items:center}
-.au-pill-icon:hover{transform:rotate(18deg)}
-/* Which theme icon shows is decided by CSS from the <html> attribute, so the
-   button needs no state and cannot mismatch during hydration. */
-.au-ico-sun,.au-ico-moon{display:none;grid-area:1/1}
-:root .au-ico-sun{display:inline-flex}
-:root[data-theme="light"] .au-ico-sun{display:none}
-:root[data-theme="light"] .au-ico-moon{display:inline-flex}
-
-@media (min-width:620px){
+@media (min-width:880px){
   .au-nav-icons{display:flex}
   .au-nav-burger{display:none}
 }
-@media (min-width:1040px){
+@media (min-width:1200px){
   .au-nav-desk{display:flex}
   .au-nav-icons{display:none}
   .au-nav-trial{display:inline-flex}
@@ -166,6 +158,7 @@ a:hover{color:var(--accent2)}
 /* ── Grids ─────────────────────────────────────────────────────────────── */
 .au-grid{display:grid;align-items:start}
 
+.au-grid-hero>*{min-width:0}
 .au-grid-hero{display:grid;gap:40px;align-items:center;grid-template-columns:1fr;max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,104px) 24px 40px}
 @media (min-width:880px){.au-grid-hero{gap:48px;grid-template-columns:1.05fr .95fr}}
 
@@ -194,6 +187,8 @@ a:hover{color:var(--accent2)}
 @media (min-width:760px){.au-grid-steps{grid-template-columns:repeat(3,1fr)}}
 
 .au-grid-price{gap:18px;grid-template-columns:repeat(2,1fr);align-items:stretch}
+.au-grid-price>*{min-width:0}
+@media (max-width:400px){.au-grid-price{grid-template-columns:1fr}}
 .au-grid-price-home{gap:16px}
 @media (min-width:560px){.au-grid-price{grid-template-columns:repeat(4,1fr)}}
 
@@ -210,7 +205,7 @@ a:hover{color:var(--accent2)}
 /* ── Hero ──────────────────────────────────────────────────────────────── */
 .au-hero-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid var(--border);border-radius:999px;background:var(--card);font-size:12.5px;font-weight:600;letter-spacing:.06em;color:var(--text2)}
 .au-hero-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
-.au-hero-title{font-family:var(--font-heading),system-ui,sans-serif;font-weight:800;font-size:clamp(38px,5.2vw,64px);line-height:1.04;letter-spacing:-.02em;margin:22px 0 0;text-wrap:balance}
+.au-hero-title{overflow-wrap:break-word;font-family:var(--font-heading),system-ui,sans-serif;font-weight:800;font-size:clamp(38px,5.2vw,64px);line-height:1.04;letter-spacing:-.02em;margin:22px 0 0;text-wrap:balance}
 .au-hero-sub{font-size:clamp(16px,1.5vw,19px);line-height:1.65;color:var(--text2);margin:22px 0 0;max-width:520px;text-wrap:pretty}
 .au-hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
 .au-hero-stats{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap}
@@ -223,6 +218,7 @@ a:hover{color:var(--accent2)}
 .au-hero-screen-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,.35),rgba(8,8,8,.62)),radial-gradient(circle at 50% 45%,var(--glow),transparent 62%)}
 .au-hero-play{width:66px;height:66px;border-radius:50%;background:var(--accent);display:grid;place-items:center;color:#fff;box-shadow:0 0 34px var(--glow);animation:au-pulse 3.2s ease-in-out infinite}
 .au-hero-phone{position:absolute;right:-6px;bottom:-26px;width:118px;border-radius:22px;border:1px solid var(--border);background:var(--card);box-shadow:var(--shadow);padding:8px;animation:au-float 5s ease-in-out infinite}
+@media (max-width:560px){.au-hero-phone{right:0;bottom:-18px;width:96px}}
 .au-hero-phone-inner{border-radius:14px;overflow:hidden;aspect-ratio:9/17;background:var(--bg2);position:relative}
 .au-hero-phone-inner img{object-fit:cover}
 

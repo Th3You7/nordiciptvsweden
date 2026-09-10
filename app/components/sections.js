@@ -10,13 +10,19 @@ import { BRAND } from "../lib/site";
 // optimizer picks the smallest adequate source. They must be kept in step with
 // the grid breakpoints in globals.css.
 const SIZES = {
-  // 1.05fr of a 2-col 1240px grid above 880px, full width below.
-  heroScreen: "(max-width: 880px) calc(100vw - 48px), 560px",
+  // .95fr of a two-column grid (48px gap) inside a 1240px container, minus the
+  // 14px frame padding on each side. Caps at 515px once the container maxes out.
+  heroScreen:
+    "(max-width: 880px) calc(100vw - 76px), (max-width: 1288px) calc((100vw - 96px) * 0.475 - 28px), 515px",
   heroPhone: "118px",
-  // 1 / 2 / 3 columns at 640px and 980px inside a 1240px container.
-  feature: "(max-width: 640px) calc(100vw - 48px), (max-width: 980px) calc(50vw - 34px), 380px",
-  // Stacked below 820px, half of a 1180px container above.
-  contentRow: "(max-width: 820px) calc(100vw - 48px), 550px",
+  // 1 / 2 / 3 columns at 640px and 980px, 20px gaps, 1240px container.
+  // Settles at exactly 384px — a width the optimizer can serve verbatim.
+  feature:
+    "(max-width: 640px) calc(100vw - 48px), (max-width: 980px) calc((100vw - 68px) / 2), (max-width: 1288px) calc((100vw - 88px) / 3), 384px",
+  // Stacked below 820px, then two equal columns with a 48px gap in a 1180px
+  // container.
+  contentRow:
+    "(max-width: 820px) calc(100vw - 48px), (max-width: 1228px) calc((100vw - 96px) / 2), 542px",
 };
 
 export function SectionHead({ kicker, title, sub, as: H = "h2", wide, tight }) {
@@ -79,6 +85,7 @@ export function Hero({ t, locale }) {
               alt=""
               fill
               sizes={SIZES.heroScreen}
+              quality={50}
               priority
             />
             <div className="au-hero-screen-scrim" />
@@ -142,7 +149,7 @@ export function FeatureGrid({ items }) {
           {f.bg ? (
             <>
               <div className={`au-feat-art${f.bgContain ? " au-feat-art-contain" : ""}`}>
-                <Image src={f.bg} alt="" fill sizes={SIZES.feature} />
+                <Image src={f.bg} alt="" fill sizes={SIZES.feature} quality={40} />
               </div>
               <div className="au-feat-scrim" />
             </>

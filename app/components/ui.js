@@ -29,7 +29,7 @@ export function LogoMark() {
   return (
     <span className="au-logo-flag">
       <Image
-        src="/assets/logo-flag.jpg"
+        src="/assets/logo-flag.webp"
         alt=""
         width={44}
         height={28}

@@ -1,5 +1,6 @@
 import { locales, defaultLocale } from "./i18n/config";
 import { url } from "./lib/site";
+import { LOGO } from "./lib/schema";
 
 // Paths that exist under every locale, relative to /{locale}.
 // Each entry is emitted once per locale with hreflang alternates.
@@ -38,6 +39,10 @@ export default function sitemap() {
       changeFrequency,
       priority,
       alternates: alternatesFor(path),
+      // The logo listed on each locale home page, so crawlers discover the
+      // image itself. Note this helps image indexing — what identifies it as
+      // *the site logo* is Organization.logo in the JSON-LD.
+      ...(path ? {} : { images: [url(LOGO.path)] }),
     }))
   );
 }

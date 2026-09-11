@@ -4,6 +4,16 @@ import { siteUrl, url, BRAND } from "./site";
 
 const ORG_ID = `${siteUrl}/#organization`;
 const SITE_ID = `${siteUrl}/#website`;
+const LOGO_ID = `${siteUrl}/#logo`;
+
+// The site logo, as Google's Logo structured data expects it. Pointed at the
+// raw asset rather than an /_next/image URL so it is directly crawlable, and
+// well past the 112x112px minimum.
+export const LOGO = {
+  path: "assets/logo-flag.webp",
+  width: 800,
+  height: 505,
+};
 
 function bcp47(locale) {
   return locale === "sv" ? "sv-SE" : "en";
@@ -21,6 +31,16 @@ export function siteGraph({ locale, t }) {
         name: BRAND,
         url: siteUrl,
         description: t.meta.description,
+        logo: {
+          "@type": "ImageObject",
+          "@id": LOGO_ID,
+          url: url(LOGO.path),
+          contentUrl: url(LOGO.path),
+          width: LOGO.width,
+          height: LOGO.height,
+          caption: BRAND,
+        },
+        image: { "@id": LOGO_ID },
       },
       {
         "@type": "WebSite",

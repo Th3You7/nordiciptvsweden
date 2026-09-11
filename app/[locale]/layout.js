@@ -9,7 +9,7 @@ import { Reveal } from "../components/client/Reveal";
 import { SiteFooter } from "../components/sections";
 import { Icon } from "../components/ui";
 import { JsonLd } from "../components/JsonLd";
-import { siteGraph } from "../lib/schema";
+import { siteGraph, LOGO } from "../lib/schema";
 import { siteUrl, BRAND } from "../lib/site";
 import { WA_LINK } from "../lib/data";
 
@@ -58,11 +58,13 @@ export async function generateMetadata({ params }) {
       url: `/${locale}`,
       title: t.meta.title,
       description: t.meta.description,
+      images: [{ url: `/${LOGO.path}`, width: LOGO.width, height: LOGO.height, alt: BRAND }],
     },
     twitter: {
       card: "summary_large_image",
       title: t.meta.title,
       description: t.meta.description,
+      images: [`/${LOGO.path}`],
     },
   };
 }

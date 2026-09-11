@@ -95,6 +95,18 @@ function parsePrice(raw) {
   return m ? m[0].replace(",", ".") : null;
 }
 
+// The 7-day money-back guarantee the refund page actually states, in the shape
+// Google expects. `returnMethod` is deliberately absent: its enumeration
+// (ReturnByMail / ReturnInStore / ReturnAtKiosk) describes physical goods, and
+// none of it is true of a subscription delivered over the internet.
+const RETURN_POLICY = {
+  "@type": "MerchantReturnPolicy",
+  applicableCountry: "SE",
+  returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+  merchantReturnDays: 7,
+  returnFees: "https://schema.org/FreeReturn",
+};
+
 export function subscriptionProduct({ locale, t }) {
   const offers = t.pricing.plans
     .map((plan) => {
@@ -107,6 +119,8 @@ export function subscriptionProduct({ locale, t }) {
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
         url: url(`${locale}/pricing`),
+        seller: { "@id": ORG_ID },
+        hasMerchantReturnPolicy: RETURN_POLICY,
       };
     })
     .filter(Boolean);
@@ -118,6 +132,9 @@ export function subscriptionProduct({ locale, t }) {
     description: t.pricing.sub,
     brand: { "@type": "Brand", name: BRAND },
     category: "IPTV streaming subscription",
+    // Required by Google for Product. A subscription has no physical form, so
+    // the brand mark stands in for it — a crawlable URL to the raw asset.
+    image: [url(LOGO.path)],
     offers,
   };
 }

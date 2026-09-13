@@ -19,3 +19,19 @@ export function localeAlternates(locale, path = "") {
 
   return { canonical: `/${locale}${seg}`, languages };
 }
+
+// Canonical + hreflang for a blog post. Unlike the static pages, a post does
+// not have to exist in every locale, so the alternates list only the locales it
+// was published in — and a single-locale post gets none, rather than pointing
+// search engines at a translation that 404s.
+export function postAlternates(locale, slug, publishedLocales) {
+  const seg = `/blog/${slug}`;
+  const result = { canonical: `/${locale}${seg}` };
+  if (publishedLocales.length < 2) return result;
+
+  const languages = {};
+  for (const l of publishedLocales) languages[l] = `/${l}${seg}`;
+  const fallback = publishedLocales.includes(defaultLocale) ? defaultLocale : publishedLocales[0];
+  languages["x-default"] = `/${fallback}${seg}`;
+  return { ...result, languages };
+}

@@ -314,18 +314,37 @@ export function PricingCards({ t, locale, compact }) {
   );
 }
 
-export function BlogCards({ posts, locale }) {
+// Cards take either a real post (it has a slug, so it links to the post and may
+// carry a hero image) or a catalog teaser (no slug — it links to the blog index
+// and shows the striped placeholder).
+function PostArt({ image, sizes }) {
+  if (image) return <Image src={image} alt="" fill sizes={sizes} />;
+  return (
+    <>
+      <div className="au-post-art-glow" />
+      <span className="au-post-art-l">FEATURED · 16:9</span>
+    </>
+  );
+}
+
+const CARD_SIZES =
+  "(max-width: 640px) calc(100vw - 48px), (max-width: 1288px) calc((100vw - 88px) / 3), 384px";
+
+export function BlogCards({ posts, locale, sizes = CARD_SIZES }) {
   return (
     <div className="au-grid au-grid-blog">
       {posts.map((b) => (
-        <article key={b.title}>
-          <Link href={`/${locale}/blog`} className="au-post" data-reveal="1">
+        <article key={b.slug || b.title}>
+          <Link
+            href={b.slug ? `/${locale}/blog/${b.slug}` : `/${locale}/blog`}
+            className="au-post"
+            data-reveal="1"
+          >
             <div className="au-post-art">
-              <div className="au-post-art-glow" />
-              <span className="au-post-art-l">FEATURED · 16:9</span>
+              <PostArt image={b.image} sizes={sizes} />
             </div>
             <div className="au-post-body">
-              <span className="au-post-tag">{b.tag}</span>
+              {b.tag ? <span className="au-post-tag">{b.tag}</span> : null}
               <h3 className="au-post-h">{b.title}</h3>
               <p className="au-post-x">{b.excerpt}</p>
               <div className="au-post-meta">
@@ -341,27 +360,37 @@ export function BlogCards({ posts, locale }) {
   );
 }
 
-export function BlogList({ posts }) {
+export function BlogList({ posts, locale }) {
   return (
     <div className="au-post-list">
-      {posts.map((b) => (
-        <article key={b.title} className="au-post-wide" data-reveal="1">
-          <div className="au-post-wide-art">
-            <div className="au-post-art-glow" />
-            <span className="au-post-art-l">FEATURED · 16:9</span>
-          </div>
-          <div className="au-post-wide-body">
-            <span className="au-post-tag">{b.tag}</span>
-            <h2 className="au-post-wide-h">{b.title}</h2>
-            <p className="au-post-wide-x">{b.excerpt}</p>
-            <div className="au-post-meta" style={{ marginTop: 0, fontSize: "13px" }}>
-              <span>{b.date}</span>
-              <span>·</span>
-              <span>{b.read}</span>
+      {posts.map((b) => {
+        const inner = (
+          <>
+            <div className="au-post-wide-art">
+              <PostArt image={b.image} sizes="(max-width: 760px) calc(100vw - 48px), 300px" />
             </div>
-          </div>
-        </article>
-      ))}
+            <div className="au-post-wide-body">
+              {b.tag ? <span className="au-post-tag">{b.tag}</span> : null}
+              <h2 className="au-post-wide-h">{b.title}</h2>
+              <p className="au-post-wide-x">{b.excerpt}</p>
+              <div className="au-post-meta" style={{ marginTop: 0, fontSize: "13px" }}>
+                <span>{b.date}</span>
+                <span>·</span>
+                <span>{b.read}</span>
+              </div>
+            </div>
+          </>
+        );
+        return b.slug ? (
+          <Link key={b.slug} href={`/${locale}/blog/${b.slug}`} className="au-post-wide" data-reveal="1">
+            {inner}
+          </Link>
+        ) : (
+          <article key={b.title} className="au-post-wide" data-reveal="1">
+            {inner}
+          </article>
+        );
+      })}
     </div>
   );
 }

@@ -664,5 +664,13 @@
         "p": "Denna garanti erbjuds utöver, och begränsar inte, de rättigheter du har enligt tvingande konsumentlagstiftning i ditt hemland."
       }
     ]
+  },
+  "blogPost": {
+    "breadcrumbLabel": "Brödsmulor",
+    "minRead": "min läsning",
+    "updated": "Uppdaterad",
+    "faqTitle": "Vanliga frågor",
+    "ctaTitle": "Redo att börja titta?",
+    "relatedTitle": "Läs också"
   }
 }

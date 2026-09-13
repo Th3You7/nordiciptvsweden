@@ -664,5 +664,13 @@
         "p": "This guarantee is offered in addition to, and does not limit, any rights you have under mandatory consumer law in your country of residence."
       }
     ]
+  },
+  "blogPost": {
+    "breadcrumbLabel": "Breadcrumb",
+    "minRead": "min read",
+    "updated": "Updated",
+    "faqTitle": "Frequently asked questions",
+    "ctaTitle": "Ready to start watching?",
+    "relatedTitle": "Keep reading"
   }
 }

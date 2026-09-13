@@ -88,6 +88,54 @@ export function faqPage({ items }) {
   };
 }
 
+// One blog post. The image is the post's own hero, or the logo when it has none,
+// so the required field is never empty.
+export function blogPosting({ locale, post }) {
+  const pageUrl = url(`${locale}/blog/${post.slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    url: pageUrl,
+    mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+    datePublished: post.date || undefined,
+    dateModified: post.updateDate || post.date || undefined,
+    inLanguage: bcp47(locale),
+    image: [url(post.image || LOGO.path)],
+    author: { "@type": "Organization", name: post.author || BRAND, url: siteUrl },
+    publisher: { "@id": ORG_ID },
+    keywords: post.tags.length ? post.tags.join(", ") : undefined,
+  };
+}
+
+// Home > Blog > {post}
+export function blogPostBreadcrumb({ locale, t, post }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: t.nav.home, item: url(locale) },
+      { "@type": "ListItem", position: 2, name: t.nav.blog, item: url(`${locale}/blog`) },
+      { "@type": "ListItem", position: 3, name: post.title, item: url(`${locale}/blog/${post.slug}`) },
+    ],
+  };
+}
+
+// The blog index. Only emitted once real posts exist — never for teaser cards.
+export function blogItemList({ locale, posts }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: posts.map((post, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: post.title,
+      url: url(`${locale}/blog/${post.slug}`),
+    })),
+  };
+}
+
 // "€15" -> "15". Returns null if a plan price is not parseable, so a bad value
 // drops the offer rather than emitting a malformed price.
 function parsePrice(raw) {

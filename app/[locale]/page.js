@@ -18,6 +18,7 @@ import {
   CtaBanner,
 } from "../components/sections";
 import { Icon } from "../components/ui";
+import { getFeaturedPosts, postCard } from "../lib/blog";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -28,6 +29,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   return { alternates: localeAlternates(locale) };
+}
+
+// Real posts once any exist in this locale — featured first, topped up with the
+// newest. Until then the catalog's teaser cards fill the section.
+async function homeBlogCards(locale, t) {
+  const posts = await getFeaturedPosts(locale, 3);
+  return posts.length ? posts.map((p) => postCard(p, locale, t.blogPost.minRead)) : t.blog.posts.slice(0, 3);
 }
 
 export default async function HomePage({ params }) {
@@ -89,7 +97,7 @@ export default async function HomePage({ params }) {
 
       <section className="au-sec">
         <SectionHead kicker={t.blog.kicker} title={t.blog.title} sub={t.blog.sub} wide />
-        <BlogCards posts={t.blog.posts.slice(0, 3)} locale={locale} />
+        <BlogCards posts={await homeBlogCards(locale, t)} locale={locale} />
         <div style={{ textAlign: "center", margin: "38px 0 0" }} data-reveal="1">
           <Link href={`/${locale}/blog`} className="au-btn au-btn-outline au-btn-md">
             {t.blog.readAll}

@@ -99,8 +99,9 @@ for (const post of posts) {
   if (data.image) {
     if (!existsSync(join(PUBLIC_DIR, String(data.image)))) error(file, `image ${data.image} does not exist in public/`);
     if (!String(data.image).startsWith("/assets/blog/")) warn(file, `image should live under /assets/blog/`);
+    if (!data.imageAlt) warn(file, "add imageAlt: — it describes the hero banner shown above the title");
   } else {
-    warn(file, "no image — the social card falls back to the logo");
+    warn(file, "no image — no hero banner, and the social card falls back to the logo");
   }
 
   // body structure
@@ -116,8 +117,11 @@ for (const post of posts) {
     warn(file, "hand-written FAQ heading — the FAQ is rendered from frontmatter, so this duplicates it");
   }
 
-  const firstLine = lines.find((l) => l.trim());
-  if (!firstLine?.startsWith("![")) warn(file, "the hero image should be the first line of the body");
+  // The hero is rendered above the title from `image:`, so repeating it in the
+  // body shows the same picture twice.
+  if (data.image && prose.includes(`](${data.image})`)) {
+    warn(file, "the hero image is also in the body — it is already shown above the title from image:, remove it here");
+  }
 
   const words = prose
     .replace(/\[\[wa:[^\]]*\]\]/g, "")
@@ -168,7 +172,7 @@ for (const post of posts) {
   if (internal < RULES.internalLinksMin || internal > RULES.internalLinksMax) {
     warn(file, `${internal} internal links (target ${RULES.internalLinksMin}–${RULES.internalLinksMax})`);
   }
-  if (images !== RULES.images) warn(file, `${images} images (target ${RULES.images}: hero + 2 in-body)`);
+  if (images !== RULES.bodyImages) warn(file, `${images} in-body images (target ${RULES.bodyImages} — the hero comes from image:)`);
 
   // WhatsApp CTAs
   const ctaLines = [];

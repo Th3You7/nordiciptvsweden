@@ -46,9 +46,9 @@ Two sites operated by the same business, with near-identical brand names (`Nordi
 
 **Never contradict these numbers in an article.** They appear on the pricing page, in FAQ schema and in `Offer` data; a post quoting a different channel count or device limit creates an inconsistency that Google and customers both notice.
 
-Two open inconsistencies to resolve **before** the first post, because articles will repeat whichever claim you pick:
+Two claims articles repeat — write them exactly this way:
 
-- 🟠 **4K vs 8K.** The hero says "äkta 8K-skärpa"; the meta title, features, pricing, FAQ and Terms all say 4K. Until that is settled, articles say **4K**.
+- ✅ **Resolution: `8K / 4K Ultra HD ready`.** Standardised on 2026-09-15 across the meta title, hero, features, pricing and the articles. Use that exact wording. Speed guidance stays 15 Mbit/s HD · 25 Mbit/s 4K — there is no published 8K speed figure, so don't invent one.
 - 🟠 **EUR on a Swedish site.** Prices are in euros; Swedish readers think in kronor. Don't quote SEK conversions — the rate moves and a stale conversion is a pricing claim. Write "15 €" and nothing more.
 
 ### 1.2 Real routes — the only internal link targets that exist
@@ -114,8 +114,8 @@ Pipeline: `remark → remark-gfm → remark-html`, then heading ids, image optim
 | 3 | Heading anchors | ✅ done |
 | 4 | Pre-publish validation | ✅ `check:blog` in `verify` |
 | 5 | **Teaser fallback.** `/blog` and the home page show the four invented posts from `blog.posts` until real posts exist | 🟠 **Delete `blog.posts` from both catalogs once 3 real posts per locale are live** |
-| 6 | **4K vs 8K** claim (§1.1) | 🟠 resolve before publishing |
-| 7 | **Operator placeholder** on Terms/Privacy/Refund (`[add registered company name…]`) | 🟠 fix before any trust or legality post links to those pages |
+| 6 | 4K vs 8K claim (§1.1) | ✅ standardised to `8K / 4K Ultra HD ready` (2026-09-15) |
+| 7 | Operator placeholder on Terms/Privacy/Refund | ✅ replaced 2026-09-15 with "Digital Product & Support Provider". By the owner's decision no company name, address or registration number is published — note that the legality checklist in `iptv-nordic` still tells readers to look for those details |
 | 8 | **No analytics.** There is no GA4 or any tracking — §16 cannot be measured | 🟠 add GA4 + a WhatsApp outbound-click event before publishing |
 | 9 | **Default social image** is the flag logo; posts without `image:` share it | 🟡 a branded 1200×630 card would convert better |
 | 10 | `public/assets/blog/` doesn't exist yet | 🟡 created by the first post's images |
@@ -330,6 +330,7 @@ date: "2026-09-15"
 updateDate: "2026-09-15"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-sverige-hero.webp"
+imageAlt: "IPTV i Sverige – smart-tv i ett vardagsrum en kväll"
 tags: ["IPTV-guider", "pris", "jämförelse", "nybörjare"]
 featured: true
 faq:
@@ -353,7 +354,8 @@ faq:
 | `date` | quoted `"YYYY-MM-DD"` | ✅ format |
 | `updateDate` | bump on every real edit; drives `dateModified` and `<lastmod>`; never earlier than `date` | ✅ |
 | `author` | `"IPTV NORDIC"` — schema types it as an Organization. No invented personas. | |
-| `image` | `/assets/blog/{slug}-hero.webp`, 1200×630; must exist | ✅ exists |
+| `image` | `/assets/blog/{slug}-hero.webp`, 16:9. Shown as the **hero banner above the title** and used as the social card; must exist | ✅ exists |
+| `imageAlt` | describes the hero picture, in the post's language | ⚠️ warns if missing |
 | `tags` | 2–4, first from §7 | ✅ |
 | `featured` | max 3 per locale | ✅ |
 | `faq` | **5–8 items, mandatory.** Plain text; 40–70 words; answer in the first sentence. The only source of `FAQPage` schema. | ✅ count + plain text |
@@ -361,8 +363,6 @@ faq:
 ### 9.2 Body template
 
 ````markdown
-![IPTV i Sverige — smart-tv i ett vardagsrum](/assets/blog/iptv-sverige-hero.webp)
-
 Inledning med huvudsökordet inom de första 100 orden. Säg direkt vilken fråga
 artikeln besvarar. 2–4 meningar, ingen säljsnack.
 
@@ -389,7 +389,7 @@ Sammanfattning och ett tydligt nästa steg: [börja med en gratis testperiod](/s
 eller [jämför paketen](/sv/pricing).
 ````
 
-The FAQ block, the closing CTA and "Läs också" render automatically. **Don't write them into the body** — the checker warns on a hand-written FAQ heading.
+The hero banner (from `image:`), the FAQ block, the closing CTA and "Läs också" render automatically. **Don't write them into the body** — the checker warns on a hand-written FAQ heading.
 
 ### 9.3 Structural rules
 
@@ -399,7 +399,7 @@ The FAQ block, the closing CTA and "Läs också" render automatically. **Don't w
 | Raw HTML | **Never** — stripped silently | ✅ fails |
 | Table of contents | **Optional** on posts over ~2 500 words. Headings have ids, so link as `[Pris](#vad-kostar-iptv)` — the id is the heading, lower-cased, å/ä/ö folded to a/a/o, spaces to hyphens. | |
 | H2 | 6–12. Keyword family in ≥2. Question-form works well. | ⚠️ warns under 6 |
-| Hero | the first line of the body | ⚠️ warns |
+| Hero | **not in the body** — set `image:` and `imageAlt:`; the page shows it as a banner above the title | ⚠️ warns if repeated in the body |
 | Tables | ≥1 wherever the topic allows | |
 | Lists | yes, but under ~30% of the article | |
 | Conclusion | summary + one next step to `/pricing` or `/contact` | |
@@ -420,15 +420,15 @@ Swedish is somewhat more compact than English, so its bands sit a little lower.
 
 ### 9.5 Images and inline CTAs
 
-**Three images per article** — hero plus two in-body.
+**Three images per article** — the hero banner (from `image:`) plus two in-body. The site owner creates the images; the article author supplies prompts for them.
 
 | Slot | Path | Size | Placement |
 |---|---|---|---|
-| Hero | `/assets/blog/{slug}-hero.webp` | 1200×630 | First line of the body; also `image:` |
+| Hero | `/assets/blog/{slug}-hero.webp` | 16:9, 1600 px wide or more | `image:` + `imageAlt:` only — shown as a banner above the title, cropped to 2:1 on desktop, so keep the subject centred |
 | Context 1 | `/assets/blog/{slug}-{topic}.webp` | 1200×675 (16:9) | After the first explanatory section |
 | Context 2 | `/assets/blog/{slug}-{topic}.webp` | 1200×675 (16:9) | In the practical half |
 
-WebP, under ~250 KB, alt text that describes the image and contains the keyword naturally. No decorative stock. The engine serves each through the image optimizer at 640–1200 px, so export at 1200 wide.
+WebP, under ~250 KB, alt text that describes the image and contains the keyword naturally. No decorative stock. Everything is served through the image optimizer, so export at least 1200 px wide (1600 px or more for the hero).
 
 **Inline WhatsApp CTAs — `[[wa:Label|note]]`**, on a line of its own:
 
@@ -465,6 +465,8 @@ Every CTA opens WhatsApp with *"Hej! Jag läste er guide och vill veta mer om IP
 | **Total** | **8–14** | never the same anchor text twice |
 
 `check:blog` warns outside 8–14 and on repeated anchor text.
+
+**Before the pillars exist.** The first published pair (`iptv-nordic`, sv + en) has no pillar or sibling to link to, so it links to `/pricing`, `/contact` and the home page (`/{lang}`) instead. From the next post on, include the pillar links above.
 
 ### 10.2 Link format
 
@@ -537,8 +539,8 @@ Maintenance: bump `updateDate`, refresh the year in `title`/`excerpt`, re-verify
 Cadence: **2 posts a week**, Swedish-weighted. Never publish a post that fails `check:blog`.
 
 ### Week 0 — before any content
-- [ ] Resolve 4K vs 8K (§1.1)
-- [ ] Fill the operator placeholder on the legal pages
+- [x] Resolve 4K vs 8K (§1.1) — `8K / 4K Ultra HD ready`
+- [x] Fill the operator placeholder on the legal pages — provider wording, no company details
 - [ ] Add GA4 and a WhatsApp outbound-click event (§16)
 - [ ] Decide `en` vs `en-SE` hreflang (§4)
 - [ ] Search Console verified for `https://www.nordiciptvsweden.com`
@@ -584,7 +586,7 @@ Deferred to day 91+: `C6` M3U/Xtream · `E1` jul och vinter *(time to December)*
 - ✅ no raw HTML
 - ✅ ≥900 words
 - ⚠️ 6+ H2s
-- ⚠️ hero is the first line
+- ⚠️ hero set with `image:` + `imageAlt:`, not repeated in the body
 - ⚠️ no hand-written FAQ section
 - [ ] keyword family in the first 100 words and ≥2 H2s
 - [ ] ≥1 comparison table where the topic allows
@@ -595,7 +597,7 @@ Deferred to day 91+: `C6` M3U/Xtream · `E1` jul och vinter *(time to December)*
 
 **Images & CTAs**
 - ✅ every image path exists
-- ⚠️ 3 images
+- ⚠️ 2 in-body images (plus the hero banner)
 - ⚠️ 5 `[[wa:…]]` shortcodes, labels and notes all different, none adjacent
 - [ ] notes consistent with §1.1
 

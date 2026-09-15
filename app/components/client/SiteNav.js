@@ -33,7 +33,7 @@ const MORE = [
 // `nav` is only the t.nav sub-object and `legal` only the three short labels:
 // passing the whole catalog would serialize every FAQ answer and pricing plan
 // into the client payload of every page.
-export function SiteNav({ locale, nav, legal }) {
+export function SiteNav({ locale, nav, legal, blogLocales }) {
   const [open, setOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const pathname = usePathname();
@@ -174,7 +174,7 @@ export function SiteNav({ locale, nav, legal }) {
         </div>
 
         <div className="au-nav-actions">
-          <LanguageSwitcher locale={locale} />
+          <LanguageSwitcher locale={locale} blogLocales={blogLocales} />
           {/* Always on the bar, beside the language switcher: opens WhatsApp.
               Icon-only on narrow screens, full label from 1200px. */}
           <a

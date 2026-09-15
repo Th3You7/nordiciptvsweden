@@ -41,6 +41,6 @@ export const RULES = {
   waCtas: 5,
   internalLinksMin: 8,
   internalLinksMax: 14,
-  images: 3,
+  bodyImages: 2, // plus the hero banner, which comes from the image: field
   wordsFloor: 900,
 };

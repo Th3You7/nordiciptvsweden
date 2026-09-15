@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "IPTV NORDIC — Premium IPTV-streaming i 4K",
-    "description": "Premium-IPTV med äkta 4K-skärpa, direkt aktivering och ett bibliotek som aldrig sover — 18 000+ livekanaler på alla enheter.",
+    "title": "IPTV NORDIC — Premium IPTV-streaming, 8K / 4K Ultra HD ready",
+    "description": "Premium-IPTV i 8K / 4K Ultra HD ready, med direkt aktivering och ett bibliotek som aldrig sover — 18 000+ livekanaler på alla enheter.",
     "ogLocale": "sv_SE",
     "langName": "Svenska"
   },
@@ -19,7 +19,7 @@
   "hero": {
     "badge": "Liveservrar online just nu",
     "title": "Nordens ultimata streamingupplevelse — Alla enheter, när som helst, inga kompromisser",
-    "sub": "Premium-IPTV med äkta 8K-skärpa, direkt aktivering och ett bibliotek som aldrig sover — streaming, perfektionerad.",
+    "sub": "Premium-IPTV i 8K / 4K Ultra HD ready, med direkt aktivering och ett bibliotek som aldrig sover — streaming, perfektionerad.",
     "cta1": "Starta gratis testperiod",
     "cta2": "Se abonnemang"
   },
@@ -69,8 +69,8 @@
       {
         "icon": "tv",
         "bg": "/assets/4k-bg.jpg",
-        "title": "Ultra HD 4K",
-        "desc": "Kristallklara 4K- och FHD-streams på alla titlar som stöds."
+        "title": "8K / 4K Ultra HD ready",
+        "desc": "Kristallklara streams i 8K / 4K Ultra HD ready och FHD på alla titlar som stöds."
       },
       {
         "icon": "phone",
@@ -203,7 +203,7 @@
   "content": {
     "kicker": "Innehåll och kanaler",
     "title": "Sport, serier och mer — allt på ett ställe",
-    "sub": "IPTV NORDIC ger dig live-TV, filmer och sport i skarp HD och 4K. Ett abonnemang, alla enheter. Utforska tjänsten, se abonnemangen eller hör av dig.",
+    "sub": "IPTV NORDIC ger dig live-TV, filmer och sport i skarp HD och 8K / 4K Ultra HD ready. Ett abonnemang, alla enheter. Utforska tjänsten, se abonnemangen eller hör av dig.",
     "rows": [
       {
         "icon": "trophy",
@@ -258,7 +258,7 @@
   },
   "cta": {
     "title": "Redo att börja titta?",
-    "sub": "Gå med tusentals tittare som streamar i fantastisk 4K redan idag."
+    "sub": "Gå med tusentals tittare som streamar i 8K / 4K Ultra HD ready redan idag."
   },
   "pricing": {
     "kicker": "Abonnemang",
@@ -276,7 +276,7 @@
         "features": [
           "18 000+ livekanaler",
           "40 000+ filmer och 12 000+ serier",
-          "4K / FHD där det finns",
+          "8K / 4K Ultra HD ready, FHD där det finns",
           "2 enheter samtidigt",
           "Inga hack, ingen buffring",
           "Direkt aktivering på 60 sekunder",
@@ -295,7 +295,7 @@
           "Allt i 1 månad",
           "18 000+ livekanaler",
           "40 000+ filmer och 12 000+ serier",
-          "4K / FHD där det finns",
+          "8K / 4K Ultra HD ready, FHD där det finns",
           "3 enheter samtidigt",
           "Prioriterade streamingservrar",
           "Krypterad, privat uppspelning",
@@ -313,7 +313,7 @@
           "Allt i 3 månader",
           "18 000+ livekanaler",
           "40 000+ filmer och 12 000+ serier",
-          "4K / FHD där det finns",
+          "8K / 4K Ultra HD ready, FHD där det finns",
           "4 enheter samtidigt",
           "VIP-kö till supporten",
           "Tidig tillgång till nytt innehåll",
@@ -332,9 +332,9 @@
           "Allt i 6 månader",
           "18 000+ livekanaler",
           "40 000+ filmer och 12 000+ serier",
-          "4K / FHD i bästa kvalitet",
+          "8K / 4K Ultra HD ready i bästa kvalitet",
           "5 enheter samtidigt",
-          "Högst prioriterade 4K-servrar",
+          "Högst prioriterade 8K/4K-servrar",
           "Egen kontaktperson",
           "2 månader gratis mot månadsvis",
           "Krypterad, privat uppspelning",
@@ -527,9 +527,9 @@
   },
   "legal": {
     "updatedLabel": "Senast uppdaterad",
-    "updatedDate": "2026-09-08",
-    "operatorLabel": "Operatör",
-    "operator": "IPTV NORDIC — [fyll i registrerat företagsnamn, registrerad adress och organisationsnummer]",
+    "updatedDate": "2026-09-15",
+    "operatorLabel": "Leverantör",
+    "operator": "IPTV NORDIC — leverantör av digital produkt och support. Beställning, kundkontakt och support sker via WhatsApp.",
     "contactCta": "Kontakta oss på WhatsApp"
   },
   "terms": {
@@ -538,8 +538,8 @@
     "intro": "Dessa villkor gäller för din användning av IPTV NORDIC. Genom att teckna ett abonnemang godkänner du dem, så läs dem gärna innan du beställer.",
     "sections": [
       {
-        "h": "1. Vad tjänsten är",
-        "p": "IPTV NORDIC ger tillgång till en internetbaserad TV-tjänst. Efter betalning får du personliga inloggningsuppgifter som fungerar i vanliga IPTV-spelarappar på dina egna enheter. Ingen parabol, kabelanslutning eller digitalbox levereras eller krävs."
+        "h": "1. Leverantör och tjänst",
+        "p": "IPTV NORDIC är en leverantör av digital produkt och support. Den digitala produkten är tillgång till en internetbaserad TV-tjänst, och supporten ges via WhatsApp. Efter betalning får du personliga inloggningsuppgifter som fungerar i vanliga IPTV-spelarappar på dina egna enheter. Ingen parabol, kabelanslutning eller digitalbox levereras eller krävs."
       },
       {
         "h": "2. Oberoende plattform",
@@ -575,7 +575,7 @@
       },
       {
         "h": "10. Ångerrätt och återbetalning",
-        "p": "Alla abonnemang omfattas av 7 dagars pengarna-tillbaka-garanti. De fullständiga villkoren framgår av vår Återbetalningspolicy, som utgör en del av dessa villkor."
+        "p": "Alla abonnemang omfattas av 7 dagars pengarna-tillbaka-garanti. Garantin gäller utöver, och begränsar inte, den lagstadgade ångerrätt du kan ha vid distansköp. De fullständiga villkoren framgår av vår Återbetalningspolicy, som utgör en del av dessa villkor."
       },
       {
         "h": "11. Ansvar",
@@ -594,7 +594,7 @@
     "sections": [
       {
         "h": "1. Vem är ansvarig",
-        "p": "Operatören som anges ovan är personuppgiftsansvarig för de personuppgifter som beskrivs i denna policy. Du kan nå oss på WhatsApp med alla frågor om integritet."
+        "p": "IPTV NORDIC, leverantören som anges ovan, är personuppgiftsansvarig för de personuppgifter som beskrivs i denna policy. Du kan nå oss på WhatsApp med alla frågor om integritet."
       },
       {
         "h": "2. Vad vi samlar in",

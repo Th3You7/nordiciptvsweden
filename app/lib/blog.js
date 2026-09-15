@@ -81,6 +81,7 @@ function toMeta(slug, locale, data, content) {
     updateDate: isoDate(data.updateDate) || undefined,
     author: data.author ? String(data.author) : undefined,
     image: data.image ? String(data.image) : undefined,
+    imageAlt: data.imageAlt ? String(data.imageAlt) : undefined,
     tags: toArray(data.tags),
     featured: Boolean(data.featured),
     readingMinutes: readingMinutes(content),
@@ -103,6 +104,14 @@ export function getPostSlugsForLocale(locale) {
   return listFiles()
     .filter((p) => p.locale === locale)
     .map((p) => p.slug);
+}
+
+/** slug -> the locales it exists in. Passed to the language switcher, which runs
+ *  on the client and cannot read content/blog itself. */
+export function getBlogLocaleMap() {
+  const map = {};
+  for (const { slug, locale } of listFiles()) (map[slug] ||= []).push(locale);
+  return map;
 }
 
 /** The locales this slug has actually been published in. */
@@ -164,22 +173,20 @@ function optimized(src, width) {
   return `/_next/image?url=${encodeURIComponent(src)}&amp;w=${width}&amp;q=75`;
 }
 
-// The strategy fixes the ratios: the first image is the 1200x630 hero, the
-// rest are 16:9. Declaring them up front reserves space and prevents layout
-// shift; CSS keeps height:auto, so a file that deviates still renders true.
+// In-body images only. The hero is rendered by the post page from the `image`
+// frontmatter field, as a banner above the title, so nothing here is treated as
+// a hero. Body images are 16:9 by the strategy: the dimensions reserve space and
+// prevent layout shift, and CSS keeps height:auto so a file that deviates still
+// renders true.
 function optimizeImages(html) {
-  let index = 0;
   return html.replace(/<img\s+([^>]*?)\s*\/?>/g, (match, attrs) => {
     const src = /src="([^"]+)"/.exec(attrs)?.[1];
     if (!src || !src.startsWith("/")) return match;
     const alt = /alt="([^"]*)"/.exec(attrs)?.[1] ?? "";
-    const hero = index === 0;
-    index += 1;
     const srcset = IMAGE_WIDTHS.map((w) => `${optimized(src, w)} ${w}w`).join(", ");
-    const loading = hero ? 'fetchpriority="high"' : 'loading="lazy"';
     return (
       `<img src="${optimized(src, 1200)}" srcset="${srcset}" sizes="${IMAGE_SIZES}" ` +
-      `alt="${alt}" width="1200" height="${hero ? 630 : 675}" ${loading} decoding="async">`
+      `alt="${alt}" width="1200" height="675" loading="lazy" decoding="async">`
     );
   });
 }

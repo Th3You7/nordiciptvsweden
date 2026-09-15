@@ -362,6 +362,14 @@ a:hover{color:var(--accent2)}
 
 /* ── Article ───────────────────────────────────────────────────────────── */
 .au-article{max-width:820px;margin:0 auto;padding:clamp(40px,6vw,72px) 24px clamp(48px,7vw,90px)}
+/* Hero banner above the article, from the post's `image` field. Wider than the
+   820px text column so it reads as a banner: 16:9 on phones, cropped to 2:1
+   from 880px so the title stays close to the fold. */
+.au-article-hero-wrap{max-width:1104px;margin:0 auto;padding:clamp(20px,3vw,36px) 24px 0}
+.au-article-hero{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--border);border-radius:22px;background:var(--bg2);box-shadow:var(--shadow)}
+.au-article-hero img{object-fit:cover}
+@media (min-width:880px){.au-article-hero{aspect-ratio:2/1}}
+.au-article-has-hero{padding-top:clamp(24px,3.5vw,40px)}
 .au-crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:26px;font-size:13.5px;color:var(--text2)}
 .au-crumbs a{color:var(--text2)}
 .au-crumbs a:hover{color:var(--accent)}

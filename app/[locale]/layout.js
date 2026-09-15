@@ -12,6 +12,7 @@ import { JsonLd } from "../components/JsonLd";
 import { siteGraph, LOGO } from "../lib/schema";
 import { siteUrl, BRAND } from "../lib/site";
 import { WA_LINK } from "../lib/data";
+import { getBlogLocaleMap } from "../lib/blog";
 
 // Self-hosted at build time and served from our own origin — no request to
 // fonts.googleapis.com, no render-blocking stylesheet, no third-party origin
@@ -96,6 +97,7 @@ export default async function LocaleLayout({ children, params }) {
           <SiteNav
             locale={locale}
             nav={t.nav}
+            blogLocales={getBlogLocaleMap()}
             legal={{
               terms: t.footer.cols.terms,
               privacy: t.footer.cols.privacy,

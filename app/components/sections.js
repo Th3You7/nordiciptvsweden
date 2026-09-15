@@ -111,7 +111,7 @@ export function Hero({ t, locale }) {
                   color: "var(--text)",
                 }}
               >
-                ULTRA HD · 4K
+                8K / 4K ULTRA HD READY
               </span>
             </div>
           </div>

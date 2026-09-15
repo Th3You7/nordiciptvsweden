@@ -18,7 +18,8 @@ excerpt: "Under 155 tecken. Det här är både metabeskrivningen och korttexten.
 date: "2026-09-15"          # quoted YYYY-MM-DD
 updateDate: "2026-09-15"    # bump on every real edit — drives dateModified and sitemap lastmod
 author: "IPTV NORDIC"
-image: "/assets/blog/iptv-sverige-hero.webp"   # 1200×630, must exist
+image: "/assets/blog/iptv-sverige-hero.webp"   # 16:9 hero banner above the title, must exist
+imageAlt: "Beskrivning av bilden"                  # describes the hero, in the post's language
 tags: ["IPTV-guider", "pris", "jämförelse"]    # 2–4; the first from the cluster list
 featured: false             # max 3 per language
 faq:                        # 5–8, plain text — becomes the FAQ block and FAQPage schema
@@ -36,6 +37,7 @@ Cluster tags (`tags[0]`) are defined in [app/lib/blog-taxonomy.js](../../app/lib
 - Internal links use this file's locale: `/sv/…` in `.sv.md`, `/en/…` in `.en.md`, and must point at a page or post that exists.
 - Every image path must exist under `public/`.
 - At least 900 words.
+- Don't put the hero picture in the body — it's shown above the title from `image:`.
 
 ## Inline WhatsApp buttons
 
@@ -45,5 +47,5 @@ On a line of its own:
 [[wa:Testa gratis|Se kvaliteten på din egen enhet innan du betalar.]]
 ```
 
-Five per post, every label and note different. The FAQ block, the closing
+Five per post, every label and note different. The hero banner, the FAQ block, the closing
 CTA and "Läs också" render automatically — don't write them into the body.

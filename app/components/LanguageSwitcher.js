@@ -6,20 +6,26 @@ import { useState } from "react";
 import { Icon } from "./ui";
 import { locales, localeLabels, localeNames } from "../i18n/config";
 
-// Swaps the leading locale segment and keeps everything after it, so this keeps
-// working unchanged once the views become real routes (/en/pricing -> /sv/pricing).
-function swapLocale(pathname, from, to) {
+// Swaps the leading locale segment and keeps the rest of the path
+// (/en/pricing -> /sv/pricing). Blog posts are the exception: a post need not
+// exist in every language, so when the other language has no translation the
+// link goes to that language's blog index instead of a URL that 404s.
+function swapLocale(pathname, from, to, blogLocales) {
   if (!pathname) return `/${to}`;
   if (pathname === `/${from}`) return `/${to}`;
-  if (pathname.startsWith(`/${from}/`)) return `/${to}${pathname.slice(from.length + 1)}`;
-  return `/${to}`;
+  if (!pathname.startsWith(`/${from}/`)) return `/${to}`;
+
+  const rest = pathname.slice(from.length + 1);
+  const post = /^\/blog\/([^/]+)\/?$/.exec(rest);
+  if (post && !(blogLocales[post[1]] || []).includes(to)) return `/${to}/blog`;
+  return `/${to}${rest}`;
 }
 
-export function LanguageSwitcher({ locale }) {
+export function LanguageSwitcher({ locale, blogLocales = {} }) {
   const pathname = usePathname();
   const [hover, setHover] = useState(false);
   const other = locales.find((l) => l !== locale) ?? locale;
-  const href = swapLocale(pathname, locale, other);
+  const href = swapLocale(pathname, locale, other, blogLocales);
 
   return (
     <Link

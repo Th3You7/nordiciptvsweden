@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "IPTV NORDIC — Premium IPTV Streaming in 4K",
-    "description": "Premium IPTV with true 4K clarity, instant activation and a library that never sleeps — 18,000+ live channels on every device.",
+    "title": "IPTV NORDIC — Premium IPTV Streaming, 8K / 4K Ultra HD ready",
+    "description": "Premium IPTV, 8K / 4K Ultra HD ready, with instant activation and a library that never sleeps — 18,000+ live channels on every device.",
     "ogLocale": "en_US",
     "langName": "English"
   },
@@ -19,7 +19,7 @@
   "hero": {
     "badge": "Live servers online now",
     "title": "Nordic's ultimate streaming experience — Any device, anytime, zero compromises",
-    "sub": "Premium IPTV with true 8K clarity, instant activation and a library that never sleeps — streaming, perfected.",
+    "sub": "Premium IPTV, 8K / 4K Ultra HD ready, with instant activation and a library that never sleeps — streaming, perfected.",
     "cta1": "Start Free Trial",
     "cta2": "View Plans"
   },
@@ -69,8 +69,8 @@
       {
         "icon": "tv",
         "bg": "/assets/4k-bg.jpg",
-        "title": "Ultra HD 4K",
-        "desc": "Crystal-clear 4K and FHD streams on every supported title."
+        "title": "8K / 4K Ultra HD ready",
+        "desc": "Crystal-clear 8K / 4K Ultra HD ready and FHD streams on every supported title."
       },
       {
         "icon": "phone",
@@ -203,7 +203,7 @@
   "content": {
     "kicker": "Content & channels",
     "title": "Sport, series & more — all in one place",
-    "sub": "IPTV NORDIC brings you live TV, movies and sport in crisp HD and 4K. One subscription, every device. Explore the service, view plans or get in touch.",
+    "sub": "IPTV NORDIC brings you live TV, movies and sport in crisp HD and 8K / 4K Ultra HD ready. One subscription, every device. Explore the service, view plans or get in touch.",
     "rows": [
       {
         "icon": "trophy",
@@ -258,7 +258,7 @@
   },
   "cta": {
     "title": "Ready to start watching?",
-    "sub": "Join thousands of viewers streaming in stunning 4K today."
+    "sub": "Join thousands of viewers streaming in 8K / 4K Ultra HD ready today."
   },
   "pricing": {
     "kicker": "Plans",
@@ -276,7 +276,7 @@
         "features": [
           "18,000+ live channels",
           "40,000+ movies & 12,000+ series",
-          "4K / FHD where available",
+          "8K / 4K Ultra HD ready, FHD where available",
           "2 devices at once",
           "No freezing, no buffering",
           "Instant activation in 60 seconds",
@@ -295,7 +295,7 @@
           "Everything in 1 Month",
           "18,000+ live channels",
           "40,000+ movies & 12,000+ series",
-          "4K / FHD where available",
+          "8K / 4K Ultra HD ready, FHD where available",
           "3 devices at once",
           "Priority streaming servers",
           "Encrypted, private playback",
@@ -313,7 +313,7 @@
           "Everything in 3 Months",
           "18,000+ live channels",
           "40,000+ movies & 12,000+ series",
-          "4K / FHD where available",
+          "8K / 4K Ultra HD ready, FHD where available",
           "4 devices at once",
           "VIP support queue",
           "Early access to new content",
@@ -332,9 +332,9 @@
           "Everything in 6 Months",
           "18,000+ live channels",
           "40,000+ movies & 12,000+ series",
-          "4K / FHD at the best quality",
+          "8K / 4K Ultra HD ready at the best quality",
           "5 devices at once",
-          "Top-priority 4K servers",
+          "Top-priority 8K / 4K servers",
           "Dedicated account manager",
           "2 months free vs monthly",
           "Encrypted, private playback",
@@ -527,9 +527,9 @@
   },
   "legal": {
     "updatedLabel": "Last updated",
-    "updatedDate": "2026-09-08",
-    "operatorLabel": "Operator",
-    "operator": "IPTV NORDIC — [add registered company name, registered address and company registration number]",
+    "updatedDate": "2026-09-15",
+    "operatorLabel": "Provider",
+    "operator": "IPTV NORDIC — Digital Product & Support Provider. Orders, customer contact and support are handled on WhatsApp.",
     "contactCta": "Contact us on WhatsApp"
   },
   "terms": {
@@ -538,8 +538,8 @@
     "intro": "These terms govern your use of the IPTV NORDIC service. By subscribing you accept them, so please read them before you order.",
     "sections": [
       {
-        "h": "1. What the service is",
-        "p": "IPTV NORDIC provides access to an internet television service. After payment you receive personal credentials that work in standard IPTV player applications on your own devices. No satellite dish, cable connection or set-top box is supplied or required."
+        "h": "1. Provider and service",
+        "p": "IPTV NORDIC is a Digital Product & Support Provider. The digital product is access to an internet television service, and support is provided on WhatsApp. After payment you receive personal credentials that work in standard IPTV player applications on your own devices. No satellite dish, cable connection or set-top box is supplied or required."
       },
       {
         "h": "2. Independent platform",
@@ -575,7 +575,7 @@
       },
       {
         "h": "10. Cancellation and refunds",
-        "p": "Every plan includes a 7-day money-back guarantee. The full conditions are set out in our Refund Policy, which forms part of these terms."
+        "p": "Every plan includes a 7-day money-back guarantee. The guarantee applies in addition to, and does not limit, any statutory right of withdrawal you may have for distance purchases. The full conditions are set out in our Refund Policy, which forms part of these terms."
       },
       {
         "h": "11. Liability",
@@ -594,7 +594,7 @@
     "sections": [
       {
         "h": "1. Who is responsible",
-        "p": "The operator named above is the data controller for the personal data described in this policy. You can reach us on WhatsApp for any privacy question."
+        "p": "IPTV NORDIC, the provider named above, is the data controller for the personal data described in this policy. You can reach us on WhatsApp for any privacy question."
       },
       {
         "h": "2. What we collect",

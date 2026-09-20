@@ -2,7 +2,7 @@
 title: "IPTV Nordic 2026: Illegal IPTV Is Falling in Sweden"
 excerpt: "IPTV Nordic 2026: illegal IPTV is down 27% in Sweden. What it means for expats: the public service fee, SINK, TV prices and a safe setup."
 date: "2026-09-13"
-updateDate: "2026-09-15"
+updateDate: "2026-09-20"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-nordic-hero.webp"
 imageAlt: "IPTV Nordic 2026 – a dark Scandinavian living room on a rainy autumn evening with a large smart TV showing streaming services"
@@ -148,7 +148,7 @@ Whatever you read about the IPTV Nordic market, the technology behind IPTV is co
 4. **What is being promised?** "Every channel", "all sport" and "works everywhere with no restrictions" are promises nobody can keep, because rights are sold country by country.
 5. **Trial and support.** Can you test before paying, and is there someone to ask when something stops working?
 
-No single point decides everything, but several warning signs together are a clear signal. If you have questions about how our own service works, the answers are gathered in our [frequently asked questions](/en/faq), or you can [contact our support team](/en/contact).
+No single point decides everything, but several warning signs together are a clear signal. If you have questions about how our own service works, the answers are gathered in our [frequently asked questions](/en/faq), or you can [contact our support team](/en/contact). For vetting any provider, see our guide to [the company behind your IPTV](/en/blog/iptv-bolaget).
 
 [[wa:Start Free Trial|No fixed term and no automatic renewal – you decide whether to carry on.]]
 

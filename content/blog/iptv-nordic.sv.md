@@ -2,7 +2,7 @@
 title: "IPTV Nordic 2026: olaglig IPTV minskar i Sverige"
 excerpt: "IPTV Nordic 2026: 175 000 färre svenska hushåll har olaglig IPTV. Så påverkas du av Mediavisions siffror, prishöjningarna och SHL-premiären."
 date: "2026-09-13"
-updateDate: "2026-09-15"
+updateDate: "2026-09-20"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-nordic-hero.webp"
 imageAlt: "IPTV Nordic 2026 – mörkt nordiskt vardagsrum en regnig höstkväll med en stor smart-tv som visar strömningstjänster"
@@ -136,7 +136,7 @@ Tekniken IPTV är helt laglig. SVT Play, TV4 Play och operatörernas tv-tjänste
 4. **Vad lovas?** "Alla kanaler", "all sport" och "fungerar överallt utan begränsningar" är löften som ingen kan hålla, eftersom rättigheter säljs land för land.
 5. **Testperiod och support.** Går det att testa innan du betalar, och finns det någon att fråga när något slutar fungera?
 
-Ingen enskild punkt avgör allt, men flera varningssignaler samtidigt är ett tydligt tecken. Har du frågor om hur just vår tjänst fungerar finns svaren samlade under [vanliga frågor](/sv/faq), och du kan alltid [kontakta supporten direkt](/sv/contact).
+Ingen enskild punkt avgör allt, men flera varningssignaler samtidigt är ett tydligt tecken. Har du frågor om hur just vår tjänst fungerar finns svaren samlade under [vanliga frågor](/sv/faq), och du kan alltid [kontakta supporten direkt](/sv/contact). Hur du granskar företaget bakom vilken tjänst som helst går vi igenom i guiden om [IPTV-bolaget bakom tjänsten](/sv/blog/iptv-bolaget).
 
 [[wa:Starta testperiod|Ingen bindningstid och ingen automatisk förnyelse – du bestämmer själv om du vill fortsätta.]]
 

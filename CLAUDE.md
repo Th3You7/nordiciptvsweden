@@ -61,6 +61,21 @@ Conventions worth knowing before editing a post or the engine:
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
 
+### Published posts (as of 2026-09-25)
+
+| Slug | Locales | Covers | Featured |
+|---|---|---|---|
+| `iptv-nordic` | sv + en | Mediavision's spring-2026 piracy figures, streaming price rises, the terrestrial network emptying, the public service fee (en adds SINK for expats) | yes |
+| `iptv-bolaget` | sv + en | Vetting the *company* behind a service: 2026 blocking orders, the PMB 4826-25 conviction, SOU 2025:100 and why viewer fines did **not** start on 1 July, ARN and the right to cancel | no |
+
+Before proposing a topic, check both files and the sister site at `~/Desktop/iptv/websites/iptv-finland/content/blog/`. That site is the same business and publishes `iptv-nordic` in English already; per strategy §0.1 the two domains must not run the same article, so keep Sweden posts anchored to Swedish law, prices and institutions.
+
+**Linking while the pillars don't exist.** The pillar guides (`iptv-sverige`, `iptv-sweden-guide`) are unwritten, so these first posts link to `/pricing`, `/contact` and the home page instead, plus each other. Add pillar links from the third post on. When a post ships, link it from existing posts and bump their `updateDate` (§10.3).
+
+**Sourcing.** Searches for these keywords return mostly IPTV affiliate SEO sites; don't cite them. Use primary sources — SVT, domstol.se, riksdagen.se, regeringen.se, Skatteverket, Konsumentverket, ARN — and verify a claim's current status before writing it. The one that matters most here: fines for viewers are still only a proposal.
+
+**Images.** Supply three prompts (16:9 hero with the subject centred, since desktop crops it to 2:1, plus two in-body). Once the owner delivers the files, check they landed in `public/assets/blog/` — twice they arrived in the project root — then wire the hero into frontmatter and the other two above their sections. Anything over ~250 KB: re-encode with `sharp` at quality 80ish, which has held dimensions while cutting files by half or more.
+
 `app/lib/blog-taxonomy.js` holds the fixed tag vocabulary and the numeric publishing limits that `scripts/check-blog.mjs` enforces. **`STRATEGY_BLOG_SWEDEN.md` is the editorial playbook** — read it before writing or auditing an article. `content/blog/README.md` is the short author guide.
 
 ### Images
@@ -78,5 +93,7 @@ Conventions worth knowing before editing a post or the engine:
 
 - No analytics of any kind, so WhatsApp click-through is unmeasured.
 - Legal pages name no company entity by the owner's decision (`legal.operator` says "Digital Product & Support Provider"), while the `iptv-nordic` article tells readers a reputable seller publishes those details.
-- The teaser `blog.posts` entries in both catalogs still feed `/blog` and the homepage; delete them once three real posts per locale exist.
+- The teaser `blog.posts` entries in both catalogs still feed `/blog` and the homepage; delete them once three real posts per locale exist (two are live as of 2026-09-25).
+- Neither pillar guide is written, so no post links "up" yet, and both published posts sit outside the §8.2 backlog.
+- Open editorial items on `iptv-bolaget`, raised in review and not applied: both conclusions end on a `/blog` link rather than `/pricing` (§9.3), the Swedish post has no home-page link, it runs ~60 words under its band, and the English keyword density is 1.51% against a 1.0–1.5% target.
 - `legacy/` is the original standalone template, kept for reference — never built, served or linted.

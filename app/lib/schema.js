@@ -8,11 +8,12 @@ const LOGO_ID = `${siteUrl}/#logo`;
 
 // The site logo, as Google's Logo structured data expects it. Pointed at the
 // raw asset rather than an /_next/image URL so it is directly crawlable, and
-// well past the 112x112px minimum.
+// well past the 112x112px minimum. Square, because the same mark is the favicon
+// (app/icon.png) and a favicon Google will use has to be square.
 export const LOGO = {
-  path: "assets/logo-flag.webp",
-  width: 800,
-  height: 505,
+  path: "assets/logo-icon.png",
+  width: 512,
+  height: 512,
 };
 
 function bcp47(locale) {

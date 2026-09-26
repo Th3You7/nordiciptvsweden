@@ -2,7 +2,7 @@
 title: "IPTV-bolaget bakom tjänsten: så granskar du det 2026"
 excerpt: "Vad är ett IPTV-bolag, vad säger svensk lag hösten 2026 och hur granskar du bolaget bakom en tjänst innan du betalar? En guide utan skrämselpropaganda."
 date: "2026-09-20"
-updateDate: "2026-09-20"
+updateDate: "2026-09-25"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-bolaget-hero.webp"
 imageAlt: "IPTV-bolaget bakom tjänsten – mörkt vardagsrum på kvällen där en stor tv visar en anonym inloggningsruta i rött sken och en mobil med ett chattsamtal ligger på soffbordet"
@@ -157,6 +157,6 @@ Frågan om IPTV-bolaget bakom tjänsten är rätt fråga att ställa hösten 202
 
 **Granskningen är enkel att göra själv.** Vem är bolaget, vad säger villkoren, hur betalar du, vad lovas, finns testperiod och hur ser supporten ut? Sex frågor, några minuter.
 
-Ett rimligt nästa steg är att jämföra vad du betalar i dag med vad du faktiskt tittar på, och att testa innan du betalar. Våra paket, priser och villkor hittar du på [sidan med paket och priser](/sv/pricing), och fler guider samlas [på bloggen](/sv/blog).
+Ett rimligt nästa steg är att jämföra vad du betalar i dag med vad du faktiskt tittar på, och att testa innan du betalar. Hur själva köpet går till, steg för steg, står i guiden om att [köpa IPTV tryggt](/sv/blog/ip-tv-kopa). Våra paket, priser och villkor hittar du på [sidan med paket och priser](/sv/pricing), och fler guider samlas [på bloggen](/sv/blog).
 
 [[wa:Beställ på WhatsApp|Sju dagars pengarna-tillbaka-garanti på alla paket, oavsett längd.]]

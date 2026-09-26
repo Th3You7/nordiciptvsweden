@@ -2,7 +2,7 @@
 title: "IPTV Bolaget: Vetting the Company Behind IPTV in Sweden"
 excerpt: "What IPTV bolaget means, what Swedish law actually says in autumn 2026, and how to check the company behind a service before you pay for it."
 date: "2026-09-20"
-updateDate: "2026-09-20"
+updateDate: "2026-09-25"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-bolaget-hero.webp"
 imageAlt: "The IPTV bolaget behind the service – a dark living room in the evening, a large TV showing an anonymous login screen in red light and a phone with a chat conversation on the coffee table"
@@ -157,6 +157,6 @@ Asking about IPTV bolaget — the company behind the service — is the right qu
 
 **The check takes minutes.** Who is the IPTV bolaget behind the service, what do the terms say, how do you pay, what is promised, is there a trial, and what does support look like?
 
-A sensible next step is to compare what you pay now against what you actually watch, and to test a service on your own connection before paying for it. You can [compare our plans](/en/pricing) in a couple of minutes. More guides for people living in Sweden are collected on [the blog](/en/blog).
+A sensible next step is to compare what you pay now against what you actually watch, and to test a service on your own connection before paying for it. The purchase itself, step by step, is covered in our guide to [buying IPTV safely](/en/blog/ip-tv-kopa). You can [compare our plans](/en/pricing) in a couple of minutes. More guides for people living in Sweden are collected on [the blog](/en/blog).
 
 [[wa:Order on WhatsApp|Every plan, whatever its length, carries a seven-day money-back guarantee.]]

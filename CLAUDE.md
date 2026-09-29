@@ -61,22 +61,29 @@ Conventions worth knowing before editing a post or the engine:
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
 
-### Published posts (as of 2026-09-25)
+### Published posts (as of 2026-09-29)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
 | `iptv-nordic` | sv + en | Mediavision's spring-2026 piracy figures, streaming price rises, the terrestrial network emptying, the public service fee (en adds SINK for expats) | yes |
 | `iptv-bolaget` | sv + en | Vetting the *company* behind a service: 2026 blocking orders, the PMB 4826-25 conviction, SOU 2025:100 and why viewer fines did **not** start on 1 July, ARN and the right to cancel | no |
+| `ip-tv-kopa` | sv + en | The purchase itself (transactional): the withdrawal button and ban on manipulative checkouts in force since 19 June 2026, payment methods, binding periods, what to receive after paying | no |
 
 Before proposing a topic, check both files and the sister site at `~/Desktop/iptv/websites/iptv-finland/content/blog/`. That site is the same business and publishes `iptv-nordic` in English already; per strategy §0.1 the two domains must not run the same article, so keep Sweden posts anchored to Swedish law, prices and institutions.
 
-**Linking while the pillars don't exist.** The pillar guides (`iptv-sverige`, `iptv-sweden-guide`) are unwritten, so these first posts link to `/pricing`, `/contact` and the home page instead, plus each other. Add pillar links from the third post on. When a post ships, link it from existing posts and bump their `updateDate` (§10.3).
+**Linking while the pillars don't exist.** The pillar guides (`iptv-sverige`, `iptv-sweden-guide`) are unwritten, so posts link to `/pricing`, `/contact` and the home page instead, plus each other — the three published slugs already cross-link in both locales. Add pillar links as soon as a pillar exists. When a post ships, link it from the existing posts and bump their `updateDate` (§10.3), and end the conclusion on `/pricing` rather than `/blog`.
 
 **Sourcing.** Searches for these keywords return mostly IPTV affiliate SEO sites; don't cite them. Use primary sources — SVT, domstol.se, riksdagen.se, regeringen.se, Skatteverket, Konsumentverket, ARN — and verify a claim's current status before writing it. The one that matters most here: fines for viewers are still only a proposal.
 
 **Images.** Supply three prompts (16:9 hero with the subject centred, since desktop crops it to 2:1, plus two in-body). Once the owner delivers the files, check they landed in `public/assets/blog/` — twice they arrived in the project root — then wire the hero into frontmatter and the other two above their sections. Anything over ~250 KB: re-encode with `sharp` at quality 80ish, which has held dimensions while cutting files by half or more.
 
 `app/lib/blog-taxonomy.js` holds the fixed tag vocabulary and the numeric publishing limits that `scripts/check-blog.mjs` enforces. **`STRATEGY_BLOG_SWEDEN.md` is the editorial playbook** — read it before writing or auditing an article. `content/blog/README.md` is the short author guide.
+
+### Favicon and logo
+
+The favicon set lives in `app/` as Next file conventions, not in `public/`: `app/icon.png` (512), `app/favicon.ico` (48), `app/apple-icon.png` (180). Next emits the `<link rel="icon">` tags automatically — there is no `icons:` metadata block. All three are the round Swedish-flag mark the owner supplied.
+
+`Organization.logo` is `public/assets/logo-icon.png` (512×512 square, the same mark), set by `LOGO` in `app/lib/schema.js`; the sitemap reads that constant. The navbar still uses the older rectangular `assets/logo-flag.webp`, which is also the social-image fallback for pages without their own — so two logo files coexist on purpose.
 
 ### Images
 
@@ -93,7 +100,8 @@ Before proposing a topic, check both files and the sister site at `~/Desktop/ipt
 
 - No analytics of any kind, so WhatsApp click-through is unmeasured.
 - Legal pages name no company entity by the owner's decision (`legal.operator` says "Digital Product & Support Provider"), while the `iptv-nordic` article tells readers a reputable seller publishes those details.
-- The teaser `blog.posts` entries in both catalogs still feed `/blog` and the homepage; delete them once three real posts per locale exist (two are live as of 2026-09-25).
-- Neither pillar guide is written, so no post links "up" yet, and both published posts sit outside the §8.2 backlog.
-- Open editorial items on `iptv-bolaget`, raised in review and not applied: both conclusions end on a `/blog` link rather than `/pricing` (§9.3), the Swedish post has no home-page link, it runs ~60 words under its band, and the English keyword density is 1.51% against a 1.0–1.5% target.
+- **The teaser `blog.posts` entries are now due for deletion**: the threshold of three real posts per locale is met, yet 4 invented teasers per locale still feed `/blog` and the homepage.
+- Neither pillar guide is written, so no post links "up" yet, and all three published slugs sit outside the §8.2 backlog.
+- Open editorial items on `iptv-bolaget`, raised in review and not applied: both conclusions end on a `/blog` link rather than `/pricing` (§9.3), the Swedish post has no home-page link, it runs ~60 words under its band, and the English keyword density is 1.51% against a 1.0–1.5% target. `ip-tv-kopa` was written without those faults.
+- The new favicon and square logo only reach Google after the live site is re-crawled; nothing in Search Console reports favicons.
 - `legacy/` is the original standalone template, kept for reference — never built, served or linted.

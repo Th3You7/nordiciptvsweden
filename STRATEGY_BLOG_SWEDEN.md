@@ -285,10 +285,12 @@ Every cluster post links **up to its pillar** and **sideways to 3–6 siblings**
 |---|---|---|---|---|
 | C1 | `iptv-smart-tv` | IPTV Smart TV installation / setup | 1 400–1 900 | P1 |
 | C2 | `iptv-smarters-pro` | IPTV Smarters Pro | 2 400–3 200 | P2 |
-| C3 | `iptv-android-tv-box` | IPTV Android TV · IPTV-box | 1 400–1 900 | P2 |
+| C3 | `iptv-android-tv-box` | IPTV Android TV · IPTV-box | 1 400–1 900 | P2 ⚠️ see §11.1 |
 | C4 | `iptv-fire-tv-stick` | IPTV Fire TV Stick | 1 200–1 700 | P2 |
 | C5 | `iptv-iphone-ipad-apple-tv` | IPTV iPhone · Apple TV | 1 200–1 700 | P3 |
 | C6 | `m3u-lista-och-xtream-codes` | M3U-lista · Xtream Codes | 1 300–1 800 | P3 |
+
+C3 note: `iptv-box-malmo` already covers the box basics as a local variant (§11.1). Write C3 as the **general** guide and trim the overlap out of the Malmö post when you do.
 
 C2 note: Finland published `iptv-smarters-pro` with an angle on counterfeit apps and Android's developer-verification rules. **Write an original post** — different structure and examples, Swedish sources. Same slug on two domains is fine; the same text is not.
 
@@ -488,7 +490,24 @@ Add one contextual link to the new post from **2–3 existing posts in the same 
 
 ## 11. LOCAL SEO
 
-There is no landing-page route, so there's no city layer to feed. Don't write city-targeted posts (`iptv-stockholm`) until one exists — a thin city post with nothing local to say ranks badly and dilutes the pillar. If a `[locale]/[slug]` landing route is ever added, revisit this section.
+There is still no landing-page route, so there is no city layer to feed, and **a city post is never justified by the city name alone**. The failure mode is a generic guide with a place name pasted on: it ranks badly and dilutes the pillar.
+
+A city post is allowed only when it passes all four of these:
+
+1. **Three or more verifiable local facts** that change the reader's decision — the local network model, what housing associations bundle, a regional channel demand, a local operator's terms. Cite them; a fact you cannot source is not a fact.
+2. **Sourced to local authorities or operators** — the municipality, the city network, an operator's own page — not to a national page with the city inserted.
+3. **The advice genuinely differs** from the national guide. If deleting the city name leaves the article unchanged, it is not a city post.
+4. **It links up to its cluster guide** rather than competing with it (§11.1).
+
+Revisit this section if a `[locale]/[slug]` landing route is ever added.
+
+### 11.1 City posts and their cluster guide
+
+A city post is a *variant* of a cluster topic, never a replacement. The cluster guide owns the general keyword; the city post owns the local query and links up to it.
+
+**Published:** `iptv-box-malmo` (sv + en, 2026-09-29) is the local variant of **C3** `iptv-android-tv-box`. It qualifies on Malmö's open city network (sourced to the municipality), the Öresund demand for Danish channels (sourced to an operator's package page) and what apartment buildings already bundle.
+
+When C3 is written it takes the general box keyword and the full device walk-through; the Malmö post then keeps only its local material and links up to C3. Until then, `iptv-box-malmo` carries the box basics — so **C3 must be written as the general guide, not as a second Malmö article**, and the overlap trimmed at that point.
 
 ---
 

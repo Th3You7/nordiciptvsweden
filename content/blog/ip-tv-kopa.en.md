@@ -2,7 +2,7 @@
 title: "Buying IPTV in Sweden 2026: How to Buy It Safely"
 excerpt: "Buying IPTV in Sweden? New rules since 19 June 2026 give online buyers a withdrawal button. What a safe purchase looks like, and what it costs."
 date: "2026-09-25"
-updateDate: "2026-09-25"
+updateDate: "2026-09-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/ip-tv-kopa-hero.webp"
 imageAlt: "Buying IPTV – a person in a dark living room facing a TV that shows a checkout panel with a confirm button, and a phone displaying a confirmed payment"
@@ -120,7 +120,7 @@ Buying IPTV means a digital delivery, and that has no excuse for taking days. Af
 - **A support channel** where a person replies.
 - **A receipt or payment confirmation** to keep.
 
-With us activation takes about a minute once payment is confirmed, and it all arrives on WhatsApp. Supported hardware is listed on the [devices page](/en/devices), and more answers are in our [frequently asked questions](/en/faq).
+With us activation takes about a minute once payment is confirmed, and it all arrives on WhatsApp. Supported hardware is listed on the [devices page](/en/devices), and more answers are in our [frequently asked questions](/en/faq). If you live in Malmö, there is a local walk-through in our guide to [choosing an IPTV box there](/en/blog/iptv-box-malmo).
 
 ## Four common mistakes when buying IPTV
 

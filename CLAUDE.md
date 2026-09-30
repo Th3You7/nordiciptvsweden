@@ -61,15 +61,18 @@ Conventions worth knowing before editing a post or the engine:
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
 
-### Published posts (as of 2026-09-29)
+### Published posts (as of 2026-09-30)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
 | `iptv-nordic` | sv + en | Mediavision's spring-2026 piracy figures, streaming price rises, the terrestrial network emptying, the public service fee (en adds SINK for expats) | yes |
 | `iptv-bolaget` | sv + en | Vetting the *company* behind a service: 2026 blocking orders, the PMB 4826-25 conviction, SOU 2025:100 and why viewer fines did **not** start on 1 July, ARN and the right to cancel | no |
 | `ip-tv-kopa` | sv + en | The purchase itself (transactional): the withdrawal button and ban on manipulative checkouts in force since 19 June 2026, payment methods, binding periods, what to receive after paying | no |
+| `iptv-box-malmo` | sv + en | Local variant of cluster C3: whether a box is needed at all, Malmö's open city network, Danish channels across the Öresund, and Google's developer-verification rules for sideloaded apps | no |
 
 Before proposing a topic, check both files and the sister site at `~/Desktop/iptv/websites/iptv-finland/content/blog/`. That site is the same business and publishes `iptv-nordic` in English already; per strategy §0.1 the two domains must not run the same article, so keep Sweden posts anchored to Swedish law, prices and institutions.
+
+**City posts.** §11 used to ban them outright; it now permits one only when it carries three or more sourced local facts, cites local authorities or operators, gives advice that genuinely differs from the national guide, and links up to its cluster guide (§11.1). `iptv-box-malmo` is the worked example. Its cluster guide C3 `iptv-android-tv-box` is still unwritten — when it is written it must be the **general** box guide, with the overlap trimmed out of the Malmö post.
 
 **Linking while the pillars don't exist.** The pillar guides (`iptv-sverige`, `iptv-sweden-guide`) are unwritten, so posts link to `/pricing`, `/contact` and the home page instead, plus each other — the three published slugs already cross-link in both locales. Add pillar links as soon as a pillar exists. When a post ships, link it from the existing posts and bump their `updateDate` (§10.3), and end the conclusion on `/pricing` rather than `/blog`.
 
@@ -100,8 +103,8 @@ The favicon set lives in `app/` as Next file conventions, not in `public/`: `app
 
 - No analytics of any kind, so WhatsApp click-through is unmeasured.
 - Legal pages name no company entity by the owner's decision (`legal.operator` says "Digital Product & Support Provider"), while the `iptv-nordic` article tells readers a reputable seller publishes those details.
-- **The teaser `blog.posts` entries are now due for deletion**: the threshold of three real posts per locale is met, yet 4 invented teasers per locale still feed `/blog` and the homepage.
-- Neither pillar guide is written, so no post links "up" yet, and all three published slugs sit outside the §8.2 backlog.
+- **The teaser `blog.posts` entries are overdue for deletion**: four real posts per locale are live, yet 4 invented teasers per locale still feed `/blog` and the homepage.
+- Neither pillar guide is written, so no post links "up" yet. Three published slugs sit outside the §8.2 backlog; `iptv-box-malmo` is tied to backlog slot C3 via §11.1.
 - Open editorial items on `iptv-bolaget`, raised in review and not applied: both conclusions end on a `/blog` link rather than `/pricing` (§9.3), the Swedish post has no home-page link, it runs ~60 words under its band, and the English keyword density is 1.51% against a 1.0–1.5% target. `ip-tv-kopa` was written without those faults.
 - The new favicon and square logo only reach Google after the live site is re-crawled; nothing in Search Console reports favicons.
 - `legacy/` is the original standalone template, kept for reference — never built, served or linted.

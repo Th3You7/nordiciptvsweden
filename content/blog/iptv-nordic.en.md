@@ -2,7 +2,7 @@
 title: "IPTV Nordic 2026: Illegal IPTV Is Falling in Sweden"
 excerpt: "IPTV Nordic 2026: illegal IPTV is down 27% in Sweden. What it means for expats: the public service fee, SINK, TV prices and a safe setup."
 date: "2026-09-13"
-updateDate: "2026-09-29"
+updateDate: "2026-10-02"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-nordic-hero.webp"
 imageAlt: "IPTV Nordic 2026 – a dark Scandinavian living room on a rainy autumn evening with a large smart TV showing streaming services"
@@ -156,7 +156,7 @@ No single point decides everything, but several warning signs together are a cle
 
 Between price rises, a new SHL season and a TV market moving online, there are good reasons to review your setup — or to set one up properly if you've just arrived. Whether you pick an operator, a streaming service or an IPTV subscription, the IPTV Nordic basics are the same:
 
-1. **Add up the whole TV bill.** Include the public service fee if it applies to you, streaming, sport and any operator box. The total is what matters, not a single package price.
+1. **Add up the whole TV bill.** Include the public service fee if it applies to you, streaming, sport and any operator box. The total is what matters, not a single package price. The comparison method itself is in [our guide to choosing a subscription](/en/blog/basta-iptv-abonnemang).
 2. **Check the contract length.** A 12- or 24-month contract is hard to change when prices or line-ups shift halfway through — and hard to exit if your plans in Sweden change.
 3. **Start from what you actually watch.** Don't pay for sports packages during the months your league is on break.
 4. **Make sure the service works on your devices** before buying new hardware. The details are on our [supported devices page](/en/devices), and choosing a box locally is covered in [our Malmö guide](/en/blog/iptv-box-malmo).

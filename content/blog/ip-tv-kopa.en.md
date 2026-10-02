@@ -2,7 +2,7 @@
 title: "Buying IPTV in Sweden 2026: How to Buy It Safely"
 excerpt: "Buying IPTV in Sweden? New rules since 19 June 2026 give online buyers a withdrawal button. What a safe purchase looks like, and what it costs."
 date: "2026-09-25"
-updateDate: "2026-09-29"
+updateDate: "2026-10-02"
 author: "IPTV NORDIC"
 image: "/assets/blog/ip-tv-kopa-hero.webp"
 imageAlt: "Buying IPTV – a person in a dark living room facing a TV that shows a checkout panel with a confirm button, and a phone displaying a confirmed payment"
@@ -70,7 +70,7 @@ No fixed term, no automatic renewal and a seven-day money-back guarantee on ever
 
 Comparing that against the rest of the market means adding up your whole TV bill: the public service fee, streaming services and any sports package. We went through those figures, with prices checked in September 2026, in [our guide to what TV costs](/en/blog/iptv-nordic).
 
-One warning worth repeating: a price far below everything else on the market is rarely a bargain. Somebody pays for the content, and if it isn't the seller, it is someone else.
+One warning worth repeating: a price far below everything else on the market is rarely a bargain. How to weigh price against content and flexibility is covered in our guide to [comparing IPTV subscriptions](/en/blog/basta-iptv-abonnemang). Somebody pays for the content, and if it isn't the seller, it is someone else.
 
 ## Step by step: what a safe purchase looks like
 

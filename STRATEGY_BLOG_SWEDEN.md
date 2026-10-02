@@ -227,7 +227,8 @@ Rules:
 - **2–4 tags** per post, the first from the table.
 - Secondary tags are the linking glue — reuse: `pris`, `jämförelse`, `Smart TV`, `Android`, `iOS`, `sport`, `hockey`, `fotboll`, `EPG`, `M3U`, `buffring`, `nybörjare` (EN: `pricing`, `comparison`, `Smart TV`, `Android`, `iOS`, `sport`, `hockey`, `football`, `expats`, `EPG`, `M3U`, `buffering`, `beginners`).
 - Tags are **locale-local**: Swedish tags in `.sv.md`, English in `.en.md`.
-- Keep tags matched across a translated pair so both show the same related set.
+- Keep tags matched across a pair so both show the same related set — with one deliberate exception.
+- **The `expats` exception.** `en` is a different audience, not a translation (§4), so an `en` post may carry `expats` as an extra tag that has no `sv` counterpart. That tag is what links the English posts to each other. Everything else — the cluster tag and the topical secondaries — must still match across the pair. Do not invent further one-sided tags.
 
 ---
 
@@ -550,6 +551,22 @@ Publish **6–8 weeks before** a window so the post is indexed and has aged by t
 | **Dec** | **Christmas TV, Kalle Anka**, holiday viewing | Oct | E1, featured rotation |
 
 Maintenance: bump `updateDate`, refresh the year in `title`/`excerpt`, re-verify prices, re-request indexing.
+
+### 13.1 Refresh triggers for claims that expire
+
+Several published posts rest on facts with a known expiry. These are not seasonal — they go stale on an event, so watch the event rather than the calendar.
+
+| Claim | In | Trigger to re-check |
+|---|---|---|
+| Viewer fines are only a proposal (SOU 2025:100, no new date after 1 July 2026 passed) | `iptv-bolaget` | Any government bill or riksdag decision on illegal ip-tv |
+| Mediavision Q1/Q2 2026 figures: ~11m subscriptions, growth gone, 4m cancellations | `basta-iptv-abonnemang` | Mediavision's next quarterly release |
+| HBO Max / SkyShowtime integration barred before 1 June 2027 | `basta-iptv-abonnemang` | The twelve-state court ruling, or 1 June 2027 |
+| Google developer verification: global rollout "2027 and beyond" | `iptv-box-malmo` | Google naming a date that includes Sweden |
+| Allente Danish add-on at 59 kr/month | `iptv-box-malmo` | Any price check; re-date or remove |
+| Withdrawal button in force since 19 June 2026 | `ip-tv-kopa` | Stable — but confirm before citing it as new |
+| Competitor prices checked 13 September 2026 | `iptv-nordic` | Quarterly; prices move faster than the post |
+
+A claim whose trigger has fired is a factual error, not an aging article. Fix it the same week.
 
 ---
 

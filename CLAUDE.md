@@ -61,7 +61,7 @@ Conventions worth knowing before editing a post or the engine:
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
 
-### Published posts (as of 2026-09-30)
+### Published posts (as of 2026-10-02)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
@@ -105,6 +105,6 @@ The favicon set lives in `app/` as Next file conventions, not in `public/`: `app
 - Legal pages name no company entity by the owner's decision (`legal.operator` says "Digital Product & Support Provider"), while the `iptv-nordic` article tells readers a reputable seller publishes those details.
 - **The teaser `blog.posts` entries are overdue for deletion**: four real posts per locale are live, yet 4 invented teasers per locale still feed `/blog` and the homepage.
 - Neither pillar guide is written, so no post links "up" yet. Three published slugs sit outside the §8.2 backlog; `iptv-box-malmo` is tied to backlog slot C3 via §11.1.
-- Open editorial items on `iptv-bolaget`, raised in review and not applied: both conclusions end on a `/blog` link rather than `/pricing` (§9.3), the Swedish post has no home-page link, it runs ~60 words under its band, and the English keyword density is 1.51% against a 1.0–1.5% target. `ip-tv-kopa` was written without those faults.
+- Open editorial items raised in review and not applied. On `iptv-bolaget`: both conclusions end on a `/blog` link rather than `/pricing` (§9.3), the Swedish post has no home-page link, and it runs ~60 words under its band. Its English keyword density self-corrected to 1.18% when the cross-links were added. On `iptv-box-malmo`: the Swedish keyword density is 1.70% against the 1.0–1.5% target, and two Swedish FAQ answers run 38–39 words against the 40-word floor. `ip-tv-kopa` was written without any of these faults.
 - The new favicon and square logo only reach Google after the live site is re-crawled; nothing in Search Console reports favicons.
 - `legacy/` is the original standalone template, kept for reference — never built, served or linted.

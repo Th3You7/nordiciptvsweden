@@ -2,6 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
 
+  // Verification builds need their own output directory, but editing this file
+  // while `next dev` is running makes the dev server reload with a different
+  // distDir and leaves its route graph broken — every page but the locale home
+  // 404s until the cache is cleared. So the directory is switched by env var
+  // instead: NEXT_DIST_DIR=.next-verify next build.
+  distDir: process.env.NEXT_DIST_DIR || ".next",
+
   images: {
     // The optimizer negotiates per request: AVIF where supported, WebP
     // otherwise, original format as a last resort.

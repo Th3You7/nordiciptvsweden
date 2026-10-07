@@ -2,7 +2,7 @@
 title: "IPTV Nordic 2026: olaglig IPTV minskar i Sverige"
 excerpt: "IPTV Nordic 2026: 175 000 färre svenska hushåll har olaglig IPTV. Så påverkas du av Mediavisions siffror, prishöjningarna och SHL-premiären."
 date: "2026-09-13"
-updateDate: "2026-10-02"
+updateDate: "2026-10-06"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-nordic-hero.webp"
 imageAlt: "IPTV Nordic 2026 – mörkt nordiskt vardagsrum en regnig höstkväll med en stor smart-tv som visar strömningstjänster"
@@ -97,7 +97,7 @@ Mönstret är tydligt. Sport är den dyraste delen av tv-räkningen, och den som
 
 Parallellt med prisfrågan pågår en tyst omställning av hur tv når hemmen i Norden.
 
-I Sverige är marknätet — tv via vanlig antenn — i dag nästan bara public service. [Enligt Bredbandsval](https://www.bredbandsval.se/tv/marksand-tv) slutade TV4 sändas som fri-tv i marknätet i januari 2026. Kvar via antenn finns SVT1, SVT2, SVT24, SVT Barn och Kunskapskanalen, samt TV Finland i vissa områden. Boxer avslutade all betal-tv i marknätet redan den 2 januari 2025, och i dag finns ingen operatör kvar som erbjuder betal-tv via antenn i Sverige.
+I Sverige är marknätet — tv via vanlig antenn — i dag nästan bara public service. [Enligt Bredbandsval](https://www.bredbandsval.se/tv/marksand-tv) slutade TV4 sändas som fri-tv i marknätet i januari 2026. Kvar via antenn finns SVT1, SVT2, SVT24, SVT Barn och Kunskapskanalen, samt TV Finland i vissa områden — men Kunskapskanalen upphör som linjär kanal den 1 januari 2027, vilket vi går igenom i [guiden om digital tv i Sverige](/sv/blog/digital-tv-sverige). Boxer avslutade all betal-tv i marknätet redan den 2 januari 2025, och i dag finns ingen operatör kvar som erbjuder betal-tv via antenn i Sverige.
 
 Samtidigt blir operatörernas tv alltmer internetbaserad. Den 18 augusti 2026 rapporterade [The Desk](https://thedesk.net/2026/08/viaplay-allente-upgrade-nordic-streaming-markets/) att Viaplay Group har lanserat ett nytt gränssnitt för Allente i Sverige, Norge, Danmark och Finland. Plattformen körs på en AI-förstärkt box med Android TV och samlar linjär tv, beställ-tv och appar som HBO Max, SkyShowtime, Prime Video och Apple TV i samma meny. För den som följer IPTV Nordic-utvecklingen är det en tydlig signal.
 

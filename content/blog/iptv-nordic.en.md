@@ -2,7 +2,7 @@
 title: "IPTV Nordic 2026: Illegal IPTV Is Falling in Sweden"
 excerpt: "IPTV Nordic 2026: illegal IPTV is down 27% in Sweden. What it means for expats: the public service fee, SINK, TV prices and a safe setup."
 date: "2026-09-13"
-updateDate: "2026-10-02"
+updateDate: "2026-10-06"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-nordic-hero.webp"
 imageAlt: "IPTV Nordic 2026 – a dark Scandinavian living room on a rainy autumn evening with a large smart TV showing streaming services"
@@ -93,7 +93,7 @@ Sport is the most expensive part of a Swedish TV bill. Anyone who wants both hoc
 
 If you've arrived from a country where an aerial or a cable box still delivers most channels, Swedish TV can be confusing at first. Almost everything now comes through the internet.
 
-The terrestrial network — TV through an ordinary aerial — is now close to public service only. [According to Bredbandsval](https://www.bredbandsval.se/tv/marksand-tv) (in Swedish), TV4 stopped broadcasting as free-to-air on the terrestrial network in January 2026. What remains through an aerial is SVT1, SVT2, SVT24, SVT Barn and Kunskapskanalen, plus TV Finland in some areas. Boxer ended all pay TV on the terrestrial network on 2 January 2025, and no operator offers pay TV through an aerial in Sweden anymore.
+The terrestrial network — TV through an ordinary aerial — is now close to public service only. [According to Bredbandsval](https://www.bredbandsval.se/tv/marksand-tv) (in Swedish), TV4 stopped broadcasting as free-to-air on the terrestrial network in January 2026. What remains through an aerial is SVT1, SVT2, SVT24, SVT Barn and Kunskapskanalen, plus TV Finland in some areas — though Kunskapskanalen stops as a linear channel on 1 January 2027, as covered in [our guide to digital TV in Sweden](/en/blog/digital-tv-sverige). Boxer ended all pay TV on the terrestrial network on 2 January 2025, and no operator offers pay TV through an aerial in Sweden anymore.
 
 The operators are moving online as well. On 18 August 2026, [The Desk reported](https://thedesk.net/2026/08/viaplay-allente-upgrade-nordic-streaming-markets/) that Viaplay Group had launched a new Allente interface in Sweden and its other Nordic markets. It runs on an AI-enabled Android TV set-top box and brings live TV, on-demand viewing and apps such as HBO Max, SkyShowtime, Prime Video and Apple TV into a single menu.
 

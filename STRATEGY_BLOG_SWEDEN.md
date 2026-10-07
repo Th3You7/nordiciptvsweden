@@ -421,6 +421,10 @@ Swedish is somewhat more compact than English, so its bands sit a little lower.
 
 **Floor: 900 words** — `check:blog` fails below it. A shorter post doesn't justify its own URL; fold it into an existing one.
 
+**Type is set by the job the post does, not by the keyword.** A post that explains a whole system end to end is a pillar whatever its primary keyword, and must then meet the pillar band and carry a table of contents (§9.3).
+
+**Published exception:** `digital-tv-sverige` (sv + en) is written at pillar length — it explains the national distribution system, the licence period and the technical history in one piece. Until A1 `iptv-sverige` exists, it is the de facto Swedish pillar and the other posts may link up to it. When A1 is written, A1 takes the `IPTV Sverige` keyword and the pillar role; `digital-tv-sverige` then keeps the distribution subject and links up instead.
+
 ### 9.5 Images and inline CTAs
 
 **Three images per article** — the hero banner (from `image:`) plus two in-body. The site owner creates the images; the article author supplies prompts for them.

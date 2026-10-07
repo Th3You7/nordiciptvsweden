@@ -2,7 +2,7 @@
 title: "IPTV Box in Malmö 2026: What to Buy, and When Not To"
 excerpt: "Do you need an IPTV box in Malmö? How the open city network, Danish channels across the Öresund and Google's new app rules change the answer."
 date: "2026-09-29"
-updateDate: "2026-09-29"
+updateDate: "2026-10-06"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-box-malmo-hero.webp"
 imageAlt: "IPTV box in Malmö – a wall-mounted TV in a Nordic living room at dusk showing a settings menu, with the remote on the sofa"
@@ -110,7 +110,7 @@ A sensible purchase is an ordinary box from an established manufacturer, plus a 
 
 We recommend at least 15 Mbps for HD and 25 Mbps for 4K. An ordinary fibre connection in Malmö clears that easily, and stability matters more than headline speed.
 
-Three things help most in a flat: an Ethernet cable to the box where possible, the router placed in the open rather than inside a cupboard, and the 5 GHz band instead of 2.4 GHz when cable isn't an option. For the wider market picture, with figures and prices, see [our guide to IPTV across the Nordics](/en/blog/iptv-nordic).
+Three things help most in a flat: an Ethernet cable to the box where possible, the router placed in the open rather than inside a cupboard, and the 5 GHz band instead of 2.4 GHz when cable isn't an option. For the wider market picture, with figures and prices, see [our guide to IPTV across the Nordics](/en/blog/iptv-nordic), and for how television is distributed nationally, [digital TV in Sweden](/en/blog/digital-tv-sverige).
 
 ## Getting started
 

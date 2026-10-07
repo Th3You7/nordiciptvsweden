@@ -23,7 +23,18 @@ There are no tests. `check:i18n`, `check:blog` and `check:urls` are the test sui
 
 ### Verifying a build without touching the user's dev server
 
-Never run `next build` into `.next` while `npm run dev` may be running. Instead: add `distDir: ".next-verify"` to `next.config.mjs`, build, `npx next start -p <port>`, probe with `fetch` scripts, run `CHECK_URLS_DIST=.next-verify node scripts/check-urls.mjs`, then remove the `distDir` line and `rm -rf .next-verify`.
+Never run `next build` into `.next` while `npm run dev` may be running. Use the env var:
+
+```bash
+NEXT_DIST_DIR=.next-verify npx next build
+NEXT_DIST_DIR=.next-verify npx next start -p 4177   # probe with fetch scripts
+CHECK_URLS_DIST=.next-verify node scripts/check-urls.mjs
+rm -rf .next-verify
+```
+
+**Do not edit `next.config.mjs` to switch `distDir`.** The dev server watches that file; editing it mid-session makes it reload with a different output directory and leaves its route graph broken — every route except the locale home 404s, and it survives until the cache is cleared. That happened twice. `distDir` therefore reads `process.env.NEXT_DIST_DIR`, so verification never touches the file.
+
+If routes 404 anyway: stop dev, `rm -rf .next`, start it again.
 
 Builds download Poppins and Inter through `next/font/google`, so a dropped network connection fails the build with "Error while requesting resource". Retry before investigating.
 
@@ -61,7 +72,7 @@ Conventions worth knowing before editing a post or the engine:
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
 
-### Published posts (as of 2026-10-02, five slugs)
+### Published posts (as of 2026-10-07, six slugs)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
@@ -69,6 +80,7 @@ Conventions worth knowing before editing a post or the engine:
 | `iptv-bolaget` | sv + en | Vetting the *company* behind a service: 2026 blocking orders, the PMB 4826-25 conviction, SOU 2025:100 and why viewer fines did **not** start on 1 July, ARN and the right to cancel | no |
 | `ip-tv-kopa` | sv + en | The purchase itself (transactional): the withdrawal button and ban on manipulative checkouts in force since 19 June 2026, payment methods, binding periods, what to receive after paying | no |
 | `iptv-box-malmo` | sv + en | Local variant of cluster C3: whether a box is needed at all, Malmö's open city network, Danish channels across the Öresund, and Google's developer-verification rules for sideloaded apps | no |
+| `digital-tv-sverige` | sv + en | **Pillar-length** (sv 3,919 / en 3,778): how TV reaches Swedish homes by four routes, the 2026–2033 licence period, the shrinking terrestrial network, Kunskapskanalen's closure, a glossary and a table of contents. De facto Swedish pillar until A1 exists (§9.4) | no |
 | `basta-iptv-abonnemang` | sv + en | Commercial comparison framework: Mediavision's stalled-growth figures, the frozen HBO Max/SkyShowtime merger, seven weighted criteria, cost per evening used. Never claims we are "best" — §12 forbids it | no |
 
 Before proposing a topic, check both files and the sister site at `~/Desktop/iptv/websites/iptv-finland/content/blog/`. That site is the same business and publishes `iptv-nordic` in English already; per strategy §0.1 the two domains must not run the same article, so keep Sweden posts anchored to Swedish law, prices and institutions.

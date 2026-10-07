@@ -2,7 +2,7 @@
 title: "IPTV-box i Malmö 2026: så väljer du rätt och slipper strul"
 excerpt: "Behöver du en IPTV-box i Malmö? Så påverkar stadsnätet, danska kanaler och Googles nya appregler valet av box — och när du klarar dig utan."
 date: "2026-09-29"
-updateDate: "2026-09-29"
+updateDate: "2026-10-06"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-box-malmo-hero.webp"
 imageAlt: "IPTV-box i Malmö – tv på väggen i ett nordiskt vardagsrum i skymningen som visar en inställningsmeny, med fjärrkontrollen på soffan"
@@ -110,7 +110,7 @@ Ett rimligt köp är i stället en vanlig box från en etablerad tillverkare, pl
 
 Vi rekommenderar minst 15 Mbit/s för HD och 25 Mbit/s för 4K. En vanlig fiberanslutning i Malmö klarar det med bred marginal, och stabilitet betyder mer än toppfart.
 
-Tre saker ger mest effekt i en lägenhet: nätverkskabel till boxen där det går, routern placerad fritt i stället för i en garderob, och 5 GHz-bandet i stället för 2,4 GHz när kabel inte är möjligt. Hur den nordiska tv-marknaden i övrigt ser ut, med siffror och priser, går vi igenom i [guiden om IPTV i Norden](/sv/blog/iptv-nordic).
+Tre saker ger mest effekt i en lägenhet: nätverkskabel till boxen där det går, routern placerad fritt i stället för i en garderob, och 5 GHz-bandet i stället för 2,4 GHz när kabel inte är möjligt. Hur den nordiska tv-marknaden i övrigt ser ut, med siffror och priser, går vi igenom i [guiden om IPTV i Norden](/sv/blog/iptv-nordic), och hur tv distribueras i landet i [guiden om digital tv i Sverige](/sv/blog/digital-tv-sverige).
 
 ## Så kommer du igång
 

@@ -72,7 +72,7 @@ Conventions worth knowing before editing a post or the engine:
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
 
-### Published posts (as of 2026-10-07, six slugs)
+### Published posts (as of 2026-10-11, six slugs)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
@@ -119,10 +119,15 @@ The favicon set lives in `app/` as Next file conventions, not in `public/`: `app
 ## Known open items
 
 - No analytics of any kind, so WhatsApp click-through is unmeasured.
+- **No security headers.** The site sends no `content-security-policy`, `strict-transport-security`, `x-frame-options`, `x-content-type-options`, `referrer-policy` or `permissions-policy`. There is no `headers()` block in `next.config.mjs`. This was the only real defect the 2026-10-08 audit found.
+- **`legacy/` is 11 MB and tracked** (26 files) — larger than `app/`, `content/` and `scripts/` combined, and never built, served or linted. It inflates clones and most deploys; it is recoverable from git history if deleted.
+- **Dependencies drift:** Next 16.1.6 → 16.4.0, React 19.2.3 → 19.3.0, ESLint 9 → 10 (major) as of 2026-10-08.
 - Legal pages name no company entity by the owner's decision (`legal.operator` says "Digital Product & Support Provider"), while the `iptv-nordic` article tells readers a reputable seller publishes those details.
-- **The teaser `blog.posts` entries are overdue for deletion**: five real posts per locale are live, yet 4 invented teasers per locale still feed `/blog` and the homepage.
+- The teaser `blog.posts` entries in both catalogs are **dead fallback data, not live content** — verified 2026-10-11. Both call sites read `posts.length ? real : teasers` (`app/[locale]/page.js:38`, `app/[locale]/blog/page.js:32`), and six real posts exist per locale, so the teasers never render. Deleting them is optional tidying and means removing those two fallback branches too.
 - Neither pillar guide is written, so no post links "up" yet. Four published slugs sit outside the §8.2 backlog; `iptv-box-malmo` is tied to slot C3 via §11.1.
 - **Unsettled overlap:** `basta-iptv-abonnemang` covers much of backlog slot **A2** `tv-paket-jamforelse` (P1, and one of the three Swedish featured slots). The boundary — A2 compares named operator packages with dated prices, the published post teaches the method — is not yet written into §8.2.
 - Open editorial items raised in review and not applied. On `iptv-bolaget`: both conclusions end on a `/blog` link rather than `/pricing` (§9.3), the Swedish post has no home-page link, and it runs ~60 words under its band. Its English keyword density self-corrected to 1.18% when the cross-links were added. On `iptv-box-malmo`: the Swedish keyword density is 1.70% against the 1.0–1.5% target, and two Swedish FAQ answers run 38–39 words against the 40-word floor. `ip-tv-kopa` was written without any of these faults.
 - The new favicon and square logo only reach Google after the live site is re-crawled; nothing in Search Console reports favicons.
+- The `digital-tv-sverige` hero shows real broadcaster logos (owner's decision), which contradicts the Terms line "no third-party channel or brand logos are used". Either amend that sentence or swap the image.
+- §13.1 has no rows yet for `digital-tv-sverige`: the 2026–2033 licence period, the 1 January 2027 Kunskapskanalen date, and the distribution inquiry's final report.
 - `legacy/` is the original standalone template, kept for reference — never built, served or linted.

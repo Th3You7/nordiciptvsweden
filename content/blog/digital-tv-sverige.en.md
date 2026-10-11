@@ -2,7 +2,7 @@
 title: "Digital TV in Sweden 2026: How It Actually Reaches You"
 excerpt: "Digital TV in Sweden explained: the four ways TV reaches a home, the new 2026–2033 licence period, the shrinking aerial network and what changes in 2027."
 date: "2026-10-06"
-updateDate: "2026-10-06"
+updateDate: "2026-10-11"
 author: "IPTV NORDIC"
 image: "/assets/blog/digital-tv-sverige-hero.webp"
 imageAlt: "Digital TV in Sweden – a wall-mounted TV in a bright living room showing an electronic programme guide, with a rooftop aerial visible through the window"
@@ -216,7 +216,7 @@ The channel scan is the step most often forgotten. Redo it whenever the line-up 
 
 ### TV over the internet: connection, Wi-Fi and cable
 
-Here the requirements differ. No aerial is needed, but the connection must be stable.
+Here the requirements differ. No aerial is needed, but the connection must be stable. Choosing between the options, and checking your connection can carry them, is covered in [our guide to internet TV](/en/blog/basta-internet-tv).
 
 - **An Ethernet cable where possible.** A cable to the TV or box removes the Wi-Fi problem entirely.
 - **5 GHz rather than 2.4 GHz.** The faster band travels less far but suffers less interference, which suits a TV in the same room as the router.

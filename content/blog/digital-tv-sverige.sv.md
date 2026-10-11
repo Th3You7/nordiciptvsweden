@@ -2,7 +2,7 @@
 title: "Digital tv i Sverige 2026: så fungerar det i dag"
 excerpt: "Digital tv i Sverige 2026: ny tillståndsperiod, krympande marknät och Kunskapskanalen som försvinner. Så når tv:n hemmen — och vad det betyder för dig."
 date: "2026-10-06"
-updateDate: "2026-10-06"
+updateDate: "2026-10-11"
 author: "IPTV NORDIC"
 image: "/assets/blog/digital-tv-sverige-hero.webp"
 imageAlt: "Digital tv i Sverige – tv på väggen i ett ljust vardagsrum som visar en tv-tablå, med en takantenn synlig genom fönstret"
@@ -219,7 +219,7 @@ Kraven skiljer sig åt beroende på väg.
 
 **För marksänd tv** behöver du en antenn och en mottagare som klarar den sändningsteknik som används — antingen inbyggd i tv:n eller som separat box. Tv-apparater sålda de senaste åren har oftast stödet inbyggt, men en äldre apparat kan behöva kompletteras. Kontrollera din modell innan du köper något.
 
-**För tv över internet** räcker det med bredband och en app. Utredningen konstaterar att funktionell tillgång till internet om 10 Mbit/s i regel räcker för att ta emot tv över nätet. För vår egen tjänst rekommenderar vi minst 15 Mbit/s för HD och 25 Mbit/s för 4K, helt enkelt för att marginal ger jämnare uppspelning än minimikrav. Vilka enheter som fungerar listar vi under [enheter som stöds](/sv/devices), och vill du ha en box eller inte går vi igenom i [guiden om IPTV-box](/sv/blog/iptv-box-malmo).
+**För tv över internet** räcker det med bredband och en app. Hur du väljer mellan lösningarna, och kontrollerar att uppkopplingen räcker, står i [guiden om bästa internet-tv](/sv/blog/basta-internet-tv). Utredningen konstaterar att funktionell tillgång till internet om 10 Mbit/s i regel räcker för att ta emot tv över nätet. För vår egen tjänst rekommenderar vi minst 15 Mbit/s för HD och 25 Mbit/s för 4K, helt enkelt för att marginal ger jämnare uppspelning än minimikrav. Vilka enheter som fungerar listar vi under [enheter som stöds](/sv/devices), och vill du ha en box eller inte går vi igenom i [guiden om IPTV-box](/sv/blog/iptv-box-malmo).
 
 ### Marksänd tv: antenn, mottagare och kanalsökning
 

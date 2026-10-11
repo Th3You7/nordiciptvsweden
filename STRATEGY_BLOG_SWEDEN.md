@@ -291,6 +291,8 @@ Every cluster post links **up to its pillar** and **sideways to 3–6 siblings**
 | C5 | `iptv-iphone-ipad-apple-tv` | IPTV iPhone · Apple TV | 1 200–1 700 | P3 |
 | C6 | `m3u-lista-och-xtream-codes` | M3U-lista · Xtream Codes | 1 300–1 800 | P3 |
 
+**Two "bästa …" posts, one boundary.** `basta-internet-tv` and `basta-iptv-abonnemang` both target superlative queries and must not merge into each other. The split: `basta-internet-tv` covers choosing the *kind* of internet TV and whether the connection at home can carry it (the PTS coverage gap, speed testing, picture quality); `basta-iptv-abonnemang` covers comparing *subscriptions* once that is settled (the seven criteria, cost per evening used, market consolidation). Each links to the other for the half it does not cover. A third "bästa" post needs its own boundary written here before it is commissioned.
+
 C3 note: `iptv-box-malmo` already covers the box basics as a local variant (§11.1). Write C3 as the **general** guide and trim the overlap out of the Malmö post when you do.
 
 C2 note: Finland published `iptv-smarters-pro` with an angle on counterfeit apps and Android's developer-verification rules. **Write an original post** — different structure and examples, Swedish sources. Same slug on two domains is fine; the same text is not.

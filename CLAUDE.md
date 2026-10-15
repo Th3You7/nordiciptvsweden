@@ -72,7 +72,7 @@ Conventions worth knowing before editing a post or the engine:
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
 
-### Published posts (as of 2026-10-11, six slugs)
+### Published posts (as of 2026-10-15, seven slugs)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
@@ -81,6 +81,7 @@ Conventions worth knowing before editing a post or the engine:
 | `ip-tv-kopa` | sv + en | The purchase itself (transactional): the withdrawal button and ban on manipulative checkouts in force since 19 June 2026, payment methods, binding periods, what to receive after paying | no |
 | `iptv-box-malmo` | sv + en | Local variant of cluster C3: whether a box is needed at all, Malmö's open city network, Danish channels across the Öresund, and Google's developer-verification rules for sideloaded apps | no |
 | `digital-tv-sverige` | sv + en | **Pillar-length** (sv 3,919 / en 3,778): how TV reaches Swedish homes by four routes, the 2026–2033 licence period, the shrinking terrestrial network, Kunskapskanalen's closure, a glossary and a table of contents. De facto Swedish pillar until A1 exists (§9.4) | no |
+| `basta-internet-tv` | sv + en | Commercial: what counts as internet TV, the PTS coverage gap (98% could connect, 86% have it in the building, 61% subscribe), a ten-minute connection test, what really decides picture quality. Pairs with `basta-iptv-abonnemang` under the §8.2 boundary | no |
 | `basta-iptv-abonnemang` | sv + en | Commercial comparison framework: Mediavision's stalled-growth figures, the frozen HBO Max/SkyShowtime merger, seven weighted criteria, cost per evening used. Never claims we are "best" — §12 forbids it | no |
 
 Before proposing a topic, check both files and the sister site at `~/Desktop/iptv/websites/iptv-finland/content/blog/`. That site is the same business and publishes `iptv-nordic` in English already; per strategy §0.1 the two domains must not run the same article, so keep Sweden posts anchored to Swedish law, prices and institutions.
@@ -88,6 +89,8 @@ Before proposing a topic, check both files and the sister site at `~/Desktop/ipt
 **City posts.** §11 used to ban them outright; it now permits one only when it carries three or more sourced local facts, cites local authorities or operators, gives advice that genuinely differs from the national guide, and links up to its cluster guide (§11.1). `iptv-box-malmo` is the worked example. Its cluster guide C3 `iptv-android-tv-box` is still unwritten — when it is written it must be the **general** box guide, with the overlap trimmed out of the Malmö post.
 
 **Linking while the pillars don't exist.** The pillar guides (`iptv-sverige`, `iptv-sweden-guide`) are unwritten, so posts link to `/pricing`, `/contact` and the home page instead, plus each other — the three published slugs already cross-link in both locales. Add pillar links as soon as a pillar exists. When a post ships, link it from the existing posts and bump their `updateDate` (§10.3), and end the conclusion on `/pricing` rather than `/blog`.
+
+**Two "bästa …" posts.** §8.2 now carries their boundary: `basta-internet-tv` covers choosing the *kind* of internet TV and whether the connection can carry it; `basta-iptv-abonnemang` covers comparing *subscriptions* once that is settled. Each links to the other. A third "bästa" post needs its own boundary written into §8.2 first.
 
 **Tags.** The cluster tag and topical secondaries match across a pair, but an `en` post may carry `expats` with no `sv` counterpart — that is the deliberate exception in §7, since `en` is a different audience, and it is what links the English posts to each other. Don't add further one-sided tags.
 

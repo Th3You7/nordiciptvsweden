@@ -291,6 +291,10 @@ Every cluster post links **up to its pillar** and **sideways to 3–6 siblings**
 | C5 | `iptv-iphone-ipad-apple-tv` | IPTV iPhone · Apple TV | 1 200–1 700 | P3 |
 | C6 | `m3u-lista-och-xtream-codes` | M3U-lista · Xtream Codes | 1 300–1 800 | P3 |
 
+**`iptv-jamforelse` fills slot A2.** The published post covers comparing *concrete offers*: campaign price versus list price, the twelve-month total, the fill-in template, telephone-sales traps and dated market figures. That is what A2 `tv-paket-jamforelse` was for, so A2 is considered served — do not write a second post against that keyword family without redefining the lane here. Its dated prices are a §13.1 trigger: they came from a review checked 8 June 2026 and must be re-dated or removed when stale.
+
+**Three comparison posts, three lanes.** `basta-internet-tv` = which *kind* of service, and whether the connection carries it. `basta-iptv-abonnemang` = the *criteria method*, weighting and cost per evening. `iptv-jamforelse` = the *offers themselves*, prices and the traps in them. Each links to the other two. A fourth comparison post needs its lane written here first.
+
 **Two "bästa …" posts, one boundary.** `basta-internet-tv` and `basta-iptv-abonnemang` both target superlative queries and must not merge into each other. The split: `basta-internet-tv` covers choosing the *kind* of internet TV and whether the connection at home can carry it (the PTS coverage gap, speed testing, picture quality); `basta-iptv-abonnemang` covers comparing *subscriptions* once that is settled (the seven criteria, cost per evening used, market consolidation). Each links to the other for the half it does not cover. A third "bästa" post needs its own boundary written here before it is commissioned.
 
 C3 note: `iptv-box-malmo` already covers the box basics as a local variant (§11.1). Write C3 as the **general** guide and trim the overlap out of the Malmö post when you do.

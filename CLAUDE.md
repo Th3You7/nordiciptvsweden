@@ -122,9 +122,8 @@ The favicon set lives in `app/` as Next file conventions, not in `public/`: `app
 ## Known open items
 
 - No analytics of any kind, so WhatsApp click-through is unmeasured.
-- **No security headers.** The site sends no `content-security-policy`, `strict-transport-security`, `x-frame-options`, `x-content-type-options`, `referrer-policy` or `permissions-policy`. There is no `headers()` block in `next.config.mjs`. This was the only real defect the 2026-10-08 audit found.
-- **`legacy/` is 11 MB and tracked** (26 files) — larger than `app/`, `content/` and `scripts/` combined, and never built, served or linted. It inflates clones and most deploys; it is recoverable from git history if deleted.
-- **Dependencies drift:** Next 16.1.6 → 16.4.0, React 19.2.3 → 19.3.0, ESLint 9 → 10 (major) as of 2026-10-08.
+- Security headers were added on 2026-10-16: CSP, HSTS (two years, no `preload`), `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy` and `Permissions-Policy`, applied to every response via `headers()` in `next.config.mjs`. CSP keeps `'unsafe-inline'` for scripts and styles because the App Router inlines the RSC payload per page and components set inline `style` attributes; the strict alternative is a middleware nonce, which would end the static prerender. **Not yet verified in a browser console.**
+- Dependencies: Next and eslint-config-next upgraded to 16.4.2 on 2026-10-16, which cleared 1 critical and 4 high vulnerabilities (9 → 4). The remaining 4 are moderate and deliberate: `gray-matter` → `js-yaml` → `argparse` → `sprintf-js`, where `npm audit fix --force` would downgrade gray-matter to 2.0.1 and break the blog engine, and no patched `sprintf-js` exists. The advisory needs attacker-controlled format strings; only our own repo files reach that parser. React 19.3.1 and ESLint 10 are still available.
 - Legal pages name no company entity by the owner's decision (`legal.operator` says "Digital Product & Support Provider"), while the `iptv-nordic` article tells readers a reputable seller publishes those details.
 - The teaser `blog.posts` entries in both catalogs are **dead fallback data, not live content** — verified 2026-10-11. Both call sites read `posts.length ? real : teasers` (`app/[locale]/page.js:38`, `app/[locale]/blog/page.js:32`), and six real posts exist per locale, so the teasers never render. Deleting them is optional tidying and means removing those two fallback branches too.
 - Neither pillar guide is written, so no post links "up" yet. Four published slugs sit outside the §8.2 backlog; `iptv-box-malmo` is tied to slot C3 via §11.1.
@@ -133,4 +132,5 @@ The favicon set lives in `app/` as Next file conventions, not in `public/`: `app
 - The new favicon and square logo only reach Google after the live site is re-crawled; nothing in Search Console reports favicons.
 - The `digital-tv-sverige` hero shows real broadcaster logos (owner's decision), which contradicts the Terms line "no third-party channel or brand logos are used". Either amend that sentence or swap the image.
 - §13.1 has no rows yet for `digital-tv-sverige`: the 2026–2033 licence period, the 1 January 2027 Kunskapskanalen date, and the distribution inquiry's final report.
-- `legacy/` is the original standalone template, kept for reference — never built, served or linted.
+- `legacy/` was deleted on 2026-10-16 (26 files, 11 MB of dead weight). The original standalone template is in git history from the initial commit if it is ever needed.
+- `public/` holds only referenced assets; a stray 383 KB JPEG left over from the template was deleted at the same time.

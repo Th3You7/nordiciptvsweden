@@ -4,9 +4,10 @@ import nextVitals from "eslint-config-next/core-web-vitals";
 // Flat config (ESLint 9). This project is plain JavaScript, so unlike the
 // Hungary site it does not pull in eslint-config-next/typescript.
 const eslintConfig = defineConfig([
-  // `legacy/` is the original standalone template, kept only for reference and
-  // never built or served. It is not ours to lint.
-  globalIgnores([".next/**", "out/**", "build/**", "node_modules/**", "legacy/**"]),
+  // Build output and dependencies only. `legacy/` used to be ignored here; the
+  // folder was deleted once it had been dead weight for months — it is in git
+  // history if the original standalone template is ever needed again.
+  globalIgnores([".next/**", ".next-verify/**", "out/**", "build/**", "node_modules/**"]),
 
   ...nextVitals,
 

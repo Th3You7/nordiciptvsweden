@@ -2,7 +2,7 @@
 title: "IPTV-box i Malmö 2026: så väljer du rätt och slipper strul"
 excerpt: "Behöver du en IPTV-box i Malmö? Så påverkar stadsnätet, danska kanaler och Googles nya appregler valet av box — och när du klarar dig utan."
 date: "2026-09-29"
-updateDate: "2026-10-06"
+updateDate: "2026-10-16"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-box-malmo-hero.webp"
 imageAlt: "IPTV-box i Malmö – tv på väggen i ett nordiskt vardagsrum i skymningen som visar en inställningsmeny, med fjärrkontrollen på soffan"
@@ -20,9 +20,9 @@ faq:
   - q: "Påverkar Googles regler min box i Sverige redan nu?"
     a: "Nej. Tillämpningen startar i fyra andra länder, och den globala utrullningen ligger 2027 och framåt enligt Google. Men en box du köper i dag används sannolikt fortfarande då, så det är värt att välja en enhet där de appar du behöver finns i den vanliga appbutiken."
   - q: "Vilken internethastighet behöver jag?"
-    a: "Vi rekommenderar minst 15 Mbit/s för HD och 25 Mbit/s för 4K. En vanlig fiberanslutning i Malmö klarar det med bred marginal. Stabilitet är viktigare än toppfart, och nätverkskabel till boxen ger nästan alltid ett jämnare resultat än wifi."
+    a: "Vi rekommenderar minst 15 Mbit/s för HD och 25 Mbit/s för 4K. En vanlig fiberanslutning i Malmö klarar det med bred marginal, så hastigheten är sällan problemet. Stabilitet är viktigare än toppfart, och en nätverkskabel till boxen ger nästan alltid ett jämnare resultat än wifi genom väggar."
   - q: "Kan jag använda IPTV NORDIC på en box?"
-    a: "Ja. Tjänsten ger inloggningsuppgifter som fungerar i vanliga IPTV-appar på smart-tv, Android TV, Fire TV Stick, Apple TV, mobil, surfplatta och dator. Aktiveringen tar omkring en minut när betalningen är bekräftad, och support finns dygnet runt via WhatsApp."
+    a: "Ja. Tjänsten ger inloggningsuppgifter som fungerar i vanliga IPTV-appar på smart-tv, Android TV, Fire TV Stick, Apple TV, mobil, surfplatta och dator. Vi säljer alltså ingen hårdvara. Aktiveringen tar omkring en minut när betalningen är bekräftad, och support finns dygnet runt via WhatsApp."
 ---
 
 Frågan om en IPTV-box i Malmö har fått ett nytt svar under 2026, och det beror inte på boxarna. Det beror på vad som finns i din fastighet, vad Öresund gör med kanalutbudet och på nya regler för vilka appar som får installeras på Android-enheter.

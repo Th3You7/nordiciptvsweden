@@ -575,6 +575,9 @@ Several published posts rest on facts with a known expiry. These are not seasona
 | Allente Danish add-on at 59 kr/month | `iptv-box-malmo` | Any price check; re-date or remove |
 | Withdrawal button in force since 19 June 2026 | `ip-tv-kopa` | Stable — but confirm before citing it as new |
 | Competitor prices checked 13 September 2026 | `iptv-nordic` | Quarterly; prices move faster than the post |
+| Public service licence period 2026–2033, technology-neutral, SR and SVT required to broadcast 2–4 channels terrestrially | `digital-tv-sverige` | Any change to the licence conditions before 2033 |
+| Kunskapskanalen "upphör 1 januari 2027" — written as upcoming | `digital-tv-sverige`, `iptv-nordic` | **1 January 2027**: rewrite in the past tense and drop it from aerial line-ups |
+| Distribution inquiry: final report "due 30 September 2026" | `digital-tv-sverige` | Publication of the final report, which the post does not yet claim has happened |
 
 A claim whose trigger has fired is a factual error, not an aging article. Fix it the same week.
 

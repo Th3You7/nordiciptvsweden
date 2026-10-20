@@ -72,7 +72,7 @@ Conventions worth knowing before editing a post or the engine:
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
 
-### Published posts (as of 2026-10-15, seven slugs)
+### Published posts (as of 2026-10-20, eight slugs)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
@@ -82,6 +82,7 @@ Conventions worth knowing before editing a post or the engine:
 | `iptv-box-malmo` | sv + en | Local variant of cluster C3: whether a box is needed at all, Malmö's open city network, Danish channels across the Öresund, and Google's developer-verification rules for sideloaded apps | no |
 | `digital-tv-sverige` | sv + en | **Pillar-length** (sv 3,919 / en 3,778): how TV reaches Swedish homes by four routes, the 2026–2033 licence period, the shrinking terrestrial network, Kunskapskanalen's closure, a glossary and a table of contents. De facto Swedish pillar until A1 exists (§9.4) | no |
 | `basta-internet-tv` | sv + en | Commercial: what counts as internet TV, the PTS coverage gap (98% could connect, 86% have it in the building, 61% subscribe), a ten-minute connection test, what really decides picture quality. Pairs with `basta-iptv-abonnemang` under the §8.2 boundary | no |
+| `iptv-jamforelse` | sv + en | Commercial, fills backlog slot **A2**: campaign price versus list price (15 of 27 packages rose, one by 101%), the twelve-month total, a fill-in template, and KO's October 2026 order over misleading telephone sales. Every competitor price is dated 8 June 2026 | no |
 | `basta-iptv-abonnemang` | sv + en | Commercial comparison framework: Mediavision's stalled-growth figures, the frozen HBO Max/SkyShowtime merger, seven weighted criteria, cost per evening used. Never claims we are "best" — §12 forbids it | no |
 
 Before proposing a topic, check both files and the sister site at `~/Desktop/iptv/websites/iptv-finland/content/blog/`. That site is the same business and publishes `iptv-nordic` in English already; per strategy §0.1 the two domains must not run the same article, so keep Sweden posts anchored to Swedish law, prices and institutions.
@@ -90,7 +91,7 @@ Before proposing a topic, check both files and the sister site at `~/Desktop/ipt
 
 **Linking while the pillars don't exist.** The pillar guides (`iptv-sverige`, `iptv-sweden-guide`) are unwritten, so posts link to `/pricing`, `/contact` and the home page instead, plus each other — the three published slugs already cross-link in both locales. Add pillar links as soon as a pillar exists. When a post ships, link it from the existing posts and bump their `updateDate` (§10.3), and end the conclusion on `/pricing` rather than `/blog`.
 
-**Two "bästa …" posts.** §8.2 now carries their boundary: `basta-internet-tv` covers choosing the *kind* of internet TV and whether the connection can carry it; `basta-iptv-abonnemang` covers comparing *subscriptions* once that is settled. Each links to the other. A third "bästa" post needs its own boundary written into §8.2 first.
+**Three comparison posts, three lanes** (§8.2). `basta-internet-tv` = which *kind* of service, and whether the connection carries it. `basta-iptv-abonnemang` = the *criteria method*, weighting and cost per evening. `iptv-jamforelse` = the *offers themselves*, prices and the traps in them. Each links to the other two. A fourth comparison post needs its lane written into §8.2 before it is commissioned.
 
 **Tags.** The cluster tag and topical secondaries match across a pair, but an `en` post may carry `expats` with no `sv` counterpart — that is the deliberate exception in §7, since `en` is a different audience, and it is what links the English posts to each other. Don't add further one-sided tags.
 
@@ -127,10 +128,10 @@ The favicon set lives in `app/` as Next file conventions, not in `public/`: `app
 - Legal pages name no company entity by the owner's decision (`legal.operator` says "Digital Product & Support Provider"), while the `iptv-nordic` article tells readers a reputable seller publishes those details.
 - The teaser `blog.posts` entries in both catalogs are **dead fallback data, not live content** — verified 2026-10-11. Both call sites read `posts.length ? real : teasers` (`app/[locale]/page.js:38`, `app/[locale]/blog/page.js:32`), and six real posts exist per locale, so the teasers never render. Deleting them is optional tidying and means removing those two fallback branches too.
 - Neither pillar guide is written, so no post links "up" yet. Four published slugs sit outside the §8.2 backlog; `iptv-box-malmo` is tied to slot C3 via §11.1.
-- **Unsettled overlap:** `basta-iptv-abonnemang` covers much of backlog slot **A2** `tv-paket-jamforelse` (P1, and one of the three Swedish featured slots). The boundary — A2 compares named operator packages with dated prices, the published post teaches the method — is not yet written into §8.2.
+- Backlog slot **A2** is served by `iptv-jamforelse` (recorded in §8.2 on 2026-10-15); do not write a second post against that keyword family without redefining the lane there first.
 - The editorial backlog is clear as of 2026-10-16: `iptv-bolaget` now ends on `/pricing`, carries a home-page link and sits at 2,004 words; `iptv-box-malmo`'s short FAQ answers were lengthened. Its Swedish keyword density had already self-corrected to 1.29% — the 1.70% recorded earlier was measured with alt text included, which inflates it.
 - The new favicon and square logo only reach Google after the live site is re-crawled; nothing in Search Console reports favicons.
 - §13.1 now covers `digital-tv-sverige`. The row that will fire first: **1 January 2027**, when Kunskapskanalen's closure must be rewritten in the past tense in both that post and `iptv-nordic`, and dropped from the aerial line-ups.
 - The Terms were reworded on 2026-10-16 so illustrations showing a channel name, logo or programme guide are declared illustrative and imply no affiliation or carriage — the old "no third-party logos are used" claim was untrue once the `digital-tv-sverige` hero shipped.
 - `legacy/` was deleted on 2026-10-16 (26 files, 11 MB of dead weight). The original standalone template is in git history from the initial commit if it is ever needed.
-- `public/` holds only referenced assets; a stray 383 KB JPEG left over from the template was deleted at the same time.
+- A stray 383 KB JPEG left over from the template was deleted alongside `legacy/`. Three more orphans remain in `public/assets/` — `series.jpg` (340 KB), `series-blur.jpg` (308 KB) and `hero-tv.jpg` (284 KB) — unreferenced from `app/` and `content/` but still shipped and publicly served. Check for CSS references before deleting. Note that `logo-icon.png` *is* referenced, without a leading slash, by `LOGO` in `app/lib/schema.js`, so a naive `/assets/...` grep reports it as an orphan.

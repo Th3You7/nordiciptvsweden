@@ -2,7 +2,7 @@
 title: "IPTV Bolaget: Vetting the Company Behind IPTV in Sweden"
 excerpt: "What IPTV bolaget means, what Swedish law actually says in autumn 2026, and how to check the company behind a service before you pay for it."
 date: "2026-09-20"
-updateDate: "2026-10-16"
+updateDate: "2026-10-20"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-bolaget-hero.webp"
 imageAlt: "The IPTV bolaget behind the service – a dark living room in the evening, a large TV showing an anonymous login screen in red light and a phone with a chat conversation on the coffee table"
@@ -99,7 +99,7 @@ Work through these with any IPTV bolaget, including this one.
 
 1. **Who are you contracting with?** Look for a name, a contact route and published terms. Plenty of small digital sellers don't publish full company details, and in that case the terms and the support channel are what you have to judge them on — read both before paying.
 2. **What do the terms say about money?** Cancellation, refunds, and what happens during an outage. Distance purchases in Sweden generally carry a 14-day statutory right of withdrawal [as Konsumentverket explains](https://www.konsumentverket.se/en/process/right-of-withdrawal/), with exceptions for digital content delivered immediately.
-3. **How do you pay?** Cards and other traceable methods give protection that cash, cryptocurrency and gift cards do not. A seller who accepts only untraceable payment is telling you something.
+3. **How do you pay?** Cards and other traceable methods give protection that cash, cryptocurrency and gift cards do not. Where that money ends up is covered in [our guide to free IPTV](/en/blog/gratis-iptv-sverige). A seller who accepts only untraceable payment is telling you something.
 4. **What is being promised?** "Every channel", "all sport" and "works everywhere with no restrictions" are promises nobody can keep, because rights are sold country by country. The bigger the promise, the less it means.
 5. **Is there a trial?** A company willing to let you test quality and stability on your own connection before paying is unlikely to be hiding much about the product itself.
 6. **What happens after you pay?** Ask how support works, how fast replies come and what happens during downtime. The answers before a sale usually resemble the service after it.

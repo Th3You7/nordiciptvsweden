@@ -2,7 +2,7 @@
 title: "IPTV-jämförelse 2026: så jämför du utan att luras"
 excerpt: "En IPTV-jämförelse som håller: kampanjpriser som dubblades, ett föreläggande mot vilseledande telefonförsäljning och mallen du fyller i själv."
 date: "2026-10-15"
-updateDate: "2026-10-15"
+updateDate: "2026-10-20"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-jamforelse-hero.webp"
 imageAlt: "IPTV-jämförelse – tre utskrivna erbjudanden bredvid varandra på ett skrivbord med priset inringat i rött, en miniräknare och en penna"
@@ -198,6 +198,8 @@ Fyra saker skiljer tjänster åt utan att synas i en pristabell:
 Det fjärde är värt ett eget resonemang. Marknadsföring räknar gärna allt som går att räkna: kanaler, titlar, enheter, timmar. En jämförelse som tar de siffrorna på allvar belönar den som räknar mest generöst, inte den som levererar bäst. Fråga i stället efter det som går att kontrollera — vad som finns i utbudet den vecka du tecknar, hur många skärmar som fungerar samtidigt, och vad som händer när något slutar fungera en söndagkväll.
 
 [[wa:Starta testperiod|Ingen bindningstid och ingen automatisk förnyelse – du bestämmer själv.]]
+
+Ett pris på noll kronor är en egen kategori i en jämförelse, och den går vi igenom i [guiden om gratis IPTV](/sv/blog/gratis-iptv-sverige).
 
 ## Fyra misstag i en IPTV-jämförelse
 

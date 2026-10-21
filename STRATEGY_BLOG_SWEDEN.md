@@ -537,6 +537,8 @@ When C3 is written it takes the general box keyword and the full device walk-thr
 - **Use unprovable superlatives.** Swedish marketing law (marknadsföringslagen) requires claims like *bäst*, *billigast* or *snabbast* to be substantiated. "Bästa IPTV" is a fine *topic* for a comparison post; it is not a claim to make about ourselves.
 - **Misstate consumer rights.** Distance sales in Sweden carry a statutory 14-day right of withdrawal (distansavtalslagen), with specific rules for digital services. The 7-day guarantee is *in addition to* statutory rights — never write that it replaces them.
 - Publish invented reviews, testimonials or an author persona.
+
+**The one "gratis" exception (added 2026-10-20).** `se gratis` as an *intent* stays off-limits, but the query may be answered as consumer protection, which is what `gratis-iptv-sverige` does. Such a post must: lead with what is genuinely free and legal (public service, ad-funded tiers, the free part of TV4 Play); never explain how to reach unlicensed content, never name or link such a service, and never publish playlists; state the viewer's legal position accurately rather than as a threat; and source every risk claim — the "95% of free apps contain malware" figure circulating on affiliate sites is unsourced and must not be repeated. If a draft cannot meet all five, it is the forbidden intent wearing a different hat.
 - State a competitor price, package or channel count you haven't verified that day.
 - Promise "alla kanaler", "100 % stabilt", or anything the FAQ contradicts.
 

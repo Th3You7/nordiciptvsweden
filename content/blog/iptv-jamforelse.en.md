@@ -2,7 +2,7 @@
 title: "IPTV Comparison in Sweden 2026: How to Compare Fairly"
 excerpt: "An IPTV comparison that holds up: campaign prices that doubled, a regulator order over misleading phone sales, and the template you fill in yourself."
 date: "2026-10-15"
-updateDate: "2026-10-15"
+updateDate: "2026-10-20"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-jamforelse-hero.webp"
 imageAlt: "IPTV comparison – three printed offers side by side on a desk with the price circled in red, a calculator and a pen"
@@ -190,6 +190,8 @@ One note on line-ups: rights move between services, sometimes mid-contract. Don'
 **What is genuinely included.** Channel counts say less than whether your channels are there — and marketing counts whatever is countable. Ask instead for what can be checked: what is in the line-up the week you sign, how many screens work at once, and what happens when something breaks on a Sunday evening.
 
 [[wa:Start Free Trial|No fixed term and no automatic renewal – you decide whether to carry on.]]
+
+A price of zero is its own category in any comparison, and it is covered in [our guide to free IPTV](/en/blog/gratis-iptv-sverige).
 
 ## Four mistakes in an IPTV comparison
 

@@ -2,7 +2,7 @@
 title: "IPTV-bolaget bakom tjänsten: så granskar du det 2026"
 excerpt: "Vad är ett IPTV-bolag, vad säger svensk lag hösten 2026 och hur granskar du bolaget bakom en tjänst innan du betalar? En guide utan skrämselpropaganda."
 date: "2026-09-20"
-updateDate: "2026-10-16"
+updateDate: "2026-10-20"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-bolaget-hero.webp"
 imageAlt: "IPTV-bolaget bakom tjänsten – mörkt vardagsrum på kvällen där en stor tv visar en anonym inloggningsruta i rött sken och en mobil med ett chattsamtal ligger på soffbordet"
@@ -99,7 +99,7 @@ Det här är den praktiska delen. Gå igenom punkterna innan du betalar, oavsett
 
 1. **Vem ingår du avtal med?** Leta efter namn, kontaktväg och publicerade villkor. Många mindre digitala säljare publicerar inte fullständiga företagsuppgifter; då blir villkoren och supportkanalen desto viktigare att läsa igenom innan du betalar.
 2. **Vad säger villkoren om pengarna?** Ångerrätt, återbetalning och vad som händer om tjänsten ligger nere. Vid distansköp har du i regel 14 dagars lagstadgad ångerrätt [enligt Konsumentverket](https://www.konsumentverket.se/konsumentratt-process/angerratt/), med undantag för visst digitalt innehåll som levereras direkt.
-3. **Hur betalar du?** Kort och andra spårbara betalsätt ger ett skydd som kontanter, kryptovaluta och presentkort inte ger. Ett bolag som bara accepterar ospårbara betalningar berättar något om sig självt.
+3. **Hur betalar du?** Kort och andra spårbara betalsätt ger ett skydd som kontanter, kryptovaluta och presentkort inte ger. Vart pengarna tar vägen i den illegala marknaden går vi igenom i [guiden om gratis IPTV](/sv/blog/gratis-iptv-sverige). Ett bolag som bara accepterar ospårbara betalningar berättar något om sig självt.
 4. **Vad lovas i marknadsföringen?** "Alla kanaler", "all sport" och "fungerar överallt utan begränsningar" är löften ingen kan hålla, eftersom rättigheter säljs land för land. Ju större löftet är, desto mindre säger det.
 5. **Finns det en testperiod?** Ett bolag som vågar låta dig kontrollera kvalitet och stabilitet i ditt eget nätverk innan du betalar har rimligen inget att dölja om produkten.
 6. **Vad händer efter köpet?** Fråga hur support ges, hur snabbt du får svar och vad som gäller vid driftstörningar. Svaren innan köpet brukar likna servicen efter det.

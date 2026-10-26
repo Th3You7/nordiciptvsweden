@@ -2,7 +2,7 @@
 title: "IPTV-jämförelse 2026: så jämför du utan att luras"
 excerpt: "En IPTV-jämförelse som håller: kampanjpriser som dubblades, ett föreläggande mot vilseledande telefonförsäljning och mallen du fyller i själv."
 date: "2026-10-15"
-updateDate: "2026-10-20"
+updateDate: "2026-10-26"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-jamforelse-hero.webp"
 imageAlt: "IPTV-jämförelse – tre utskrivna erbjudanden bredvid varandra på ett skrivbord med priset inringat i rött, en miniräknare och en penna"
@@ -40,7 +40,7 @@ Sex uppgifter avgör vad ett abonnemang är värt. Pris är en av dem.
 5. **Support**: kanal, språk och svarstid.
 6. **Vad som faktiskt ingår** i det du jämför, inte vad som nämns i marknadsföringen.
 
-Metoden för att vikta de här mot varandra finns i [guiden om bästa IPTV-abonnemang](/sv/blog/basta-iptv-abonnemang). Den här guiden handlar om själva siffrorna och fällorna i dem.
+Metoden för att vikta de här mot varandra finns i [guiden om bästa IPTV-abonnemang](/sv/blog/basta-iptv-abonnemang). Den här guiden handlar om själva siffrorna och fällorna i dem. Vad ett sänkt pris måste uppfylla rent juridiskt tar vi i stället upp i [vad ett prispåstående betyder](/sv/blog/basta-och-billigaste-iptv).
 
 Ordningen spelar roll. Börja med vad hushållet behöver, inte med vad som är billigast — annars jämför du bort krav du faktiskt har. Ett paket med en ström kan vara perfekt för en person och helt obrukbart för en familj, och den skillnaden syns inte i priset.
 

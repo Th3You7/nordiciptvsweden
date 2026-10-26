@@ -293,7 +293,9 @@ Every cluster post links **up to its pillar** and **sideways to 3–6 siblings**
 
 **`iptv-jamforelse` fills slot A2.** The published post covers comparing *concrete offers*: campaign price versus list price, the twelve-month total, the fill-in template, telephone-sales traps and dated market figures. That is what A2 `tv-paket-jamforelse` was for, so A2 is considered served — do not write a second post against that keyword family without redefining the lane here. Its dated prices are a §13.1 trigger: they came from a review checked 8 June 2026 and must be re-dated or removed when stale.
 
-**Three comparison posts, three lanes.** `basta-internet-tv` = which *kind* of service, and whether the connection carries it. `basta-iptv-abonnemang` = the *criteria method*, weighting and cost per evening. `iptv-jamforelse` = the *offers themselves*, prices and the traps in them. Each links to the other two. A fourth comparison post needs its lane written here first.
+**Four comparison posts, four lanes.** `basta-internet-tv` = which *kind* of service, and whether the connection carries it. `basta-iptv-abonnemang` = the *criteria method*, weighting and cost per evening. `iptv-jamforelse` = the *offers themselves*, prices and the traps in them. `basta-och-billigaste-iptv` = the *price claim itself* (below). Each links to the others. A fifth comparison post needs its lane written here first.
+
+**`basta-och-billigaste-iptv` — the fourth comparison post and the third "bästa" post (lane added 2026-10-26).** Its subject is the *price claim*, not the packages behind it: what `billigast` is allowed to mean under **7 a § prisinformationslagen**, how a lawful discount is constructed from the lowest price of the previous 30 days, why a struck-through price proves nothing on its own, and why "best" and "cheapest" are two questions that pull against each other. It must not compare named operator packages (that is `iptv-jamforelse`), must not re-run the weighted criteria (`basta-iptv-abonnemang`) and must not cover connection types (`basta-internet-tv`); it links to all three. Because the post is *about* superlatives, §12 applies with extra force: it may analyse the words `bäst` and `billigast`, and must never apply either to us.
 
 **Two "bästa …" posts, one boundary.** `basta-internet-tv` and `basta-iptv-abonnemang` both target superlative queries and must not merge into each other. The split: `basta-internet-tv` covers choosing the *kind* of internet TV and whether the connection at home can carry it (the PTS coverage gap, speed testing, picture quality); `basta-iptv-abonnemang` covers comparing *subscriptions* once that is settled (the seven criteria, cost per evening used, market consolidation). Each links to the other for the half it does not cover. A third "bästa" post needs its own boundary written here before it is commissioned.
 
@@ -534,6 +536,7 @@ When C3 is written it takes the general box keyword and the full device walk-thr
 **Don't:**
 - Frame content around getting paid content for free, bypassing geo-blocks, or evading detection. `se gratis` as an intent is off-limits even with volume.
 - **Claim specific rights** — never say the line-up carries SHL, Allsvenskan, Premier League or any named premium channel. Write about what people want to watch and what the service offers generally (`sportkanaler`, `18 000+ kanaler`).
+- **Call ourselves the cheapest.** Our plans are priced and dated, which is a fact; "billigast" is a market-wide claim we cannot substantiate and must never make, including by implication in a title, hero or meta description.
 - **Use unprovable superlatives.** Swedish marketing law (marknadsföringslagen) requires claims like *bäst*, *billigast* or *snabbast* to be substantiated. "Bästa IPTV" is a fine *topic* for a comparison post; it is not a claim to make about ourselves.
 - **Misstate consumer rights.** Distance sales in Sweden carry a statutory 14-day right of withdrawal (distansavtalslagen), with specific rules for digital services. The 7-day guarantee is *in addition to* statutory rights — never write that it replaces them.
 - Publish invented reviews, testimonials or an author persona.
@@ -580,6 +583,11 @@ Several published posts rest on facts with a known expiry. These are not seasona
 | Public service licence period 2026–2033, technology-neutral, SR and SVT required to broadcast 2–4 channels terrestrially | `digital-tv-sverige` | Any change to the licence conditions before 2033 |
 | Kunskapskanalen "upphör 1 januari 2027" — written as upcoming | `digital-tv-sverige`, `iptv-nordic` | **1 January 2027**: rewrite in the past tense and drop it from aerial line-ups |
 | Distribution inquiry: final report "due 30 September 2026" | `digital-tv-sverige` | Publication of the final report, which the post does not yet claim has happened |
+| Skatteverket's figures on unlicensed streaming: 37 million (2023) and 550 million kronor (2018) | `gratis-iptv-sverige` | Skatteverket's next published estimate |
+| Competitor prices checked 8 June 2026 (27 packages, 15 raised, one by 101%) | `iptv-jamforelse` | Quarterly; re-date or remove — prices move faster than the post |
+| KO's order against seven companies over price information, 8.6 MSEK, 17 November 2025 | `basta-och-billigaste-iptv` | A court ruling on any of them, or KO's next follow-up review |
+| PMD overturned KO's order against Inet AB (published 20 March 2026) | `basta-och-billigaste-iptv` | An appeal to Patent- och marknadsöverdomstolen, or a contrary ruling |
+| **7 a § prisinformationslagen still says "produkt"** (varor, tjänster eller andra nyttigheter), so the 30-day rule reaches service subscriptions. A lagrådsremiss of 15 October 2026 (Fi2026/00996) would narrow it to "vara", in force 1 March 2027 — the promemoria said 1 February | `basta-och-billigaste-iptv` | **Riksdag decision on Fi2026/00996, or 1 March 2027.** When it passes, the post's central claim inverts: the rule stops covering IPTV subscriptions. The post must keep this as a proposal until then |
 
 A claim whose trigger has fired is a factual error, not an aging article. Fix it the same week.
 

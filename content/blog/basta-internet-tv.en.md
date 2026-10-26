@@ -2,7 +2,7 @@
 title: "Best Internet TV in Sweden 2026: How to Choose"
 excerpt: "Choosing internet TV in Sweden? 98% can get gigabit broadband but only 61% subscribe. How to check your connection first, then pick the right service."
 date: "2026-10-11"
-updateDate: "2026-10-15"
+updateDate: "2026-10-26"
 author: "IPTV NORDIC"
 image: "/assets/blog/basta-internet-tv-hero.webp"
 imageAlt: "Best internet TV – a bright living room where a wall-mounted TV shows a grid of app icons, with a network cable running from a wall socket"
@@ -72,7 +72,7 @@ Which internet TV is best for you comes down to five things:
 4. **Flexibility** — how quickly you can stop if something changes.
 5. **Support** when something breaks.
 
-The full method for weighting and scoring those criteria, including the cost-per-evening calculation, is in [our guide to choosing a subscription](/en/blog/basta-iptv-abonnemang). This guide covers the step before: which *kind* of internet TV fits, and whether the technology at home can carry it.
+The full method for weighting and scoring those criteria, including the cost-per-evening calculation, is in [our guide to choosing a subscription](/en/blog/basta-iptv-abonnemang). This guide covers the step before: which *kind* of internet TV fits, and whether the technology at home can carry it. If you want to know what a discount must be built on, see [the rules behind a reduced price](/en/blog/basta-och-billigaste-iptv).
 
 ### Three households, three different answers
 

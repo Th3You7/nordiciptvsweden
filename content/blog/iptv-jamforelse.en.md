@@ -2,7 +2,7 @@
 title: "IPTV Comparison in Sweden 2026: How to Compare Fairly"
 excerpt: "An IPTV comparison that holds up: campaign prices that doubled, a regulator order over misleading phone sales, and the template you fill in yourself."
 date: "2026-10-15"
-updateDate: "2026-10-20"
+updateDate: "2026-10-26"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-jamforelse-hero.webp"
 imageAlt: "IPTV comparison – three printed offers side by side on a desk with the price circled in red, a calculator and a pen"
@@ -40,7 +40,7 @@ Six facts decide what a subscription is worth. Price is one of them.
 5. **Support**: channel, language and response time.
 6. **What is genuinely included**, rather than what the marketing mentions.
 
-The method for weighting these against each other is in [our guide to choosing a subscription](/en/blog/basta-iptv-abonnemang). This guide is about the numbers themselves and the traps inside them.
+The method for weighting these against each other is in [our guide to choosing a subscription](/en/blog/basta-iptv-abonnemang). This guide is about the numbers themselves and the traps inside them. What a reduced price must legally satisfy is covered separately in [what a price claim means](/en/blog/basta-och-billigaste-iptv).
 
 Order matters. Start from what the household needs rather than from what is cheapest, or you will compare away requirements you actually have. A package with one stream can be perfect for one person and useless for a family, and that difference never shows in the price.
 

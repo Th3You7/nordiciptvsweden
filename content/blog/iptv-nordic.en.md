@@ -2,11 +2,20 @@
 title: "IPTV Nordic 2026: Illegal IPTV Is Falling in Sweden"
 excerpt: "IPTV Nordic 2026: illegal IPTV is down 27% in Sweden. What it means for expats: the public service fee, SINK, TV prices and a safe setup."
 date: "2026-09-13"
-updateDate: "2026-10-06"
+updateDate: "2026-10-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-nordic-hero.webp"
 imageAlt: "IPTV Nordic 2026 – a dark Scandinavian living room on a rainy autumn evening with a large smart TV showing streaming services"
 tags: ["IPTV Guides", "comparison", "pricing", "expats"]
+keywords:
+  primary: "IPTV Nordic"
+  head: "IPTV"
+  variants:
+    - "IPTV service"
+    - "IPTV in the Nordics"
+    - "Nordic IPTV"
+    - "IPTV market"
+    - "IPTV subscription"
 featured: true
 faq:
   - q: "What does IPTV Nordic mean?"
@@ -70,7 +79,7 @@ That is the heart of the IPTV Nordic question in Sweden this autumn. It's rarely
 
 ## Why TV still feels expensive in Sweden
 
-If illegal IPTV is falling, why is the level still so high? Part of the answer is on Swedish price tags.
+If illegal IPTV is falling, why is the level still so high? Part of the answer is on Swedish price tags. Netflix raised its Swedish prices on 15 May 2026, its first increase since October 2024, and ahead of the SHL season starting 19 September the sport packages remain several hundred kronor a month.
 
 **Netflix raised its Swedish prices on 15 May 2026.** According to [TT via TV4](https://www.tv4.se/artikel/tt-260513-netflix1-8a5c3286/netflix-hojer-priset-i-sverige) (in Swedish), the basic plan went from SEK 109 to 129, Standard from 149 to 169, and Premium from 199 to 219 a month. Adding an extra member now costs SEK 65 instead of 55. It was the first increase since October 2024.
 
@@ -91,7 +100,7 @@ Sport is the most expensive part of a Swedish TV bill. Anyone who wants both hoc
 
 ## What still reaches a Swedish aerial — and what moved online
 
-If you've arrived from a country where an aerial or a cable box still delivers most channels, Swedish TV can be confusing at first. Almost everything now comes through the internet.
+If you've arrived from a country where an aerial or a cable box still delivers most channels, Swedish TV can be confusing at first. Almost everything now comes through the internet: the terrestrial network is close to public service only, TV4 left free-to-air in January 2026, and no operator still sells pay TV through an aerial.
 
 The terrestrial network — TV through an ordinary aerial — is now close to public service only. [According to Bredbandsval](https://www.bredbandsval.se/tv/marksand-tv) (in Swedish), TV4 stopped broadcasting as free-to-air on the terrestrial network in January 2026. What remains through an aerial is SVT1, SVT2, SVT24, SVT Barn and Kunskapskanalen, plus TV Finland in some areas — though Kunskapskanalen stops as a linear channel on 1 January 2027, as covered in [our guide to digital TV in Sweden](/en/blog/digital-tv-sverige). Boxer ended all pay TV on the terrestrial network on 2 January 2025, and no operator offers pay TV through an aerial in Sweden anymore.
 
@@ -125,7 +134,7 @@ Either way, once you're taxed in the ordinary way in Sweden you already fund SVT
 
 ## Your monthly TV bill in Sweden: a worked example
 
-The TV bill usually has several layers that rarely get added up. Here is what the IPTV Nordic price rises look like for one adult who wants a film service and wants to follow SHL:
+The TV bill usually has several layers that rarely get added up: the public service fee collected through tax, one or more streaming services, and sport — normally the dearest line and the one most likely to carry a fixed term. Here is what that looks like for one adult who wants a film service and SHL:
 
 | Item | Approximate monthly cost |
 |---|---|
@@ -169,7 +178,7 @@ Your internet connection is rarely the problem in Sweden. We recommend at least 
 
 ## What IPTV NORDIC is — and what we don't claim
 
-To be clear: IPTV NORDIC is an IPTV service with login credentials that work in standard IPTV apps on smart TVs, Android TV, Fire TV Stick, Apple TV, phones, tablets and computers. Sales and support run through WhatsApp.
+To be clear: IPTV NORDIC is an IPTV service with login credentials that work in standard IPTV apps on smart TVs, Android TV, Fire TV Stick, Apple TV, phones, tablets and computers. Sales and support run through WhatsApp, and what follows sets out both what is included and what we explicitly do not promise.
 
 According to our service description, it includes **18,000+ live channels**, 40,000+ movies and 12,000+ series, 8K / 4K Ultra HD ready with FHD where available, a TV guide (EPG) and catch-up, activation in about a minute, round-the-clock support and a seven-day money-back guarantee. Plans cost €15 for one month, €35 for three, €45 for six and €65 for twelve months, with 2–5 simultaneous streams depending on the plan. There is no fixed-term contract and nothing renews automatically. See [every feature](/en/features) and [the plans in detail](/en/pricing).
 

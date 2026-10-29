@@ -18,7 +18,11 @@ import {
   CtaBanner,
 } from "../components/sections";
 import { Icon } from "../components/ui";
-import { getFeaturedPosts, postCard } from "../lib/blog";
+import { getFeaturedPosts, postCard, getPostSlugsForLocale } from "../lib/blog";
+
+// The system-level hub the home page points at for background reading. Resolved
+// against the published slugs so a rename can never leave a 404 on the home page.
+const SYSTEM_HUB = "digital-tv-sverige";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -98,7 +102,13 @@ export default async function HomePage({ params }) {
       <section className="au-sec">
         <SectionHead kicker={t.blog.kicker} title={t.blog.title} sub={t.blog.sub} wide />
         <BlogCards posts={await homeBlogCards(locale, t)} locale={locale} />
-        <div style={{ textAlign: "center", margin: "38px 0 0" }} data-reveal="1">
+        {getPostSlugsForLocale(locale).includes(SYSTEM_HUB) ? (
+          <p className="au-hub-intro" style={{ margin: "34px auto 0" }} data-reveal="1">
+            {t.blog.homeLead}{" "}
+            <Link href={`/${locale}/blog/${SYSTEM_HUB}`}>{t.blog.homeSystemLink}</Link>.
+          </p>
+        ) : null}
+        <div style={{ textAlign: "center", margin: "26px 0 0" }} data-reveal="1">
           <Link href={`/${locale}/blog`} className="au-btn au-btn-outline au-btn-md">
             {t.blog.readAll}
             <Icon name="arrow" size={18} />

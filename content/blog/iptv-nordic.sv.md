@@ -2,11 +2,20 @@
 title: "IPTV Nordic 2026: olaglig IPTV minskar i Sverige"
 excerpt: "IPTV Nordic 2026: 175 000 färre svenska hushåll har olaglig IPTV. Så påverkas du av Mediavisions siffror, prishöjningarna och SHL-premiären."
 date: "2026-09-13"
-updateDate: "2026-10-06"
+updateDate: "2026-10-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-nordic-hero.webp"
 imageAlt: "IPTV Nordic 2026 – mörkt nordiskt vardagsrum en regnig höstkväll med en stor smart-tv som visar strömningstjänster"
 tags: ["IPTV-guider", "jämförelse", "pris", "sport"]
+keywords:
+  primary: "IPTV Nordic"
+  head: "IPTV"
+  variants:
+    - "IPTV-tjänst"
+    - "IPTV i Norden"
+    - "nordisk IPTV"
+    - "IPTV-marknad"
+    - "IPTV-abonnemang"
 featured: true
 faq:
   - q: "Vad betyder IPTV Nordic?"
@@ -59,7 +68,7 @@ Varför minskar det? Mediavision drar inga säkra slutsatser. *"Vi kan inte fast
 
 ## Norden i siffror: 1,2 miljoner hushåll och 280 miljoner euro
 
-Sverige är inte ensamt. Enligt [Telecompapers rapportering av samma undersökning](https://www.telecompaper.com/news/nordic-tv-piracy-access-rate-reaches-1-home-in-10-in-spring-2026--1581635) hade nästan vart tionde hushåll i Danmark, Finland, Norge och Sverige tillgång till olaglig tv våren 2026. Det är omkring **1,2 miljoner hushåll** totalt.
+Sverige är inte ensamt. Enligt [Telecompapers rapportering av samma undersökning](https://www.telecompaper.com/news/nordic-tv-piracy-access-rate-reaches-1-home-in-10-in-spring-2026--1581635) hade nästan vart tionde hushåll i Danmark, Finland, Norge och Sverige tillgång till olaglig tv våren 2026 — omkring **1,2 miljoner hushåll**, som tillsammans betalar runt 280 miljoner euro om året. Sverige står för nästan fyra av tio av dem.
 
 De betalar i snitt omkring 20 € i månaden. Räknat över ett år blir det omkring **280 miljoner euro enligt Mediavision** — pengar som går till tjänster utan rätt att sända innehållet.
 
@@ -74,7 +83,7 @@ Här ligger kärnan i IPTV Nordic-frågan hösten 2026. Det handlar sällan om a
 
 ## Priserna fortsätter att stiga – därför är frågan fortfarande het
 
-Om olaglig IPTV minskar, varför är nivån fortfarande så hög? En del av svaret syns på prislapparna.
+Om olaglig IPTV minskar, varför är nivån fortfarande så hög? En del av svaret syns på prislapparna. Netflix höjde sina svenska priser den 15 maj 2026, den första höjningen sedan oktober 2024, och inför SHL-säsongen som startar den 19 september ligger sportpaketen kvar på flera hundra kronor i månaden.
 
 **Netflix höjde i Sverige den 15 maj 2026.** Enligt [TT via TV4](https://www.tv4.se/artikel/tt-260513-netflix1-8a5c3286/netflix-hojer-priset-i-sverige) gick basabonnemanget från 109 till 129 kronor, standard från 149 till 169 kronor och premium från 199 till 219 kronor i månaden. En extra medlem kostar nu 65 kronor i stället för 55. Det var den första höjningen sedan oktober 2024.
 
@@ -95,7 +104,7 @@ Mönstret är tydligt. Sport är den dyraste delen av tv-räkningen, och den som
 
 ## Antennen töms – tv:n flyttar till internet
 
-Parallellt med prisfrågan pågår en tyst omställning av hur tv når hemmen i Norden.
+Parallellt med prisfrågan pågår en tyst omställning av hur tv når hemmen i Norden. Marknätet är i dag nästan bara public service: TV4 slutade sändas som fri-tv i januari 2026, och ingen operatör erbjuder längre betal-tv via antenn. Samtidigt flyttar operatörernas egna tjänster till internet.
 
 I Sverige är marknätet — tv via vanlig antenn — i dag nästan bara public service. [Enligt Bredbandsval](https://www.bredbandsval.se/tv/marksand-tv) slutade TV4 sändas som fri-tv i marknätet i januari 2026. Kvar via antenn finns SVT1, SVT2, SVT24, SVT Barn och Kunskapskanalen, samt TV Finland i vissa områden — men Kunskapskanalen upphör som linjär kanal den 1 januari 2027, vilket vi går igenom i [guiden om digital tv i Sverige](/sv/blog/digital-tv-sverige). Boxer avslutade all betal-tv i marknätet redan den 2 januari 2025, och i dag finns ingen operatör kvar som erbjuder betal-tv via antenn i Sverige.
 
@@ -105,7 +114,7 @@ Slutsatsen är enkel: **nästan all tv i Norden är på väg att bli IPTV**, oav
 
 ## Vad kostar tv ett svenskt hushåll 2026?
 
-Tv-räkningen består ofta av flera lager som sällan räknas ihop.
+Tv-räkningen består ofta av flera lager som sällan räknas ihop: public service-avgiften som dras via skatten, en eller flera streamingtjänster, och sport — som ofta är den dyraste posten och den som oftast har bindningstid. Tillsammans blir summan högre än de flesta gissar.
 
 **Public service-avgiften.** Den ersatte tv-licensen och dras via skatten. [Enligt Skatteverket](https://www.skatteverket.se/privat/skatter/arbeteochinkomst/askattsedelochskattetabeller/publicserviceavgift.4.22501d9e166a8cb399f31dd.html) är avgiften 1 procent av den beskattningsbara förvärvsinkomsten, men högst 1 184 kronor per person för inkomståret 2026. Taket var 1 249 kronor året innan, så avgiften har faktiskt sjunkit något.
 
@@ -142,7 +151,7 @@ Ingen enskild punkt avgör allt, men flera varningssignaler samtidigt är ett ty
 
 ## Så väljer du tv-lösning hösten 2026
 
-Med prishöjningar, en ny SHL-säsong och en IPTV Nordic-marknad som flyttar till internet finns det goda skäl att se över sin lösning. Så här kan du göra:
+Med prishöjningar, en ny SHL-säsong och en IPTV Nordic-marknad som flyttar till internet finns det goda skäl att se över sin lösning. Räkna ihop hela tv-räkningen, kontrollera bindningstiderna, utgå från vad du faktiskt tittar på och testa innan du betalar. Så här gör du, steg för steg:
 
 1. **Räkna ihop hela tv-räkningen.** Lägg ihop public service-avgift, streaming, sport och eventuell operatörsbox. Det är summan som räknas, inte ett enskilt paketpris. Själva jämförelsemetoden finns i guiden om [bästa IPTV-abonnemang](/sv/blog/basta-iptv-abonnemang).
 2. **Kontrollera bindningstiden.** Ett avtal på 12 eller 24 månader är svårt att ändra när priser eller utbud förändras mitt i perioden.
@@ -157,7 +166,7 @@ Internetuppkopplingen är sällan problemet i Sverige. Vi rekommenderar minst 15
 
 ## Vad IPTV NORDIC är – och vad vi inte påstår
 
-För tydlighetens skull: IPTV NORDIC är en IPTV-tjänst med inloggningsuppgifter som fungerar i vanliga IPTV-appar på smart-tv, Android TV, Fire TV Stick, Apple TV, mobil, surfplatta och dator. Försäljning och support sker via WhatsApp.
+För tydlighetens skull: IPTV NORDIC är en IPTV-tjänst med inloggningsuppgifter som fungerar i vanliga IPTV-appar på smart-tv, Android TV, Fire TV Stick, Apple TV, mobil, surfplatta och dator. Försäljning och support sker via WhatsApp, och nedan står både vad som ingår och vad vi uttryckligen inte lovar.
 
 Det här ingår enligt vår tjänstebeskrivning: **18 000+ livekanaler**, 40 000+ filmer och 12 000+ serier, 8K / 4K Ultra HD ready med FHD där det finns tillgängligt, tv-guide (EPG) och catch-up, aktivering på omkring en minut, support dygnet runt och sju dagars pengarna-tillbaka-garanti. Paketen kostar 15 € för en månad, 35 € för tre, 45 € för sex och 65 € för tolv månader, och antalet samtidiga strömmar är 2–5 beroende på paket. Det finns ingen bindningstid och inget förnyas automatiskt. Se [alla funktioner](/sv/features) och [paketen i detalj](/sv/pricing).
 

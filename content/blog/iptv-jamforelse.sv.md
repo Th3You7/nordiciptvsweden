@@ -2,11 +2,19 @@
 title: "IPTV-jämförelse 2026: så jämför du utan att luras"
 excerpt: "En IPTV-jämförelse som håller: kampanjpriser som dubblades, ett föreläggande mot vilseledande telefonförsäljning och mallen du fyller i själv."
 date: "2026-10-15"
-updateDate: "2026-10-26"
+updateDate: "2026-10-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-jamforelse-hero.webp"
 imageAlt: "IPTV-jämförelse – tre utskrivna erbjudanden bredvid varandra på ett skrivbord med priset inringat i rött, en miniräknare och en penna"
 tags: ["IPTV-guider", "jämförelse", "pris"]
+keywords:
+  primary: "IPTV-jämförelse"
+  head: "jämförelse"
+  variants:
+    - "jämföra IPTV"
+    - "IPTV"
+    - "prisjämförelse"
+    - "tv-paket jämförelse"
 featured: false
 faq:
   - q: "Vad ska en IPTV-jämförelse innehålla?"
@@ -31,7 +39,7 @@ Det ena är att operatörerna har skruvat ned rabatterna i stället för att hö
 
 ## Vad en IPTV-jämförelse faktiskt ska jämföra
 
-Sex uppgifter avgör vad ett abonnemang är värt. Pris är en av dem.
+Sex uppgifter avgör vad ett abonnemang är värt, och pris är bara en av dem: totalkostnaden för hela perioden, antalet samtidiga strömmar, bindnings- och uppsägningstid, vad som ingår i utbudet, vilka enheter som stöds och hur supporten svarar när något slutar fungera.
 
 1. **Totalkostnad för hela perioden**, inklusive vad som händer när kampanjen tar slut.
 2. **Antal samtidiga strömmar** — hur många i hushållet som kan titta på olika saker samtidigt.
@@ -46,7 +54,7 @@ Ordningen spelar roll. Börja med vad hushållet behöver, inte med vad som är 
 
 ## Fällan 2026: kampanjpris mot ordinarie pris
 
-Det här är den viktigaste upptäckten för alla som jämför tv-priser i år.
+Det här är den viktigaste upptäckten för alla som jämför tv-priser i år. I en genomgång av 27 jämförbara tv-paket hade 15 fått höjt kampanjpris mellan februari och juni 2026, medan de ordinarie priserna låg kvar. Den som jämför kampanjpriser jämför alltså en rörlig siffra.
 
 I en genomgång av **27 jämförbara tv-paket** hos Telia, Tele2, Telenor, Boxer, Allente och Sappa jämfördes priserna den 24 februari och den 8 juni 2026. Resultatet: **15 paket hade fått höjt kampanjpris**, ett hade blivit billigare och 11 låg kvar. De ordinarie priserna låg i stort sett still, [rapporterade Dagens PS den 9 juni 2026](https://www.dagensps.se/privatekonomi/tv-rabatterna-ryker-priset-hojs-med-101-procent/).
 
@@ -69,7 +77,7 @@ Praktiskt: skriv alltid ned båda siffrorna, och räkna på hela den period du t
 
 ## När säljaren ringer: föreläggandet i oktober
 
-Den andra fällan sitter i hur erbjudanden presenteras.
+Den andra fällan sitter i hur erbjudanden presenteras. Den 14 oktober 2026 publicerade Konsumentverket ett föreläggande mot Allente för vilseledande telefonförsäljning. Slutsatsen för din jämförelse är enkel: ett telefonsamtal är inte en jämförelse, eftersom du inte kan kontrollera siffrorna medan någon pratar.
 
 Den 14 oktober 2026 publicerade Konsumentverket ett **föreläggande mot Allente för vilseledande telefonförsäljning**, [enligt myndighetens egen nyhetslista](https://www.konsumentverket.se/aktuellt/). Säljare hade gett intryck av att de ringde från konsumentens befintliga leverantör, och kunder hade utlovats billigare abonnemang än de fick. Föreläggandet innebär att bolaget tydligt ska uppge sitt namn och att syftet med samtalet är att sälja företagets abonnemang.
 
@@ -95,7 +103,7 @@ Den femte frågan är den som oftast avslöjar skillnaden mellan ett erbjudande 
 
 ## Vad en jämförelsesajt inte visar
 
-Söker du på IPTV-jämförelse möter du dussintals topplistor. De flesta tjänar pengar på klick eller provision, vilket inte gör dem värdelösa — men det förklarar varför samma handfull tjänster återkommer överst nästan överallt.
+Söker du på IPTV-jämförelse möter du dussintals topplistor. De flesta tjänar pengar på klick eller provision, vilket inte gör dem värdelösa — men det förklarar varför samma handfull tjänster återkommer överst nästan överallt. Fyra kontroller avgör om en lista är värd att läsa: datum, metod, finansiering och om priserna går att verifiera hos källan.
 
 Fyra snabba kontroller avgör om en lista är värd att läsa:
 
@@ -112,7 +120,7 @@ En sista sak: listor jämför nästan alltid kampanjpriser, eftersom de ser bäs
 
 ## Så räknar du ut totalkostnaden
 
-Metoden tar fem minuter och avslöjar mer än någon topplista.
+Metoden tar fem minuter och avslöjar mer än någon topplista: skriv ned kampanjpriset och dess längd, ordinarie pris efter kampanjen, bestäm en tidshorisont på tolv månader, multiplicera och lägg ihop. Dela sedan summan med antalet månader för en jämförbar månadskostnad.
 
 1. **Skriv ned kampanjpriset** och hur många månader det gäller.
 2. **Skriv ned ordinarie pris** efter kampanjen.
@@ -142,7 +150,7 @@ Byt ut siffrorna mot dem du faktiskt har fått och gör om uträkningen. Den tar
 
 ## Mallen: vad du fyller i
 
-Gör en rad per alternativ. Kolumnerna är de som faktiskt skiljer tjänster åt.
+Gör en rad per alternativ. Kolumnerna är de som faktiskt skiljer tjänster åt: kampanjpris och längd, ordinarie pris, bindningstid, antal strömmar, vad som ingår och totalkostnaden för tolv månader. Fyll i allt innan du jämför, annars ställs ofullständiga rader mot varandra.
 
 | Fält | Vad du skriver in |
 |---|---|
@@ -164,7 +172,7 @@ Spara mallen. När nästa kampanj dyker upp om ett halvår har du redan jämför
 
 ## Bindningstid och uppsägning
 
-Lagen sätter ramarna. [Enligt Konsumentverket](https://www.konsumentverket.se/varor-och-tjanster/bindningstid-och-uppsagningstid/) får bindningstiden i ett konsumentavtal vara högst 24 månader, och för avtal som ingåtts från den 1 maj 2014 får uppsägningstiden vara högst en månad.
+Lagen sätter ramarna. [Enligt Konsumentverket](https://www.konsumentverket.se/varor-och-tjanster/bindningstid-och-uppsagningstid/) får bindningstiden i ett konsumentavtal vara högst 24 månader, och för avtal som ingåtts från den 1 maj 2014 får uppsägningstiden vara högst en månad. Inom de ramarna varierar villkoren kraftigt, och det är där ett felval blir dyrt.
 
 Två saker är värda att kontrollera särskilt:
 
@@ -175,7 +183,7 @@ I en marknad där kampanjer ändras var fjärde månad är ett kort avtal värt 
 
 ## Jämför sporten separat
 
-Sport är nästan alltid den dyraste posten i en tv-räkning, och den som gör jämförelser svårast. Två råd gör den hanterbar.
+Sport är nästan alltid den dyraste posten i en tv-räkning, och den som gör jämförelser svårast. Två råd gör den hanterbar: räkna per säsong i stället för per månad, och kontrollera vad som gäller mellan säsongerna — går abonnemanget att pausa, eller löper det på?
 
 **Räkna per säsong, inte per månad.** En serie pågår i ett visst antal månader. Kostnaden som betyder något är vad du betalar under de månaderna, plus eventuella månader du betalar utan att det spelas något.
 
@@ -185,7 +193,7 @@ Ett ord om utbudet: rättigheter flyttar mellan tjänster, ibland mitt i en peri
 
 ## Det som inte syns i en prisjämförelse
 
-Fyra saker skiljer tjänster åt utan att synas i en pristabell:
+Fyra saker skiljer tjänster åt utan att synas i en pristabell: vem du har avtal med, vad din uppkoppling faktiskt klarar, hur supporten svarar i praktiken och vilka villkor som gäller vid driftstörning. De märks först den dag något går fel.
 
 **Vem du har avtal med.** Villkor, kontaktvägar och hur bolaget uppträder när något går fel. Granskningen finns i [guiden om bolaget bakom tjänsten](/sv/blog/iptv-bolaget).
 
@@ -203,14 +211,16 @@ Ett pris på noll kronor är en egen kategori i en jämförelse, och den går vi
 
 ## Fyra misstag i en IPTV-jämförelse
 
+De fyra vanligaste felen får en jämförelse att peka åt fel håll: att ställa kampanjpris mot ordinarie pris, att glömma vad boendet redan ger dig, att välja efter kanalantal i stället för kanaler du ser, och att skriva på under ett telefonsamtal.
+
 1. **Att jämföra kampanjpris mot ordinarie pris.** Det är den vanligaste orsaken till att en jämförelse pekar fel.
-2. **Att glömma vad som redan ingår i boendet.** I många flerfamiljshus ligger ett tv-utbud i avgiften.
+2. **Att glömma vad som redan ingår i boendet.** I många flerfamiljshus ligger ett tv-utbud i avgiften. Vad som ingår beror på hur fastigheten är ansluten, vilket vi förklarar i [hur fastigheter får sitt tv-utbud](/sv/blog/digital-tv-sverige).
 3. **Att välja efter kanalantal.** 18 000 kanaler och 4 000 kanaler skiljer sig sällan åt i vad ett hushåll ser under en vecka.
 4. **Att skriva på under ett telefonsamtal.** Se avsnittet ovan.
 
 ## Vad IPTV NORDIC är – och vad vi inte påstår
 
-IPTV NORDIC är en IPTV-tjänst med inloggningsuppgifter som fungerar i vanliga IPTV-appar på smart-tv, Android TV, Fire TV Stick, Apple TV, mobil, surfplatta och dator. Försäljning och support sker via WhatsApp, inte via telefonförsäljning.
+IPTV NORDIC är en IPTV-tjänst med inloggningsuppgifter som fungerar i vanliga IPTV-appar på smart-tv, Android TV, Fire TV Stick, Apple TV, mobil, surfplatta och dator. Försäljning och support sker via WhatsApp, inte via telefonförsäljning, och nedan står både vad som ingår enligt tjänstebeskrivningen och vad vi uttryckligen inte lovar.
 
 Enligt vår tjänstebeskrivning ingår **18 000+ livekanaler**, 40 000+ filmer och 12 000+ serier, 8K / 4K Ultra HD ready med FHD där det finns tillgängligt, tv-guide (EPG) och catch-up, aktivering på omkring en minut, support dygnet runt och sju dagars pengarna-tillbaka-garanti. Paketen kostar 15 € för en månad, 35 € för tre, 45 € för sex och 65 € för tolv månader, med 2–5 samtidiga strömmar beroende på paket. Det finns inga kampanjpriser som löper ut, ingen bindningstid och ingen automatisk förnyelse. Se [alla funktioner](/sv/features) eller börja på [startsidan](/sv).
 

@@ -2,11 +2,19 @@
 title: "Gratis IPTV i Sverige: vad som är gratis och vad det kostar"
 excerpt: "Gratis IPTV i Sverige: vad du faktiskt kan se gratis och lagligt, vad listorna med gratis IPTV kostar i stället, och vad som gäller för dig som tittare."
 date: "2026-10-20"
-updateDate: "2026-10-20"
+updateDate: "2026-10-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/gratis-iptv-sverige-hero.webp"
 imageAlt: "Gratis IPTV i Sverige – mörkt vardagsrum där tv:n visar en inloggningsruta med en röd etikett märkt som gratis"
 tags: ["IPTV-guider", "pris", "nybörjare"]
+keywords:
+  primary: "gratis IPTV"
+  head: "gratis IPTV"
+  variants:
+    - "gratis IPTV i Sverige"
+    - "gratis-tjänst"
+    - "IPTV"
+    - "gratislista"
 featured: false
 faq:
   - q: "Finns det gratis IPTV i Sverige?"
@@ -31,7 +39,7 @@ Den här guiden gör tre saker: visar vad du faktiskt kan se gratis och lagligt 
 
 ## Varför så många söker efter gratis IPTV
 
-Sökningen säger mer om tv-marknaden än om tittarna.
+Sökningen säger mer om tv-marknaden än om tittarna. Ett svenskt hushåll har i dag omkring tre streamingtjänster, priserna rör sig uppåt och kampanjpriser löper ut. Då blir "gratis" en logisk sökning — den som skriver in den letar sällan efter något olagligt, utan efter en rimlig totalkostnad.
 
 Ett svenskt hushåll har i dag omkring tre streamingtjänster, och hushållen lade tillsammans närmare sju miljarder kronor på streaming under 2025 mot 4,5 miljarder 2020. Samtidigt är innehållet splittrat: serien ligger på en tjänst, sporten på en annan, filmen på en tredje. Siffrorna och vad de betyder gick vi igenom i [guiden om IPTV i Norden](/sv/blog/iptv-nordic).
 
@@ -41,7 +49,7 @@ Det gör frågan värd ett ärligt svar i stället för en moralpredikan, och et
 
 ## Vad "gratis IPTV" betyder i praktiken
 
-Begreppet används om två helt olika saker, och det är därför frågan blir rörig.
+Begreppet används om två helt olika saker, och det är därför frågan blir rörig. Den ena är tv som är gratis för att någon annan betalar — public service och reklamfinansierade tjänster. Den andra är kanalpaket utan tillstånd att sända innehållet. Skillnaden handlar om rättigheter, inte om pris.
 
 Den första betydelsen är **tv som är gratis för att någon annan betalar**: public service finansieras av public service-avgiften, reklamfinansierade tjänster av annonsörer. Det är lagligt, stabilt och kräver ingen installation utöver en app.
 
@@ -53,7 +61,7 @@ Skillnaden handlar alltså inte om pris utan om rättigheter. Det är samma skil
 
 ## Det här är gratis och lagligt i Sverige
 
-Mer än många tror, faktiskt.
+Mer än många tror, faktiskt. SVT Play, UR Play och gratisdelen av TV4 Play ger nyheter, drama, barnprogram och utbildning utan någon extra kostnad utöver public service-avgiften som redan dras via skatten. Tabellen nedan sammanfattar vad respektive tjänst ger dig.
 
 | Tjänst | Vad du får | Vad det kostar |
 |---|---|---|
@@ -87,7 +95,7 @@ Det här täcker nyheter, svensk drama, barnprogram och en del underhållning ut
 
 ## Vad en gratislista kostar i stället för pengar
 
-Här finns svaret på varför något gratis kan bli dyrt.
+Här finns svaret på varför något gratis kan bli dyrt. Betalningen sker i annan valuta än kronor: appen installeras utanför appbutiken och undgår dess granskning, uppdateringarna kommer från en okänd avsändare, och du lämnar betalnings- och kontaktuppgifter till någon du inte kan nå.
 
 Eurojust, EU:s byrå för straffrättsligt samarbete, skriver att illegala IPTV-tjänster kan orsaka betydande skada för både rättighetshavare och användare, bland annat genom **förlorade personuppgifter och skadlig kod**, och att vinsterna kan finansiera annan organiserad brottslighet som bedrägeri, korruption och narkotikahandel, [i sin genomgång av illegala IPTV-tjänster](https://www.eurojust.europa.eu/publication/illegal-iptv-services) (publicerad i september 2022).
 
@@ -109,7 +117,7 @@ Jämför det med en betald tjänst som slutar fungera: där finns villkor, en su
 
 ## Pengaspåret: vad Skatteverket hittade
 
-Det här är den del av bilden som sällan når konsumenten.
+Det här är den del av bilden som sällan når konsumenten. Skatteverkets utredningar av svenska återförsäljare hade vid sammanställningen lett till 80 slutförda ärenden och 37 miljoner kronor i påförd skatt. En typisk återförsäljare tjänar mellan en halv och en miljon kronor om året.
 
 Skatteverkets utredningar av svenska återförsäljare hade vid sammanställningen lett till **80 slutförda ärenden och 37 miljoner kronor i påförd skatt**. Betalningen från kunden går ofta via Swish till en kryptoväxlare, som skickar bitcoin vidare till säljarens adress — ett upplägg som finns till för att göra pengarna svårare att följa. Merparten hamnar enligt genomgången hos globala kriminella nätverk som också sysslar med narkotika, smuggling och prostitution. En typisk återförsäljare tjänar mellan en halv och en miljon kronor om året, [enligt Rättighetsalliansens redogörelse för utredningen](https://rattighetsalliansen.se/skatteverkets-utredning-av-illegal-iptv-visar-pa-gigantiska-belopp-och-kriminella-natverk/) (publicerad i december 2023).
 
@@ -119,7 +127,7 @@ Det är värt att stanna vid betalningskedjan. Swish till en kryptoväxlare är 
 
 ## Siffror du inte ska lita på
 
-En varning som gäller hela det här ämnet: nätet är fullt av skrämselstatistik om gratis IPTV.
+En varning som gäller hela det här ämnet: nätet är fullt av skrämselstatistik om gratis IPTV. Påståenden som "95 procent av alla gratisappar innehåller skadlig kod" cirkulerar brett, nästan alltid utan källa. Testa varje siffra med tre frågor: vem har mätt, när, och går originalet att läsa?
 
 Påståenden i stil med "95 procent av alla gratis IPTV-appar innehåller skadlig kod" cirkulerar brett, nästan alltid utan källa och nästan alltid på sidor som själva säljer abonnemang. Vi använder dem inte, och du bör inte heller göra det.
 
@@ -129,7 +137,7 @@ Testa i stället varje siffra du möter med tre frågor: **vem har mätt, när, 
 
 ## Vad som gäller för dig som tittare
 
-Rättsläget är enklare än rubrikerna antyder.
+Rättsläget är enklare än rubrikerna antyder. Att driva och sälja tjänster utan tillstånd är redan olagligt och har lett till fällande domar. Att titta är det inte: förslaget om böter för tittare är fortfarande ett förslag. Den praktiska risken är alltså inte straff, utan att betala för något som försvinner.
 
 Att driva och sälja tjänster utan tillstånd är redan olagligt och har lett till flera fällande domar. Att titta är det däremot inte: utredningsförslaget om böter för privatpersoner skulle ha trätt i kraft den 1 juli 2026 men gjorde det inte, eftersom förslaget saknar politisk enighet. Hela rättsläget, med domar och blockeringsbeslut, går vi igenom i [guiden om IPTV-bolaget bakom tjänsten](/sv/blog/iptv-bolaget).
 
@@ -137,7 +145,7 @@ Den praktiska risken för dig är alltså inte straff. Den är att betala för n
 
 ## Gratis testperiod är inte samma sak
 
-Ordet gratis används också om något helt legitimt, och de två bör inte blandas ihop.
+Ordet gratis används också om något helt legitimt, och de två bör inte blandas ihop. En testperiod har en identifierbar avsändare, publicerade villkor och ett slutdatum du känner till i förväg. En gratislista har ingen av de tre, vilket tabellen nedan ställer upp sida vid sida.
 
 | | Gratis testperiod | "Gratis IPTV"-lista |
 |---|---|---|
@@ -153,7 +161,7 @@ En testperiod är alltså ett erbjudande med en motpart. Det andra är en okänd
 
 ## Så känner du igen en oseriös gratis IPTV-tjänst
 
-Fem tecken, och ett räcker för att backa:
+Fem tecken återkommer: inga företagsuppgifter eller villkor någonstans, betalning enbart via ospårbara metoder, löften ingen kan hålla, ett utbud som byter namn och adress ofta, och ingen väg till support. Ett enda av dem räcker för att backa, och flera av dem tillsammans är regel snarare än undantag.
 
 1. **Inga företagsuppgifter och inga villkor** någonstans på sidan.
 2. **Betalning bara via ospårbara metoder** — krypto, presentkort eller Swish till privatperson.
@@ -175,7 +183,7 @@ Tre frågor, trettio sekunder. De flesta gratislistor faller på den första.
 
 ## Räkna på vad "gratis" faktiskt kostar
 
-Ett sista perspektiv, för den som jämför.
+Ett sista perspektiv, för den som jämför. Ett hushåll som använder SVT Play, UR Play och gratisdelen av TV4 Play betalar noll kronor extra utöver public service-avgiften. En gratislista kostar inget i kronor men saknar motpart, villkor och support — och det är den egentliga prislappen.
 
 Ett hushåll som använder SVT Play, UR Play och gratisdelen av TV4 Play betalar noll kronor extra utöver public service-avgiften som redan dras via skatten. Vill du därutöver ha ett brett kanalutbud kostar det något — hos oss 15 € för en månad eller omkring 5,40 € i månaden på årspaketet.
 
@@ -184,7 +192,7 @@ Jämför det med en gratislista: ingen kostnad i kronor, men ingen motpart, inga
 
 ## Vad IPTV NORDIC är – och vad vi inte påstår
 
-IPTV NORDIC är en betaltjänst. Vi erbjuder inga gratislistor, inga spellistor och inget sätt att komma åt innehåll utan att betala för det.
+IPTV NORDIC är en betaltjänst. Vi erbjuder inga gratislistor, inga spellistor och inget sätt att komma åt innehåll utan att betala för det. Nedan står vad som ingår enligt vår tjänstebeskrivning, vad perioderna kostar och — minst lika viktigt — vad vi uttryckligen inte påstår.
 
 Enligt vår tjänstebeskrivning ingår **18 000+ livekanaler**, 40 000+ filmer och 12 000+ serier, 8K / 4K Ultra HD ready med FHD där det finns tillgängligt, tv-guide (EPG) och catch-up, aktivering på omkring en minut, support dygnet runt och sju dagars pengarna-tillbaka-garanti. Tjänsten fungerar i vanliga IPTV-appar på smart-tv, Android TV, Fire TV Stick, Apple TV, mobil, surfplatta och dator. Se [alla funktioner](/sv/features), [enheter som stöds](/sv/devices) eller börja på [startsidan](/sv).
 

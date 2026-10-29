@@ -2,11 +2,19 @@
 title: "Best and Cheapest IPTV in Sweden 2026: What Prices Mean"
 excerpt: "Best and cheapest IPTV are two different questions. How Sweden's 30-day price rule works, and the change that may remove it for subscriptions."
 date: "2026-10-26"
-updateDate: "2026-10-26"
+updateDate: "2026-10-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/basta-och-billigaste-iptv-hero.webp"
 imageAlt: "Best and cheapest IPTV – a dark living room where the TV screen shows a price tag with a struck-through price beside a lower one"
 tags: ["IPTV Guides", "pricing", "comparison", "expats"]
+keywords:
+  primary: "best and cheapest IPTV"
+  head: "cheapest IPTV"
+  variants:
+    - "cheap IPTV"
+    - "IPTV"
+    - "IPTV price"
+    - "price claim"
 featured: false
 faq:
   - q: "What is the difference between the best and the cheapest IPTV?"
@@ -41,7 +49,7 @@ There is a legal point buried in the wording, too. Swedish marketing law treats 
 
 ## What the law requires when a price is cut
 
-This is a concrete rule worth knowing, and it reaches far beyond television.
+This is a concrete rule worth knowing, and it reaches far beyond television. Under section 7 a of prisinformationslagen, a previous price must be stated when something is marketed as reduced, and that price must be the lowest one used in the preceding 30 days.
 
 Under **section 7 a of prisinformationslagen**, the Price Information Act, a previous price must be stated when a product is offered with an indication that the price has been reduced. The provision reads: "Om en produkt tillhandahålls med angivande av att priset har sänkts ska även det tidigare priset anges." And the previous price is not any old figure. [Konsumentverket, the Swedish Consumer Agency, puts it this way](https://www.konsumentverket.se/marknadsratt-foretag/prissankningar-regler-for-foretag/) (in Swedish): the earlier price must be the lowest price used for the product in the 30 days before the reduction.
 
@@ -57,7 +65,7 @@ Alongside this sits the Marketing Act (marknadsföringslagen): section 10 prohib
 
 ## Two examples of a discount calculated wrongly
 
-The rule only becomes clear with figures. Konsumentverket published two when it ordered ten companies to correct their marketing in May 2025, and both show the same mechanism.
+The rule only becomes clear with figures. Konsumentverket published two when it ordered ten companies to correct their marketing in May 2025, and both show the same mechanism: the discount was calculated from a different and higher price than the lowest of the period, so the offer was not really an offer at all.
 
 **The winter jacket.** Advertised at 22% off. The percentage was calculated from a price higher than the lowest of the preceding 30 days. Measured against the correct comparison figure the jacket was not discounted at all — it was **299 kronor more expensive** than it had been during the period.
 
@@ -69,7 +77,7 @@ Neither figure was invented. Both were real prices that had existed at some poin
 
 ## What happened to the companies that carried on
 
-Enforcement here is not theoretical, and it reaches large, familiar businesses.
+Enforcement here is not theoretical, and it reaches large, familiar businesses. In May 2025 ten well-known companies were ordered with a combined 22 million kronor in penalties, and that November seven more with a potential 8.6 million. Several had already promised once to correct their price marketing.
 
 In May 2025 the Consumer Ombudsman (Konsumentombudsmannen, KO) issued orders against ten well-known companies — among them Blomsterlandet, Bygghemma, Nakd, Nordic Nest, Power, Soffadirekt, Stadium, Webhallen, XXL and Åhlens — carrying a combined penalty of **22 million kronor**. All had previously promised to correct their price marketing and were found wanting again.
 
@@ -79,7 +87,7 @@ The point is not which companies were caught. It is that incorrect discount clai
 
 ## The rules are neither settled nor finished
 
-Two things are in motion right now, and both matter before you rely on the rule.
+Two things are in motion right now, and both matter before you rely on the rule: one company has won against the Consumer Ombudsman in court, and a bill proposes narrowing the provision to goods only — which would exclude services such as a television subscription.
 
 **One company won.** The Patent and Market Court set aside the Consumer Ombudsman's order against Inet AB, finding that the company had not failed to provide price information under section 7 a and had not breached the prohibition on misleading marketing, [according to Konsumentverket's summary published on 20 March 2026](https://www.konsumentverket.se/dom/beslut-i-malet-ko-inet-ab/) (in Swedish). The rules are not self-evident even to the authority enforcing them.
 
@@ -91,7 +99,7 @@ If it passes, the 30-day rule stops applying to services — and a television su
 
 ## How to read a price claim on an IPTV service
 
-With the rules in place, the checklist is short:
+With the rules in place, the checklist is short. Five questions cover it: what the price is compared against, how long the offer lasts, whether the discount is calculated from the right figure, what is added on top of the headline number, and what happens at renewal.
 
 1. **What is the price compared against?** Is a previous price stated, and is it nearby? With no comparison figure, a discount is a number without a reference.
 2. **How long does it last?** A promotional price has an end date. What does the service cost the day after?
@@ -105,7 +113,7 @@ If you want the method for putting concrete offers side by side, it is in our [g
 
 ## Working out what is actually cheapest for you
 
-This is the arithmetic, and it takes a few minutes.
+This is the arithmetic, and it takes a few minutes. Decide how long you expect to keep the service, count promotional and ordinary months separately, add any one-off fees, divide by the number of months — and then divide again by the number of people who actually watch.
 
 1. Decide **how long** you expect to keep the service. Be honest; most people overestimate.
 2. Take the **promotional price × promotional months**.
@@ -128,7 +136,7 @@ That last row deserves its own check. The most common way to cut a television bi
 
 ## What you pay with us
 
-Our prices look like this:
+Our prices are dated and you can do arithmetic on them: 15 euros for one month, 35 for three, 45 for six and 65 for twelve, which is about 5.40 euros a month on the annual plan. No fixed term, no automatic renewal.
 
 | Plan | Price | Per month | Simultaneous streams |
 |---|---|---|---|
@@ -147,7 +155,7 @@ We do **not** claim this is the lowest price on the market. It is a dated figure
 
 ## Once price is settled: what "best" actually means
 
-Now the other half of the search. When two options cost roughly the same per viewer per month, the decision turns on things no price list shows:
+Now the other half of the search. When two options cost roughly the same per viewer per month, the decision turns on things no price list shows: stability when the network is busy, support that actually replies, content in your own categories, the terms during an outage, and what your own connection can carry:
 
 - **Stability when the network is busy.** A service that works on a Tuesday morning tells you little about the same service at 8pm on a Friday.
 - **Support that answers.** Not that a contact page exists, but that a person replies in reasonable time when the picture freezes.
@@ -157,9 +165,11 @@ Now the other half of the search. When two options cost roughly the same per vie
 
 None of these can be read off a price list, which is exactly why the two questions have to be kept apart. The price is on the page before you buy. The rest only shows up afterwards — which is why a short trial and a short first period are cheaper than they look: they cap what a wrong choice costs.
 
-The last two points have their own guides: the criteria and how to weight them are in our review of [the best IPTV subscription](/en/blog/basta-iptv-abonnemang), and the question of which kind of internet TV your connection can carry is in [the best internet TV](/en/blog/basta-internet-tv). We recommend at least 15 Mbps for HD and 25 Mbps for 4K; what is included is listed under [features](/en/features).
+The last two points have their own guides: the criteria and how to weight them are in our review of [the best IPTV subscription](/en/blog/basta-iptv-abonnemang), and the question of which kind of internet TV your connection can carry is in [the best internet TV](/en/blog/basta-internet-tv). We recommend at least 15 Mbps for HD and 25 Mbps for 4K; what is included is listed under [features](/en/features). How the signal reaches you at all is set out in [the four routes television takes into a home](/en/blog/digital-tv-sverige).
 
 ## Four mistakes when chasing the cheapest IPTV
+
+Four errors recur again and again among people chasing the lowest price: comparing entry prices instead of totals, treating a struck-through price as proof, forgetting how many people actually watch, and chasing zero rather than costing out a sensible option per viewer.
 
 1. **Comparing entry prices.** That is the figure the seller picks. The total is the figure you pay.
 2. **Treating a struck-through price as proof.** It is a claim that has to meet a legal requirement, and the reviews show how often it does not.
@@ -170,7 +180,7 @@ The last two points have their own guides: the criteria and how to weight them a
 
 ## What IPTV NORDIC is — and what we don't claim
 
-IPTV NORDIC is an IPTV service with login credentials that work in standard IPTV apps on smart TVs, Android TV, Fire TV Stick, Apple TV, phones, tablets and computers. Sales and support run through WhatsApp.
+IPTV NORDIC is an IPTV service with login credentials that work in standard IPTV apps on smart TVs, Android TV, Fire TV Stick, Apple TV, phones, tablets and computers. Sales and support run through WhatsApp, and what follows sets out both what is included and what we explicitly do not claim.
 
 According to our service description it includes **18,000+ live channels**, 40,000+ movies and 12,000+ series, 8K / 4K Ultra HD ready with FHD where available, a TV guide (EPG) and catch-up, activation in about a minute, round-the-clock support and a seven-day money-back guarantee. More answers are in our [frequently asked questions](/en/faq), and anything else can go through [contact](/en/contact).
 

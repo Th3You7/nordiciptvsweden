@@ -357,6 +357,13 @@ a:hover{color:var(--accent2)}
 .au-post-wide-h{font-family:var(--font-heading),system-ui,sans-serif;font-weight:700;font-size:23px;letter-spacing:-.01em;margin:16px 0 10px;text-wrap:balance}
 .au-post-wide-x{color:var(--text2);font-size:15.5px;line-height:1.6;margin:0 0 16px;text-wrap:pretty}
 .au-post-list{display:flex;flex-direction:column;gap:22px}
+/* Blog hub: the index groups posts by cluster, so each group needs a heading
+   and a short standfirst. The intro sits at text width rather than the card
+   width so it reads as prose, not as another card. */
+.au-hub-intro{max-width:680px;margin:0 auto 10px;color:var(--text2);font-size:16.5px;line-height:1.7;text-align:center;text-wrap:pretty}
+.au-hub-group{margin-top:clamp(40px,5vw,64px)}
+.au-hub-h{font-family:var(--font-heading),system-ui,sans-serif;font-weight:700;font-size:clamp(22px,2.4vw,27px);letter-spacing:-.01em;margin:0 0 10px}
+.au-hub-x{color:var(--text2);font-size:15.5px;line-height:1.65;margin:0 0 24px;max-width:680px;text-wrap:pretty}
 .au-post-art img,.au-post-wide-art img{object-fit:cover}
 .au-post-wide-art{overflow:hidden}
 

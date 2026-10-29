@@ -360,7 +360,7 @@ export function BlogCards({ posts, locale, sizes = CARD_SIZES }) {
   );
 }
 
-export function BlogList({ posts, locale }) {
+export function BlogList({ posts, locale, titleAs: TitleTag = "h2" }) {
   return (
     <div className="au-post-list">
       {posts.map((b) => {
@@ -371,7 +371,7 @@ export function BlogList({ posts, locale }) {
             </div>
             <div className="au-post-wide-body">
               {b.tag ? <span className="au-post-tag">{b.tag}</span> : null}
-              <h2 className="au-post-wide-h">{b.title}</h2>
+              <TitleTag className="au-post-wide-h">{b.title}</TitleTag>
               <p className="au-post-wide-x">{b.excerpt}</p>
               <div className="au-post-meta" style={{ marginTop: 0, fontSize: "13px" }}>
                 <span>{b.date}</span>

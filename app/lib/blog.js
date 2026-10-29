@@ -64,6 +64,24 @@ function toFaq(value) {
     .map((item) => ({ q: String(item.q).trim(), a: String(item.a).trim() }));
 }
 
+// A `howto:` block is optional and only belongs on posts whose primary content is
+// a genuine ordered procedure — Google penalises HowTo markup that is not real
+// instructions, so STRATEGY_BLOG_SWEDEN.md §9.6 keeps the eligibility narrow.
+// Returns undefined rather than an empty object so the page can skip the JSON-LD.
+function toHowTo(value) {
+  if (!value || typeof value !== "object") return undefined;
+  const steps = (Array.isArray(value.steps) ? value.steps : [])
+    .filter((s) => s && s.name && s.text)
+    .map((s) => ({ name: String(s.name).trim(), text: String(s.text).trim() }));
+  if (!value.name || steps.length < 2) return undefined;
+  return {
+    name: String(value.name).trim(),
+    description: value.description ? String(value.description).trim() : undefined,
+    totalTime: value.totalTime ? String(value.totalTime).trim() : undefined,
+    steps,
+  };
+}
+
 // Shortcodes and image lines are not prose, so they are left out of the count.
 function readingMinutes(content) {
   const prose = content.replace(/\[\[wa:[^\]]*\]\]/g, "").replace(/^!\[.*$/gm, "");
@@ -86,6 +104,7 @@ function toMeta(slug, locale, data, content) {
     featured: Boolean(data.featured),
     readingMinutes: readingMinutes(content),
     faq: toFaq(data.faq),
+    howto: toHowTo(data.howto),
   };
 }
 

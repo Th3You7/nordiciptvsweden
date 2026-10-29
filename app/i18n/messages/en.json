@@ -475,7 +475,25 @@
         "date": "Jun 20, 2026",
         "read": "3 min read"
       }
-    ]
+    ],
+    "hubTitle": "Guides and comparisons",
+    "hubIntro": "Every guide to IPTV in Sweden, grouped by the question it answers. Start with the first group if you are weighing what a service should cost and how to compare two of them. If you would rather understand how television reaches a Swedish home at all, that background sits further down.",
+    "clusters": {
+      "A": {
+        "title": "Choosing and comparing",
+        "intro": "This group is about choosing: what an IPTV subscription should cost, how to compare two offers that look identical, what the law requires behind a reduced price, and how to vet the company behind a service. Start here if you are facing a purchase and want to do the arithmetic first."
+      },
+      "E": {
+        "title": "How television works in Sweden",
+        "intro": "The background to everything else: how TV actually reaches Swedish homes by aerial, cable, satellite and internet, what the 2026–2033 broadcasting licences require, and why the terrestrial network keeps shrinking. Read this group first if you want the system before comparing individual services."
+      },
+      "C": {
+        "title": "Equipment and setup",
+        "intro": "Practical guides to the hardware: whether you need a box at all, what to look for if you buy one, and how to get started on equipment you already own. This group grows as we add guides for more devices and player apps."
+      }
+    },
+    "homeLead": "The guides are grouped by subject: what is worth comparing before you buy, how to get started on the equipment you own, and the background to all of it —",
+    "homeSystemLink": "how digital TV works in Sweden"
   },
   "devicesPage": {
     "kicker": "Devices",

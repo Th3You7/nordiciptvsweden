@@ -10,7 +10,7 @@ import { existsSync, readdirSync, readFileSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import matter from "gray-matter";
-import { CLUSTER_TAGS, RULES } from "../app/lib/blog-taxonomy.js";
+import { CLUSTER_TAGS, RULES, HUB_SLUGS } from "../app/lib/blog-taxonomy.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const BLOG_DIR = join(root, "content", "blog");
@@ -24,6 +24,45 @@ const errors = [];
 const warnings = [];
 const error = (file, msg) => errors.push(`${file}: ${msg}`);
 const warn = (file, msg) => warnings.push(`${file}: ${msg}`);
+
+// ---- Keyword family measurement (STRATEGY_BLOG_SWEDEN.md §5) ----------------
+// One answer per (text, family): matches are resolved longest-first and may not
+// overlap, so "bästa IPTV-abonnemang" is never also counted as "IPTV". Without
+// that rule the number depends on match order and stops being comparable.
+const SV_SUFFIX = "(?:en|et|n|t|er|ar|or|na|erna|arna)?";
+const termRe = (t) =>
+  new RegExp(`(?<![\\w\\-])${t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "[\\s\\-]+")}${SV_SUFFIX}(?![\\w])`, "gi");
+
+// Rendered body prose only: frontmatter has its own placement rules below, image
+// lines and CTA shortcodes are not body copy, and a link's URL is not visible text.
+function keywordText(body) {
+  return body
+    .split("\n")
+    .filter((l) => !l.trimStart().startsWith("!["))
+    .join("\n")
+    .replace(/\[\[wa:[^\]]*\]\]/g, "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`#>|]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function keywordDensity(text, terms) {
+  const words = text.split(" ").filter(Boolean).length;
+  if (!words) return { words: 0, density: 0 };
+  const spans = [];
+  for (const t of [...new Set(terms)].sort((a, b) => b.length - a.length)) {
+    for (const m of text.matchAll(termRe(t))) {
+      const [a, b] = [m.index, m.index + m[0].length];
+      if (spans.some(([x, y]) => !(b <= x || a >= y))) continue;
+      spans.push([a, b]);
+    }
+  }
+  const matched = spans.reduce((n, [a, b]) => n + text.slice(a, b).split(" ").filter(Boolean).length, 0);
+  return { words, density: matched / words };
+}
+
+const present = (text, terms) => terms.some((t) => termRe(t).test(text));
 
 // Lines outside fenced code blocks, with inline code blanked, so example
 // markup inside `code` is not mistaken for the real thing.
@@ -169,8 +208,33 @@ for (const post of posts) {
   }
 
   for (const [text, n] of anchors) if (n > 1) warn(file, `anchor text "${text}" used ${n} times`);
-  if (internal < RULES.internalLinksMin || internal > RULES.internalLinksMax) {
-    warn(file, `${internal} internal links (target ${RULES.internalLinksMin}–${RULES.internalLinksMax})`);
+  // keyword family: declared per post so the measurement is reproducible (§5)
+  const kw = data.keywords;
+  if (!kw || !kw.primary || !kw.head) {
+    warn(file, "missing keywords: block (primary + head) — see STRATEGY_BLOG_SWEDEN.md §5");
+  } else {
+    const variants = Array.isArray(kw.variants) ? kw.variants.map(String) : [];
+    const all = [String(kw.primary), String(kw.head), ...variants];
+    const soft = [String(kw.head), ...variants];
+    const text = keywordText(prose);
+    const { density } = keywordDensity(text, all);
+    if (density > RULES.keywordDensityMax) {
+      warn(file, `keyword density ${(density * 100).toFixed(2)}% exceeds ${(RULES.keywordDensityMax * 100).toFixed(1)}% — likely stuffing`);
+    }
+    // Placement is the rule that matters: the title carries the primary phrase
+    // exactly, the prose positions accept the head term or any declared variant.
+    if (!present(String(data.title || ""), [String(kw.primary)])) warn(file, `title does not contain the primary keyword "${kw.primary}"`);
+    if (!present(String(data.excerpt || ""), soft)) warn(file, "excerpt contains no keyword-family term");
+    if (!present(text.split(" ").slice(0, 100).join(" "), soft)) warn(file, "no keyword-family term in the first 100 words");
+    const kwH2 = lines.filter((l) => /^##\s/.test(l)).filter((h) => present(h, all)).length;
+    if (kwH2 < 2) warn(file, `keyword family in ${kwH2} H2(s) (target ≥2)`);
+    const tail = prose.split(/^## (?:Sammanfattning|Summary)\s*$/m).pop();
+    if (!present(tail, soft)) warn(file, "conclusion contains no keyword-family term");
+  }
+
+  const linkMax = HUB_SLUGS.has(slug) ? RULES.internalLinksMaxHub : RULES.internalLinksMax;
+  if (internal < RULES.internalLinksMin || internal > linkMax) {
+    warn(file, `${internal} internal links (target ${RULES.internalLinksMin}–${linkMax})`);
   }
   if (images !== RULES.bodyImages) warn(file, `${images} in-body images (target ${RULES.bodyImages} — the hero comes from image:)`);
 

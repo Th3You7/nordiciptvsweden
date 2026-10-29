@@ -11,7 +11,7 @@ import {
   postCard,
 } from "../../../lib/blog";
 import { postAlternates } from "../../../lib/metadata";
-import { blogPosting, blogPostBreadcrumb, faqPage, LOGO } from "../../../lib/schema";
+import { blogPosting, blogPostBreadcrumb, faqPage, howTo, LOGO } from "../../../lib/schema";
 import { BRAND } from "../../../lib/site";
 import { whatsappUrl } from "../../../lib/whatsapp";
 import { JsonLd } from "../../../components/JsonLd";
@@ -92,6 +92,7 @@ export default async function BlogPostPage({ params }) {
         <JsonLd schema={blogPostBreadcrumb({ locale, t, post })} />
         <JsonLd schema={blogPosting({ locale, post })} />
         {post.faq.length ? <JsonLd schema={faqPage({ items: post.faq })} /> : null}
+        {post.howto ? <JsonLd schema={howTo({ locale, post })} /> : null}
 
         <nav aria-label={L.breadcrumbLabel} className="au-crumbs">
           <Link href={`/${locale}`}>{t.nav.home}</Link>

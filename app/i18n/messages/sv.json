@@ -475,7 +475,25 @@
         "date": "20 juni 2026",
         "read": "3 min läsning"
       }
-    ]
+    ],
+    "hubTitle": "Guider och jämförelser",
+    "hubIntro": "Här samlas alla guider om IPTV i Sverige, sorterade efter vad du behöver svar på. Vill du veta vad en tjänst får kosta och hur du jämför den börjar du i första gruppen. Undrar du i stället hur tv överhuvudtaget når hemmet finns bakgrunden längre ner.",
+    "clusters": {
+      "A": {
+        "title": "Välja och jämföra",
+        "intro": "Den här gruppen handlar om att välja: vad ett IPTV-abonnemang får kosta, hur du jämför två erbjudanden som ser likadana ut, vad lagen kräver bakom ett sänkt pris och hur du granskar bolaget bakom tjänsten. Börja här om du står inför ett köp och vill räkna innan du bestämmer dig."
+      },
+      "E": {
+        "title": "Så fungerar tv i Sverige",
+        "intro": "Bakgrunden till allt det andra: hur tv faktiskt når svenska hem via antenn, kabel, parabol och internet, vad som gäller under sändningstillstånden 2026–2033 och varför marknätet krymper. Läs den här gruppen först om du vill förstå systemet innan du jämför enskilda tjänster."
+      },
+      "C": {
+        "title": "Utrustning och installation",
+        "intro": "Praktiska guider om hårdvaran: om du behöver en box alls, vad du ska titta efter när du köper en, och hur du kommer igång på den utrustning du redan har hemma. Den här gruppen växer i takt med att vi lägger till guider för fler enheter och spelarappar."
+      }
+    },
+    "homeLead": "Guiderna är samlade efter ämne: vad som är värt att jämföra innan du köper, hur du kommer igång på utrustningen du har, och bakgrunden till alltihop —",
+    "homeSystemLink": "så fungerar digital tv i Sverige"
   },
   "devicesPage": {
     "kicker": "Enheter",

@@ -110,6 +110,30 @@ export function blogPosting({ locale, post }) {
   };
 }
 
+// Only emitted for posts carrying a `howto:` block. Every step points at the post
+// URL rather than a heading id: ids are generated at render time from the heading
+// text, so a reworded heading would silently break each step link.
+export function howTo({ locale, post }) {
+  const pageUrl = url(`${locale}/blog/${post.slug}`);
+  const h = post.howto;
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: h.name,
+    description: h.description || undefined,
+    totalTime: h.totalTime || undefined,
+    inLanguage: bcp47(locale),
+    image: post.image ? [url(post.image)] : undefined,
+    step: h.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+      url: pageUrl,
+    })),
+  };
+}
+
 // Home > Blog > {post}
 export function blogPostBreadcrumb({ locale, t, post }) {
   return {

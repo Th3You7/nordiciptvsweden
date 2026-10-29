@@ -165,10 +165,51 @@ Swedish is far less inflected than Finnish, but it has three features that chang
 
 Targets:
 
-- Keyword **family** (all inflected and compound forms) at **1.0–1.5%** of words.
-- The clean form in: title, first 100 words, ≥2 H2s, the excerpt, the conclusion.
+- **The family is declared per post**, in a `keywords:` frontmatter block — see §5.1. Guidance below is for choosing the terms; the block is what gets measured.
+- **Placement is the rule that matters**, and it is checked: primary in the title, a family term in the excerpt, in the first 100 words, in ≥2 H2s and in the conclusion.
+- **Density has a ceiling, not a target** — `RULES.keywordDensityMax`, currently 3.0%, warned by `check:blog`. The old 1.0–1.5% band was removed on 2026-10-29; §5.1 explains why.
 - **Slugs are ASCII**: `å→a`, `ä→a`, `ö→o` (`basta-iptv`, `ar-iptv-lagligt`). `check:blog` enforces this.
 - **Never mix languages in one post.** No English CTA in a Swedish article.
+
+### 5.1 The keyword-family model (rewritten 2026-10-29)
+
+**Why this replaced a 1.0–1.5% band.** The old rule said "keyword family at 1.0–1.5% of words" but never said, for any published post, which terms counted. Two defensible readings of "family" produced contradictory answers on the same ten articles — one put most posts under the band, the other over it — because the figure was dominated by whoever drew up the term list. A rule whose output depends on the measurer is not a rule.
+
+Measured properly with declared families (below), the ten published slugs span **0.75%–2.53%, median 1.41%**. Only 7 of 20 files sat inside 1.0–1.5%. A band that flags 13 of 20 audited, published posts is not describing bad writing; it is describing a bad threshold. Worse, a *floor* pushes an author to insert keywords to clear it — the exact padding §9.4.1 and §12 forbid, and the GEO answer blocks legitimately diluted density by adding ~4,700 words of genuine prose.
+
+So: no floor, and the two-sided band is gone. What remains is a one-sided anti-stuffing ceiling plus placement checks that are objectively verifiable.
+
+**The declared family.** Every post carries three levels:
+
+```yaml
+keywords:
+  primary: "IPTV-jämförelse"      # the full target phrase — must appear in the title
+  head: "jämförelse"              # shortest obligatory noun phrase
+  variants:                       # genuine semantic variants, counted for density
+    - "jämföra IPTV"
+    - "IPTV"
+    - "prisjämförelse"
+```
+
+- `primary` — the post's target query, verbatim. The **title must contain it**.
+- `head` — the shortest noun phrase the topic cannot be written without. Prose positions accept this or any variant, because forcing a full superlative phrase ("bästa och billigaste IPTV") into an excerpt or a conclusion reads badly and helps nobody.
+- `variants` — real semantic variants that appear in the copy. Not a wish list: a term nobody wrote does not belong here, and padding the list inflates the density figure without changing the article.
+
+**How it is measured** — the algorithm lives once, in `scripts/check-blog.mjs`:
+
+| Decision | Rule |
+|---|---|
+| Source text | rendered **body prose only** — frontmatter has its own placement checks, so counting it twice would double-count |
+| Excluded | image lines, `[[wa:]]` CTA shortcodes, and link URL targets (anchor text is kept — it is visible) |
+| Matching | case-insensitive, whole-term, tolerating one trailing Swedish inflection (`-en`, `-et`, `-er`, `-na`…), since §5 targets the family and Swedish stemming folds these |
+| Overlap | **longest match first, non-overlapping** — `bästa IPTV-abonnemang` is never also counted as `IPTV`. Without this the answer depends on match order |
+| Density | words inside matches ÷ total body words |
+
+That last rule is what makes the figure reproducible: same text plus same declared family always yields the same number. The model was settled by iterating against the published corpus, so treat it as *repeatable* rather than objectively correct — its value is that two people measuring the same post now agree.
+
+**The ceiling: 3.0%.** Set from the corpus, not invented — the densest published post measures 2.53%, so 3.0% is a genuine guard with roughly half a point of headroom. It is a **warning**, not an error: stuffing is an editorial judgement, and the checker's job is to raise it, not to block a build.
+
+**What `check:blog` now warns on:** a missing `keywords:` block, density above the ceiling, a title missing its primary, and a missing family term in the excerpt, the first 100 words, fewer than 2 H2s, or the conclusion. All ten published slugs pass all of it.
 
 ### Swedish keyword families
 
@@ -247,7 +288,14 @@ PILLAR EN:  /en/blog/iptv-sweden-guide    ← "IPTV Sweden" newcomer master guid
    └── E. Local & seasonal     (seasonal)   → pillar
 ```
 
-Every cluster post links **up to its pillar** and **sideways to 3–6 siblings**.
+Every cluster post links **up to its pillar** and **sideways to 3–6 siblings** — but only as far as the cluster actually contains siblings. Cluster C and E hold one post each, so a 3–6 sideways quota is arithmetically impossible there; link to the genuinely related posts in adjacent clusters instead of padding.
+
+**Hub architecture (decided 2026-10-29).** The home page stays the **commercial** pillar: its intent is brand and purchase, and turning it into a topical directory would both dilute conversion and set it competing with the guides it should feed. Topical hubbing is done by two pages instead:
+
+- **`/{locale}/blog` is the structural hub.** It groups posts by cluster, each group introduced by a 40–60 word standfirst from `blog.clusters.{A,E,C}` in the catalogs, and it already sits in the nav and footer. Every post therefore has a parent with a path up. It is a listing page, so treat it as crawl and navigation structure rather than as a page that will rank for informational queries.
+- **`digital-tv-sverige` is the topical hub** for the "how television reaches you" axis, formalising what §9.4 already recorded. Every other post links up to it, and it links down to the spokes it parents. It is listed in `HUB_SLUGS` in `app/lib/blog-taxonomy.js`, which raises its internal-link ceiling to 20 — a hub that parents nine spokes cannot also obey a quota written for spokes.
+
+This is an interim arrangement. A1 `iptv-sverige` and A8 `iptv-sweden-guide` remain the right topical pillars for cluster A, which holds eight of the ten published posts and currently has no article-level parent. When they ship they take the pillar role and the hub above links to them.
 
 ### 8.2 Backlog
 
@@ -421,7 +469,7 @@ Swedish is somewhat more compact than English, so its bands sit a little lower.
 
 | Type | `sv` | `en` |
 |---|---|---|
-| Pillar | 3 200–4 000 | 3 000–3 800 |
+| Pillar | 3 200–4 300 | 3 000–4 100 |
 | Commercial / comparison | 2 200–3 000 | 2 000–2 800 |
 | Channels / sport | 1 600–2 600 | 1 600–2 600 |
 | Device how-to | 1 200–1 900 | 1 200–1 900 |
@@ -432,6 +480,25 @@ Swedish is somewhat more compact than English, so its bands sit a little lower.
 **Type is set by the job the post does, not by the keyword.** A post that explains a whole system end to end is a pillar whatever its primary keyword, and must then meet the pillar band and carry a table of contents (§9.3).
 
 **Published exception:** `digital-tv-sverige` (sv + en) is written at pillar length — it explains the national distribution system, the licence period and the technical history in one piece. Until A1 `iptv-sverige` exists, it is the de facto Swedish pillar and the other posts may link up to it. When A1 is written, A1 takes the `IPTV Sverige` keyword and the pillar role; `digital-tv-sverige` then keeps the distribution subject and links up instead.
+
+### 9.4.1 GEO answer blocks (added 2026-10-29)
+
+Adopted unchanged from the Poland project's playbook (`polska-iptv/docs/strategy.md` §3), because the numbers there are already tuned and a second set would make the two sites inconsistent.
+
+**Every meaningful content `##` H2 must open with a direct-answer paragraph of 40–60 words.** It comes immediately after the heading, before any list, table, image or CTA, and it answers the heading's implied question first — verdict, number or yes/no — and explains afterwards. AI answer engines lift these blocks verbatim as citations, so they must stand alone.
+
+| Rule | Value |
+|---|---|
+| Length | **40–60 words**, counted with link URLs stripped |
+| Position | immediately after the H2, before lists, tables, images and `[[wa:]]` CTAs |
+| Content | restates what the section establishes — never a new fact (§12 still applies) |
+| Exclusion | the closing summary heading (`## Sammanfattning` / `## Summary`) only |
+
+Poland's one exclusion is its TL;DR heading. Sweden has no TL;DR section, so the equivalent exclusion here is the closing summary, which is itself a recap and not an answerable question. Everything else counts, including the `Vad IPTV NORDIC är` section.
+
+Writing them: do not pad to reach 40 words and do not repeat the keyword to fill space. Summarise the section's own substance. When the whole opening paragraph is already long, split it — answer block first, detail after — rather than letting one paragraph run past 60.
+
+**Word-count consequence (decided 2026-10-29).** Retrofitting these blocks across the first ten slugs added roughly 4,700 words in total, so the §9.4 pillar band was widened to absorb it. Expect every new post to carry 300–500 words of answer blocks and budget for that from the outset rather than trimming afterwards.
 
 ### 9.5 Images and inline CTAs
 
@@ -463,6 +530,35 @@ WebP, under ~250 KB, alt text that describes the image and contains the keyword 
 | Internal link? | **No** — outbound to WhatsApp; outside the 8–14 quota | |
 
 Every CTA opens WhatsApp with *"Hej! Jag läste er guide och vill veta mer om IPTV NORDIC."* prefilled, so a chat started from the blog says so.
+
+### 9.6 HowTo structured data (added 2026-10-29)
+
+A post may carry a `howto:` frontmatter block, which `app/lib/blog.js` parses and `howTo()` in `app/lib/schema.js` renders as `HowTo` + `HowToStep` JSON-LD through the existing `<JsonLd>` component. Nothing else emits it, and a post without the block emits nothing.
+
+```yaml
+howto:
+  name: "Så testar du din uppkoppling på tio minuter"
+  description: "En rad som sammanfattar vad proceduren leder till."
+  totalTime: "PT10M"        # only when the article itself states a duration
+  steps:
+    - name: "Kort stegnamn"
+      text: "Instruktionen, formulerad som i artikeln."
+```
+
+**Eligibility is deliberately narrow.** Google penalises HowTo markup that is not genuine instructions, so the test is not "does the article contain a numbered list" — most of ours are criteria checklists, mistake lists or diagnostic questions, and none of those qualify. A post is eligible only when:
+
+1. the procedure is **ordered**, so that doing step 3 before step 1 would be wrong;
+2. it produces a **completed outcome** — a measurement taken, a purchase made, a device set up;
+3. it is a **substantial part of what the page is for**, not one section of an otherwise comparative article;
+4. every step, duration and figure in the block **appears in the rendered article**. Never invent a `totalTime`, a tool or a supply.
+
+The parser enforces the mechanical half: a block needs a `name` and at least two complete steps, or it is ignored.
+
+**Currently carrying it:** `basta-internet-tv` (the ten-minute connection test, `PT10M` because the article states it) and `ip-tv-kopa` (the six-step purchase).
+
+**Deliberately excluded:** `basta-och-billigaste-iptv` and `iptv-jamforelse` — both contain real calculation procedures, but both are comparison articles, where HowTo misrepresents the page's purpose. `iptv-box-malmo` — its "Så kommer du igång" steps are generic, and §11.1 says that overlap moves out when cluster guide C3 is written, which is where the box setup HowTo belongs.
+
+The device and setup guides in §8.2 cluster C are the natural home for this markup. Add the block when those ship.
 
 ---
 

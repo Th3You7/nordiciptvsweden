@@ -2,11 +2,19 @@
 title: "IPTV Comparison in Sweden 2026: How to Compare Fairly"
 excerpt: "An IPTV comparison that holds up: campaign prices that doubled, a regulator order over misleading phone sales, and the template you fill in yourself."
 date: "2026-10-15"
-updateDate: "2026-10-26"
+updateDate: "2026-10-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-jamforelse-hero.webp"
 imageAlt: "IPTV comparison – three printed offers side by side on a desk with the price circled in red, a calculator and a pen"
 tags: ["IPTV Guides", "comparison", "pricing", "expats"]
+keywords:
+  primary: "IPTV comparison"
+  head: "comparison"
+  variants:
+    - "comparing IPTV"
+    - "IPTV"
+    - "price comparison"
+    - "TV package comparison"
 featured: false
 faq:
   - q: "What should an IPTV comparison actually compare?"
@@ -31,7 +39,7 @@ The first is that Swedish operators have been cutting discounts rather than rais
 
 ## What an IPTV comparison should actually compare
 
-Six facts decide what a subscription is worth. Price is one of them.
+Six facts decide what a subscription is worth, and price is only one of them: the total cost across the whole period, the number of simultaneous streams, the binding and notice periods, what the line-up includes, which devices are supported, and how support answers when something stops working.
 
 1. **Total cost across the whole period**, including what happens when the campaign ends.
 2. **Simultaneous streams** — how many people can watch different things at once.
@@ -46,7 +54,7 @@ Order matters. Start from what the household needs rather than from what is chea
 
 ## The 2026 trap: campaign price versus list price
 
-This is the most useful finding for anyone comparing Swedish TV prices this year.
+This is the most useful finding for anyone comparing Swedish TV prices this year. In a review of 27 comparable TV packages, 15 had a higher campaign price between February and June 2026 while the list prices barely moved. Comparing campaign prices means comparing a moving number.
 
 A review of **27 comparable TV packages** at Telia, Tele2, Telenor, Boxer, Allente and Sappa checked prices on 24 February and 8 June 2026. The result: **15 packages had a higher campaign price**, one had become cheaper and 11 were unchanged. List prices largely stayed where they were, [as Dagens PS reported on 9 June 2026](https://www.dagensps.se/privatekonomi/tv-rabatterna-ryker-priset-hojs-med-101-procent/) (in Swedish).
 
@@ -69,7 +77,7 @@ In practice: always write down both numbers, and calculate across the whole peri
 
 ## When the seller calls: October's regulator order
 
-The second trap sits in how offers are presented, and it catches newcomers hardest — cold-call selling of TV and broadband is common in Sweden.
+The second trap sits in how offers are presented, and it catches newcomers hardest — cold-call selling of TV and broadband is common in Sweden. On 14 October 2026 the Consumer Agency ordered Allente to stop misleading telephone sales. A phone call is not a comparison.
 
 On 14 October 2026 the Swedish Consumer Agency published an **order against Allente for misleading telephone sales**, [listed in its own news feed](https://www.konsumentverket.se/aktuellt/) (in Swedish). Sellers had given the impression they were calling from the consumer's existing provider, and customers were promised cheaper subscriptions than they received. The order requires the company to state its name clearly and to say that the purpose of the call is to sell its subscriptions.
 
@@ -95,7 +103,7 @@ The fifth usually separates a genuine offer from a pressure tactic.
 
 ## What a comparison site will not show you
 
-Search for an IPTV comparison and you meet dozens of ranking pages. Most earn from clicks or commission, which does not make them worthless — but it explains why the same handful of services top nearly every list.
+Search for an IPTV comparison and you meet dozens of ranking pages. Most earn from clicks or commission, which does not make them worthless — but it explains why the same handful of services top nearly every list. Four checks decide whether one is worth reading: the date, the method, the funding, and whether the prices verify at source.
 
 Four quick checks decide whether a list is worth reading:
 
@@ -112,7 +120,7 @@ One last thing: lists almost always compare campaign prices, because those look 
 
 ## Working out the total cost
 
-The method takes five minutes and reveals more than any ranking.
+The method takes five minutes and reveals more than any ranking: write down the campaign price and its length, the list price that follows, pick a twelve-month horizon, multiply and add. Then divide the total by the number of months for a comparable monthly figure.
 
 1. **Write down the campaign price** and how many months it runs.
 2. **Write down the list price** that follows.
@@ -140,7 +148,7 @@ Three lessons. The lowest headline produced the highest annual cost. A flat pric
 
 ## The template: what to fill in
 
-One row per option. The columns are what actually separates services.
+One row per option. The columns are what actually separates services: campaign price and length, list price, binding period, number of streams, what is included, and the twelve-month total. Fill every field before comparing, or you end up setting incomplete rows against each other.
 
 | Field | What you write |
 |---|---|
@@ -160,9 +168,9 @@ Fill it in with offers actually in front of you, not list prices found elsewhere
 
 ## Binding periods and cancellation
 
-The law sets the limits. [According to Konsumentverket](https://www.konsumentverket.se/varor-och-tjanster/bindningstid-och-uppsagningstid/) (in Swedish), a consumer contract may have a binding period of at most 24 months, and for contracts from 1 May 2014 the notice period may be at most one month.
+The law sets the limits. [According to Konsumentverket](https://www.konsumentverket.se/varor-och-tjanster/bindningstid-och-uppsagningstid/) (in Swedish), a consumer contract may have a binding period of at most 24 months, and for contracts from 1 May 2014 the notice period may be at most one month. Within those limits the terms vary widely, and that is where a wrong choice turns expensive.
 
-Two things deserve a specific check:
+Two things deserve a specific check, because together they decide what a wrong choice costs you:
 
 - **Does it renew automatically?** If so, how do you cancel and how far ahead?
 - **What does breaking it cost?** The longer the commitment, the more an error costs.
@@ -171,7 +179,7 @@ In a market where campaigns change every few months, a short contract is worth m
 
 ## Compare sport separately
 
-Sport is almost always the most expensive line on a TV bill, and the hardest to compare. Two rules make it manageable.
+Sport is almost always the most expensive line on a TV bill, and the hardest to compare. Two rules make it manageable: count per season rather than per month, and check what happens between seasons — can the subscription be paused, or does it simply roll on?
 
 **Count per season, not per month.** A league runs a certain number of months. What matters is what you pay during them, plus any months you pay while nothing is played.
 
@@ -180,6 +188,8 @@ Sport is almost always the most expensive line on a TV bill, and the hardest to 
 One note on line-ups: rights move between services, sometimes mid-contract. Don't build a long commitment on a particular sport staying where it is today. We never promise a named sport is included, and you should be sceptical of anyone who does.
 
 ## What a price comparison never shows
+
+Four things separate services without appearing in any price table: who you are contracting with, what your connection can actually carry, how support answers in practice, and what is genuinely included rather than merely counted. All four surface only when something goes wrong.
 
 **Who you are contracting with.** Terms, contact routes and how the company behaves when something fails. The checklist is in [the company behind your IPTV](/en/blog/iptv-bolaget).
 
@@ -195,8 +205,10 @@ A price of zero is its own category in any comparison, and it is covered in [our
 
 ## Four mistakes in an IPTV comparison
 
+Four errors send a comparison in the wrong direction: setting a campaign price against a list price, forgetting what the building already provides, choosing by channel count rather than by channels you watch, and signing during a phone call. Each one is easy to make and easy to avoid once named.
+
 1. **Comparing a campaign price against a list price.** The most common reason a comparison points the wrong way.
-2. **Forgetting what the building already includes.** Many Swedish apartment blocks bundle a TV package into the monthly fee.
+2. **Forgetting what the building already includes.** Many Swedish apartment blocks bundle a TV package into the monthly fee. What it includes depends on how the building is connected, which we explain in [how buildings get their TV package](/en/blog/digital-tv-sverige).
 3. **Choosing by channel count.** 18,000 channels and 4,000 rarely differ in what a household watches in a week.
 4. **Signing during a phone call.** See above.
 

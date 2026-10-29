@@ -2,11 +2,18 @@
 title: "Digital TV in Sweden 2026: How It Actually Reaches You"
 excerpt: "Digital TV in Sweden explained: the four ways TV reaches a home, the new 2026–2033 licence period, the shrinking aerial network and what changes in 2027."
 date: "2026-10-06"
-updateDate: "2026-10-11"
+updateDate: "2026-10-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/digital-tv-sverige-hero.webp"
 imageAlt: "Digital TV in Sweden – a wall-mounted TV in a bright living room showing an electronic programme guide, with a rooftop aerial visible through the window"
 tags: ["Sweden", "beginners", "comparison", "expats"]
+keywords:
+  primary: "digital TV in Sweden"
+  head: "digital TV"
+  variants:
+    - "terrestrial TV"
+    - "terrestrial network"
+    - "TV over the internet"
 featured: false
 faq:
   - q: "What counts as digital TV in Sweden?"
@@ -75,7 +82,7 @@ One mistake worth avoiding: adding a new solution on top of an old one without r
 
 ## From analogue to digital: the timeline
 
-Today's digital TV landscape makes more sense with the history behind it, because the pattern repeats: the technology changes, the line-up moves, households replace equipment.
+Today's digital TV landscape makes more sense with the history behind it, because the pattern repeats: the technology changes, the line-up moves, households replace equipment. The timeline below runs from the digital terrestrial launch in 1999 to today, where television has effectively moved into the broadband connection.
 
 | Year | What happened |
 |---|---|
@@ -97,7 +104,7 @@ For anyone watching digital TV today the lesson is simple: terrestrial equipment
 
 ## New since 1 January 2026: a new licence period
 
-This is the biggest regulatory change in eight years.
+This is the biggest regulatory change in eight years. On 4 December 2025 the government set the broadcasting licences and public service remits for Sveriges Radio, SVT and UR covering 2026–2033. The remit is now technology-neutral, and SVT must still broadcast terrestrially.
 
 On 4 December 2025 the government set the broadcasting licences and public service remits for Sveriges Radio, SVT and UR covering **2026–2033**. Much of the remit became technology-neutral: programme activities are covered by the same conditions however the content reaches the audience, [according to the government's press release](https://www.regeringen.se/pressmeddelanden/2025/12/regeringen-beslutar-om-de-narmare-villkoren-for-srs-svts-och-urs-public-service-uppdrag-de-kommande-atta-aren/) (in Swedish).
 
@@ -123,7 +130,7 @@ For a viewer that means three things. Public service can prioritise where the au
 
 ## The aerial network: near-total coverage, shrinking use
 
-The terrestrial network has changed most, and the picture cuts both ways.
+The terrestrial network has changed most, and the picture cuts both ways: coverage is close to complete at about 99.8 percent of the population, while ever fewer households actually use it. A network with almost total reach and a shrinking audience is exactly the tension now under review.
 
 Coverage is close to complete. The inquiry into radio and TV distribution records about **99.8 percent population coverage** and describes the network as robust in a crisis, [in its report SOU 2025:116](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/statens-offentliga-utredningar/distribution-av-radio-och-tv-i-det-nya_hdb3116/html/) (in Swedish). That argument carries weight in emergency planning: an aerial works when the internet does not.
 
@@ -160,7 +167,7 @@ The pattern is familiar across the Nordics and is fundamentally the same movemen
 
 ## The inquiry that decides what happens next
 
-In 2024 the government commissioned an inquiry into how radio and TV are distributed through the terrestrial network and over the internet. A partial report arrived in December 2025, and supplementary directives on 3 July 2025 added the question of whether the terrestrial networks' organisation and financing need to change. The final report was due by **30 September 2026**, [according to the government](https://www.regeringen.se/pressmeddelanden/2025/07/distributionsutredningen-ska-undersoka-behov-av-forandringar-avseende-marknaten/) (in Swedish).
+In 2024 the government commissioned an inquiry into how radio and TV are distributed through the terrestrial network and over the internet. A partial report arrived in December 2025, and supplementary directives added the question of whether the networks' organisation and financing need to change. The final report was due by **30 September 2026**, [according to the government](https://www.regeringen.se/pressmeddelanden/2025/07/distributionsutredningen-ska-undersoka-behov-av-forandringar-avseende-marknaten/) (in Swedish).
 
 It is led by Charlotte Ingvar-Nilsson, former director-general of what is now the Media Authority. Its conclusions will not change what you watch tonight, but they shape how long the aerial network survives in its present form and how internet distribution gets regulated.
 
@@ -180,7 +187,7 @@ Whatever the outcome, the advice holds — don't build your setup on nothing cha
 
 ## Digital TV over the internet, and why it behaves differently
 
-The fastest-growing route deserves its own explanation, because it works unlike the other three.
+The fastest-growing route deserves its own explanation, because it works unlike the other three. With terrestrial, cable and satellite every channel is sent to every receiver at once. Over the internet only the stream you asked for is sent, to your connection alone.
 
 With terrestrial, cable and satellite, every channel is sent to every receiver at once and your box selects the one you watch. With digital TV over the internet, only the stream you choose is sent, to your connection alone. That is why the line-up is not limited by how many channels fit in a broadcast network, and why pause and restart feel natural in an app but are rare in an aerial broadcast.
 
@@ -236,12 +243,12 @@ Troubleshooting differs by route — another reason to know which one your digit
 
 ## What this means for you
 
-The answer depends on how you watch today.
+The answer depends on how you watch today. If you watch through an aerial you are most affected; if you have cable or fibre through the building the terrestrial changes pass you by; and if you mostly use play services you will barely notice. The four cases below cover most households.
 
 1. **You watch through an aerial.** You are most affected: the line-up has thinned and another channel goes at new year. Expect public service plus a handful of channels, and check that your receiver still works.
 2. **You have cable or fibre through the building.** The terrestrial changes pass you by, but it is worth checking what is already included in your rent or monthly fee before paying for anything extra.
 3. **You mostly use play services.** You will barely notice, except that more channels move their content to where you already watch.
-4. **You are considering switching.** Compare the whole cost and the flexibility rather than individual package prices — the method is in [our guide to choosing a subscription](/en/blog/basta-iptv-abonnemang), and the purchase itself in [buying IPTV safely](/en/blog/ip-tv-kopa).
+4. **You are considering switching.** Compare the whole cost and the flexibility rather than individual package prices — the method is in [our guide to choosing a subscription](/en/blog/basta-iptv-abonnemang), and the purchase itself in [buying IPTV safely](/en/blog/ip-tv-kopa). How to set two concrete offers against each other is in [comparing IPTV offers](/en/blog/iptv-jamforelse), and what a reduced price has to be built on in [best and cheapest IPTV](/en/blog/basta-och-billigaste-iptv).
 
 For newcomers, the shortest honest answer is that a broadband connection plus the apps you want covers almost every need, and that SVT Play is already funded by the public service fee you pay through tax once you work here.
 
@@ -263,15 +270,15 @@ Five things that take fifteen minutes, whichever form of digital TV you use, and
 
 1. **Rescan channels after new year** if you watch through an aerial. Kunskapskanalen leaves the list, and an old list shows empty slots.
 2. **Check what your housing includes.** Ask the association or landlord outright which TV package sits in the fee.
-3. **List what you pay for.** Every service, with its monthly cost, on one page. The total is almost always higher than the guess.
-4. **Try an Ethernet cable to the TV.** If the picture stutters in the evening, this is the cheapest improvement available.
+3. **List what you pay for.** Every service, with its monthly cost, on one page. The total is almost always higher than the guess. What you can genuinely watch free and legally is covered in [free IPTV in Sweden](/en/blog/gratis-iptv-sverige).
+4. **Try an Ethernet cable to the TV.** If the picture stutters in the evening, this is the cheapest improvement available. Whether you need a set-top box at all is covered in [choosing an IPTV box](/en/blog/iptv-box-malmo).
 5. **Check your contract end dates.** Knowing when each agreement runs out lets you act when something changes rather than discovering it afterwards.
 
 None requires switching anything. They just mean you know what you have — the precondition for choosing something else.
 
 ## Glossary: the words you will meet
 
-Digital TV runs on abbreviations, and they turn up in everything from operator offers to licensing decisions.
+Digital TV runs on abbreviations, and they turn up in everything from operator offers to licensing decisions. The table below collects the terms that recur in this guide — marknät, DVB-T2, MPEG, EPG, IPTV, OTT and a few more — each explained in a single line.
 
 | Term | What it means |
 |---|---|

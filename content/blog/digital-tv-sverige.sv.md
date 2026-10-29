@@ -2,11 +2,19 @@
 title: "Digital tv i Sverige 2026: så fungerar det i dag"
 excerpt: "Digital tv i Sverige 2026: ny tillståndsperiod, krympande marknät och Kunskapskanalen som försvinner. Så når tv:n hemmen — och vad det betyder för dig."
 date: "2026-10-06"
-updateDate: "2026-10-11"
+updateDate: "2026-10-29"
 author: "IPTV NORDIC"
 image: "/assets/blog/digital-tv-sverige-hero.webp"
 imageAlt: "Digital tv i Sverige – tv på väggen i ett ljust vardagsrum som visar en tv-tablå, med en takantenn synlig genom fönstret"
 tags: ["Sverige", "nybörjare", "jämförelse"]
+keywords:
+  primary: "digital tv i Sverige"
+  head: "digital tv"
+  variants:
+    - "digital-tv"
+    - "marksänd tv"
+    - "marknätet"
+    - "tv via internet"
 featured: false
 faq:
   - q: "Vad menas med digital tv i Sverige?"
@@ -76,7 +84,7 @@ Ett misstag värt att undvika: att lägga till en ny lösning ovanpå en befintl
 
 ## Från analogt till digitalt: tidslinjen
 
-Dagens läge blir begripligare med historiken bakom sig, eftersom samma mönster upprepas: tekniken byts, utbudet flyttar och hushållen får byta utrustning.
+Dagens läge blir begripligare med historiken bakom sig, eftersom samma mönster upprepas: tekniken byts, utbudet flyttar och hushållen får byta utrustning. Tidslinjen nedan går från den marksända digitala starten 1999 till dagens läge, där tv i praktiken har flyttat in i bredbandet.
 
 | År | Vad som hände |
 |---|---|
@@ -100,7 +108,7 @@ För dig som tittar på digital tv i dag är lärdomen enkel: utrustning i markn
 
 ## Nytt sedan 1 januari 2026: ny tillståndsperiod
 
-Det här är den största förändringen i regelverket på åtta år.
+Det här är den största förändringen i regelverket på åtta år. Regeringen beslutade den 4 december 2025 om sändningstillstånd och public service-uppdrag för Sveriges Radio, SVT och UR för perioden 2026–2033. Uppdraget är nu teknikneutralt, och SVT ska fortsatt sända terrestert.
 
 Regeringen beslutade den 4 december 2025 om sändningstillstånd och public service-uppdrag för Sveriges Radio, SVT och UR för perioden **2026–2033**. En stor del av uppdraget blev teknikneutralt: enligt regeringen omfattas programverksamheten "av samma villkor oavsett hur innehållet når publiken", [enligt regeringens pressmeddelande](https://www.regeringen.se/pressmeddelanden/2025/12/regeringen-beslutar-om-de-narmare-villkoren-for-srs-svts-och-urs-public-service-uppdrag-de-kommande-atta-aren/).
 
@@ -128,7 +136,7 @@ Det är alltså en regelförändring som både möjliggör och bromsar: den öpp
 
 ## Marknätet krymper – men täcker nästan alla
 
-Marknätet är den väg som förändrats mest, och bilden är dubbel.
+Marknätet är den väg som förändrats mest, och bilden är dubbel: täckningen är närmast total med omkring 99,8 procent av befolkningen, samtidigt som allt färre faktiskt använder nätet. Ett nät med nästan fullständig räckvidd och krympande publik är precis den motsättning som nu utreds.
 
 Å ena sidan är täckningen närmast total. Utredningen om distribution av radio och tv konstaterar att marknätet har omkring **99,8 procents befolkningstäckning** och är robust i krissituationer, [enligt betänkandet SOU 2025:116](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/statens-offentliga-utredningar/distribution-av-radio-och-tv-i-det-nya_hdb3116/html/). Det är ett argument som väger tungt i beredskapssammanhang: en antenn fungerar när internet inte gör det.
 
@@ -146,7 +154,7 @@ Det förklarar också varför en kanalsökning ibland behövs. När innehåll fl
 
 ## Kunskapskanalen försvinner 1 januari 2027
 
-Nästa konkreta förändring är daterad. **Kunskapskanalen upphör som linjär tv-kanal den 1 januari 2027.** Utbudet flyttar till UR Play, SVT Play och till SVT2 på fasta tider måndag till torsdag, klockan 16–19 och 20–21, [enligt SVT](https://omoss.svt.se/arkiv/nyhetsarkiv/2026-05-06-kunskapskanalens-utbud-flyttar-in-i-svt2-ur-play-och-svt-play.html).
+Nästa konkreta förändring är daterad. **Kunskapskanalen upphör som linjär tv-kanal den 1 januari 2027.** Utbudet flyttar till UR Play, SVT Play och till SVT2 på fasta tider måndag till torsdag, klockan 16–19 och 20–21, [enligt SVT](https://omoss.svt.se/arkiv/nyhetsarkiv/2026-05-06-kunskapskanalens-utbud-flyttar-in-i-svt2-ur-play-och-svt-play.html). Har du bara antenn blir det en kanal mindre i listan efter nyår.
 
 SVT och UR motiverar beslutet med ändrade tittarvanor och med att besparingar genomförs. För dig som tittare betyder det i praktiken:
 
@@ -185,7 +193,7 @@ För hushållen är det praktiska rådet detsamma oavsett utfall: bygg inte din 
 
 ## Digital tv via internet – så fungerar det
 
-Den väg som växer snabbast förtjänar en egen förklaring, eftersom den fungerar annorlunda än de tre andra.
+Den väg som växer snabbast förtjänar en egen förklaring, eftersom den fungerar annorlunda än de tre andra. Vid antenn, kabel och satellit skickas alla kanaler samtidigt till alla mottagare. Över internet skickas i stället bara den ström du har begärt, till just din uppkoppling.
 
 Vid marksänd, kabel- och satellitsänd tv skickas alla kanaler samtidigt till alla mottagare, och din box väljer ut den du tittar på. Vid digital tv över internet skickas i stället bara den ström du har valt, till just din uppkoppling. Det är därför utbudet inte begränsas av hur många kanaler som får plats i ett sändarnät, och därför en paus- eller startaom-funktion är självklar i en app men ovanlig i en antennsändning.
 
@@ -215,7 +223,7 @@ Det är värt att nämna eftersom den första reflexen vid hackig bild oftast ä
 
 ## Vad krävs tekniskt hemma?
 
-Kraven skiljer sig åt beroende på väg.
+Kraven skiljer sig åt beroende på väg. För marksänd tv behövs en antenn och en mottagare som klarar sändningstekniken, antingen inbyggd i tv:n eller som separat box. För tv över internet räcker bredband och en app — och en uppkoppling som är stabil snarare än snabb.
 
 **För marksänd tv** behöver du en antenn och en mottagare som klarar den sändningsteknik som används — antingen inbyggd i tv:n eller som separat box. Tv-apparater sålda de senaste åren har oftast stödet inbyggt, men en äldre apparat kan behöva kompletteras. Kontrollera din modell innan du köper något.
 
@@ -251,12 +259,12 @@ Felsökningen ser alltså olika ut beroende på vilken väg din digital tv tar h
 
 ## Vad betyder det här för dig?
 
-Kort sammanfattat beror svaret på hur du tittar i dag.
+Kort sammanfattat beror svaret på hur du tittar i dag. Ser du via antenn berörs du mest, har du kabel eller fiber via fastigheten påverkas du knappast, och ser du mest på play-tjänster märks förändringarna nästan inte alls. De fyra fallen nedan täcker de flesta hushåll.
 
 1. **Du ser på tv via antenn.** Du berörs mest. Utbudet har tunnats ut och en kanal till försvinner vid årsskiftet. Räkna med public service plus ett fåtal kanaler, och kontrollera att din mottagare fungerar.
 2. **Du har kabel eller fiber via fastigheten.** Du påverkas inte av marknätets förändringar, men det är värt att kontrollera vad som redan ingår i avgiften innan du betalar för något extra.
 3. **Du ser mest på play-tjänster.** Förändringarna märks knappt, utom att fler kanaler flyttar sitt innehåll dit du redan tittar.
-4. **Du funderar på att byta lösning.** Jämför då hela kostnaden och flexibiliteten, inte enskilda paketpriser — metoden finns i [guiden om bästa IPTV-abonnemang](/sv/blog/basta-iptv-abonnemang).
+4. **Du funderar på att byta lösning.** Jämför då hela kostnaden och flexibiliteten, inte enskilda paketpriser — metoden finns i [guiden om bästa IPTV-abonnemang](/sv/blog/basta-iptv-abonnemang). Hur du ställer två konkreta erbjudanden mot varandra står i [IPTV-jämförelse](/sv/blog/iptv-jamforelse), och vad ett sänkt pris måste bygga på i [bästa och billigaste IPTV](/sv/blog/basta-och-billigaste-iptv).
 
 Ett råd som gäller alla fyra: gör ingenting i panik. Inget av det som beslutats hittills släcker ned din tv, och de förändringar som är beslutade har satta datum. Det du däremot tjänar på är att veta vilken väg ditt tittande går, så att du känner igen vad som faktiskt berör dig nästa gång en rubrik påstår att digital tv ska skrotas.
 
@@ -276,15 +284,15 @@ Fem saker som tar en kvart tillsammans och sparar irritation i januari.
 
 1. **Gör om kanalsökningen efter nyår** om du tar emot tv via antenn. Kunskapskanalen försvinner ur listan, och en gammal lista visar tomma platser.
 2. **Kontrollera vad som ingår i boendet.** Ring föreningen eller hyresvärden och fråga rakt ut vilket tv-utbud som ligger i avgiften.
-3. **Lista vad du betalar för.** Alla tjänster, med månadskostnad, på ett papper. Summan är nästan alltid högre än gissningen.
+3. **Lista vad du betalar för.** Alla tjänster, med månadskostnad, på ett papper. Summan är nästan alltid högre än gissningen. Vad som faktiskt går att se gratis och lagligt gick vi igenom i [gratis IPTV i Sverige](/sv/blog/gratis-iptv-sverige).
 4. **Testa en nätverkskabel till tv:n.** Om bilden hackar på kvällarna är det här den billigaste förbättringen som finns.
-5. **Kontrollera bindningstiderna.** Vet du när varje avtal löper ut kan du agera när något ändras, i stället för att upptäcka det i efterhand.
+5. **Kontrollera bindningstiderna.** Vet du när varje avtal löper ut kan du agera när något ändras, i stället för att upptäcka det i efterhand. Vad du bör kontrollera vid själva köpet står i [vad du ska tänka på när du köper IP-tv](/sv/blog/ip-tv-kopa).
 
 Ingen av punkterna kräver att du byter lösning. De gör bara att du vet vad du har, vilket är förutsättningen för att kunna välja något annat.
 
 ## Ordlista: orden du stöter på
 
-Branschen använder många förkortningar, och de dyker upp i allt från operatörserbjudanden till tillståndsbeslut.
+Branschen använder många förkortningar, och de dyker upp i allt från operatörserbjudanden till tillståndsbeslut. Tabellen nedan samlar de ord som återkommer i den här guiden: marknät, DVB-T2, MPEG, EPG, IPTV, OTT och några fler, var och en förklarad i en rad.
 
 | Ord | Vad det betyder |
 |---|---|

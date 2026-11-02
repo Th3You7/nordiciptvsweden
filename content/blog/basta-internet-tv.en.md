@@ -2,7 +2,7 @@
 title: "Best Internet TV in Sweden 2026: How to Choose"
 excerpt: "Choosing internet TV in Sweden? 98% can get gigabit broadband but only 61% subscribe. How to check your connection first, then pick the right service."
 date: "2026-10-11"
-updateDate: "2026-10-29"
+updateDate: "2026-11-02"
 author: "IPTV NORDIC"
 image: "/assets/blog/basta-internet-tv-hero.webp"
 imageAlt: "Best internet TV – a bright living room where a wall-mounted TV shows a grid of app icons, with a network cable running from a wall socket"
@@ -128,7 +128,7 @@ Most households combine them. What decides is how you watch: anyone who mainly w
 
 Before switching services, measure what you actually have, and it takes ten minutes. Test first with an Ethernet cable at the router, then over Wi-Fi where the TV sits, then repeat in the evening when the network is busiest. The order matters:
 
-1. **Test with a cable first.** Connect a computer straight to the router with Ethernet and run a speed test. That is what the subscription delivers, with Wi-Fi out of the way.
+1. **Test with a cable first.** Connect a computer straight to the router with Ethernet and run a speed test. That is what the subscription delivers, with Wi-Fi out of the way. That same machine can serve as the player — [how to set it up](/en/blog/iptv-i-datorn) is covered separately.
 2. **Then test where the TV sits**, over Wi-Fi. The difference between the two is exactly what your home network costs you.
 3. **Repeat in the evening**, around 20:00, when your household and the neighbours load the network hardest.
 4. **Test the service, not just the network.** Run a live channel and a film for ten minutes each. Buffering that hits only one service rarely sits in your connection.

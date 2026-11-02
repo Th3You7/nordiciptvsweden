@@ -2,7 +2,7 @@
 title: "IPTV Box in Malmö 2026: What to Buy, and When Not To"
 excerpt: "Do you need an IPTV box in Malmö? How the open city network, Danish channels across the Öresund and Google's new app rules change the answer."
 date: "2026-09-29"
-updateDate: "2026-10-29"
+updateDate: "2026-11-02"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-box-malmo-hero.webp"
 imageAlt: "IPTV box in Malmö – a wall-mounted TV in a Nordic living room at dusk showing a settings menu, with the remote on the sofa"
@@ -40,7 +40,7 @@ This guide covers when an IPTV box is genuinely useful in Malmö, when it is mon
 
 ## What an IPTV box is — and whether you need one
 
-An IPTV box is a small computer that plugs into the TV over HDMI and runs the player app that shows the channels. It fills the same role as a Fire TV Stick, an Apple TV or an Android TV box.
+An IPTV box is a small computer that plugs into the TV over HDMI and runs the player app that shows the channels — which is also why [IPTV on a computer](/en/blog/iptv-i-datorn) often removes the need for one. It fills the same role as a Fire TV Stick, an Apple TV or an Android TV box.
 
 Often you need no IPTV box at all:
 

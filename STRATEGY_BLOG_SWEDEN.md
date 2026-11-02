@@ -338,6 +338,7 @@ This is an interim arrangement. A1 `iptv-sverige` and A8 `iptv-sweden-guide` rem
 | C4 | `iptv-fire-tv-stick` | IPTV Fire TV Stick | 1 200–1 700 | P2 |
 | C5 | `iptv-iphone-ipad-apple-tv` | IPTV iPhone · Apple TV | 1 200–1 700 | P3 |
 | C6 | `m3u-lista-och-xtream-codes` | M3U-lista · Xtream Codes | 1 300–1 800 | P3 |
+| C7 | `iptv-i-datorn` | IPTV i datorn · IPTV on a computer | 1 200–1 900 | P2 |
 
 **`iptv-jamforelse` fills slot A2.** The published post covers comparing *concrete offers*: campaign price versus list price, the twelve-month total, the fill-in template, telephone-sales traps and dated market figures. That is what A2 `tv-paket-jamforelse` was for, so A2 is considered served — do not write a second post against that keyword family without redefining the lane here. Its dated prices are a §13.1 trigger: they came from a review checked 8 June 2026 and must be re-dated or removed when stale.
 
@@ -350,6 +351,8 @@ This is an interim arrangement. A1 `iptv-sverige` and A8 `iptv-sweden-guide` rem
 C3 note: `iptv-box-malmo` already covers the box basics as a local variant (§11.1). Write C3 as the **general** guide and trim the overlap out of the Malmö post when you do.
 
 C2 note: Finland published `iptv-smarters-pro` with an angle on counterfeit apps and Android's developer-verification rules. **Write an original post** — different structure and examples, Swedish sources. Same slug on two domains is fine; the same text is not.
+
+**C7 `iptv-i-datorn` — lane added 2026-11-02.** The slot the original C1–C6 list missed: the desktop. Its subject is **the computer as a playback device** — what the machine needs, how the player is installed and run, how it reaches the television, and why a player app beats a browser tab. Finland already publishes `iptv-smarters-player`, so this post must stay **device-anchored rather than app-anchored**: name the players generically, keep the walkthrough about the computer, and source the Swedish and Microsoft facts here (§0.1). It is the first cluster-C post outside the Malmö variant, so it has exactly one same-cluster sibling — do not force a 3–6 sideways quota on it (§8.1). It is also a genuine `howto:` candidate under §9.6, unlike anything in cluster A.
 
 #### Cluster D — Troubleshooting (both locales)
 
@@ -684,6 +687,8 @@ Several published posts rest on facts with a known expiry. These are not seasona
 | KO's order against seven companies over price information, 8.6 MSEK, 17 November 2025 | `basta-och-billigaste-iptv` | A court ruling on any of them, or KO's next follow-up review |
 | PMD overturned KO's order against Inet AB (published 20 March 2026) | `basta-och-billigaste-iptv` | An appeal to Patent- och marknadsöverdomstolen, or a contrary ruling |
 | **7 a § prisinformationslagen still says "produkt"** (varor, tjänster eller andra nyttigheter), so the 30-day rule reaches service subscriptions. A lagrådsremiss of 15 October 2026 (Fi2026/00996) would narrow it to "vara", in force 1 March 2027 — the promemoria said 1 February | `basta-och-billigaste-iptv` | **Riksdag decision on Fi2026/00996, or 1 March 2027.** When it passes, the post's central claim inverts: the rule stops covering IPTV subscriptions. The post must keep this as a proposal until then |
+| Windows 10 consumer ESU: enrol until **12 October 2027**, requires 22H2, one licence covers ten devices, security updates only | `iptv-i-datorn` | **12 October 2027**, or any Microsoft change to the consumer ESU terms — the post is the only place the project states them |
+| The outdated **13 October 2026** ESU date is corrected as still circulating | `iptv-i-datorn` | Once the wrong date stops appearing in Swedish coverage the correction loses its point; drop the paragraph rather than leave it arguing with nobody |
 
 A claim whose trigger has fired is a factual error, not an aging article. Fix it the same week.
 

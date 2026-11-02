@@ -77,7 +77,7 @@ Conventions worth knowing before editing a post or the engine:
 - **Every post declares its keyword family** in a `keywords:` frontmatter block (`primary`, `head`, `variants`) — §5.1. `check:blog` measures density from it and warns above 3.0%; it also warns if the primary is missing from the title, or a family term from the excerpt, the first 100 words, ≥2 H2s or the conclusion.
 - **`howto:` frontmatter is optional and narrowly scoped** (§9.6). It emits `HowTo` + `HowToStep` JSON-LD. Only for genuine ordered procedures that are a substantial part of what the page is for — not criteria checklists or mistake lists, and never on comparison articles.
 
-### Published posts (as of 2026-11-02, ten slugs)
+### Published posts (as of 2026-11-02, eleven slugs)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
@@ -90,6 +90,7 @@ Conventions worth knowing before editing a post or the engine:
 | `iptv-jamforelse` | sv + en | Commercial, fills backlog slot **A2**: campaign price versus list price (15 of 27 packages rose, one by 101%), the twelve-month total, a fill-in template, and KO's October 2026 order over misleading telephone sales. Every competitor price is dated 8 June 2026 | no |
 | `basta-iptv-abonnemang` | sv + en | Commercial comparison framework: Mediavision's stalled-growth figures, the frozen HBO Max/SkyShowtime merger, seven weighted criteria, cost per evening used. Never claims we are "best" — §12 forbids it | no |
 | `basta-och-billigaste-iptv` | sv + en | Commercial, the fourth comparison lane (§8.2): what a *price claim* means — 7 a § prisinformationslagen's 30-day lowest-price rule, KO's orders against ten (22 MSEK, May 2025) and seven (8.6 MSEK, Nov 2025) companies, PMD overturning the Inet order, and the 15 Oct 2026 lagrådsremiss that would narrow the rule to goods from 1 Mar 2027 and drop service subscriptions out of it | no |
+| `iptv-i-datorn` | sv + en | **Cluster C device how-to** and the first one in the project (lane C7, added 2026-11-02): what the machine needs, installing and running the player, HDMI to the TV, four common faults, computer vs box. Hook is Windows 10 — support ended 14 Oct 2025, consumer ESU runs to **12 Oct 2027** (22H2, ten devices, security updates only), and it corrects the outdated 13 Oct 2026 date still circulating. Carries `howto:` | no |
 | `gratis-iptv-sverige` | sv + en | Answers a §12-forbidden query as consumer protection (sv 2,158 / en 2,113): what is genuinely free and legal, what a free list costs instead of money, Skatteverket's money trail, the free trial that is not a free service, and the viewer's real legal position. Debunks the unsourced "95% of free apps contain malware" figure rather than repeating it | no |
 
 Before proposing a topic, check both files and the sister site at `~/Desktop/iptv/websites/iptv-finland/content/blog/`. That site is the same business and publishes `iptv-nordic` in English already; per strategy §0.1 the two domains must not run the same article, so keep Sweden posts anchored to Swedish law, prices and institutions.
@@ -123,7 +124,7 @@ Two pages do the hubbing instead:
 
 This is interim. A1 `iptv-sverige` and A8 `iptv-sweden-guide` are still the right topical pillars for cluster A, which holds eight of the ten posts and has no article-level parent.
 
-**Cluster distribution is badly skewed** and this shapes every linking decision: A has 8 posts, C and E have 1 each, B/D/F are empty. So `iptv-box-malmo` and `digital-tv-sverige` have **zero** same-cluster siblings — never force a 3–6 sideways quota on them; link to genuinely related posts in adjacent clusters instead (§8.1).
+**Cluster distribution is badly skewed** and this shapes every linking decision: A has 8 posts, C has 2, E has 1, B/D/F are empty. So `digital-tv-sverige` has **zero** same-cluster siblings and the two cluster-C posts have one each — never force a 3–6 sideways quota on them; link to genuinely related posts in adjacent clusters instead (§8.1).
 
 ### Favicon and logo
 

@@ -2,7 +2,7 @@
 title: "IPTV-box i Malmö 2026: så väljer du rätt och slipper strul"
 excerpt: "Behöver du en IPTV-box i Malmö? Så påverkar stadsnätet, danska kanaler och Googles nya appregler valet av box — och när du klarar dig utan."
 date: "2026-09-29"
-updateDate: "2026-10-29"
+updateDate: "2026-11-02"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-box-malmo-hero.webp"
 imageAlt: "IPTV-box i Malmö – tv på väggen i ett nordiskt vardagsrum i skymningen som visar en inställningsmeny, med fjärrkontrollen på soffan"
@@ -45,6 +45,7 @@ Poängen är att du ofta inte behöver någon IPTV-box alls:
 
 - **Smart-tv från de senaste åren.** De flesta har en appbutik där en IPTV-spelare kan installeras direkt.
 - **Konsol eller befintlig streamingprylar.** Har du redan en streamingenhet kopplad till tv:n är den oftast tillräcklig.
+- **En dator vid tv:n.** Den gör samma jobb som en box, och hur du ställer in den står i [IPTV i datorn](/sv/blog/iptv-i-datorn).
 - **Äldre tv utan appar.** Här gör en box störst nytta, och den är billigare än att byta tv.
 
 En IPTV-box löser alltså tre saker: en tv som saknar rätt appar, en tv vars appbutik är begränsad, och en uppkoppling som blir stabilare med nätverkskabel. Vilka enheter som fungerar med vår tjänst listar vi under [enheter som stöds](/sv/devices).

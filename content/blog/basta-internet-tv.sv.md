@@ -2,7 +2,7 @@
 title: "Bästa internet-tv 2026: så väljer du rätt lösning"
 excerpt: "Vad är bästa internet-tv för ditt hushåll? 98 procent kan få gigabit, bara 61 procent har abonnemang. Så väljer du tjänst — och kollar uppkopplingen."
 date: "2026-10-11"
-updateDate: "2026-10-29"
+updateDate: "2026-11-02"
 author: "IPTV NORDIC"
 image: "/assets/blog/basta-internet-tv-hero.webp"
 imageAlt: "Bästa internet-tv – ljust vardagsrum där en väggmonterad tv visar ett rutnät med appikoner, med nätverkskabel dragen från ett vägguttag"
@@ -146,7 +146,7 @@ Den billigaste förbättringen är nästan alltid en nätverkskabel till tv:n el
 
 Innan du byter tjänst är det värt att mäta vad du faktiskt har, och det tar tio minuter. Mät först med nätverkskabel vid routern, sedan över wifi där tv:n står, och gör om testet på kvällen när belastningen är som högst. Ordningen spelar roll:
 
-1. **Mät med kabel först.** Koppla en dator direkt till routern med nätverkskabel och kör ett hastighetstest. Det är den siffra abonnemanget levererar, utan wifi i vägen.
+1. **Mät med kabel först.** Koppla en dator direkt till routern med nätverkskabel och kör ett hastighetstest. Det är den siffra abonnemanget levererar, utan wifi i vägen. Samma dator går att använda som spelare — hur det går till står i [guiden för IPTV på datorn](/sv/blog/iptv-i-datorn).
 2. **Mät sedan där tv:n står**, över wifi. Skillnaden mellan de två mätningarna är exakt vad hemmanätet kostar dig.
 3. **Gör om testet på kvällen**, runt klockan 20. Det är då både ditt hushåll och grannarna belastar nätet som mest.
 4. **Testa tjänsten, inte bara nätet.** Starta en livekanal och en film och låt dem rulla tio minuter var. Buffring som bara drabbar en tjänst sitter sällan i din uppkoppling.

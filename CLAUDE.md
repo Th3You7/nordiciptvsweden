@@ -16,6 +16,8 @@ npm run verify       # lint + check:i18n + check:blog + build + check:urls — t
 npm run lint         # eslint --max-warnings 0
 npm run check:i18n   # sv/en catalogs must match in key paths and array lengths
 npm run check:blog   # per-post rules from STRATEGY_BLOG_SWEDEN.md; errors fail, warnings print
+                     # covers links, CTAs, images, FAQ, GEO-adjacent structure and the
+                     # keyword family (density ceiling + 5 placement checks)
 npm run check:urls   # scans build output for localhost URLs (reads .next, or CHECK_URLS_DIST)
 ```
 
@@ -56,7 +58,7 @@ Resolution wording is standardised as **`8K / 4K Ultra HD ready`** (title, hero,
 
 - `app/lib/site.js` — `siteUrl` (inlined at **build** time from `NEXT_PUBLIC_SITE_URL`; a runtime-only env var has no effect) and `BRAND`.
 - `app/lib/metadata.js` — `localeAlternates()` for static pages, `postAlternates()` for posts. Next replaces the whole `alternates` object per page, so every page must build the complete canonical + hreflang set here; a page setting only `canonical` silently loses hreflang. Posts emit hreflang only for locales they exist in.
-- `app/lib/schema.js` — JSON-LD builders rendered through `<JsonLd>`. The layout emits `Organization` + `WebSite`; each route adds its own (`BreadcrumbList`, `Product`/`Offer`, `FAQPage`, `BlogPosting`, `ItemList`). Schema must not claim anything the page doesn't show.
+- `app/lib/schema.js` — JSON-LD builders rendered through `<JsonLd>`. The layout emits `Organization` + `WebSite`; each route adds its own (`BreadcrumbList`, `Product`/`Offer`, `FAQPage`, `BlogPosting`, `ItemList`, `HowTo`). Schema must not claim anything the page doesn't show. `howTo()` fires only for posts with a `howto:` block — currently `ip-tv-kopa` and `basta-internet-tv`, both locales. Adding a second schema implementation is the thing not to do; extend this file.
 - `app/sitemap.js`, `app/robots.js` — static routes plus published posts, with `updateDate` as `lastmod`.
 
 ### Blog engine
@@ -71,8 +73,11 @@ Conventions worth knowing before editing a post or the engine:
 - **The FAQ block and its `FAQPage` schema come from the `faq:` frontmatter array** — never hand-write a FAQ heading. The closing CTA and related posts render automatically too.
 - **Internal links must be root-relative and locale-matched** (`/sv/...` in `.sv.md`). There is no link rewriter, and `check:blog` fails dead links and locale mismatches.
 - **Slugs are ASCII** (å→a, ä→a, ö→o). Translations share a slug; `getBlogLocaleMap()` feeds the language switcher so a single-locale post doesn't switch into a 404.
+- **Every meaningful H2 opens with a 40–60 word direct-answer paragraph** (§9.4.1, adopted unchanged from the Poland project). It goes immediately after the heading, before any list, table, image or CTA, and restates what the section establishes — never a new fact. The only exclusion is the closing `## Sammanfattning` / `## Summary`. All 207 content H2s comply; a new post is expected to carry 300–500 words of these, so budget for it rather than trimming afterwards.
+- **Every post declares its keyword family** in a `keywords:` frontmatter block (`primary`, `head`, `variants`) — §5.1. `check:blog` measures density from it and warns above 3.0%; it also warns if the primary is missing from the title, or a family term from the excerpt, the first 100 words, ≥2 H2s or the conclusion.
+- **`howto:` frontmatter is optional and narrowly scoped** (§9.6). It emits `HowTo` + `HowToStep` JSON-LD. Only for genuine ordered procedures that are a substantial part of what the page is for — not criteria checklists or mistake lists, and never on comparison articles.
 
-### Published posts (as of 2026-10-26, ten slugs)
+### Published posts (as of 2026-11-02, ten slugs)
 
 | Slug | Locales | Covers | Featured |
 |---|---|---|---|
@@ -107,6 +112,19 @@ Before proposing a topic, check both files and the sister site at `~/Desktop/ipt
 
 `app/lib/blog-taxonomy.js` holds the fixed tag vocabulary and the numeric publishing limits that `scripts/check-blog.mjs` enforces. **`STRATEGY_BLOG_SWEDEN.md` is the editorial playbook** — read it before writing or auditing an article. `content/blog/README.md` is the short author guide.
 
+### Hub architecture (decided 2026-10-29)
+
+The home page is the **commercial** pillar and stays that way — its intent is brand and purchase, so it is not the topical hub. Turning it into a link directory would dilute conversion and set it competing with the guides it feeds. Its only hub role is one contextual paragraph under the blog section pointing at `digital-tv-sverige`, guarded by `getPostSlugsForLocale()` so a rename can't 404 the home page.
+
+Two pages do the hubbing instead:
+
+- **`/{locale}/blog` is the structural hub.** `app/[locale]/blog/page.js` groups posts by cluster via `clusterOf()` and `CLUSTER_ORDER` from `app/lib/blog-taxonomy.js`, each group headed by a 40–60 word standfirst from `blog.clusters.{A,E,C}` in the catalogs. Empty clusters are skipped at render, so the page shows three groups today and more when B/D/F fill. `BlogList` takes `titleAs` so grouped cards drop to `<h3>` under the cluster `<h2>` — one `<h1>` per page.
+- **`digital-tv-sverige` is the topical hub** for the "how television reaches you" axis. Every other post links up to it; it links down to nine spokes. It is listed in `HUB_SLUGS`, which raises its internal-link ceiling to `internalLinksMaxHub` (20) — a hub that parents nine spokes cannot obey a quota written for spokes.
+
+This is interim. A1 `iptv-sverige` and A8 `iptv-sweden-guide` are still the right topical pillars for cluster A, which holds eight of the ten posts and has no article-level parent.
+
+**Cluster distribution is badly skewed** and this shapes every linking decision: A has 8 posts, C and E have 1 each, B/D/F are empty. So `iptv-box-malmo` and `digital-tv-sverige` have **zero** same-cluster siblings — never force a 3–6 sideways quota on them; link to genuinely related posts in adjacent clusters instead (§8.1).
+
 ### Favicon and logo
 
 The favicon set lives in `app/` as Next file conventions, not in `public/`: `app/icon.png` (512), `app/favicon.ico` (48), `app/apple-icon.png` (180). Next emits the `<link rel="icon">` tags automatically — there is no `icons:` metadata block. All three are the round Swedish-flag mark the owner supplied.
@@ -130,14 +148,17 @@ The favicon set lives in `app/` as Next file conventions, not in `public/`: `app
 - Security headers were added on 2026-10-16: CSP, HSTS (two years, no `preload`), `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy` and `Permissions-Policy`, applied to every response via `headers()` in `next.config.mjs`. CSP keeps `'unsafe-inline'` for scripts and styles because the App Router inlines the RSC payload per page and components set inline `style` attributes; the strict alternative is a middleware nonce, which would end the static prerender. **Not yet verified in a browser console.**
 - Dependencies: Next and eslint-config-next upgraded to 16.4.2 on 2026-10-16, which cleared 1 critical and 4 high vulnerabilities (9 → 4). The remaining 4 are moderate and deliberate: `gray-matter` → `js-yaml` → `argparse` → `sprintf-js`, where `npm audit fix --force` would downgrade gray-matter to 2.0.1 and break the blog engine, and no patched `sprintf-js` exists. The advisory needs attacker-controlled format strings; only our own repo files reach that parser. React 19.3.1 and ESLint 10 are still available.
 - Legal pages name no company entity by the owner's decision (`legal.operator` says "Digital Product & Support Provider"), while the `iptv-nordic` article tells readers a reputable seller publishes those details.
-- The teaser `blog.posts` entries in both catalogs are **dead fallback data, not live content** — verified 2026-10-11. Both call sites read `posts.length ? real : teasers` (`app/[locale]/page.js:38`, `app/[locale]/blog/page.js:32`), and nine real posts exist per locale, so the teasers never render. Deleting them is optional tidying and means removing those two fallback branches too.
-- Neither pillar guide is written, so no post links "up" yet. Of the nine published slugs only two map to backlog slots — `iptv-jamforelse` (A2) and `iptv-box-malmo` (C3, via §11.1) — while `digital-tv-sverige` serves as the de facto A1 pillar (§9.4). The rest sit outside the backlog.
+- The teaser `blog.posts` entries in both catalogs are **dead fallback data, not live content** — verified 2026-10-11. Both call sites read `posts.length ? real : teasers` (`app/[locale]/page.js:38`, `app/[locale]/blog/page.js:32`), and ten real posts exist per locale, so the teasers never render. Deleting them is optional tidying and means removing those two fallback branches too.
+- **Every post now has a parent** (blog hub + `digital-tv-sverige`) — verified 2026-10-29: 20/20 files have a path up, all link counts inside 8–14 (hub 16 of its 20), no locale-mixed links. Of the ten slugs only two map to backlog slots — `iptv-jamforelse` (A2) and `iptv-box-malmo` (C3, via §11.1) — while `digital-tv-sverige` holds the pillar role until A1 exists (§9.4).
+- **Awaiting the owner's go-ahead (asked 2026-11-02):** (1) write A1 `iptv-sverige` and A8 `iptv-sweden-guide`, outlines already drafted and presented — the English one only works re-angled as a "first 30 days in Sweden" setup guide, or it cannibalises `iptv-nordic.en`, `ip-tv-kopa.en` and `iptv-box-malmo.en`; (2) add a **Transactional** row to §9.4 at 1,800–2,400 so `ip-tv-kopa` (sv 1,926) is in band by classification rather than by padding. Nothing was written or changed for either.
+- **Empty clusters, recommended order:** B `svenska-tv-kanaler-online` then `sportkanaler-online` (sport is the dearest line on a Swedish TV bill and the site has no sport content at all — §12 still forbids claiming we carry SHL or Allsvenskan); D `iptv-buffrar`, which is also the natural second home for `howto:`; F **leave empty** — no analytics and no release cadence means nothing truthful to put there. No layout change needed; the hub already skips empty clusters.
 - **Featured slots are underfilled.** §8.3 allows exactly three `featured: true` per locale and `check:blog` fails on a fourth, but only `iptv-nordic` is featured in either locale — 1 of 3 sv, 1 of 3 en. The slots §8.3 names are all still unwritten, so filling them means either writing those posts or promoting published ones.
 - §13.1's two gaps were closed on 2026-10-26: `gratis-iptv-sverige`'s Skatteverket figures and `iptv-jamforelse`'s 8 June 2026 prices now have rows, alongside three for `basta-och-billigaste-iptv`.
 - **The row most likely to fire next is `basta-och-billigaste-iptv`'s.** Its spine is that 7 a § prisinformationslagen still says *produkt* (goods, services or other benefits), so the 30-day rule reaches service subscriptions. The lagrådsremiss of 15 October 2026 (Fi2026/00996) would change that word to *vara* from **1 March 2027**. When it passes, the post's central claim inverts — the rule stops covering IPTV. Both locales say explicitly that it is a proposal; keep it that way until a riksdag decision.
 - `gratis-iptv-sverige` includes a "free trial is not the same thing" section, while backlog slot **A4** `iptv-gratis-test` (transactional, "IPTV gratis test") is unwritten with no boundary in §8.2. That is the same overlap pattern that A2 hit — write the lane into §8.2 before commissioning A4.
 - Backlog slot **A2** is served by `iptv-jamforelse` (recorded in §8.2 on 2026-10-15); do not write a second post against that keyword family without redefining the lane there first.
-- `check:blog` reports 18 files (sv:9 en:9), 0 warnings as of 2026-10-26. The editorial backlog was last cleared on 2026-10-16: `iptv-bolaget` now ends on `/pricing`, carries a home-page link and sits at 2,004 words; `iptv-box-malmo`'s short FAQ answers were lengthened. Its Swedish keyword density had already self-corrected to 1.29% — the 1.70% recorded earlier was measured with alt text included, which inflates it.
+- `check:blog` reports 20 files (sv:10 en:10), **0 errors and 0 warnings** as of 2026-11-02, now including the five keyword checks. GEO is 207/207. `ip-tv-kopa` (sv 1,926) and `iptv-box-malmo` (sv 1,659) sit below the Commercial band — `iptv-box-malmo` is inside Device how-to (1,200–1,900) and needs nothing; `ip-tv-kopa` is the transactional-band question above. Neither should be padded.
+- **Keyword density was re-based on 2026-11-02.** The old 1.0–1.5% band was removed: measured with declared families the ten slugs span 0.75–2.53% (median 1.41%) and only 7 of 20 files sat inside it, so the band was describing a bad threshold rather than bad writing — and a floor invites the padding §9.4.1 forbids. Replaced by a 3.0% anti-stuffing ceiling plus placement checks. Caveat recorded in §5.1: the matching model was settled by iterating against the corpus, so it is **repeatable, not objectively correct** — its value is that two people measuring the same post now agree. Earlier figures in this file measured a different family and are not comparable.
 - The new favicon and square logo only reach Google after the live site is re-crawled; nothing in Search Console reports favicons.
 - §13.1 now covers `digital-tv-sverige`. The row that will fire first: **1 January 2027**, when Kunskapskanalen's closure must be rewritten in the past tense in both that post and `iptv-nordic`, and dropped from the aerial line-ups.
 - The Terms were reworded on 2026-10-16 so illustrations showing a channel name, logo or programme guide are declared illustrative and imply no affiliation or carriage — the old "no third-party logos are used" claim was untrue once the `digital-tv-sverige` hero shipped.

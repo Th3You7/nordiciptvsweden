@@ -367,8 +367,11 @@ C2 note: Finland published `iptv-smarters-pro` with an angle on counterfeit apps
 | # | Slug | Locale | Primary keyword | Words | P |
 |---|---|---|---|---|---|
 | E1 | `tv-i-jul-och-vinter` | sv | *(seasonal — refresh yearly)* | 1 000–1 500 | P3 |
+| E2 | `ip-tv-gavle` | sv + en | IP TV Gävle · IPTV Gävle | 1 600–1 900 | P2 |
 
-**Total: 25 slugs → ~34 markdown files.**
+**E2 `ip-tv-gavle` — lane added 2026-11-12.** The second city post, and the first in cluster E. Its subject is **how television actually reaches a home in Gävle** — the city network, what a rented flat already includes, and which contract the reader is really on. It is the local variant of the `digital-tv-sverige` axis and links up to it as its cluster guide (§11.1), so it must not restate the national distribution story: that belongs to the guide. It qualifies under §11 on three operator-sourced local facts, not on the city name. Keep it out of cluster C — it is not a device or install post, and `iptv-box-malmo` already holds the local box variant.
+
+**Total: 26 slugs → ~36 markdown files.**
 
 ### 8.3 Featured slots
 
@@ -621,6 +624,10 @@ A city post is a *variant* of a cluster topic, never a replacement. The cluster 
 
 When C3 is written it takes the general box keyword and the full device walk-through; the Malmö post then keeps only its local material and links up to C3. Until then, `iptv-box-malmo` carries the box basics — so **C3 must be written as the general guide, not as a second Malmö article**, and the overlap trimmed at that point.
 
+**Published:** `ip-tv-gavle` (sv + en, 2026-11-12) is the local variant of the **`digital-tv-sverige`** axis, which is its cluster guide until A1 exists. It qualifies on GavleNet being Gävle Energi's own city network for Gävle and Ockelbo at 100–1000 Mbit/s, on Sappa taking over that network's TV customer contracts from 1 December 2026, and on Gavlegårdarna including a Tele2 basic package in the rent while broadband is ordered through Open Universe — each sourced to the operator or the municipal landlord itself, not to a comparison site. Its advice differs from the national guide at every one of those three points, which is the §11 test.
+
+**Two city posts is the ceiling for now.** Each existing one is anchored to a different cluster and a different local mechanism. A third needs its own §11 case written here first, and "a bigger city" is not one.
+
 ---
 
 ## 12. EDITORIAL & COMPLIANCE GUARDRAILS — Sweden
@@ -683,12 +690,16 @@ Several published posts rest on facts with a known expiry. These are not seasona
 | Kunskapskanalen "upphör 1 januari 2027" — written as upcoming | `digital-tv-sverige`, `iptv-nordic` | **1 January 2027**: rewrite in the past tense and drop it from aerial line-ups |
 | Distribution inquiry: final report "due 30 September 2026" | `digital-tv-sverige` | Publication of the final report, which the post does not yet claim has happened |
 | Skatteverket's figures on unlicensed streaming: 37 million (2023) and 550 million kronor (2018) | `gratis-iptv-sverige` | Skatteverket's next published estimate |
+| PTS broadband mapping dated **1 October 2025**: ≈98% could connect to fast fixed broadband, ≈86% have it in the building, ≈61% subscribe, ≈88% in rural areas. Carried in the excerpt, the FAQ, a table and the body of both locales | `basta-internet-tv` | **PTS's next annual mapping.** The 98/86/61 gap is the post's whole spine, so a new release re-dates or replaces all four figures, not just one sentence |
 | Competitor prices checked 8 June 2026 (27 packages, 15 raised, one by 101%) | `iptv-jamforelse` | Quarterly; re-date or remove — prices move faster than the post |
 | KO's order against seven companies over price information, 8.6 MSEK, 17 November 2025 | `basta-och-billigaste-iptv` | A court ruling on any of them, or KO's next follow-up review |
 | PMD overturned KO's order against Inet AB (published 20 March 2026) | `basta-och-billigaste-iptv` | An appeal to Patent- och marknadsöverdomstolen, or a contrary ruling |
 | **7 a § prisinformationslagen still says "produkt"** (varor, tjänster eller andra nyttigheter), so the 30-day rule reaches service subscriptions. A lagrådsremiss of 15 October 2026 (Fi2026/00996) would narrow it to "vara", in force 1 March 2027 — the promemoria said 1 February | `basta-och-billigaste-iptv` | **Riksdag decision on Fi2026/00996, or 1 March 2027.** When it passes, the post's central claim inverts: the rule stops covering IPTV subscriptions. The post must keep this as a proposal until then |
 | Windows 10 consumer ESU: enrol until **12 October 2027**, requires 22H2, one licence covers ten devices, security updates only | `iptv-i-datorn` | **12 October 2027**, or any Microsoft change to the consumer ESU terms — the post is the only place the project states them |
 | The outdated **13 October 2026** ESU date is corrected as still circulating | `iptv-i-datorn` | Once the wrong date stops appearing in Swedish coverage the correction loses its point; drop the paragraph rather than leave it arguing with nobody |
+| **Sappa takes over the TV customer contracts in GavleNet from 1 December 2026** — written as upcoming, in both locales | `ip-tv-gavle` | **1 December 2026.** The soonest trigger in the project. Rewrite in the past tense, and confirm the promise held that line-up, prices and function were unaffected |
+| The last parts of the copper network close "at the end of November 2026" — written as upcoming | `ip-tv-gavle` | **30 November 2026.** Rewrite in the past tense; the sequencing advice ("fix the connection first") survives, the future tense does not |
+| GavleNet covers Gävle and Ockelbo at 100–1000 Mbit/s; Gavlegårdarna includes a Tele2 basic package in the rent with broadband via Open Universe | `ip-tv-gavle` | Any change at either operator. These are the three facts the post qualifies on under §11 — if one stops being true the post stops qualifying, not just that sentence |
 
 A claim whose trigger has fired is a factual error, not an aging article. Fix it the same week.
 

@@ -2,7 +2,7 @@
 title: "IPTV Box in Malmö 2026: What to Buy, and When Not To"
 excerpt: "Do you need an IPTV box in Malmö? How the open city network, Danish channels across the Öresund and Google's new app rules change the answer."
 date: "2026-09-29"
-updateDate: "2026-11-02"
+updateDate: "2026-11-12"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-box-malmo-hero.webp"
 imageAlt: "IPTV box in Malmö – a wall-mounted TV in a Nordic living room at dusk showing a settings menu, with the remote on the sofa"
@@ -58,7 +58,7 @@ This is the local part, and it is worth checking before buying anything. Malmö'
 
 The City of Malmö states that the city network is **not tied to a single service provider**, and that in a house the fibre association itself procures the service provider or operator, [in its broadband information](https://malmo.se/Bo-och-leva/Bygga-och-bo/Inomhusmiljo/Bredband-till-ditt-boende.html) (in Swedish). If you rent or own a flat, the city points you to the landlord or the housing association to find out which providers are connected to the building.
 
-For a newcomer this has a practical consequence: in an open network you choose the service separately from the connection, and in many apartment buildings a TV package is already bundled into the rent or the monthly fee. Before buying a box, find out:
+For a newcomer this has a practical consequence: in an open network you choose the service separately from the connection, and in many apartment buildings a TV package is already bundled into the rent or the monthly fee. The model differs between cities — in [Gävle](/en/blog/ip-tv-gavle) the municipal utility owns the network and the landlord has signed for the basic line-up. Before buying a box, find out:
 
 1. which service providers reach your building,
 2. whether a TV package is already included in what you pay,

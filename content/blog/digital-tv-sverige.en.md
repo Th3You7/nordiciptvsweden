@@ -2,7 +2,7 @@
 title: "Digital TV in Sweden 2026: How It Actually Reaches You"
 excerpt: "Digital TV in Sweden explained: the four ways TV reaches a home, the new 2026–2033 licence period, the shrinking aerial network and what changes in 2027."
 date: "2026-10-06"
-updateDate: "2026-10-29"
+updateDate: "2026-11-12"
 author: "IPTV NORDIC"
 image: "/assets/blog/digital-tv-sverige-hero.webp"
 imageAlt: "Digital TV in Sweden – a wall-mounted TV in a bright living room showing an electronic programme guide, with a rooftop aerial visible through the window"
@@ -260,7 +260,7 @@ Two practical notes that save money. First, check the building before buying: in
 
 **The house without fibre.** The terrestrial network still matters here, sometimes as the only option for linear TV. Check the aerial and rescan at the new year. Mobile broadband can supplement play services, but check coverage and data limits first.
 
-**The flat with a collective contract.** A TV package is probably already in the monthly fee, and paying twice for the same channels is common. Ask the housing association or landlord what is included before adding anything.
+**The flat with a collective contract.** A TV package is probably already in the monthly fee, and paying twice for the same channels is common. Ask the housing association or landlord what is included before adding anything. What this looks like in one city, with a municipal utility and a municipal landlord, is set out in [TV in Gävle](/en/blog/ip-tv-gavle).
 
 **The newcomer.** For most arrivals, digital TV means broadband plus the apps you want, and that is almost always enough. An aerial is rarely worth the trouble in a rented flat, and SVT Play is already funded by the public service fee you pay through tax once you work here. More on that fee is in [our breakdown of TV costs in the Nordics](/en/blog/iptv-nordic).
 

@@ -2,7 +2,7 @@
 title: "IPTV-box i Malmö 2026: så väljer du rätt och slipper strul"
 excerpt: "Behöver du en IPTV-box i Malmö? Så påverkar stadsnätet, danska kanaler och Googles nya appregler valet av box — och när du klarar dig utan."
 date: "2026-09-29"
-updateDate: "2026-11-02"
+updateDate: "2026-11-12"
 author: "IPTV NORDIC"
 image: "/assets/blog/iptv-box-malmo-hero.webp"
 imageAlt: "IPTV-box i Malmö – tv på väggen i ett nordiskt vardagsrum i skymningen som visar en inställningsmeny, med fjärrkontrollen på soffan"
@@ -58,7 +58,7 @@ Det här är den lokala delen, och den är värd att kolla innan du köper någo
 
 Malmö stad skriver att stadsnätet **inte är knutet till en enskild tjänsteleverantör**, och att villaägare via sin fiberförening själva upphandlar tjänsteleverantör eller operatör, [enligt kommunens information om bredband](https://malmo.se/Bo-och-leva/Bygga-och-bo/Inomhusmiljo/Bredband-till-ditt-boende.html). Bor du i lägenhet hänvisar staden till hyresvärden eller bostadsrättsföreningen för att få veta vilka leverantörer som är inkopplade.
 
-Konsekvensen för ett köp av IPTV-box är konkret: i ett öppet nät väljer du tjänst separat från nätet, och i många flerfamiljshus ingår redan ett tv-utbud i avgiften. Innan du köper en box, ta reda på
+Konsekvensen för ett köp av IPTV-box är konkret: i ett öppet nät väljer du tjänst separat från nätet, och i många flerfamiljshus ingår redan ett tv-utbud i avgiften. Modellen skiljer sig mellan städer — i [Gävle](/sv/blog/ip-tv-gavle) äger kommunens eget energibolag nätet och hyresvärden har tecknat grundutbudet. Innan du köper en box, ta reda på
 
 1. vilka tjänsteleverantörer som finns i din fastighet,
 2. om ett tv-paket redan ingår i hyran eller avgiften,

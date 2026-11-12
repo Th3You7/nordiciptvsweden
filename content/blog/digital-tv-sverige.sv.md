@@ -2,7 +2,7 @@
 title: "Digital tv i Sverige 2026: så fungerar det i dag"
 excerpt: "Digital tv i Sverige 2026: ny tillståndsperiod, krympande marknät och Kunskapskanalen som försvinner. Så når tv:n hemmen — och vad det betyder för dig."
 date: "2026-10-06"
-updateDate: "2026-10-29"
+updateDate: "2026-11-12"
 author: "IPTV NORDIC"
 image: "/assets/blog/digital-tv-sverige-hero.webp"
 imageAlt: "Digital tv i Sverige – tv på väggen i ett ljust vardagsrum som visar en tv-tablå, med en takantenn synlig genom fönstret"
@@ -274,7 +274,7 @@ Ett råd som gäller alla fyra: gör ingenting i panik. Inget av det som besluta
 
 **Villan utan fiber.** Här är marknätet fortfarande relevant, och ibland det enda alternativet för linjär tv. Kontrollera antennens skick och gör om kanalsökningen vid årsskiftet. Mobilt bredband kan vara ett komplement för play-tjänster, men kontrollera täckning och datamängd först.
 
-**Lägenheten med kollektivt avtal.** Troligen ingår redan ett tv-utbud i avgiften, och det är vanligt att betala för tjänster som dubblerar det. Börja med att fråga föreningen eller hyresvärden vad som faktiskt ingår innan du lägger till något.
+**Lägenheten med kollektivt avtal.** Troligen ingår redan ett tv-utbud i avgiften, och det är vanligt att betala för tjänster som dubblerar det. Börja med att fråga föreningen eller hyresvärden vad som faktiskt ingår innan du lägger till något. Hur det ser ut i en enskild stad, med stadsnät och kommunal hyresvärd, visar [genomgången av tv i Gävle](/sv/blog/ip-tv-gavle).
 
 **Den nyinflyttade.** Bredband plus de appar du vill ha räcker nästan alltid. Antenn är sällan värt besväret i en hyreslägenhet, och SVT Play finansieras redan av public service-avgiften du betalar via skatten när du arbetar här. Mer om vad avgiften kostar och hur den dras står i [genomgången av tv-kostnader i Norden](/sv/blog/iptv-nordic).
 

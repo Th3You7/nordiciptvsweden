@@ -1,8 +1,8 @@
 ---
 title: "Best IPTV Subscription in Sweden 2026: How to Compare"
-excerpt: "Looking for the best IPTV subscription in Sweden? Growth has stalled, four million subscriptions were cancelled — here is how to compare properly."
+excerpt: "Looking for the best IPTV subscription in Sweden? Record subscriptions, 3.4 million cancelled — here is how to compare properly."
 date: "2026-10-02"
-updateDate: "2026-10-29"
+updateDate: "2026-11-17"
 author: "IPTV NORDIC"
 image: "/assets/blog/basta-iptv-abonnemang-hero.webp"
 imageAlt: "Best IPTV subscription 2026 – a TV in a dark living room showing a grid of content with three tiles outlined in red, and a notebook on the coffee table"
@@ -14,6 +14,9 @@ keywords:
     - "IPTV"
     - "subscription"
     - "IPTV service"
+    - "best IPTV provider"
+    - "IPTV provider"
+    - "provider"
 featured: false
 faq:
   - q: "Which is the best IPTV subscription in Sweden?"
@@ -21,7 +24,7 @@ faq:
   - q: "How many streaming services does a Swedish household have?"
     a: "About three on average, up from roughly two in 2020, according to Mediavision as reported by SVT in August 2026. Swedish households together spent close to seven billion kronor on streaming during 2025, against 4.5 billion in 2020. That total is why comparing is worth the effort."
   - q: "Has the Swedish streaming market stopped growing?"
-    a: "According to Mediavision there were around eleven million paid streaming subscriptions in Sweden in the first quarter of 2026, but growth disappeared during the second quarter for the first time in over two years. More than four million subscriptions were cancelled within a single year."
+    a: "According to Mediavision there were 11.2 million paid streaming subscriptions in Sweden in the third quarter of 2026, up 18 percent on a year earlier and driven by ad-supported tiers. At the same time 3.4 million subscriptions were cancelled across a year, and roughly one in four was later reactivated. The market is growing and churning at once."
   - q: "What is happening to HBO Max and SkyShowtime?"
     a: "Paramount wants to merge HBO Max with Paramount+, which is called SkyShowtime in Sweden, keeping the HBO brand. The integration is on hold: the companies may not combine operations before 1 June 2027 while a court reviews a lawsuit from twelve states. Nothing changes for Swedish customers right now."
   - q: "How long can a Swedish subscription tie me in?"
@@ -36,7 +39,7 @@ faq:
 
 Searching for the best IPTV subscription looks simple and isn't. No subscription is best for everyone, and Swedish marketing law requires anyone claiming to be the best to prove it. What you can do is compare systematically — and autumn 2026 is an unusually good moment to redo that comparison.
 
-The market has turned: growth has stalled, cancellations are at record levels, and the biggest services face a merger that is now frozen until at least June 2027. This guide gives you the criteria, the figures and a method, written for people living in Sweden who may not have grown up with the Swedish TV market. *Information checked 2 October 2026.*
+The market is moving in two directions at once: subscriptions are at a record and so are cancellations, and the biggest services face a merger that is now frozen until at least June 2027. This guide gives you the criteria, the figures and a method, written for people living in Sweden who may not have grown up with the Swedish TV market. *Information checked 17 November 2026.*
 
 ## What "best IPTV subscription" actually means
 
@@ -55,11 +58,13 @@ A word about the word "best". In Sweden it is governed by *marknadsföringslagen
 
 In practice you have to set the weights yourself. Two households with identical budgets can reasonably land on different subscriptions.
 
-## The Swedish market in 2026: the party is over
+## The Swedish market in 2026: record subscriptions, record cancellations
 
-This is the backdrop that makes comparing worthwhile right now. According to Mediavision there were around eleven million paid streaming subscriptions in Sweden in the first quarter of 2026, and growth has stalled. Meanwhile the bill grows: households spent close to seven billion kronor during 2025.
+This is the backdrop that makes comparing worthwhile right now. The number of paid streaming subscriptions in Sweden has reached a new high, while cancellations stay heavy and the bill per household keeps climbing. The market is therefore moving in two directions at once, which is exactly why the choice is worth making deliberately.
 
-According to Mediavision there were around **eleven million paid streaming subscriptions** in Sweden in the first quarter of 2026. During the second quarter growth disappeared for the first time in over two years, and more than **four million subscriptions were cancelled** across a single year — only 40 percent of active subscriptions were left untouched, [as Dagens PS reported in August 2026](https://www.dagensps.se/weekend/noje-underhallning/streamingfesten-ar-over-svenskarna-borjar-fa-nog/) (in Swedish).
+According to Mediavision there were **11.2 million paid streaming subscriptions** in Sweden in the third quarter of 2026, up 18 percent on the same period a year earlier, with the growth coming from ad-supported tiers. At the same time **3.4 million subscriptions were cancelled** across a year, and roughly one in four cancelled subscriptions was later reactivated, [as Advanced Television reported in October 2026](https://www.advanced-television.com/2026/10/23/sweden-bundled-streaming-subs-see-almost-half-the-churn/).
+
+One figure in the same research is more useful than the headline numbers when you compare: **14 percent of bundled subscriptions were cancelled over the year, against 25 percent of standalone ones**. A bundled subscription is left about half as often. That may mean it suits people better — but it also means it is harder to get out of, which is the same fact seen from the other side.
 
 Meanwhile the bill keeps growing. Households spent close to **seven billion kronor** on streaming during 2025, against 4.5 billion in 2020, and a Swedish household now holds about **three services** rather than two, [according to Mediavision via SVT](https://www.svt.se/nyheter/ekonomi/billigare-streamingkonton-men-storre-utgift-for-hushallen) (in Swedish).
 
@@ -67,10 +72,11 @@ Meanwhile the bill keeps growing. Households spent close to **seven billion kron
 |---|---|---|
 | Streaming spend, all households | SEK 4.5bn | nearly SEK 7bn |
 | Services per household | about 2 | about 3 |
-| Paid subscriptions in Sweden | — | about 11 million (Q1 2026) |
-| Subscriptions cancelled in a year | — | over 4 million |
+| Paid subscriptions in Sweden | — | 11.2 million (Q3 2026) |
+| Subscriptions cancelled in a year | — | 3.4 million |
+| Cancellations: bundled vs standalone | — | 14% vs 25% |
 
-The reading is not that Swedes have stopped streaming. It is that they have started **choosing again** — cancelling, switching, trying cheaper tiers. A comparison exists to make that deliberate rather than impulsive.
+The reading is not that the market has stalled. It is that it grows and **churns at the same time** — people cancel, switch, try cheaper tiers and sometimes come back. A comparison exists to make that deliberate rather than impulsive.
 
 [[wa:Ask us on WhatsApp|Not sure what suits your household? Describe how you watch and we will answer honestly.]]
 
@@ -171,6 +177,18 @@ Most people choose between three ways of getting television: the operator packag
 
 None of the models is best in itself. What decides is how much you want to administer and how much flexibility you want in return.
 
+## Best IPTV provider, or best subscription?
+
+These are two questions with different answers, easily confused. The subscription is what you get: channels, streams, price and any fixed term. The provider is who you get it from, and who you deal with when something stops working. A strong package from someone who never answers is worth less than a fair one from someone who does.
+
+The criteria above judge the package. Three questions judge the provider, and none of them appears in a feature table:
+
+- **Who is the counterparty?** Can the company be named, are its terms published, and is payment traceable? That vetting decides what you can do later, and is covered in our guide to the company behind a service.
+- **How hard is it to leave?** The Mediavision figure above — 14 percent against 25 — is about the provider relationship rather than the content. A bundled subscription is left less often, and that can reflect friction just as easily as satisfaction.
+- **What happens when it goes wrong?** Response time and the complaints route are never in the channel list, but they are what you buy when you pay twelve months up front.
+
+So build the criteria table in two halves: one row per package feature, and one for counterparty, exit route and support. Comparing only packages compares half the deal.
+
 ## What makes a subscription easy to leave
 
 Because the market is moving, the exit matters as much as the entrance. [According to Konsumentverket](https://www.konsumentverket.se/varor-och-tjanster/bindningstid-och-uppsagningstid/) (in Swedish), a consumer contract may have a binding period of at most 24 months, and for contracts entered into from 1 May 2014 the notice period may be at most one month.
@@ -207,7 +225,7 @@ What we **don't** claim: that any specific named channel or sport is included, t
 
 **No subscription is best for everyone.** One is best for your household, decided by content, streams, flexibility and support — not by a ranking page.
 
-**The market has turned.** Eleven million subscriptions, growth gone in the second quarter of 2026 and over four million cancellations in a year mean more people are choosing again. Do it deliberately.
+**The market grows and churns at once.** 11.2 million subscriptions in the third quarter of 2026, up 18 percent, and 3.4 million cancellations in a year mean more people are choosing again. Do it deliberately.
 
 **Lock-in costs more than usual right now.** With the HBO Max and SkyShowtime merger frozen until at least June 2027, a short contract is worth more than a few kronor of discount.
 

@@ -2,7 +2,7 @@
 title: "Bästa och billigaste IPTV 2026: vad priset faktiskt betyder"
 excerpt: "Bästa och billigaste IPTV är två olika frågor. Så fungerar 30-dagarsregeln vid prissänkningar – och ändringen som kan ta bort den för abonnemang."
 date: "2026-10-26"
-updateDate: "2026-10-29"
+updateDate: "2026-11-17"
 author: "IPTV NORDIC"
 image: "/assets/blog/basta-och-billigaste-iptv-hero.webp"
 imageAlt: "Bästa och billigaste IPTV – mörkt vardagsrum där tv-skärmen visar en prislapp med ett överstruket pris vid sidan av ett lägre pris"
@@ -22,7 +22,7 @@ faq:
   - q: "Vad säger lagen om ett sänkt pris?"
     a: "Enligt 7 a § prisinformationslagen ska ett tidigare pris anges när en produkt marknadsförs med att priset har sänkts, och det priset ska vara det lägsta som använts under de senaste 30 dagarna före sänkningen. Konsumentverket kräver dessutom att siffran står i omedelbar närhet till det nedsatta priset och är lätt att läsa. Rabatten ska räknas från det lägsta priset, inte från något annat."
   - q: "Gäller 30-dagarsregeln för abonnemang och tjänster?"
-    a: "I nuvarande lydelse är 7 a § kopplad till ordet produkt, som enligt förarbetena omfattar varor, tjänster eller andra nyttigheter. Ett tjänsteabonnemang faller alltså inom ordalydelsen i dag. En lagrådsremiss från den 15 oktober 2026 föreslår att paragrafen i stället ska gälla enbart varor, med ikraftträdande den 1 mars 2027. Går förslaget igenom slutar regeln gälla för tjänster. Kontrollera läget innan du förlitar dig på regeln för ett abonnemang."
+    a: "I nuvarande lydelse är 7 a § kopplad till ordet produkt, som enligt förarbetena omfattar varor, tjänster eller andra nyttigheter. Ett tjänsteabonnemang faller alltså inom ordalydelsen i dag. Sedan den 10 november 2026 ligger förslaget hos riksdagen som proposition 2026/27:14, och vill att paragrafen i stället ska gälla enbart varor med ikraftträdande den 1 mars 2027. Går det igenom slutar regeln gälla för tjänster. Kontrollera läget innan du förlitar dig på regeln för ett abonnemang."
   - q: "Vad kostar IPTV NORDIC?"
     a: "Våra abonnemang kostar 15 euro för en månad, 35 för tre, 45 för sex och 65 för tolv, vilket motsvarar omkring 5,40 euro i månaden på årsabonnemanget. Antalet samtidiga strömmar är 2 till 5 beroende på period. Ingen bindningstid, ingen automatisk förnyelse och sju dagars pengarna-tillbaka-garanti på varje period. Vi påstår inte att det är marknadens lägsta pris."
   - q: "Hur räknar jag ut vad som är billigast för mig?"
@@ -85,11 +85,13 @@ Poängen för dig som läsare är inte vilka bolag som fastnade. Poängen är at
 
 ## Reglerna är varken färdiga eller oomtvistade
 
-Två saker är i rörelse just nu, och båda är värda att känna till innan du litar på en regel: ett företag har vunnit mot Konsumentombudsmannen i domstol, och en lagrådsremiss föreslår att paragrafen bara ska gälla varor — inte tjänster som ett tv-abonnemang.
+Två saker är i rörelse just nu, och båda är värda att känna till innan du litar på en regel: ett företag har vunnit mot Konsumentombudsmannen i domstol, och en proposition hos riksdagen föreslår att paragrafen bara ska gälla varor — inte tjänster som ett tv-abonnemang.
 
 **Ett företag har vunnit.** Patent- och marknadsdomstolen upphävde Konsumentombudsmannens föreläggande mot Inet AB. Domstolen bedömde att bolaget inte hade underlåtit att lämna prisinformation enligt 7 a § och inte brutit mot förbudet mot vilseledande marknadsföring, [enligt Konsumentverkets referat publicerat den 20 mars 2026](https://www.konsumentverket.se/dom/beslut-i-malet-ko-inet-ab/). Reglerna är med andra ord inte självklara ens för tillsynsmyndigheten.
 
-**Och paragrafen kan krympa.** I dag är 7 a § kopplad till ordet *produkt*, som enligt förarbetena betyder "varor, tjänster eller andra nyttigheter". Ett tjänsteabonnemang ligger alltså inom ordalydelsen. En **lagrådsremiss den 15 oktober 2026** (Fi2026/00996) föreslår att ordet byts till *vara*, så att bestämmelsen lyder: "Om en vara tillhandahålls med angivande av att priset har sänkts ska även det tidigare priset anges." Skälet är att anpassa svensk rätt till EU:s prisinformationsdirektiv, som handlar om varor. Ikraftträdandet föreslås till **den 1 mars 2027**; den tidigare promemorian angav 1 februari.
+**Och paragrafen kan krympa.** I dag är 7 a § kopplad till ordet *produkt*, som enligt förarbetena betyder "varor, tjänster eller andra nyttigheter". Ett tjänsteabonnemang ligger alltså inom ordalydelsen. Förslaget är att ordet byts till *vara*, så att bestämmelsen lyder: "Om en vara tillhandahålls med angivande av att priset har sänkts ska även det tidigare priset anges." Skälet är att anpassa svensk rätt till EU:s prisinformationsdirektiv, som handlar om varor. Ikraftträdandet föreslås till **den 1 mars 2027**; den tidigare promemorian angav 1 februari.
+
+Förslaget har flyttat ett steg. Det började som en promemoria (Fi2026/00996), gick till Lagrådet den 15 oktober 2026 och lämnades till riksdagen som **proposition 2026/27:14** den 10 november 2026. Det ligger nu hos civilutskottet, vars betänkande får beteckningen 2026/27:CU5. Varken utskottet eller kammaren har fattat något beslut, så regeln gäller fortfarande tjänster — men en proposition är ett betydligt tydligare besked om färdriktningen än en remiss.
 
 Går förslaget igenom slutar 30-dagarsregeln gälla för tjänster — och ett tv-abonnemang är en tjänst. Marknadsföringslagens förbud mot vilseledande prisuppgifter står kvar, men den specifika, mätbara regeln om jämförelsepriset gör det inte. Det här är ett förslag när detta skrivs, inte gällande rätt, och det är värt att kontrollera status innan du åberopar regeln för ett abonnemang.
 
@@ -192,7 +194,7 @@ Fyra saker att ta med sig när du letar efter bästa och billigaste IPTV.
 
 **Ett sänkt pris har ett lagkrav bakom sig.** Jämförelsepriset ska vara det lägsta under de senaste 30 dagarna, rabatten ska räknas från det, och siffran ska stå nära. Konsumentverkets granskningar visar hur ofta den kräver efterlevnad.
 
-**Regeln kan krympa den 1 mars 2027.** Lagrådsremissen från den 15 oktober 2026 vill begränsa 7 a § till varor, vilket skulle lämna tjänsteabonnemang utanför. Kontrollera läget innan du förlitar dig på den.
+**Regeln kan krympa den 1 mars 2027.** Proposition 2026/27:14, som lämnades till riksdagen den 10 november 2026, vill begränsa 7 a § till varor, vilket skulle lämna tjänsteabonnemang utanför. Kontrollera läget innan du förlitar dig på den.
 
 **Räkna per tittare och månad över hela perioden.** Det är den enda siffran som är jämförbar mellan två erbjudanden.
 

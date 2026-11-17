@@ -2,7 +2,7 @@
 title: "Best and Cheapest IPTV in Sweden 2026: What Prices Mean"
 excerpt: "Best and cheapest IPTV are two different questions. How Sweden's 30-day price rule works, and the change that may remove it for subscriptions."
 date: "2026-10-26"
-updateDate: "2026-10-29"
+updateDate: "2026-11-17"
 author: "IPTV NORDIC"
 image: "/assets/blog/basta-och-billigaste-iptv-hero.webp"
 imageAlt: "Best and cheapest IPTV – a dark living room where the TV screen shows a price tag with a struck-through price beside a lower one"
@@ -22,7 +22,7 @@ faq:
   - q: "What does Swedish law require when a price is reduced?"
     a: "Under section 7 a of the Price Information Act (prisinformationslagen), a previous price must be stated when something is marketed as reduced, and it must be the lowest price used in the 30 days before the reduction. Konsumentverket also requires the figure to sit immediately next to the reduced price and to be easy to read. The discount must be calculated from that lowest price and no other."
   - q: "Does the 30-day rule cover subscriptions and services?"
-    a: "As currently worded, section 7 a is tied to the word produkt, which the preparatory works define as goods, services or other benefits. A service subscription therefore falls inside it. A bill referred to the Council on Legislation on 15 October 2026 would narrow the rule to goods only from 1 March 2027. If that passes, it stops covering services, so check the status before relying on it."
+    a: "As currently worded, section 7 a is tied to the word produkt, which the preparatory works define as goods, services or other benefits. A service subscription therefore falls inside it. Since 10 November 2026 the proposal has been before the Riksdag as proposition 2026/27:14, and would narrow the rule to goods only from 1 March 2027. If it passes, it stops covering services, so check the status before relying on it."
   - q: "Do these rules protect me if I am not a Swedish citizen?"
     a: "Yes. Swedish consumer protection follows the transaction, not your nationality or whether you hold a personnummer. If you buy as a consumer from a trader marketing to the Swedish market, the price-information and misleading-marketing rules apply to you on the same terms as to anyone else, and Konsumentverket is the supervising authority either way."
   - q: "What does IPTV NORDIC cost?"
@@ -91,7 +91,9 @@ Two things are in motion right now, and both matter before you rely on the rule:
 
 **One company won.** The Patent and Market Court set aside the Consumer Ombudsman's order against Inet AB, finding that the company had not failed to provide price information under section 7 a and had not breached the prohibition on misleading marketing, [according to Konsumentverket's summary published on 20 March 2026](https://www.konsumentverket.se/dom/beslut-i-malet-ko-inet-ab/) (in Swedish). The rules are not self-evident even to the authority enforcing them.
 
-**And the provision may shrink.** Today section 7 a is tied to the word *produkt*, which the preparatory works define as "varor, tjänster eller andra nyttigheter" — goods, services or other benefits. A service subscription sits inside that wording. A **bill referred to the Council on Legislation on 15 October 2026** (Fi2026/00996) would swap the word for *vara*, so the provision would read: "Om en vara tillhandahålls med angivande av att priset har sänkts ska även det tidigare priset anges." The stated reason is to align Swedish law with the EU price indication directive, which concerns goods. Entry into force is proposed for **1 March 2027**; the earlier memorandum said 1 February.
+**And the provision may shrink.** Today section 7 a is tied to the word *produkt*, which the preparatory works define as "varor, tjänster eller andra nyttigheter" — goods, services or other benefits. A service subscription sits inside that wording. The proposal would swap the word for *vara*, so the provision would read: "Om en vara tillhandahålls med angivande av att priset har sänkts ska även det tidigare priset anges." The stated reason is to align Swedish law with the EU price indication directive, which concerns goods. Entry into force is proposed for **1 March 2027**; the earlier memorandum said 1 February.
+
+It has moved a stage. It began as a memorandum (Fi2026/00996), went to the Council on Legislation on 15 October 2026, and was laid before the Riksdag as **proposition 2026/27:14** on 10 November 2026. It now sits with the civil affairs committee, whose report will be numbered 2026/27:CU5. Neither the committee nor the chamber has decided, so the rule still covers services — but a proposition is a far clearer signal of direction than a referral.
 
 If it passes, the 30-day rule stops applying to services — and a television subscription is a service. The Marketing Act's ban on misleading price information remains, but the specific, measurable rule about the comparison price does not. This is a proposal as this is written, not law in force, and the status is worth checking before you invoke the rule for a subscription.
 
@@ -194,7 +196,7 @@ Four things to take away when you are weighing the best and cheapest IPTV.
 
 **A reduced price carries a legal requirement.** The comparison figure must be the lowest of the previous 30 days, the discount must be calculated from it, and it must be shown nearby. Konsumentverket's reviews show how often that needs enforcing.
 
-**The rule may shrink on 1 March 2027.** The bill of 15 October 2026 would limit section 7 a to goods, leaving service subscriptions outside it. Check where that stands before relying on it.
+**The rule may shrink on 1 March 2027.** Proposition 2026/27:14, laid before the Riksdag on 10 November 2026, would limit section 7 a to goods, leaving service subscriptions outside it. Check where that stands before relying on it.
 
 **Calculate per viewer per month across the whole period.** It is the only figure that compares between two offers.
 
